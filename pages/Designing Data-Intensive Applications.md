@@ -1,0 +1,238 @@
+tags:: books, distsys, sre, devops, software engineering, software architecture
+alias:: DDIA
+
+- **Chapter 1: Reliable, Scalable, and Maintainable Applications**
+  collapsed:: true
+	- what is a **data-intensive system**? one where "data is its primary challenge—the quantity of data, the complexity of data, or the speed at which it is changing—as opposed to compute-intensive, where CPU cycles are the bottleneck."
+	- such an application is usually built from "building blocks" like: databases, caches, search indexes, stream processing tools, batch processing tools...
+	- why should we lump all these building blocks under the name "data system" when they're so different?
+		- nowadays, many of those building blocks have converged! see [[Redis]], a data store that can be used as a [[message queue]], and [[Kafka]], a message queue with database-like guarantees
+		- many modern applications are complex enough that no one tool does the trick! so, you break down your work into smaller tasks which _can_ be done on one tool, and stitch those tools together with application code- effectively abstracting them into your own data system
+	- what core aspects should a data-intensive app aspire to?
+		- **Reliability:** *"The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of adversity (hardware or software faults, and even human error)."*
+			- what's that really mean?
+				- it does what the user expected
+				- it can tolerate user mistakes or unexpected uses
+				- its performance is good enough for the use case and volume
+				- it prevents unauthorized access and abuse
+				- in sum, "it works correctly, even when things go wrong"
+			- the things that can go wrong are called **faults**. it is impossible to reduce the probability of faults to 0, or to tolerate all faults, so usually one should focus on preventing faults from becoming **failures** (actual outages)
+			- types of fault:
+				- **hardware faults:** something in the machine failed! these tend to occur at random. can be addressed by software and hardware redundancy
+				- **software errors:** an error within the system. these tend to be correlated, since all nodes are running the software. they occur because the software is making an assumption about its environment that isn't always true.
+				- **human error:** PEBKAC! humans operate systems, and we make mistakes.
+					- could reduce suceptibility to human error by:
+						- designing in a way that minimizes opportunity for error- well-designed APIs and components
+						- decoupling the places that the most errors happen, from the places they can cause errors. (provide sandbox envs for testing, etc)
+						- testing thoroughly, and at all levels
+						- making recovery fast- gradual rollouts, quick rollbacks, frequent backups
+						- good telemetry
+						- good management and training
+		- **Scalability:** *"As the system grows (in data volume, traffic volume, or complexity), there should be reasonable ways of dealing with that growth."*
+			- systems that work at a 1000-user scale probably won't work with 1000000 users!
+			- scalability is not one-dimensional- the structure of the application and the type of load matter
+			- uses Twitter fan-out as an example: about 4.6k/sec tweets are written, but 300k/sec tweets are viewed.
+				- could have each tweet insert into a global DB. that'd get fast writes, but slow reads
+				- maintain a cached timeline for each user, then writing a tweet does a large number of inserts into each timeline. that'd get fast reads, but slow writes
+				- since viewing was two orders of magnitude more frequent, Twitter optimized for reads!
+				- but some tweets get read much more than others! e.g., celebrities with 50 million followers- now each time they write a tweet, it causes 50 million writes!
+				- so now a hybrid approach is used- most twitter users go through fan-out, but high-follower-count users are fetched separately at read time
+			- how to measure?
+				- a [[batch processing]] system typically cares about **throughput**- how many records can we process per second?
+				- an [[online processing]] system typically cares about **response time**- the time between a client send a req and receiving a res.
+					- since response time varies nondeterministically, we need to think of it as a [[distribution]].
+				- we can use [[SLA]]s or [[SLO]]s to define the expected performance
+			- 💡queueing delays can account for a large portion of response time! a server can only do so many things at once, so one super slow query can block many fast ones later in the queue. so, when load-testing, ensure your test framework *doesn't* wait on a response before sending more requests! #nuggets
+			- 💡 even if only a small % of BE calls are slow, in an app with many BE calls they can slow down the entire UX. the app is only as fast as the slowest necessary BE call. that's called [[tail latency amplification]] #nuggets
+			- how to deal with load?
+				- you can **scale up**- run the app on larger machines
+				- or, **scale out**- run the app on a cluster or more machines
+					- distributing load across multiple machines is also known as [[shared-nothing]] architecture
+				- systems that can scale their resources automatically are known as [[elastic]]. (it's not just an [[AWS]] buzzword!)
+				- there's no one-size-fits-all answer- [[magic scaling sauce]] does not exist. your solution will be highly dependent on your application
+		- **Maintainability:** *"Over time, many different people will work on the system (engineering and operations, both maintaining current behavior and adapting the system to new use cases), and they should all be able to work on it productively."*
+			- most of the cost of software isn't in initially writing it- it's in ongoing ops! how can we make that as smooth as possible?
+			- **Operability:** *"Make it easy for operations teams to keep the system running smoothly."*
+				- provide visibility into runtime behavior with good telemetry
+				- provide support for automation and integration with standard tools
+				- avoid dependency on individual machines
+					- "cattle, not pets"
+				- good docs
+				- smart defaults, with the ability to override as needed
+				- self-healing, with the ability to override as needed
+				- predictable behavior
+					- [No alarms and no surprises](https://www.youtube.com/watch?v=u5CVsCnxyXg) #music
+					- shades of [[principle of least surprise]]
+			- **Simplicity:** *"Make it easy for new engineers to understand the system, by removing as much complexity as possible from the system."*
+				- see [[Simple Made Easy]]
+				- systems have some inherent complexity, but we can remove accidental complexity. use good abstractions!
+			- **Evolvability:** *"Make it easy for engineers to make changes to the system in the future, adapting it for unanticipated use cases as requirements change."*
+				- systems change over time as users' needs change!
+				- on the organization side, [[agile]] helps teams deal with change
+				- on the software side, [[TDD]] and [[sustaining engineering]] help
+- **Chapter 2: Data Models and Query Languages**
+  collapsed:: true
+	- "The limits of my language mean the limits of my world." [[Wittgenstein]] #aphorisms #philosophy
+	- > Most applications are built by layering one data model on top of another. For each layer, the key question is: how is it represented in terms of the next-lower layer?
+	- "polyglot persistence"- it's likely that apps will use relational DBs alongside non-relational DBs, each for the type of data they're best for
+	- **[[heirarchical model]]:** the first data model. stores data in a tree structure
+	- **[[network model]] (or CODASYL model):** generalization of heirarchical model, with data having multiple parents
+	- **[[relational model]]:** data is stored in [[tuple]] s, grouped into relations
+	- **[[document DB]]s:** similar to [[heirarchical model]] in that data is stored in nested records, similar to [[relational model]] in that you can reference records by unique ID
+	- **[[graph model]]:** data is stored in [[graph]]s
+		- are [[graph DB]]s the second coming of the [[CODASYL model]]? nope!
+			- CODASYL has schemas, graph DBs don't
+			- CODASYL required traversing to reach a target record, graph DBs can use a unique ID
+			- CODASYL children are an ordered set, graph DB edges are not ordered
+			- CODASYL queries are imperative, graph DB queries are not
+	- **the [[object-relational mismatch]]:** objects in PLs aren't quite the same as relations in RDBs!
+	- **document DBs vs RDBs:**
+		- documents have better locality
+			- RDBs would have to shred a document across several tables
+		- document have a more flexible [[db/schema]]
+		- closure to the application data sctructure for some apps
+		- RDB has better support for one-to-many and many-to-many relations
+		- better support for joins
+			- joins are wasteful in DDBs, and shift complexity to the application code
+			- even if data is *initially* join-free, it tends to grow to be relational as features are added
+	- why is [[NoSQL]] growing?
+		- scalability needs- harder to scale relational DBs
+		- specialize data types or query operations that RDBs don't handle well
+		- desire for more dynamic data models
+	- RDBs and NoSQL are converging- many RDBs now support XML and JSOn data like a DDB, and DDBs are starting to support joins
+	- why use declarative langs for data query? they lend themselves well to parallel execution
+	- what to do with highly interconnected data?
+		- document DBs are bad, RDBs are OK, graph DBs are best
+	- things that are _like_ query langs:
+		- [[CSS]] is kinda like a data query lang, in that you declaratively specify elements to style, and the browser engine handles finding 'em and applying the styles for you
+		- [[MapReduce]]
+- **Chapter 3: Storage and Retrieval**
+  collapsed:: true
+	- *"Wer Ordnung hält, ist nur zu faul zum Suchen."*
+	- there's a big difference between storage engines optimized for transaction processing, and analytics!
+	- **log-structured storage engines:**
+		- stores data in an append-only sequence of records
+		- how do we keep from running out of space? compaction! every once in a while, we split the file in two, write to the new chunk, and in the old chunk keep only the newest update for each item
+		- good for reading concurrently from multiple threads- can't race conditions in append-only, immutable data
+		- key-value data can use [[hash indexing]], much like you might store that data in memory in a [[hash map]]
+			- done in log-structured engines. [[Bitcask]] does this
+			- in most cases, hash table needs to fit in memory, so you're out of luck if you have a huge number of keys. on-disk hash tables aren't fast
+		- SSTables / LSM-Tree:
+			- terminology comes from [[Bigtable]]
+			- store the logs as sorted sequences, sorted by string key
+			- easy to merge data
+			- no longer need an index in memory to find keys efficiently
+			- can compress data before writing to disk
+			- use a tree data structure in memory, like [[red-black tree]]s or [[AVL tree]]s: write in keys in any order, read 'em out in sorted order. sometimes called a **memtable**
+			- works like so:
+				- when you write, add it to the memtable
+				- when the memtable exceeds a threshold, write it to disk as an SSTable. this becomes the most recent segment, and writes move to a new memtable
+				- to read data, first look in the memtable, then the most recent segment, then progressively older ones
+				- occasionally, run merging and compaction in the background
+			- LevelDB and RocksDB work like this, Cassandra and HBase kinda like this
+			- Lucene, the engine behind Elasticsearch and Solr, works like a more complex version of this
+	- **page-oriented storage engines:**
+		- **[[B-tree]]**
+	- **database indexing:**
+		- querying is hard and slow! we can add an index to make it faster to find the data we want
+		- > well-chosen indexes speed up reads, but every index slows down writes.
+		- secondary indexes are often constructed with **heap files**- each secondary key maps to a pointer, which points to the actual data. this prevents duplicating the data for each index
+		- if heap files are too slow, a **clustered index** can be used- primary indexes hold the data directly, and secondary indexes point to the primary index
+		- a **covering index** is a hybrid of the approaches- some data lives in the index, some does not
+	- comparing B-trees and LSM-trees
+		- LSM-trees generally faster for writes, B-trees generally faster for reads
+		- LSM-trees typically have sequential writes, B-trees don't
+		- Both B-trees and LSM-trees have write amplification, but it _tends_ to be lower with LSM-trees
+		- LSM-trees can be compressed better
+		- LSM-tree compaction can negatively impact query time
+		- the bigger the DB gets, the more disk bandwidth an LSM-tree must spend on compaction
+	- in-memory DBs:
+		- ex: [[Redis]], [[CouchDB]], [[VoltDB]]
+		- they are more performant than on-disk DBs, but... _not_ because of the overhead of actually writing to disk! (OSes already optimize by caching pages into memory.) it's because you don't need to encode the data into a disk-friendly structure!
+		- also lets you provide DB-like interfaces to structures that don't work well on-disk: priority queues, sets, etc.
+	- [[OLTP]] vs. [[OLAP]]
+		- SQL is pretty good for both, but running OLAP operations on live OLTP instances is a great way to clog it up and cause latency! so, [[data warehouse]]s were invented
+		- even though OLTP and OLAP data are usually both relational, the engines that work well for them are very different, due to the differing query patterns!
+			- OLAP queries typically want zillions of rows, each row has zillions of columns, but you only want 4-5 of those columns
+	- **column-oriented storage:**
+		- instead of storing each *row* together, store each *column* together
+		- now, a big ol' OLAP query simply needs to stitch together 4-5 columns, instead of crunching zillions of rows
+		- columns must be ordered consistently, so that we can combine them to reconstruct rows
+			- typically done with a combination of the most common keys to query on- date, SKU, etc
+		- columns can be compressed with bitmap encoding and run-length encoding
+		- sort order and compression combine to let you compress the first few sort keys a lot with RLE!
+		- compressed data, and bitwise operations on the bitmasks, make very efficient use of CPU cache and cycles
+		- writes are very hard, as you need to modify every column. how to do this efficiently? [[LSM-tree]]s!
+		- hybrid: [[Bigtable]]/[[Cassandra]]/[[HBase]] have **column families**, but is not truly column-oriented: the columns are busted out into families, but *within* each family, the data is stored row-oriented.
+- **Chapter 4: Encoding and Evolution**
+  collapsed:: true
+	- how do we encode data usefully, and evolve it as the app grows?
+	- in a distributed system, we can't upgrade everything in lockstep. we might want to do [[rolling upgrade]]s on the server side, which necessitates two or more versions running at the same time. and there's _nothing_ we can do to force clients to update in a timely manner!
+	- **forward compat** vs **back compat**- we need both, but forward compat is harder!
+	- langs' built-in serialization/deserialization isn't good enough:
+		- they are usually tied closely to the particular lang, making them useless in a polyglot stack
+		- in order to unmarshal, they typically need to instantiate arbitrary classes, which is a security problem
+		- usually no concept of *versioning* the data
+		- efficiency is not a high priority
+	- how 'bout JSON, XML, or CSV?
+		- ambiguity about number encoding
+		- no support for binary blobs, so you have to base64 into a string
+		- lack of schema- XML and JSON kinda have it but most tools don't support, CSV got nothin'
+		- despite drawback, **these are great for data transfer between orgs**, because it's harder to get two orgs to agree on something than anything else!
+	- enter [[Thrift]] / [[protobuf]]
+		- typed, schema-on-write, binary-encoded data formats
+		- use codegen tools to convert into native structures in langs
+		- forward compat is maintained 'cause each new field should be given a new tag number, and the protocol can simply ignore tag numbers it doesn't know about
+		- backcompat is maintained by not removing tags or changing tag numbers, as well as not making new fields mandatory
+		- this is reversed when removing fields!
+	- [[Avro]] does compat by looking at both the reader and writer's schema side by side, and translating the one into the other if they differ
+		- you can only add or remove fields with default values
+		- this is for better support of dynamically generated schemas
+	- now that we know how to _encode_ it, how do we _transmit_ it?
+		- **via database**
+			- databases are updated over time! no guarantee all data was marshaled with the same schema
+				- **data outlives code** #aphorisms
+		- **via service calls**
+			- Web services ([[REST]]/[[SOAP]]) vs. other [[RPC]]
+			- problems with RPC
+				- local function calls are predictable, and depend only on what you put in. network calls are unpredictable, and depend also on network conditions
+				- local calls succeed, fail, or don't return. network calls can also timeout- which gives you no info
+				- because a failed network request may actually have succeeded, we need to uild in [[idempotence]]
+				- execution time of remote calls is unpredictable!
+				- you have to serialize all data for remote calls, which is less efficient than local references
+				- you may have to translate between data types in 2 different langs
+			- challanges in practice:
+				- [[service discovery]]!
+		- **via message passing**
+			- transmit data asynchronously, via a [[message queue]]
+				- typically one-way!
+			- benefits over RPC:
+				- can act as a buffer to improve reliability
+				- can auto-redeliver missed messages
+				- avoids the need to know the recipient's address
+				- multicast
+				- logically decouples sender and recipient
+			- distributed [[actor framework]]s
+- ## Part II: Distributed Data
+  collapsed:: true
+	- why might we want to distribute data across multiple machines?
+		- **scalability**
+		- **[[fault tolerance]]/[[high availability]]**
+		- **latency**
+	- scaling to higher load
+		- [[scaling up]]/vertically is simpler than scaling out!
+			- scaling up is a [[shared-memory architecture]] or [[shared-disk architecture]]
+			- cost grows faster than linearly, has upper limits, has less [[fault tolerance]]
+		- [[scaling out]]
+			- is [[shared-nothing]] architecture
+			- no special hardware is required!
+	- replication vs. partitioning
+- **Chapter 5: Replication**
+	- in [[replication]], we keep a copy of the same data on multiple machines connected via a network
+	- why?
+		- reduce latency via geographic closeness
+		- increase [[fault tolerance]] and [[high availability]]
+		- increase throughput via scaling out
+	- > All the difficulty in replication lies in handling _changes_ to replicated data
+	- [[leader-based replication]]
+	-

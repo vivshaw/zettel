@@ -1,0 +1,27 @@
+tags:: project management, finance, management, cost
+
+- top-down estimate- use historical data to get a rough back-of-the-envelope estimate
+- bottom-up estimates- break the project into small pieces, estimate their costs, and sum them
+	- e.g., use the [[WBS]]
+- ⚠️there's a tradeoff between accuracy of the estimate and cost of the estimate! Rough, order-of-magnitude estimates are quicker and cheaper to produce than a detailed WBS-based breakdown
+- also consider the phase of your project- you need less detail and accuracy toward the beginning, but more toward the end
+- techniques of estimation:
+	- **unit method**- estimate a single unit cost, and multiply by units
+	- **factor method**- construct a more detailed cost equation, with multiple factors
+		- basically, break the system into components, then do a sum of unit costs for each component
+	- **index method**- use an estimate from a prior year, indexed to cost changes over time
+		- you can weight an average of indices for an estimate that covers multiple cost components
+	- **power sizing method**- estimate equipment cost from a similar, but differently-scaled piece of equipment
+		- `Ca = Cb (Sa / Sb)^x`
+			- where `Ca` and `Cb` are the cost of the two pieces of equipment, `Sa` and `Sb` their output, and `x` the _cost capacity factor_
+			- the cost capacity factor represents the equipment's economy of scale. at `1`, cost is linear. if `>1`, we have diseconomy of scale. if `<1`, we have economy of scale.
+	- **parametric curve-fitting**- use stats to fit a curve to observed cost data
+	- **learning curve analysis**- the more you do something, the more efficient you become. eventually, you hit the steady-state level of efficiency. you can estimate costs taking this into account.
+		- **learning curve rate (LCR)**- the % reduction in cost when doubling quantity.
+			- in practice, usually between .8 and 1
+		- use a [[log-log model]] to make the learning curve linear for easy estimation
+			- originally, `Tn = T0 n^m`
+			- `log(Tn) = m log(n) + log(T0)`
+			- now estimate the slope: `m = (log(T1) - log(T0)) / (log(n1) - log(n0))`
+			- by definition of the LCR, let `n1 = 2 n0`, and `T1 = LCR * T0`
+			- then `m = log(LCR)/log(2)`

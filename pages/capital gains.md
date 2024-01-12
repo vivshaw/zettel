@@ -1,0 +1,1 @@
+alias:: capital gain

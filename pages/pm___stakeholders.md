@@ -1,0 +1,5 @@
+- a **stakeholder** is anyone with an influence on the project outcome:
+	- customers
+	- team members
+	- suppliers
+	- etc.

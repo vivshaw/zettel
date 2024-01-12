@@ -1,0 +1,3 @@
+- I'm interested in compiling my various notes and knowledge into a PKM.
+- I'm not enthralled with any particular guru or approach- I'd prefer to roll my own based on what feels usable to me.
+- ultimately, I'd like it to grow into a [[digital garden]] that I can make publicly accessible, at least via GitHub, if not also on [[vivsha.ws]]

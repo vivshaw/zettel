@@ -1,0 +1,4 @@
+- management is all [[praxis]], all day. you can't be effective if you don't know your shit, but knowing your shit gets you nothing if you can't wrangle people and organizations. you must translate theory into practice, within the lens of accomplishing business needs with a complex social organism. you must build your experiences back into theory that helps you [[do better next time]].
+	- from Bungay's [[The Art of Action]]:
+	  > Management is not a science but a practical art. Practicing it skillfully means applying general principles in a specific context. It helps to identify what the critical principles are.
+- I am building a [[management OS]] to help carry my tools, skills, and knowledge across roles and companies as my career progresses.

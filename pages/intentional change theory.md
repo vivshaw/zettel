@@ -1,0 +1,25 @@
+tags:: management, psychology, systems thinking
+
+- intentional change theory (ICT) is a theory about what it takes to make a sustained, desired change in one's behavior. it is a [[complex systems]] perspective, that applies to both individuals and organizations.
+- refs:
+	- [Boyatzis - An overview of intentional change from a complexity perspective](https://www.researchgate.net/publication/235317062_An_overview_of_intentional_change_from_a_complexity_perspective)
+- **the five discoveries of ICT:**
+	- **1. the [[ideal self]].** who do I want to be?
+		- use positive visioning to get here. hope is a powerful emotional driver.
+		- think about the self _you_ want, not the self _others_ say you should want. (the "ought self")
+	- **2. the real self.** who am I now? combine with 1 to reach:
+		- the greatest challenge is to see yourself as others see you. your ego defense mechanisms make your self-image inaccurate.
+		- once you're successful, you'll find:
+			- **2.1 strengths:** where my real and ideal self are similar
+			- **2.2 gaps:** where my real and ideal self differ
+	- **3. a learning agenda.** proceeding from 2, a plan to build on my strengths (2.1) while reducing my gaps (2.2)
+		- a self-driven plan leads you to create a personal standard of performance, rather than mimicking others
+		- people's behaviors are driven by positive (PEA) and negative (NEA) [[attractors]]. the plan fosters a positive disequilibrium
+			- negative disequilibrium triggers the [[sympathetic nervous system]]. positive disequilibrium triggers the [[parasympathetic nervous system]]
+	- **4. experimentation and practice with the new behavior.**
+		- this cycles back to 1 and 2! practice leads to a new self.
+	- **5. resonant relationships.** relationships that help, support, and encourage each step of the cycle.
+		- we need people to support us through the stress of the NEA, and guide us toward the PEA.
+- according to this theory, sustained, deliberate change happens at any level of human organization through this same ICT process.
+	- at the group level, the "ideal self" might be- "what does the group want to be? what _can_ we be?"
+	- leadership enables interaction between the levels by spreading "emotional contagion" and communication

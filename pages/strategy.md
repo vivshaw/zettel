@@ -1,0 +1,4 @@
+- what is strategy?
+	- per Bungay in [[The Art of Action]]:
+		- > At its most simple, executing strategy is about planning what to do in order to achieve certain outcomes and making sure that the actions we have planned are actually carried out until the desired outcomes are achieved.
+		- > Strategy is a framework for decision making, a guide to thoughtful, purposive action

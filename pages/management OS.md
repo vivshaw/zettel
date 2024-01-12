@@ -1,0 +1,28 @@
+tags:: management, engineering management, personal
+
+- my **management OS** is a package of rituals, documents, and references that I carry with me between jobs. it is the living body of the wisdom I've picked up as my career has progressed.
+	- like a computer's OS, it gives me the basic structure to stand up an engineering team and get things rolling.
+	- like a computer's OS, it doesn't give me everything I need. it's merely a baseline, that I will build on top of to suit my team's unique needs as the team grows and I grow with it.
+	- like a computer's OS, no installation is going to be identical, and I won't always use every part. I will pick and choose what fits my current circumstance, and drop what isn't useful.
+- **concepts:**
+	- **overarching philosophy:** *be like water. adjust to the situation. be pragmatic. source concepts from anywhere, and use precisely what works. be an artist. hone your praxis.*
+	- [[the role of a manager]]: TBD
+	- [[The Three Gaps]]: why don't our strategies work out in practice? how can we do better?
+	- [[directed opportunism]]: a philosophy of strategy under uncertainty, of building both alignment _and_ autonomy. plan only what can be planned, align  and give people the autonomy to address the rest on their best judgment.
+	- [[independent thinking obedience]]: what do I want out of my reports? neither rote following, nor going off and doing whatever they please- I want independent thinking and execution to achieve a united result.
+	- [[The Executive's Trinity]]: the high-level skills needed to manage with aplomb
+	- [[strategy, operations, and tactics]]: bridging the conceptual gap from strategy to execution
+- **rituals:**
+	- **overarching philosophy:** *provide just enough structure. no more, no less.*
+	- **1:1s:** TBD
+	- **standups:** TBD
+	- **retrospectives:** TBD
+	- **[[strategy briefs]]:** here's how you can plan a good strategy, and cascade it through an organization.
+- **documents:**
+	- **overaching philosophy:** *documents can never lead a change, they can only follow.*
+	- **team outline:** who are we? what do we do? what do we value? how can you get in touch with us? these questions help us know who we are as a team, help others learn about us
+	- **team vision:** we need a North Star that we can all navigate by.
+	- **team onboarding help:** this has two parts. first, an informational document to help the new hire get used to the team, get to know me, understand what we do. second, a [[30-60-90]] plan.
+	- **team rituals doc:** writing down your team rituals encourages being thoughtful about them. you should only have rituals that serve a purpose. to prove one has a purpose, explain it in writing! this also helps you onboard new folks, and track evolution in your rituals over time.
+- **references:**
+	- [[The Art of Action]]: an **excellent** work on [[strategy]]- why it's hard, how it is more an art than a science, and how you can practice that art and make your organization great at it.

@@ -1,0 +1,245 @@
+tags:: design, books, design system, systems thinking
+
+- **Introduction**
+  collapsed:: true
+	- **drift** appears as we scale, and design systems are introduced to solve the problem of drift
+		- the real issue with drift isn't that stuff looks different- it's that it represents and/or leads to lack of alignment and comms, diluted brand voice, disjointed [[UX]]...
+	- [[pattern libraries]] and [[style guide]] are the most tangible outputs of a design system, but the system is more than that
+		- what sort of pattern library you need depends on your org and situation! in a small org who mostly wants to go faster, you might just need a small set of blessed patterns. if you want to build a comprehensive UI library, you'll need to do more
+	- principles of design systems:
+		- **design systems are intentional** - they need to be approached with deliberation and care
+		- **your team is already working in systems** - informal systems spring up whether or not you have a formal one. corollary: a good place to start is in making those informal, invisible systems in people's heads explicit
+		- **strong systems are collaborative** - needs to be cross-functional and cross-team
+		- **the human aspects of your system are more complicated than the tooling** - "spend more time creating a shared language, and less on tools"
+	- designers often feel frustrated by design systems- they feel rigid and stifling, monotonous and uninspiring, overly-specific and difficult to adapt to use cases, or complex and unexplained
+	- instead, we want to make **expressive** design systems. an expressive system has 3 qualities:
+		- **it is purpose-built**
+			- > Your design system should align your team on a shared vision of your brand's coice, visual style, and behavior
+		- **it supports a range of expression**
+			- > Your design system should enable meaningful experimentation and divergence while still retaining the spirit of the system writ large
+		- **it inspires use**
+			- > Designers should feel motivated to solve complex problems with their design system, rather than feeling constrained by it.
+- **1 - Purpose and Principles**
+  collapsed:: true
+	- how do we set the purpose of our system? how do we keep eams aligned on it as they make design decisions? with a **purpose statement** and **design principles**
+	- brings up Vignelli and Noorda's NYCTA Graphics Standards Manual as an early example- a comprehensive, user-centric, from-first-principles guide to mass transit graphics
+	- a design system should have both **unity** (feels complete, works together) and **cohesion** (the quality that makes UIs easy to understtand across the experience). unity is easier- just set standards! but cohesion requires aligning on **purpose**
+	- do this with a **purpose statement**:
+		- **what** is the goal for our design system?
+		- **why** is the goal important?
+		- **how** will this design system help us?
+		- **who** is the design system for?
+	- start the process by discussing with stakeholders. then, listen to users!
+		- uncover problems- what are your pain points, where's duplication happening, where's eng<->design communication breaking down
+		- uncover goals- what do you wish the system helped you do? what info would you need from a style guide? what would it take for you to trust it?
+		- can't stop there, though! those are tool-oriented questions. we also need to ask system-oriented questions: how are y'all collaborating, how do you define quality, how do you know if you're aligned, how do you know what's ship-ready
+	- doing design requires making hundreds of small, quick design decisions. we can get better aligned on them by establishing **design principles**
+		- > While shared components and visual styles help teams align on how their brand should look, shared principles help teams align on how their brand should behave.
+		- effective principles should be:
+			- **specific and opinionated** - universal principles like "simple" and "delightful" aren't enough! you need something more tied to your use case- like Intercom's "design conversations, not transactions"
+			- **grown from within your team** - start with what's already baked into your teams and culture
+			- **decision-making tools**
+		- derive them from brainstorming a cross-disciplinary, cross-team workshop. then make them short and memorable. no more than 5!
+- **2 - The Process Behind the System**
+  collapsed:: true
+	- problem of planning- brings up urban planning of [[Brasilia]] by analogy. many beautifully-planned elements, that together didn't quite work and didn't quite scale. now 2 million people live there, but with 90% living in unplanned communities around the outskirts. the same will happen to your design system if you don't consider people's needs!
+	- step 1: mapping the ecosystem:
+		- **what products will this system serve?**
+		- **which people should we involve?**
+		- **what is the scope of this system?**
+		- do a product and user inventory. make it collaborative- do a figjam or something. then document it somewhere durable, like a spreadsheet. include information about who each thing is for!
+		- now we can create ecosystem maps:
+			- **choose an audience type**
+			- **list the tasks they perform every day**
+			- **break a task out into a user flow**
+			- **map the flow to sections of the product**
+			- **write down which teams are responsible for each section**
+			- **repeat that for a few different audiences**
+			- **visualize it!**
+	- step 2: planning begins. Cruz recommends using this map as the start of your planning. don't start with your visual language. don't start with simple building blocks, like buttons. *start with the elements that will most improve the user experience.* whatever was roughest in the map, that's where to start
+		- **identify workflow pain points and opportunities**
+		- **find visual inconsistency**
+		- **organize across silos**
+	- step 3: visual audit.
+		- **organize a team**
+		- **choose a tool**
+		- **decide on categories**
+		- **screenshot and categorize**
+		- now it's time to interpret the results:
+			- **how well does your design language express your brand?**
+			- **is your design consistent?**
+	- step 4: evaluate your pre-existing components
+		- **which components are used most frequently?**
+		- **which high-frequency components are unique to your product?** these may not be as high-frequency as the above, but they are high-*value*
+		- try making a **purpose-directed inventory** - group components by purpose, rather than visual style
+		- now consolidate your components. not everything deserves to get in! you can use a few criteria like:
+			- **does it add value?**
+			- **is it available to three or more areas of business?**
+			- **is it a must-have for one area?**
+			- **does it engage users?**
+			- **does it uphold the design principles?**
+	- step 5: start creating the system! your research should have led you to one of two conclusions:
+		- your existing, informal systems are working well, in which case you should document what's working and make then into reusable patterns.
+		- your existing, informal systems are *not* working well, and you want to improve. you should probably start from scratch and work from first principles here.
+		- in either case, you are looking to build a core of components that are **purposeful, reusable, and flexible**, and get them used in product so you can see how it goes in practice
+		- documenting these components is just as important as building them!
+			- naming is important! what's important is not precision, but *agreement*- we all need to be speaking the same language across teams and disciplines. a good name should be **purposeful, specific, and inclusive**.
+			- docs should contain at minimum: **name and description, purpose, and an example**
+			- can be expanded to cover: **when to use it**, **when not to use it**, **content guidelines**, **related patterns**
+			- documentation needs to be workshopped with users! different users need different things out of the docs.
+	- step 6: rollout:
+		- can be **incremental**- this fits the case where existing systems are working well.
+			- pros: quicker feedback loops, faster benefit to users
+			- cons: limbo period of partial adoption
+		- or, **a large-scale redesign**- this fits the case where we're making fundamental changes
+			- pros: no inconsistent between-states
+			- cons: takes more time and effort, requires product teams to redesign product
+- **3 - Communicating Your Brand**
+  collapsed:: true
+	- in addition to unity and cohesion, **harmony** is a third element- the combination of all design elements to produce pleasing layouts
+		- just having good consistent building blocks isn't good enough, if they look awful together!
+		- **[[typography]], color, and space** are the key elements to get right here
+	- to tackle this, we need a **component hierarchy**. doesn't have to be exactly like this, but one such example:
+		- **basic components** - buttons, icons, etc. aka elements, basics, atoms
+			- the smallest possible stuff, that can't be broken down further
+			- the main success point is *reusability*
+			- these need to be the most flexible!
+			- color and typography should be used *functionally* - maximizing legibility, attention-guiding, etc.
+		- **composite components** - collections of basic components to make a larger, more specific component. aka component, modules, molecules
+			- they exist to fill a specific purpose
+			- the main success point is *how well they solve their chosen problem*
+			- color and typography can be used more expressively
+		- **containers** - areas of a page containing a collection of components. aka regions
+			- typically fullwidth horizontal elements, which a page is constructed by stacking
+			- primary design elements are color and space
+			- here is where you determine your overall density
+		- **layout** - how all the pieces are laid out on a page. aka templates
+			- here's where you can really see if all your branding attributes work together well
+		- choices at each level should harmoniously build on choices you made at the lower level
+		- case study on Guardian's Items/Slices/Containers model
+	- much like the component hierarchy, there's a **decision hierarchy**:
+		- **levers** - "broad, sweeping decisions about how our experiences should feel." 4 big levers:
+			- **size** - how large are small are the elements on the page *in general*? should users take their time interacting with one thing at a time? make it large! should they be able to see it all at a glance? make it small!
+				- > Size primarily impacts the speed at which your content is consumed.
+			- **scale** - how large and small are elements on the page *relative to one another*? should there be dramatic contrasts, that guide the user to them? should things feel even, letting users choose their own path?
+				- > Scale primarily involves how you use size to focus attention.
+			- **density** - how tightly packed are your elements? primarily communicated through space
+			- **weight** - how heavy is the page overall? primarily communicated through typography and color
+			- you want to set these levers based on your brand goals. Vox vs. Verge case study- a serious, political newspaper wants to be explanatory, a fun, techy newspaper wants to be entertaining. the former is mostly textual, the latter involves lots of custom photography. etc.etc. - these inform us as to which levers we should pull
+		- **dials** - "small, detailed choices that enable those feelings." granular elements like:
+			- **typography**
+				- this is the most pervasive dial, because text is the majority of UIs
+				- every lever affects this!
+				- 3 base decisions:
+					- **base font size** - this is the basis from which the rest of the type system will be built! pick something legible for your purpose, and fttiing your size lever
+					- **type hierarchy** - use a modular type scale. consider your scale lever- use wider ratios between headings if you want more contrast, or vice-versa
+					- **global line height** - by setting the spacing between lines of text, you influence the density lever
+				- consider also that the choice of font itself influences weight and density!
+			- **spacing**
+				- brings visual balance and consistent rhythm
+				- affected most heavily by the density lever
+				- 2 base decisions:
+					- **setting a base number** - pick something easily divisible. it doesn't even have to be the smallest increment on your scale! affected by density- pick a higher base for airier layouts
+					- **setting the scale** - then, choose how the spacing scale from the base. you can go linear or nonlinear. affected by density- use larger increments for airier layouts
+				- **name your spacing intervals!** we need folks to understand how to use them! this is possibly the single biggest source of dev/design mismatch. doesn't matter as much _what_ we call them, just that they have an agreed-upon name #nuggets
+				- **define how to apply the space within and between components!** a scale accomplishes nothing if it doesn't also come with contextual guidelines for applying it #nuggets
+			- **colors**
+				- book rec- Josef Albers' [[Interactions of Color]]
+				- don't just consider individual colors, consider how they interact
+				- we consider **hue, value, and luminance**. typically, where fragmentation starts happening is with saturation and luminance! #nuggets
+				- ask these questions:
+					- **how should color direct attention?**
+					- **how should your foreground and background colors interact?**
+					- **how prominently should color be used?**
+		- you have to adjust these together. for example, pulling the lever "make the page more dense!' might involve the dials "use bolder text", "tighten the spacing", "use darker bg colors"
+	- finally, remember that components aren't used in isolation, they're used around and within each other!
+		- > "Always design a thing by considering it in its next larger context- a chair in a room, a room  in a house, a house in an environment, and environment in a city plan.
+		  [[Eliel Saarinen]]
+		- this isn't a linear process- as you build out your system, you'll need to keep tweaking dials and levers as you see problems arise
+- **4 - Making Room For Variation**
+  collapsed:: true
+	- what is variation?
+		- **unintentional divergence** - typically happens when folks can't find the solutions they're looking for. solve this with better docs!
+		- **intentional-but-unnecessary divergence** - usually happens when designers don't want to feel constrained by the system, or feel they have better solutions. solve this with better processes for contribution and pushback
+		- **intentional, meaningful divergence** - solves a specific user problem than no existing pattern solves
+	- variation happens in contexts:
+		- **brand** - your system might support multiple brands within your org, and those brand might have unique needs.
+			- the key is to find a core of common elements, then set criteria for how exactly you should deviate from them
+			- deviation here should not be purely visual- it should exist only insofar as it furthers the brand strategy
+		- **audience** - your product might serve several audiences- e.g., AirBNB's hosts vs. guests and plus vs. regular
+		- **environment** - where will the system be used? web, print, mobile? at home or on the go? under what sort of lighting? how active or passive will engagement be?
+	- how can we vary?
+		- **vary your components** - you should build flexibility into them so that they _can_ be varied. you can vary them in **content, structure, and style**
+		- **vary your visual language** - think here of *theming*, sets of interconnected variables. assign tokens to roles and give them values- then you customize the values. viz [[semantic tokens]]
+			- you can either **theme only the dials**, for a more cohesive look that you're merely "skinning", or **theme the dials and levers**, for more freedom
+			- color is the only dial you can change without changing anything else! typography and spacing are interdependent #nuggets
+			- theming type is extra challenging, because of the differing physical characteristics of each typeface. but it can be done:
+				- **how many categories of fonts do you need?** give them token names!
+				- **which of these categories should be themed?** probably not all!
+				- **decide on type sizes and proportions.** be deliberate about picking which parameters are baked in, and which can vary!
+				- **let teams customize sizes.** you can either let teams choose all the size values, or, just let them choose the base size and ratio.
+			- theming space:
+				- not as common as the others
+				- you want to theme space as a lever, not a dial!
+				- GMail's density settings as an example
+			- theming color:
+				- can either just allow foreground colors to be themed, or allow full customization
+				- use **color groups** instead of tweaking individual color vars. decide first how many background colors you need and choose them, then how many foreground colors you need and customize 'em for each background. this makes folks think about them holistically.
+			- consider thinking of your system in terms of **layers** - which layers are stable? which experience frequent change?
+				- refers to [[How Buildings Learn]]:
+					- > Our basic argument is that there isn't any such thing as a building. A building properly conceived is several layers of longevity of built components.
+					- **site, structure, skin, services, space plan, stuff**, ordered by increasing frequency of change
+- **5 - Managing Design Systems**
+  collapsed:: true
+	- > A good design system helps you improvise.
+	- a good design system is like a pantry, not a cookbook!
+	- a bad design system is like having a hammer, when what you need to do is drive a screw
+	- should you have many basic components, or many composites? depends on your needs! brings up Bootstrap vs Mailchimp as examples
+		- if you're not sure, it's best to start from basics and expand from there
+	- consider providing the option of a prefab component vs. build-your-own from building blocks! some teams may have more design resources and more unique needs than others. this lets you ensure both cases stay harmonious
+	- design systems need to evolve over time, and the best way to do this is to test them in real products
+		- from [[A Pattern Language]] - *"Patterns stay alive because the people who are using them are also testing them."*
+		- product teams know the product needs best- set up clear feedback loops between product teams and system teams. this has to start with communication
+	- lack of adoption is the first big challenge. adopting a system means other folks are giving up control of some decisions they used to make, and you are gaining control. how then do we get buy-in?
+		- **include people in the planning exercises**
+		- **change your approach for different disciplines** - for example, engineers might be motivated by [[DRY]], designers might be more motivated by better UX quality, or freeing up their time for more interesting challenges
+		- **keep up your onboarding** - you can't just do this up-front, as teams change over time. you need onboarding materials so new folks also buy in
+	- governance is the second big challenge. once we buy in, how do we ensure it stays high-quality inan ongoing fashion?
+		- > Part of this challenge lies in the fact that the skills it takes to build a design system are different from the skills it takes to maintain a system.
+		- **decide what skills you need to maintain the system** - [[product management]]? [[project management]]? comms/community management/support? data & research?
+		- **rotate people** - folks who were stoked to build the early phase might not be stoked to be maintainers, and that's OK! rotate them out to product teams, and rotate folks in from product teams. now you have an advocate on the product side, _and_ someone with new product perspective on the inside
+		- consider having **ambassadors** - something like a working group of folks from across the org, that act as liaisons between the system team and the wider org. they can decide the roadmap for the system. start with the folks who are most invested!
+		- then you need a **governance model**
+			- **solitary** - built by and for one team
+			- **centralized** - a single, central design system team that produces and supports the system used by the product teams. clear ownership, can easily identify broader needs- but lacks day-to-day context on the product
+			- **federated** - no single team owns it, designers from multiple product teams collab on it. this has context, but lacks clear ownership. and product teams are more focused on shipping their product quickly than systematizing
+			- **cyclical** - a combination of centralization and federation. you have a centralized team whose main responsibility is to build and maintain the System, but you welcome and encourage contributions from across the product
+		- you need to **provide support** to the product teams- set up a channel for quick Q&As, organize collab sessions (like a Design System office hours).
+		- **encourage contribution** - for the system to work, it needs to inspire use, and that use then needs to inspire evolution through contributing changes.
+			- communicate that changes aren't just code fixes! documentation, user testing, tweaks to existing patterns- can be anything
+			- be mindful of why folks _aren't_ contributing already. maybe they are too busy with their own roadmap. maybe they don't have confidence, or motivation, or permission. maybe they see the system team as a gatekeeper.
+			- answer these questions:
+				- **why should you contribute?**
+				- **how should you contribute?**
+				- **how can we make it matter when someone contributes?**
+	- a system includes not just a component library, but usage guidelines, and a governance model. instead of starting by going ham on components to begin and ignoring the other parts, start small with a lil' of each. once you have a working simple system, you can evolve it to higher levels of completeness and cmplexity
+		- [[Gall's law]], from [[Systemantics]]
+	- think of the boundaries! referencing [[Thinking in Systems]] - the greatest complexity of a system happens at its borders. enable creativity at these boundaries, watch what happens, and see what can be folded back into the core
+- **Conclusion**
+  collapsed:: true
+	- brings up example of the Levittowns, the first true American suburbs. they made houses affordable through standardization, to bring forth the American Dream for everyone. except it _wasn't_ for everyone! they were segregated, so most people were left out. on the flip side, Morris Milgram pursued the aim of housing for everyone in Concord Park, with racial inclusion prat of the plan. the same idea of a suburb played out very differently
+		- > Systems aren't neutral. Systems reflect the values of the people who make the system.
+		  #aphorisms
+		- your design system, too, is not just a set of tools. it tells a story about what your org values. you have the opportunity, and the imperative, to make it inclusive. and to do that, yu need the team to be inclusive.
+- **Suggested resources**
+	- systems thinking:
+		- [[Thinking in Systems]]
+		- [[A Pattern Language]]
+		- [[The Timeless Way of Building]]
+		- [[Seeing Like a State]]
+	- design:
+		- [[Design Systems]] by [[Alla Kholmatova]]
+		- [[Interactions of Color]] by Josef Albers
+		- [[Designing Interface Animation]] by Val Head
+	- service design:
+		- [[Orchestrating Experiences]] by Risdom & Quattlebaum

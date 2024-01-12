@@ -1,0 +1,23 @@
+tags:: aws, cloud, storage
+
+- global storage platform, regional resilience
+	- you selecct region when you upload stuff
+- public service
+- default storage service for AWS- economical, fast, great for holding tons of static data, great input/output for AWS services
+- it is [[object storage]], not [[file storage]] or [[block storage]]
+	- so, only kinda like a filesystem, but kinda like a [[KV store]]
+	- you can't mount S3 as a drive!
+- core concepts:
+	- **objects:** sorta like a file. a blob of data and metadata, with a key (filename)
+		- can range from 0B to 5TB
+		- no concept of filetype- file extension is just part of th ekey
+	- **buckets:** sorta like a folder. it's what you store objects in.
+		- exists in a region, and never leaves it (unless configured)
+		- **needs a globally unique name!**
+			- can be 3-63 characters
+			- must start with a lowercase letter or number
+			- can't be IP formatted
+		- unlimited # of objects, unlimited size
+		- no complex structure! all objects are stored at the same level
+			- if you use names with `/`s, it will _look_ like a folder. but it ain't. this is often called a 'prefix'
+		- 100 bucket soft limit, 1000 bucket hard limit

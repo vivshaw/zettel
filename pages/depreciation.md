@@ -1,0 +1,45 @@
+tags:: finance, accounting
+
+- a financial measure of how a tangible asset loses value over time
+- for intangible assets, see [[amortization]]
+- **accumulated depreciation** is the total amount of depreciation and amortization at a point in time
+- what can be depreciated?
+	- assets used strictly for business
+	- assets having a useful life over 1 year
+	- assets whose value decreases over time
+- accounting terminology:
+	- value of an asset: **book value**
+	- initial cost: **cost basis**
+	- useful life of the asset: **recovery period**
+	- sale price after the useful life ends: **salvage value**
+- when I purchase an asset, where is that tracked?
+	- the decreasing value of the asset is tracked in the company's [[balance sheet]]
+	- the *amount* of the decrease is tracked on the [[income statement]]
+	- the amount of cash spent is tracked on the [[cash flow statement]]
+- methods of calculating depreciation in the US:
+	- pre-1981 tax code:
+		- **the SL (Straight Line) method:** depreciation is uniform over the recovery period.
+			- depreciation expense = (cost basis - salvage value) / recovery period
+			- still used for intangible assets nowadays!
+		- **the DB (Declining Balance) method:** depreciation is a fixed % of the book value over the recovery period
+			- DB method: depreciation rate = 150% / recovery period
+			- double DB method: 20)% / recovery period
+			- deprecation expense = rate * previous year's book value
+			- ⚠️this method never reaches 0! to fix this, accountants can swap from DB to SL when the depreciation expense from SL exceeds DB. calculated as remaining balance before the switch / remaining lifetime of the asset
+	- post-1986 tax code:
+		- **the MACRS (Modified Accelerated Cost Recovery System) method:** depreciation is a combination of both
+			- outlined in [IRS Publication 946](https://www.irs.gov/forms-pubs/about-publication-946)
+				- equipment and activities are sorted into "asset classes"
+				- each asset class has a predefined recovery period, ranging from 3 to 39 years
+				- salvage values are assumed to be 0
+				- a schedule exists for each year of depreciation
+				- a 1/2-year convention was adopted- only half a year of depreciation happens in the first year, and an extra year is added at the end with another half year
+			- this removes guesswork about asset lifetime, salvage value, etc., standardizing it across the US
+			- MACRS starts with a DB or DDB approach, then swaps to SL to ensure we hit 0.
+	- 2018-2027:
+		- **bonus depreciation:** expense the entire cost of the asset in year 1
+			- created as a stimulus measure to encourage large capital expenses
+			- started at 100% bonus depreciation from 2018-2022, and is currently ramping down 20% per year 2023-2027.
+- what if an asset is sold?
+	- if sold above its book value, then you generate a [[capital gain]], called a **depreciation recapture**
+	- if sold below book value, that's a capital loss, and is tax-deductible

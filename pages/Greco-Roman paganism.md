@@ -1,0 +1,1 @@
+alias:: Greco-Roman pagan

@@ -1,0 +1,5 @@
+- types of resilience on AWS:
+	- **globally resilient**: no concept of picking a region, one global service
+		- e.g. [[AWS/IAM]], [[AWS/Route53]]
+	- **region resilient:** operate separate services in each region, replicated across multiple [[AWS/Availability Zone]]s in that region
+	- **AZ resilient:** run in a single [[AWS/Availability Zone]]

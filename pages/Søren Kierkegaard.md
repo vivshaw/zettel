@@ -1,0 +1,33 @@
+tags:: philosophy, Denmark, existentialism, theology, 1800s
+alias:: Kierkegaard
+
+- 1813-1855, Denmark's greatest philosopher
+- early life: youngest of 7 children. born to a rich family in Copenhagen during a time when Denmark had just gone bankrupt.
+	- all his siblings died young except his elder brother, and his mother died before he was 21
+	- childhood nickname, "the fork". when asked what he wanted to be when he grew up, he said, "a fork, so I can spear anything on he dinner table"
+	- studied classics at the University of Copenhagen, where he was unpopular for being an intellectual provocateur
+- thought of his writing as a [[Socratic]] task
+	- > The only analogy I have before me is Socrates.
+	- like Socrates for Athens, he would be the gadfly of Copenhagen, critiquing the supposed experts with [[Socratic irony]]
+	- he engaged in [[maieutics]] about the nature of Christianity, seeking not to tell others what it was, but draw their own ideas out of them
+	- like Socrates focused on the simple question "what does it mean to be human?" and turned that unproblematic thing problematic, Kierkegaard does the same for "what does it mean to be a Christian?"
+		- for Socrates, this can only be answered by living the examined life. similarly for K, this can only be answered as the existential transformation of a single individual
+- Kierkegaard and [[Hegel]]
+	- introduced to Hegel via his contemporary [[Martensen]]
+	- K felt alienated from Martensen's celebrity following and adoring students, but took the Hegelian ideas he introduced seriously
+- For K, the _subjective_, inward, individual truth of Christianity is far more important and more interesting than the outward, historical, objective truth
+- had a fascination with [[Goethe]]'s [[Faust]], but got scooped by [[Martensen]]
+	- Faust is parallel to Scorates- S an individual severed from the State by individuality, Faust from the Church
+- Socrates, Faust, The Fall (in Genesis) all as stories of the dangers of knowledge. it's a double-edged sword, and we can't put the genie back in the bottle. e.g., the invention of WMDs, the horrors of WWII, all hand-in-hand with the benefits of modern knowledge
+- [[Poul Martin Møller]] was an early mentor, and scholar of the classics. [[The Concept of Anxiety]] is dedicate to Møller, as "the confidant of Socrates". he's also discussed in the [[Concluding Unscientific Postscript]].
+	- Møller's death, and K's father's death shortly afterward, was a turning point in K's life. spurred him to take his studies seriously and complete his thesis.
+	- Møller has been working on his own theory of irony, with the same title as K's thesis, and similar thrust! he assuredly inspired the direction of K's research
+- K's thesis was somewhat of a flop, for stylistic reasons! but he successfully defended it, and graduated
+- after graduating and breaking his engagement, he went to Berlin, capital of [[Prussia]], and attended lectures at the [[University of Berlin]]
+	- [[Schelling]] had just been appointed there, the last surviving torchbearer of [[German Idealism]]
+		- folks like [[Marx]], [[Feuerbach]], [[Engels]], [[Bruno Bauer]], and [[David Strauss]] were students of Hegel, and were undermining Christianity and traditional society. Schelling was appointed to counter this
+		- K. at first liked Schelling, but rapidly grew tired of him
+- K. considered his authorship to begin _after_ [[The Concept of Irony]]
+	- that doesn't mean it's immature and to be ignored! in fact, it is the preparation for his authorship; how he figured out what his philosophical project was
+- Hegelians criticized the law of the excluded middle, the "either/or" principle, which ignited a controversy- folks like [[Mynster]] called out how it was a cornerstone of logic dating back to [[Aristotle]], which folks like [[Martensen]] called out how it conflicted with Christian doctrine
+	- this inspired K's [[Either-Or]]. contra Hegel, the truth is not found by mediating the either/or, but in front of it

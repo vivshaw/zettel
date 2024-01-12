@@ -1,0 +1,3 @@
+- you can use frontmatter!
+	- for page tags, use `tags::` followed by a comma-separated list
+	- for aliases, use `alias::`

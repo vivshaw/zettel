@@ -1,0 +1,10 @@
+- Money stuff- **[[Economics]], [[business]], [[finance]]:**
+	- [Money Stuff](https://newsletterhunt.com/newsletters/money-stuff-by-matt-levine) by Matt Levine
+	- [Bits About Money](https://www.bitsaboutmoney.com/) by patio11
+- **[[Management]]:**
+	- [The Beautiful Mess](https://cutlefish.substack.com/) by John Cutler
+- **[[Software engineering]]:**
+	- [SRE Weekly](https://sreweekly.com/)
+	- [LeadDev](https://leaddev.com/)
+	- [Software Architecture Monday](https://www.developertoarchitect.com/lessons/)
+		- notes: [[Software Architecture Monday]]

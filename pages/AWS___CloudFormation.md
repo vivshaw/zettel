@@ -1,0 +1,25 @@
+tags:: aws, cloud, IaC
+
+- allows you to use [[JSON]] or [[YAML]] templates to automate creating, configuring, and deleting AWS resources
+- a *template* of logical resources is instantiated as a *stack* of actual resources
+- sections of a CF template:
+	- **AWSTemplateFormatVersion**
+		- version of the CF spec
+		- optional!
+	- **Description**
+		- details about what the template does
+		- must go directly after the version, if included
+	- **Metadata**
+	- **Parameters**
+		- parameters to pass into the Resources
+	- **Mappings**
+		- lets you create lookup tables to use in Resources
+	- **Conditions**
+		- create conditions that can be used in the Resources
+	- **Transform**
+	- **Resources**
+		- the AWS resources to create
+		- logical resources have a type and properties, which AWS uses to determine what to create and what values to give it
+	- **Outputs**
+		- stuff to return after you're done
+- you can use  CF Functions like `!Ref`, `!GetAttr` to populate templates with dynamic stuff

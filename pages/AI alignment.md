@@ -1,0 +1,32 @@
+tags:: machine learning, software engineering
+
+- [AI alignment](https://research.ibm.com/blog/what-is-alignment-ai) is the process of getting AI models to follow human values and seek human goals. Norbert Weiner thought it up in 1960:
+	- > If we use, to achieve our purposes, a mechanical agency with whose operation we cannot interfere effectively… we had better be quite sure that the purpose put into the machine is the purpose which we really desire.
+	- values we might wish to optimize for:
+		- helpfulness
+		- truthfulness
+		- transparency
+- two types of alignment challenge:
+	- **outer alignment:** carefully specifying the purpose of the system
+	- **inner alignment:** ensuring the system robustly adopts that specification, and any emergent goals are aligned
+- what might lead to misalignment?
+	- **specification gaming / reward hacking:** AI might find loopholes in its goal, that let it achieve the reward without taking the intended action. for example, a system trained to race around a track and hit targets find it can maximize reward more effectively by just ignoring the track and hitting the same target over and over.
+		- other examples: chatbots producing convincing falsehoods, social media algos optimizing for engagement over well-being​
+		- this has interesting parallels to [[addiction]] in humans
+	- **pressure to deploy unsafe systems**: there are heavy commercial and political incentives to win the technological race, even if that means compromising on safety
+	- **increasing complexity of models:** the 'smarter' and more complex our models get, the harder they are to align. complicated black-boxes like LLMs are tough to understand. things that perform at near-human or better-than-human levels are difficult to judge by humans. systems that operate at massive scale are tough to oversee all actions of.
+- what risks might misaligned AI cause?
+	- **power-seeking:** regardless of goal, a system can achieve its goal more effectively if it has more power to do so. this could lead to instrumental power-seeking behavior, existence-preserving behavior, etc. this is known as [[instrumental convergence]]
+	- **existential risk:** some argue that a powerful AGI system that did not share values with humanity could threaten our continued existence
+- areas of alignment research:
+	- **teaching AI human values and preferences:** we can use reinforcement learning to promote behaviors we'd prefer
+		- we might try to optimize behavior in a specific situation. common methods of doing this are [[RLHF]] or [[RLAIF]]
+		- or, we might try to teach broad moral values. this is sometimes called [[machine ethics]]
+	- **scalable oversight:** coming up with techniques to align that don't require human feedback for every example. for example, using proxy objectives, semi-supervised learning, or helper models. could also have two AI models critique each other, or have Ai break its own decisions into smaller chunks better for human oversight
+	- **Honest AI:** working on methods of stopping AI from fabricating answers and spreading falsehood.
+		- for one thing, making models **truthful**, in that they only say things that are true. if they're not sure, they should say so.
+		- for another, making models **honest**, in that they only say things they believe. so, no sayin thing purely because it aligns with the user's expectations
+	- **building corrigible systems:** creating AI that, rather than power-seeking, will allow modification or shutdown. this might involve introducing uncertainty about the AI's objective
+	- **emergent goals:** much like the human desire for sugar _used_ to be adaptive, and isn't anymore, AI goals might misgeneralize and become maladaptive. or, new goals and capabilities might emergently arise which we don't expect.
+	- **embedded agency:** how do we deal with AI that isn't just a chatbox, but an embodied agent that can interact with the physical world?
+	- **the [[principal-agent problem]]:** much like humans in an organization aren't always aligned, the same applies to AI. in fact, many think AI alignment will be much more similar to [[alignment]] of teams and organizations than some of the more sci-fi concerns above!

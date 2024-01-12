@@ -1,0 +1,26 @@
+tags:: hegel, philosophy, books
+
+- on [[Socrates]]:
+	- > His philosophy, which asserts that real existence is in consciousness as a universal, is still not a properly speculative philosophy, but remained individual; yet the aim of his philosophy was that it should have a universal significance.
+	- *Moralität* vs *Sittlichkeit* brought up- the objecttive, external sphere of Greek tradition, religion, and law as *Sittlichkeit*, Socrates as introducing *Moralität*
+		- Antigone (religious and familial tradition of burial) contra Cleon (individual will of the tyrant) as representative of traditional Greek thought, reversed in Socrates (individual morality and reflection) contra Athens (objective tradition and law)
+		- In a sense, Socrates is the founder of morality!
+	- Socrates as "an example of the most perfect Attic urbanity"
+	- Socrates as a philosopher without a system, Socratic philosophy as a negative process, not aspiring to be a science
+	- Socratic method as dialectic, if only a subjective form
+		- > [...] the Socratic irony which, like all dialectics, gives force to what is taken immediately, but only in order to allow the dissolution inherent in it to come to pass
+	- the method of [[Socratic irony]] as containing two parts:
+		- developing from the concrete to the universal
+		- resolving confusion between concrete particulars and universals
+	- Socrates' project as a negative one, reducing interlocutors to [[aporia]]
+	- Socrates' project as [[maieutics]], drawing out fundamental ideas that were already there
+	- Socrates' *daimon* as a representative of internal, subjective reflection and judgment, in contrast to the Greek social world of external guidance of oracles and omens
+	- Socrates' trial as showing actual guilt by the standards of Athenian law- it's not that they railroaded him, it's that there really was a clash between Socrates' teaching and the ways of public worship, filial piety, etc.
+		- > in what is truly tragic there must be valid moral powers on both the sides which come into collision; this was so with Socrates
+	- Socrates as introducer of "the Good" as an objective measure and end, "the universal which determines itself by itself"
+	- Pre-Socratics were primarily concerned in understanding _nature_. Socrates was the first to turn inward and focus on thought and human life
+- on [[Fichte]]:
+	- Fichte is correct to note the role of the subject, but only takes it halfway! he only recognizes the "finite spirit"- the thinking subject- but not the infinite spirit
+	- the senses and feelings are not what make humans unique. we share those with the animals
+	- Fichte's idealism is a precursor to [[Schlegel]]'s irony, its relativism and rejection of everything objective
+	- one cannot remain in relativism forever, one needs a foundation

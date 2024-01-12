@@ -1,0 +1,149 @@
+tags:: books, management
+
+- concepts:
+	- types of power:
+		- **role power** - what your org grants you to compel others to act for the org
+		- **relationship power** - your own ability to persuade others because of their knowledge and trust of you
+		- **expertise power** - others' perception of your technical, industrial, or topical knowledge
+	- the Allen Curve
+- **1: What Is An Effective Manager?**
+  collapsed:: true
+	- **your first responsibility as a manager is to achieve results.**
+		- > Phrase borrowed from the military: "Mission first, people always"
+		- the only way to feel good about this is to have quantified, measurable goals
+	- **your second responsibility is to retain your people.**
+		- retention is "the brake against an unrelenting results focus". chasing results pressures your reports. if you pressure 'em so hard they leave, you've lost goodwill, institutional memory, money, time... so don't do that!
+	- that's it. that's [[the role of a manager]]!
+	- the rest of the book is based on empirical studies of tools managers use to fulfil that role effectively.
+- **2: The Four Critical Behaviors**
+  collapsed:: true
+	- **get to know your people**
+		- people and their actions are what create results! not systems, machines, processes, metrics...
+		- we need to be able to manage people who are different from us, and that means being willing to adjust
+		- think you know your people well? ok- what are the first names of all their kids? if you don't know that, how well do you know 'em?
+		- being familiar with your reports is not the same as being friends with them. you *don't* want to be friends with your reports.
+		- your reports probably don't see you as a nice person- they see you *as their boss*. because you are! because of your role power, your reports see you differently than you see yourself
+		- you are not part of the team, any more than a sports coach is part of their team.
+		- what's important is **building trust**. and to do that, you're going to need to talk about what's important with your reports! frequently!
+		- **getting to know your directs accounts for 40% of the value of the four behaviors.**
+	- **communicate about performance**
+		- you can't do better if you don't have feedback that tells you what needs addressed.
+		- just like you wish you had feedback, your reports wish they had it from you.
+		- **performance communication accounts for 30% of the value.**
+	- **ask for more**
+		- counterintuitively, as managers, we're *supposed* to create stress for our directs. but not distress- [[eustress]]. the type of stress that get folks pumped, pushes them to try new things and achieve what they thought they couldn't.
+		- a manager is responsible not just for maintaining the status quo, but improving the team's performance. and you can only do that by improving individual performance.
+		- it's better to grow capability by growing the people you have, than throwing headcount at your problems. it's cheaper, more durable, builds on existing relationships, builds a succession plan, and reduces hiring risk. what's not to like?
+		- **asking for more accounts for 15% of the value.**
+	- **push work down**
+		- pushing work down creates capacity for the organization
+		- anything that either your or a direct could do at an acceptable level of quality... have your direct do it! it's a matter of [[comparative advantage]]. you are a manager and can be doing more efficient things with your (expensive!) time.
+		- you might be worried that they're too busy. guess  what? everybody's busy, all the time! what matters is making sure that *the most important work is getting done*. and the way to do that is to share it.
+		- **pushing work down accounts for 15% of the value.**
+- **3: Teachable and Sustainable Tools**
+  collapsed:: true
+	- > However you manage, your techniques/behavior/philosophy *must be both teachable to others and sustainable*.
+	- it's not enough to d oyour job well. you need to be able to communicate about our work with others. this is obvious for other jobs. but somehow, we don't hold managers to this standard, and treat it like a mystery that folks "just know how to do". that's wrong!
+	- > What does it say about the most important systemic behavior in any organization- management- that the majority of us learned how to do it from somebody *who was never taught it and privately worried that others would discover that they didn't truly know what they were doing*?
+	- personality has nothin' to do with it- you can be an effective manager regardless of introversion/extroversion, energy level, etc.
+	- to grow an organization, you need to create new managers. and the best way to do that is to teach them before they step into the shoes. learning while in the role is the hard way, with full consequences and heavy burdens, at exactly the time the organization *doesn't* need weak, new managers, but strong ones that can carry out the growth
+	- what tools worked empirically?
+		- **Get to know your people:** [[one-on-ones]]
+		- **Communicate about performance:** feedback
+		- **Ask for more:** coaching
+		- **Push work down:** delegation
+- **4: Get to Know your People - One-on-Ones**
+  collapsed:: true
+	- getting to know your reports is the single most important behavior, and 1:1s are the single best tool to do it.
+	- a one-on-one is: **a scheduled, weekly, 30-minute meeting with each of your directs, where your direct goes first, and you take notes.**
+	- properties in order of importance:
+		- **scheduled**
+			- put 'em on a regular schedule, at the same time every week.
+			- if you think your calendar doesn't have space for this, you're wrong. compare your business today to your business a few months out. your calendar doesn't fill up until the 1-2 weeks ahead! so just start scheduling 1:1s a month or tw oout, and it'll Just Work™️
+			- if you don't schedule them, you're only 20% likely to *do* them!
+			- why is this important?
+				- **my boss is saying I'm important** - setting aside regular, scheduled time, implies your reports matter at least that much
+				- **I have time to prepare** - if you know it's coming, you can prep!
+			- it's OK to move them when there are conflicts! having them scheduled is still just as beneficial, even if the schedule has to be changed.
+		- **weekly**
+			- we do our work in weekly increments, so we should meet in weekly increments! that aligns best with the rhythm of work
+			- if you have them every other week, you're instead implying: "this 1:1 is worth less to me than what I'm working on right now". you lose 60% of the value this way. so... do weekly!
+			- weekly cadence also wins you a reduction in interruptions. folks know they get a chance each and every week to address stuff with you.
+			- fine to start with biweekly if you have more than ~10 directs
+			- if you team is bigger than 20-25 directs... it's too big! these suggestions won't help much!
+		- **30 minutes**
+			- no benefit in going longer, and in fact causes a reduction in successful O3s
+			- better to have a 30-minute jam-packed meeting, than an hour meeting that's half-empty
+			- caveat: if you're a senior exec, you may need a full hour.
+		- **with each of your directs**
+			- gotta do 'em with everybody. and if you do 'em with everybdy, you should do 'em the _same_ with everybody, or else you create a sense of segregation
+				- so, if you need to spend additional time with particular directs- sure, do that, but not in the form of the O3!
+			- not about _differentiating_ directs, but about *making time for each* direct
+			- don't do 'em with anyone other than your directs! this includes skip-levels. you maintian comms with skip-levels through your directs talking to their directs
+		- **where your direct goes first**
+			- O3s are business meetings, so they have a purpose, an agenda
+				- try this: 10 mins for your direct, 10 for you, then 10 mins for the future
+				- probably, their 10 mins will run over, and probably, you'll rarely talk about the future... that's OK! don't practice "agenda fascism". let it be organic.
+			- O3s will start with you making a statement or asking a question. you can just start with the same one every time. nothin' wrong with predictability
+			- don't ask for their list of topics in advance, don't send a list of topics in advance, and don't use O3s for stuff that needs to go out to the whole team
+			- are you worried that your 1:1s are too much like status updates? don't be! that's normal for many folks.
+			- if you run out of content, just end early
+				- if a direct is consistently uncommunicative, give them time
+		- **and you take notes**
+			- if you don't take notes, you're less engaged, less interested, less likely to take action, less accountable...
+			- having a standard form is good.
+			- don't scatter your O3 notes in your usual "go to meetings" notebook- put them somewhere dedicated
+			- have a distinctive way to capture deliverables
+			- also capture comms or responsibilities in a separate distinctive way
+			- the key to this document isn't form, formality, length... it's whether it is contemporaneous
+			- capture coaching notes "on the back of last week's form"- nearby, so you see 'em during next week's session
+	- recommends against taking notes on laptop- you won't remember as much
+	- don't do O3s in public! but you don't have to get fancy about where to do it either.. if directs want greater privacy, they'll ask
+	- you can do O3s over the phone when needed- it'll get 80% of the value.
+		- Zoom is better- 90% of the value, in that case
+	- common pushback to O3s:
+		- "it's micromanaging"
+			- consider the Middleman Test: *"Never tolerate from your directs that which you would not visit upon your boss. And never do to your boss that which you would not accept from your directs."*
+			- realistically, it just isn't micromanaging. and in fact, if anything there is on average too *little* management.
+			- someone objecting to this is either afraid of oversight or thinks they're above it- both are bad!
+			- explain what micromanagement really is, and why this ain't it
+			- if needed, just use your role power
+		- "I'm too busy"
+			- as with scheduling above- everybody has time if you schedule far enough out. people are thinking about how busy they are now.
+			- you're asking for only ~1% of their time!
+			- again, if needed use role power
+- **5 - Doing One on Ones with Remote and Hybrid Workers**
+  collapsed:: true
+	- we communicate less with those who are distant from us
+	- so, O3s become *even more necessary*!
+	- try to persuade folks to come into the office or be colocated with you
+	- managers working from home is the exception and not the rule
+		- executive roles require exceptional relationship-building. role power is not what makes it work.
+		- "When you look at the top of your organization, what you call politics, they call collaboration."
+		- **The political capital necessary to achieve executive success is nearly impossible to build from a distance.**
+		- **use video calls!** Zoom, Teams, etc.
+- **6 - How to Start Doing Manager Tools One on Ones**
+  collapsed:: true
+	- Choose times from your calendar
+	  logseq.order-list-type:: number
+		- rule of thumb for how many options to make available so each direct gets a calender slot that works for them: how many directs do you have? provide 1.5x that many options #nuggets
+		- *don't* throw your calendar open and say, "any time is fine"! your directs are committing tohalf an hour per week. you're committing to as many O3s per week as you have directs. so, you need to be more sensitive to your own schedule!
+		- avoid: times right before and after staff meetings, Friday afternoons, Monday mornings
+		- no preference for all on one day vs. spread out
+	- Send out an O3 email invitation
+	  logseq.order-list-type:: number
+		- send out a broadcast email, not individual invites!
+	- Allow for possible changes and questions as you get started
+	  logseq.order-list-type:: number
+		- things will change, stuff will get rescheduled, etc. and that's OK! just pick something that works for the near future
+	- Brief your team on your O3s
+	  logseq.order-list-type:: number
+		- take questions! and it's OK to say, "I don't know! we'll figure it out as we go."
+	- Do O3s ONLY for 12 weeks
+	  logseq.order-list-type:: number
+		- don't make too many changes at once! make 'em one at a time. do O3s *first*, and on their own. you can think about other changes later.
+		- don't rush toward seeking or giving feedback! just plain O3s on their own should help. so master that first.
+- **7 - Talk About Performance - Feedback**
+	- this is the second most important manager behavior
+	- MT presents a feedback model to "give positive or negative feedback easily, and routinely, taking no more than 15 seconds each time. And your directs won't complain."
+	-
