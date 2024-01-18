@@ -6,7 +6,7 @@
 	- you could check out what I think is [[sick]] and [[jacked]]
 	- you could check out what [[books]] I'm thinking about lately, or what [[music]] I have on the brain
 	- you could start with stuff I'm currently studying:
-		- [[engineering management]], my day job
-		- [[AWS]] and [[Kubernetes]], to strengthen my cloud and DevOps/SRE skills
+		- [[engineering management]], which is my job
+		- [[AWS]] and [[distributed systems]], to strengthen my cloud and DevOps/SRE skills
 		- [[machine learning]], just for funsies
 	- you could check out niche interests of mine: [[heraldry]], [[vexillology]]

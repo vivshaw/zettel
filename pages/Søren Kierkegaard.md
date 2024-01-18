@@ -31,3 +31,4 @@ alias:: Kierkegaard
 	- that doesn't mean it's immature and to be ignored! in fact, it is the preparation for his authorship; how he figured out what his philosophical project was
 - Hegelians criticized the law of the excluded middle, the "either/or" principle, which ignited a controversy- folks like [[Mynster]] called out how it was a cornerstone of logic dating back to [[Aristotle]], which folks like [[Martensen]] called out how it conflicted with Christian doctrine
 	- this inspired K's [[Either-Or]]. contra Hegel, the truth is not found by mediating the either/or, but in front of it
+- Kierkegaard thought that, though Socrates was not a Christian, modern day Christianity had much to learn from him

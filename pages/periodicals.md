@@ -8,3 +8,7 @@
 	- [LeadDev](https://leaddev.com/)
 	- [Software Architecture Monday](https://www.developertoarchitect.com/lessons/)
 		- notes: [[Software Architecture Monday]]
+- Philosophy:
+	- [The Splintered Mind](https://schwitzsplinters.blogspot.com/) by [[Eric Schwitzgebel]]
+- Etc.
+	- [Aeon](https://aeon.co/)
