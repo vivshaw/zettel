@@ -24,6 +24,7 @@ tags:: software engineering, software architecture, Mark Richards
 	- Mark reads [InfoQ](https://www.infoq.com/), [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar), and [DZone](https://dzone.com/). 20 mins/day is enough to build the breadth. you only need to go deep on the stuff you actually decide to use!
 		- don't click any of the stuff to limit it to one language or platform! you _want_ to see stuff you don't know about!
 - **Lesson 4 - Microservices: Distributed Logging (posted Feb 12, 2018)** #microservices #logging #distsys
+  collapsed:: true
 	- microservices makes the flow of an action complex to track- distributed across many logs in different services it flows through
 	- even if you use tools like [[Splunk]] or [[Logstash]], that's not enough on its own!
 	- two styles:
@@ -39,4 +40,17 @@ tags:: software engineering, software architecture, Mark Richards
 	- consider a custom logging API wrapper
 		- this ensures users always pass the info that's needed for good tracing!
 		- also enables using filtering logic- send some stuff out to Kafka, other stuff out to Logstash- all in one place, without affecting users, across the whole org and all its services
--
+- **Lesson 5 - Microservices: Reducing Staging Iterations (posted Feb 19, 2018)** #microservices #staging #distsys #planning
+  collapsed:: true
+	- a "staging iteration" is one that sets the stage for a future architecture change, but does not itself change the architecture
+	- ex: current state -> setup continuous delivery -> setup container environment and deploys -> separate UI from business layer -> write and deploy infra services -> write and deploy first customer service
+		- this is sound and safe, but it takes ages to get to the point where we're delivering any business value!
+	- aside: devops gets hard as heck in a microservice environment! but at the same time, it gets much more important! you just can't manage a huge fleet of services manually.
+	- how to reduce staging iterations? **don't treat non-dependent steps as iterations. treat them as parallel workstreams.**
+		- the "set up the devops environment" stuff should be a parallel workflow!
+		- we could separate the UI from the backend without needing the devops stuff set up
+		- infrastructure services and first customer serviced could be done in parallel as well
+			- in fact, can we really be effective at setting up the devops env _before_ we know what type of services will be in it? we'd just be building with test services, "hello world", etc
+			- working in parallel gets us real live services to base the devop envs around and test it with
+- **Lesson 6 - Classifying Architecture Patterns (posted Feb 26, 2018)** #[[software architecture]]
+	-
