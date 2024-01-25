@@ -1,4 +1,4 @@
-tags:: hegel, philosophy, books
+tags:: hegel, philosophy, books, histphil, philhist
 
 - on [[Socrates]]:
 	- > His philosophy, which asserts that real existence is in consciousness as a universal, is still not a properly speculative philosophy, but remained individual; yet the aim of his philosophy was that it should have a universal significance.

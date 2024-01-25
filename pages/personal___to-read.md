@@ -12,3 +12,4 @@ tags:: books, personal
 - Habermas
 - Ellul
 - Edith Stein
+- Agamben's *The Highest Poverty*

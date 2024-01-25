@@ -52,7 +52,7 @@ tags:: books, management
 		- **Communicate about performance:** feedback
 		- **Ask for more:** coaching
 		- **Push work down:** delegation
-- **4: Get to Know your People - One-on-Ones**
+- **4: Get to Know your People - One-on-Ones** #1-1s
   collapsed:: true
 	- getting to know your reports is the single most important behavior, and 1:1s are the single best tool to do it.
 	- a one-on-one is: **a scheduled, weekly, 30-minute meeting with each of your directs, where your direct goes first, and you take notes.**
@@ -112,7 +112,7 @@ tags:: books, management
 			- as with scheduling above- everybody has time if you schedule far enough out. people are thinking about how busy they are now.
 			- you're asking for only ~1% of their time!
 			- again, if needed use role power
-- **5 - Doing One on Ones with Remote and Hybrid Workers**
+- **5 - Doing One on Ones with Remote and Hybrid Workers** #1-1s
   collapsed:: true
 	- we communicate less with those who are distant from us
 	- so, O3s become *even more necessary*!
@@ -122,7 +122,7 @@ tags:: books, management
 		- "When you look at the top of your organization, what you call politics, they call collaboration."
 		- **The political capital necessary to achieve executive success is nearly impossible to build from a distance.**
 		- **use video calls!** Zoom, Teams, etc.
-- **6 - How to Start Doing Manager Tools One on Ones**
+- **6 - How to Start Doing Manager Tools One on Ones** #1-1s
   collapsed:: true
 	- Choose times from your calendar
 	  logseq.order-list-type:: number
@@ -143,7 +143,76 @@ tags:: books, management
 	  logseq.order-list-type:: number
 		- don't make too many changes at once! make 'em one at a time. do O3s *first*, and on their own. you can think about other changes later.
 		- don't rush toward seeking or giving feedback! just plain O3s on their own should help. so master that first.
-- **7 - Talk About Performance - Feedback**
+- **7 - Talk About Performance - Feedback** #feedback
 	- this is the second most important manager behavior
 	- MT presents a feedback model to "give positive or negative feedback easily, and routinely, taking no more than 15 seconds each time. And your directs won't complain."
+	- > When the typical manager gives feedback, *the focus is on what happened*. We think about what happened in the past, and we ask ourselves how to talk to the direct.
+	  About what happened. In the past. *Which we can do nothing about.*
+	  (p. 105)
+	- of _course_ your directs get defensive when you talk to them about their mistakes! they're things that happened in the past, about which they can now do nothing to change.
+		- if they try to justify their actions, that makes sense too! consider your own life:
+			- did I make any mistakes in the last month?
+			- did I *intend* to make them?
+		- your directs' answers are gonna be pretty similar to yours!
+	- other things that lead to defensiveness:
+		- lack of trust
+		- infrequent performance feedback. if it doesn't happen frequently, when it does happen, it'll be seen as "you're in trouble now!"
+		- role power- their livelihood depends on your approval, of course they'd feel defensive about that
+	- many managers use a "threat" model of feedback- negative only, scheduled meetings to talk over "an issue of some concern", threats of writeups. this doesn't work.
+	- but _most_ managers do something else: **they give no feedback at all**!
+		- this can't work. humans *need* feedback in our social interactions
+		- in human psychology, an environment without feedback is called a [[wicked environment]]!
+	- a better model: **the purpose of performance communications (and therefore feedback) is to encourage effective future behavior**
+		- this is future-oriented- it's about _stuff we can change_
+		- this also lets us focus not on the negatives of what went wrong, but on the positives of what you _want_.
+	- how to do that in practice? USE **the Manager Tools Feedback Model:**
+		- **ask**
+		  logseq.order-list-type:: number
+			- *"Can I have a word?" / "Can I give you some feedback?"*
+			- ask, every time, whether it's positive or negative feedback
+			- the purpose is to make sure we have their attention. there's no point in talking about their future behavior if now is a bad time!
+			- honor a "no" if it is given. sincerity matters!
+			- empirically, asking directs for permission increased their appreciation for the feedback and likelihood of following through
+		- **describe the behavior**
+		  logseq.order-list-type:: number
+			- focus on behavior is critical! but we often fail to do that, for two reasons
+				- we might think we're good at know what others were thinking or feeling
+				- we might want to "fix the root of the problem" rather than "the symptom"
+			- unfortunately... we are incredibly wrong about that! we are fallible humans who have no idea what others are thinking or feeling. empirically, we're wrong 60-70% of the time. that means we'll be "fixing" the wrong cause!
+			- directs also just plain don't like it! it's unpleasant when someone assumes what you're thinking and tells you it's wrong
+			- so, don't talk about "attitude", what they "meant to do", "why" they did it, whether they "know better"- none of that is helpful.
+			- so, **what is behavior?** in the business world, these 5 things:
+				- the words you say. not just whether you speak up, but how you phrase it
+				- how you say those words. your tone, tenor, speed, inflection- the vocal parts of our [[non-verbal communication]]
+				- your facial expressions and eye contact. another piece of [[non-verbal communication]] that has a wider impact than you might think.
+				- your body language. yet more [[non-verbal communication]]- how you sit or stand, what you do with your hands and arms, where you face
+				- work product. "What you do and how well you do your job are behaviors as well."
+					- > Conceptually, this in part flows from your organization as an entity unto itself, *with you and your fellow associates as the hands and arms and eyes and ears of the firm.*
+					- think about
+						- quality- how does it compares to established standards? was it effective? was it excellent?
+						- quantity- how much have you done? did it meet your numerical goals, if any?
+						- accuracy- does it require rework?
+						- timeliness- did you meet the deadline? are you on time to work and to meetings?
+						- documentation- did you communicate your work? emails and documentation and Slack chat are all behaviors!
+			- *start with a "When you..." statement*
+				- this is the key! center the feedback on the specific instance of behavior!
+				- don't "soften the blow"- it doesn't help
+				- keep it snappy!
+		- **describe the impact of the behavior**
+		  logseq.order-list-type:: number
+			- say what happened because of what the direct did. this model works on cause and effect- the direct's behavior was a cause, and something positive or negative happened as an effect.
+			- this is the second clause of the "When you" statement
+			- this doesn't have to be big and important! it can be small behaviors and small impacts.
+				- it's more important to be frequent than to wait for big occasions. if you did, you'd barely ever give feedback
+				- feedback on many small changes will add up!
+		- **encourage effective future behavior**
+		  logseq.order-list-type:: number
+			- here, we either encourage a change in behavior (by asking for it!), or encourage continuing a behavior (by thanking the direct!)
+				- for positive feedback, a simple "thanks", "well done", "I appreciate you" can be all it takes.
+				- for negative feedback, start simple. just ask them to handle it differently next time
+					- once you get some practice in and build some trust, you can advance to asking "what can you do differently?" and seeing what they come up with
+	- it is OK if the model feels like a script at first. practice is what brings it to life and makes it natural. the script is just to get you off the ground and practicing!
+	- following this model helps keep feedback quick and frequent, and build a habit
+	- **don't** try to engage in a dialog about feedback! this is popular, but the data suggests it's ineffective. consider- nobody suggests we have a discussion about *positive* feedback. that's a good sign this is off-track.
+		- empirical data shows that this approach is correlated with _worse_ performance, not better!
 	-

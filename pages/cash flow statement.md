@@ -1,3 +1,23 @@
 tags:: finance, accounting, financial statements
 
-- a statement summarizing the flow of [[cash and cash equivalents]] that flow in and out of a company
+- a statement summarizing the flow of [[cash and cash equivalents]] that flowed in and out of a company, usually over the past year
+- generally contains:
+	- cash at beginning of year
+	- cash from operating activity
+		- net income- from [[income statement]]
+		- depreciation and amortization- from [[income statement]], added back in, as they're non-cash expenses
+		- change in [[inventory]], from [[balance sheet]], comparing to last year
+		- change in [[accounts payable]], from [[balance sheet]], comparing to last year
+		- change in [[accounts receivable]], from [[balance sheet]], comparing to last year
+		- total this up for net cash from operating activity!
+	- cash from investing activity
+		- fixed asset acquisitions- equipment, facilities, etc. [[CAPEX]]
+		- other investments- purchasing other companies, etc.
+		- total this up for net cash from investing activity!
+	- cash from financing activity
+		- change in notes payable- paying off short-term debt
+		- change in long-term debt
+		- dividends paid
+		- total this up for net cash from financing activity!
+	- net increase/decrease in cash
+	- cash at end of year
