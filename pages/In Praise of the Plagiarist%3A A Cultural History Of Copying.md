@@ -1,0 +1,7 @@
+- examples:
+	- imitatio christi / Thomas a Kempis
+	- remix culture, turntablism
+	- readymades / Dada
+	- art education
+	- mirror neurons
+	- Rene Girard

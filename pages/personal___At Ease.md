@@ -1,0 +1,33 @@
+- topics: complex systems, boundary conditions, HCI, cognitive ease, ready-at-hand, lifeworlds
+-
+- Donella H Meadows quote- the greatest complexity in a complex system happens at its borders
+- complex systems- what are they?
+- narrow down to a particularly interesting form of boundaries, *interfaces*- "the boundary between a system and a subject"
+- different types of interface- most obvious is Mercury's user interface, but maybe you think of APIs and the interface between our frontend and backend or between modules, or the interfaces between teams
+- in other words, an interface is what lets us treat a complex system as a single, whole tool
+- what makes a good interface? **ease**
+	- you might say, "I don't want to do easy work, I want to accomplish difficult, stimulating challenges!" that's not the type of ease I mean
+	- or, you might bring up "Simple Made Easy"- that's not the type of ease I mean either!
+	- I mean **cognitive ease**
+- let's consider one of the best user interfaces of all time:
+	- picture of a hammer
+	- bring up Heidegger's ready-to-hand and present-at-hand- example of a sculptor's hammer and chisel. that's what a good tool is!
+- how do we build cognitive ease?
+	- **simplicity**
+		- simple made easy
+		- cognitive load
+	- **humanity**
+		- **corporeity**
+			- Merleau-Ponty- le corps propre, perception as a dialogue between the body and the world
+		- **embeddedness in a form of life**
+			- imagine we hand the sculptor an awl and a cobbler's last, and ask her to fix a shoe. in all likelihood, she will not even know where to start.
+				- this doesn't mean it's a poor-quality tool, nor that it's the wrong tool for the job
+			- where does the meaning of a tool live? its shape? its name? some scientific property? its history?
+				- something can become unintelligible between times, or cultures at one time... or even when moving from the sculptor's studio and into the cobbler's shop next door
+			- Language is a tool... explain Wittgenstein's "form of life"
+				- by analogy, Dilthey's Lebenszusammenhang, Edmund Husserl's Lebenswelt, Heidegger's in-der-Welt-sein
+		- **care**
+			- we use tools for a reason, to accomplish a purpose we have in the world
+			- cognitive empathy
+			- a human being has only a handful of decades to them, and they're dedicating a sizable chunk of precious time to using your tool
+			- fit for purpose/right tool for the job

@@ -1,0 +1,3 @@
+- measures how profitable a company is, while adjusting to avoid the drawbacks of [[return on equity]] around how the company is financed
+- ROIC = (EBIT x (1 - Tax Rate)) / Total Invested Capital
+	- or, Operating Profit less Taxes / Total Invested Capital

@@ -5,7 +5,6 @@ tags:: finance, accounting, financial statements
 	- [[revenue]] (or Sales, or top-line)
 	- [[cost of goods sold]] (or cost of sales)
 		- subtotal is called [[gross profits]]
-		- you'll also see [[gross margin]]
 	- [[operating expenses]]
 		- subtotal is called [[operating income]]
 	- [[interest]] income or expense

@@ -1,4 +1,4 @@
-tags:: finance
+tags:: finance, ratio analysis
 
 - gross profit margin, defined as a percent of revenue:
 	- gross margin = [[gross profits]] / [[revenue]] * 100

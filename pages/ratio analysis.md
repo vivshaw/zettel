@@ -1,0 +1,30 @@
+tags:: finance
+
+- financial analysis of a company based on ratios of the values one might find in their financial statements, such as the [[balance sheet]], [[cash flow statement]], and [[income statement]]
+- **liquidity ratios:**
+	- [[current ratio]]
+	- [[quick ratio]]
+- **working capital management ratios:**
+	- [[days' sales outstanding]]
+	- [[inventory turnover ratio]]
+	- [[days' sales in inventory]]
+- **profitability ratios:**
+	- [[gross margin]]
+	- [[operating margin]]
+	- [[net margin]]
+- **debt management ratios:**
+	- [[debt ratio]]
+	- [[debt-to-equity ratio]]
+	- [[interest coverage ratio]]
+	- [[times interest earned]]
+- **investment ratios:**
+	- [[return on assets]]
+	- [[return on equity]]
+	- [[return on invested capital]]
+	- [[revenues per employee]]
+- **market value ratios:**
+	- [[earnings per share]]
+	- [[price to earnings ratio]]
+	- [[dividend yield]]
+	- [[book value per share]]
+	- [[market to book ratio]]

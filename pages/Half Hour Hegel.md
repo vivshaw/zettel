@@ -86,7 +86,8 @@ tags:: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 	- need to have otherness and alienation in order to overcome it
 	- the True is the whole, via essence consummating itself (unfolding, perfecting)
 	- whatever is more than just a word, is a proposition, contains a becoming-other
-- **9 - Preface, sec 21-23**
+- **9 - [Preface, sec 21-23](https://www.youtube.com/watch?v=MupCVLUciBE)**
+  collapsed:: true
 	- > [...] mediation is nothing beyond self-moving self-sameness, or is reflection into self, the moment of the "I" which is for itself pure negativity or, when reduced to its pure abstraction, simple becoming.
 	- this mediation stuff is what people don't want to get! it's sticky and difficult to think through, so we want simple immediacy. but reality doesn't work that way
 	- reflection overcomes the antithesis between the process of becoming, and the result
@@ -96,3 +97,14 @@ tags:: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 		- the purpose for Hegel is for the absolute through us and through human history, to come to know itself in its fully developed condition, which is _as us_!
 	- positing God as love, the eternal, the moral world-order (e.g. [[Fichte]]), only posit something of the Absolute, but they don't show its self-reflection
 		- "God" on its own is just a meaningless sound, an empty name
+- **10 - [Preface, sec 24-25](https://www.youtube.com/watch?v=1mDmU_IL8Jg)**
+  collapsed:: true
+	- basic principles of philosophy, if true, are also false! what the heck does this mean?
+		- if you want to reveal the falsity of a basic idea, you can't just toss ideas at it from outside. you have to "give it enough rope"- let it play out until it shows itself as untrue
+- **11 - [Preface, sec 26](https://www.youtube.com/watch?v=7ZzFNGhK2y8)**
+	- interplay between the individual and science
+		- the individual is ourselves- as single subjects, concretely existing, with our own own histories
+		- science needs to not only be systematic and verify truths, but to be reflexive. to think about itself, and whether it's adequate for describing reality, which it is a part of
+		- there's a dialectic between the individual and objects- we both condition and are conditioned by our environment. we have a degree of freedom- the conditioning isn't total. and the environment differs from individual to individual!
+		- as well as a dialectic between the individual and science! science must be universal, but the individual has the right to demand a ladder from science. and science can only develop through individual people who become scientists!
+-
