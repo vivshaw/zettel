@@ -1,5 +1,5 @@
-- welcome to https://zettel.vivsha.ws, my [[digital garden]].
-- if you've stumbled here and want to know more about me, check out [[my website]], https://vivsha.ws
+- welcome to [zettel.vivsha.ws](https://zettel.vivsha.ws), my [[digital garden]].
+- if you've stumbled here and want to know more about me, check out [[my website]], [vivsha.ws](https://vivsha.ws).
 - I think about many topics, ranging from [[software engineering]] to [[philosophy]], [[heavy metal]] to [[management]].
 - not sure where to start?
 	- you could check out [:a {:href "#/all-journals"} "my journal"], which I use as a combination journal/linkdump/fun fact stash.
