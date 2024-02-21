@@ -1,4 +1,4 @@
-tags:: philosophy, Germany, German Idealism
+tags:: philosophy, Germany, idealism, German Idealism
 alias:: Schelling
 
 - on [[nature]], from *First Outline of System of the Philosophy of Nature*:

@@ -5,7 +5,7 @@ tags:: books, management
 		- **role power** - what your org grants you to compel others to act for the org
 		- **relationship power** - your own ability to persuade others because of their knowledge and trust of you
 		- **expertise power** - others' perception of your technical, industrial, or topical knowledge
-	- the Allen Curve
+	- the [Allen Curve](https://en.wikipedia.org/wiki/Allen_curve) - frequency of communication drops exponentially as distance increases
 - **1: What Is An Effective Manager?**
   collapsed:: true
 	- **your first responsibility as a manager is to achieve results.**
@@ -112,7 +112,7 @@ tags:: books, management
 			- as with scheduling above- everybody has time if you schedule far enough out. people are thinking about how busy they are now.
 			- you're asking for only ~1% of their time!
 			- again, if needed use role power
-- **5 - Doing One on Ones with Remote and Hybrid Workers** #1-1s
+- **5: Doing One on Ones with Remote and Hybrid Workers** #1-1s
   collapsed:: true
 	- we communicate less with those who are distant from us
 	- so, O3s become *even more necessary*!
@@ -122,7 +122,7 @@ tags:: books, management
 		- "When you look at the top of your organization, what you call politics, they call collaboration."
 		- **The political capital necessary to achieve executive success is nearly impossible to build from a distance.**
 		- **use video calls!** Zoom, Teams, etc.
-- **6 - How to Start Doing Manager Tools One on Ones** #1-1s
+- **6: How to Start Doing Manager Tools One on Ones** #1-1s
   collapsed:: true
 	- Choose times from your calendar
 	  logseq.order-list-type:: number
@@ -143,7 +143,8 @@ tags:: books, management
 	  logseq.order-list-type:: number
 		- don't make too many changes at once! make 'em one at a time. do O3s *first*, and on their own. you can think about other changes later.
 		- don't rush toward seeking or giving feedback! just plain O3s on their own should help. so master that first.
-- **7 - Talk About Performance - Feedback** #feedback
+- **7: Talk About Performance - Feedback** #feedback #performance
+  collapsed:: true
 	- this is the second most important manager behavior
 	- MT presents a feedback model to "give positive or negative feedback easily, and routinely, taking no more than 15 seconds each time. And your directs won't complain."
 	- > When the typical manager gives feedback, *the focus is on what happened*. We think about what happened in the past, and we ask ourselves how to talk to the direct.
@@ -215,4 +216,69 @@ tags:: books, management
 	- following this model helps keep feedback quick and frequent, and build a habit
 	- **don't** try to engage in a dialog about feedback! this is popular, but the data suggests it's ineffective. consider- nobody suggests we have a discussion about *positive* feedback. that's a good sign this is off-track.
 		- empirical data shows that this approach is correlated with _worse_ performance, not better!
-	-
+		- this also makes feedback way faster
+		- ...which in turn encourages doing it more frequently! the longer it takes to give feedback, the less we give
+		- **discussions about intent are useless!** who ever _intends_ to mess up?
+			- these also get interpreted by the manager as "defensiveness", but what else would you expect the direct to talk about? this is also a great cue that the manager isn't separating behavior from emotions, intents, beliefs, etc.
+			- you might not be doing that. you might be thinking, "how can I find the root cause of the behavior?" but this is not the manager's job- it's the manager's job to give the feedback, it's the direct's job to follow through on it and solve their problems. if they want help, they will ask you for it!
+		- **discussions about the past are useless!** the past already happened. the purpose of feedback is to encourage better behaviors in the future.
+		- **asking for reasons aims us at the wrong target!** often, it will _strengthen_ commitment to the old behavior, since it probably had good reasons!
+		- **root cause analysis and feedback are two separate tasks, with different goals.**
+			- doing RCA takes up more time, so the more of it you do, the less time you have. feedback does not have this problem
+			- doing RCA will incentivize reports to bring their problems to you to solve. but problems are most efficiently solved at the level they happen!
+	- give feedback as soon as practical. no more than a week after the behavior.
+		- this is not the same as immediate! the perfect is the enemy of the good. as soon as practical is good enough.
+		- we live our work lives in weekly increments, so one week is good enough. plus, our recall of the past is imperfect, and one week is recent enough.
+	- feedback doesn't necessarily need to be private! this private-convo-behind-a-locked-door thing makes it too big of a deal. most feedback is about small things
+	- don't wait for a pattern to appear before giving feedback! by the time there's an engrained pattern, you've waited too long.
+		- plus, wouldn't you feel bad if your boss deliberately let you make an avoidable mistake for a few weeks just to prove to you that there was a problem? wouldn't you prefer to hear the feedback soon?
+	- pay attention to tone! positive and negative feedback should both be given with the same, positive tone. think:
+		- **am I angry?** then don't give feedback!
+		- **do I want to remind or punish?** then don't give feedback!
+		- **can I let it go?** paradoxically, if you _can't_ let it go, then you _should_ let it go.
+		- if you don't pass any of these checks, you either delay the feedback 'til you can give it well, or defer it completely and don't give it.
+	- **what to do about pushback?**
+		- think of the "shot across the bow" in a naval engagement
+		- here's the trick- the feedback itself _was_ the shot across the bow! so, _don't do anything_! don't argue about it, don't punish, don't talk about the past. just keep giving feedback
+		- if you need to, *straight-up give in*. what matters is whether the direct changes their behavior in the future. winning or losing an argument is useless toward that end.
+	- what if feedback doesn't stick? that's what Systematic Feedback is for:
+		- keep giving feedback, in the exact same way
+		- if you're following the pattern, you'll have ended each feedback with a request- "can you work on that?" etc.
+		- after many incidents of the direct saying "yes" but not following through, you now have not an issue with the behavior you gave feedback about, but an issue of *honesty*, which is much more serious. so you _give feedback about the honesty issue_.
+	- what if your direct doesn't know what to do?
+		- if it looks like they need help, *ask* if they do! but only do this when you have reason to think they do- 93% of the time they don't!
+			- then, maybe you have a quick answer- give it!
+			- or, maybe you don't have a quick answer, or don't have time right now- that's also OK. tell them you're glad they're willing to ask for help, but unfortunately you have to go do such-and-such right now, so can they grab a calendar slot and we'll work on it? keep it positive in tone!
+	- **if you want to be able to give more negative feedback, give more _positive_ feedback.**
+		- this helps build trust!
+		- in a group of effective managers the author followed, the ratio was **9 to 1**!
+		- this tracks- if work is going ok, most of what happens is good. and if you've done 9 good things, wouldn't it feel just awful to have them ignored and just the 1 bad thing mentioned? plus, _positive feedback is reinforcement_- so if folks are doing stuff you wanna see more of, _you gotta tell them that_!
+- **8: Giving Feedback to Remote Directs**
+  collapsed:: true
+	- remote feedback works basically the same as in-person. it's still essential, and the same techniques should still do the trick
+	- but there are some unique challenges
+		- **feedback should be verbal.** written feedback isn't as effective, and is more time-consuming. additionally, positive and negative feedback should sound the same, and written comms don't sound like anything!
+			- try giving feedback verbally, in 1:1s, after a Zoom, after a standup. or ask for a call.
+		- **feedback should be behavior-driven.** but remotely, it's harder to know what the behavior was!
+			- not impossible though! you can see what people say and how they say it on Slack, their tone and body language on Zooms, whether they're camera-off
+	- one approach to making remote easier: **learn to assign deliverables, not tasks.** use a public work tracker like a Kanban. if the deliverable is a message or doc, ask for a CC.
+- **9: How to Start Delivering Feedback**
+  collapsed:: true
+	- it is critical to build trust first!
+	- don't start until you've had ~12 weeks of 1:1s
+	- introduce the change before you make it. say you're gonna do it, then do it!
+	- don't rush into negative feedback. go slow, start with the positive. you can even give only positive feedback for 8 weeks or so before branching into negative.
+	- start by shooting for 1 item of feedback per day. if you find that's really easy after a few weeks, you can increase it slowly. again, no rush- keep it a sustainable pace!
+	- if you have any doubts on your readiness to add in negative feedback, wait. clearly, what you doing now is working well enough that you still have your job. better to stick with the imperfect-but-OK thing for a few extra days or weeks, than rush into the new thing and mess it up!
+	- most importantly, **keep the emphasis positive**. positive feedback is more powerful than negative. don't go overboard when you start mixing in the negative feedback and have it crowd out the positive.
+- **10: Ask for More - Coaching** #coaching #performance #pedagogy
+	- **coaching is a way to supervise the self-driven improvement process of a direct over time**
+		- it can be done in as little as 5-10 minutes/week
+		- it isn't the same as feedback, it isn't the same as a heavy 6-month planning process
+	- steps of the coaching process:
+		- **step 1: collaborate to set a goal**
+			- you will not be a teacher, preparing lesson plans and teaching 'em like a schoolchild.
+			- **adults learn by doing**
+			- do this by describing a behavior or result, starting with a deadline. for example, "by Feburary 1, you will obtain your AWS Solutions Architect Associate cert"
+			- **DBQ goal model**- Deadline, Behavior, Quality
+			- how far away should the deadline be? at least 4 months, otherwise it should just be feedback. if you're not sure, take your best guess and double it.

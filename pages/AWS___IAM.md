@@ -1,4 +1,4 @@
-tags:: aws, security
+tags:: aws, security, cloud
 
 - **Identity and Access Management** lets you set up users, roles, and groups within your AWS account.
 - IAM is a globally resilient service, but each AWS account has its own dedicated IAM instance

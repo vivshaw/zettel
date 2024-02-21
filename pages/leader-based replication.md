@@ -1,5 +1,7 @@
 tags:: data, distsys, db
 
+- src:
+	- mostly, [[DDIA]]
 - a [[replication]] strategy:
 	- one replica is designated **leader**
 	- the others are **followers**.
@@ -49,3 +51,4 @@ tags:: data, distsys, db
 	- but it adds the massive problem of conflicting writes!
 	- an app that is available offline is effectively just a multi-leader replication where the local DB and the remote backend are both leaders! #nuggets
 	- an app with collaborative editing are much like a multi-leader replication where each local document state and the remote backend are all leaders! #nuggets
+- one strategy for dealing with conflicts is to avoid them! ensure all writes for a given record go through the same leader

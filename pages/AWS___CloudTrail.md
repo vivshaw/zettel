@@ -1,0 +1,19 @@
+tags:: AWS, cloud, logging, security
+
+- CloudTrail logs all API calls / AWS activities as CloudTrail Events
+- by default, stores up to 90 days in the Event History
+	- unlike Trails, this **does not** store in S3!
+- enabled by default- no cost up to 90 day retention
+- is a **regional** service
+- is not realtime! there's a delay!
+- can customize by creating Trails, of 3 different types:
+	- management events
+	- data events
+		- **not enabled by default**
+	- insight events
+	- trails can be single-region or all-regions
+		- some services log globally, like [[AWS/IAM]], [[AWS/STS]], [[AWS/Cloudfront]] - these you can set whether they get logged in a trail. by default, they do
+	- trails can store longer than 90 days
+- by default, stores data in [[AWS/S3]]
+	- can also be configured to store it in [[AWS/CloudWatch]]
+- you can build an **organizational trail** in the management account for an [[AWS/Organization]], which will store events from every account in the org

@@ -1,0 +1,22 @@
+tags:: aws, cloud
+
+- makes it quick to set up multi-account environments by orchestrating other AWS services, such as:
+	- [[AWS/Organization]]
+	- [[AWS/IAM Identity Center]]
+	- [[AWS/CloudFormation]]
+	- [[AWS/Config]]
+	- etc...
+- **Landing Zone** - the core part of Control Tower that is a multi-account environment. like "Organizations with superpowers"
+	- provides SOO/ID federation, centralized logging & auditing, etc.
+- **Guard Rails** - detects & mandates rules & standards across the accounts in a Landing Zone
+	- mandatory, strongly recommended, and elective rules
+	- preventative- stops stuff using [[AWS/SCP]]
+		- can be enabled or not enabled
+	- detective - check for compliance using [[AWS/Config]]
+		- clear, in violation, not enabled
+- **Account Factory** - automates & standardizes account creation
+	-
+- organizational units:
+	- **security OU** - contains a Log Archive and Audit account
+	- **sandbox OU** - for testing
+	- **custom OU**

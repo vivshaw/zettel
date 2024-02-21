@@ -9,25 +9,36 @@
 	- you might say, "I don't want to do easy work, I want to accomplish difficult, stimulating challenges!" that's not the type of ease I mean
 	- or, you might bring up "Simple Made Easy"- that's not the type of ease I mean either!
 	- I mean **cognitive ease**
-- let's consider one of the best user interfaces of all time:
+- let's consider one of the best interfaces of all time:
 	- picture of a hammer
-	- bring up Heidegger's ready-to-hand and present-at-hand- example of a sculptor's hammer and chisel. that's what a good tool is!
+	- from a psychological perspective, Csikszentmihalyi and flow state
+	- from a philosophical perspective, bring up Heidegger's ready-to-hand and present-at-hand- example of a sculptor's hammer and chisel. that's what a good tool is!
 - how do we build cognitive ease?
 	- **simplicity**
 		- simple made easy
-		- cognitive load
+		- low cognitive load
 	- **humanity**
-		- **corporeity**
+		- simplicity isn't enough! bring up The Three Shells from Demolition Man- they're sure simple, but they don't tell us much
+		- **corporeity**, or, embodiedness
 			- Merleau-Ponty- le corps propre, perception as a dialogue between the body and the world
-		- **embeddedness in a form of life**
+		- **social context**, or, embeddedness
+			- Aristotle- "Man is by nature a political animal." Not 'political' in the sense of "goes and votes in elections"- political as in lives in the polis, the city.
+				- or "man is a social animal"? get the quote straight
 			- imagine we hand the sculptor an awl and a cobbler's last, and ask her to fix a shoe. in all likelihood, she will not even know where to start.
-				- this doesn't mean it's a poor-quality tool, nor that it's the wrong tool for the job
-			- where does the meaning of a tool live? its shape? its name? some scientific property? its history?
+				- this doesn't mean it's a poor-quality tool, nor that it's the wrong tool for the job!
+			- so where does the meaning of a tool live? its shape? its name? some scientific property? its history?
 				- something can become unintelligible between times, or cultures at one time... or even when moving from the sculptor's studio and into the cobbler's shop next door
-			- Language is a tool... explain Wittgenstein's "form of life"
+			- even language is a tool... explain Wittgenstein's "form of life"
 				- by analogy, Dilthey's Lebenszusammenhang, Edmund Husserl's Lebenswelt, Heidegger's in-der-Welt-sein
-		- **care**
-			- we use tools for a reason, to accomplish a purpose we have in the world
-			- cognitive empathy
-			- a human being has only a handful of decades to them, and they're dedicating a sizable chunk of precious time to using your tool
-			- fit for purpose/right tool for the job
+		- **instrumentality**, or care, or empathy
+			- we don't just pick up a tool and swing it around because we are the sort of beings it fits in the hand of, and because we live in a social context that makes a tool meaningful
+				- we use tools **for a reason**. we beings have needs and desires, purposes out there in the world beyond us, and we use our tools as instruments to accomplish these purposes.
+				- tools only have meaning in the nexus of our reasons and the world
+				- in fact, many would tell you this more than just an aspect of our tools, it's a fundamental part of being human
+					- Heidegger and *Sorge*
+					- on the flip side, Guatama Buddha and *attachment*
+			- so, those who build tools need to have **cognitive empathy**. technical craftsmanship isn't enough- what *need* does this tool fill? how can I better fill it?
+				- a human being has only a handful of decades of lifespan to them, and they're dedicating a sizable chunk of precious time to using your tool!
+			- let's think about the sublime empathy of the hammer
+				- a hammer asks nothing of you to use it. you just see something that needs a whack, raise the hammer aloft, and bring it down, tracing an perfect arc from sky to target, a blazing through-line from intention to result. it's rather beautiful!
+- in 2024, let's stay human. let's build tools for humans. let's build a working environment for humans.

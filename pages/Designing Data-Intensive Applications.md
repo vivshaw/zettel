@@ -228,6 +228,7 @@ alias:: DDIA
 			- no special hardware is required!
 	- replication vs. partitioning
 - **Chapter 5: Replication**
+  collapsed:: true
 	- in [[replication]], we keep a copy of the same data on multiple machines connected via a network
 	- why?
 		- reduce latency via geographic closeness
@@ -235,4 +236,25 @@ alias:: DDIA
 		- increase throughput via scaling out
 	- > All the difficulty in replication lies in handling _changes_ to replicated data
 	- [[leader-based replication]]
-	-
+	- [[conflict-free replicated datatype]]s and [[mergeable persistent data structure]]s
+	- **operational transformation**, a model in which the *operations* to be performed on the data are stored and passed to clients, and the client transforms them according to their local updates before applying them
+	- [[leaderless replication]]
+	- > Eventual consistency is a deliberately vague guarantee, but for operability it's important to be able to quantify "eventual".
+	- **sloppy quorums:** if enough nodes are offline that there are fewer than *w* nodes left within our *n* which own the piece of data we want? instead of erroring, we could allow temporary writes to other nodes outside *n*. then, pass off the writes once the nodes from *n* are back up
+	- it's not important whether events were _literally_ concurrent in time to determine whether they're concurrent in the data sense. clocks may not be aligned between nodes, and data takes time to travel from a node to another. all that is necessary for A and B to be concurrent is that we can't prove A happened before B, or vice-versa
+		- in a sense, this is a little like [[relativity]]!
+- **Chapter 6: Partitioning**
+	- aka [[sharding]] !
+	- primarily, we move to sharding to make an application more [[scalable]]. by moving to a system like this, we can distribute the data across many nodes that individually couldn't handle the whole
+	- typically, used in tandem with [[replication]]
+	- ideally, we want the data to be distributed evenly across partitions- otherwise, there will be hot spots taking on an inordinate level of load, and idle nodes elsewhere. but how can we do this?
+		- we could assign randomly... but now every read needs to read from all partitions
+		- we could assign based on key ranges! this lets us do range queries efficiently
+			- this can lead to hotspots, though. suppose we use the timestamp as a key in a sensor-based application. then all today's read-writes will go in the same partition... and we expect most read/writes will be of today's data
+			- we can avoid that by not putting a hot-spotty piece of the data at the front of the key. e.g., use node id + timestamp instead
+		- we could instead use a hash function! a good hash should make data uniformly distributed.
+			- but we lose efficient range queries
+			- there can also still be hotspots! imagine you assigned Twitter read/writes by username as the key. certain users are read/written much more than others!
+	- partitioning is hard when there are secondary indexes! two approaches:
+		- **document-based partitioning:** (aka **scatter/gather**) each partition is completely separate, and maintains its own set of secondary indices. when you *write*, you don't have to care about anything but the partition you write to. but when you *read*, you need to query _all_ partitions
+		-

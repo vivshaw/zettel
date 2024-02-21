@@ -1,0 +1,20 @@
+tags:: psychology, philosophy
+
+- src:
+	- Martela & Steger - [The Three Meanings of Meaning in Life](https://www.its.caltech.edu/~squartz/Martela-Steger-JOPP.pdf)
+- what is meaning in life? probably not just one thing. at least three different facets:
+	- **coherence** - does life make sense?
+		- this is descriptive
+	- **purpose** - do i have meaningful goals? a sense of direction? do i feel that i have a future?
+		- this is evaluative
+	- **significance** - do i feel like my life matters to others? is my life worth it _to me_?
+		- this is evaluative
+		- this connects with the Grek idea of [[eudaimonia]]
+		- and, the Japanese idea of [[ikigai]]
+		- this is more often than not how Western philosophers treat the question of meaning too
+- all three facets are united by the human capacity for reflectively interpreting one's life
+	- so, **coherence** is really about "forming a coherent mental representation of the world"
+	- **purpose** is really about "articulated and valued motivations toward aligned behavior"
+	- and **significance** is really about "the sense of value that arises when we evaluate our lives against some conceptual criteria"
+	- shades of [[Hegel]] here!
+- [[Viktor Frankl]] provides a slightly different theory: meaning gives us purpose, gives us values or standards to judge by, give us a sense of control, and provides self-worth
