@@ -1,0 +1,51 @@
+tags:: books, Aquinas, Summa Theologica, theology, philosophy, Thomism
+
+- **Introduction**
+	- > The study of philosophy is not the study of what men have opined, but of what is the truth.
+	- Aquinas as a master of _practical_ morality- Kant, Hobbes, Nietzsche, Hume all have ethical systems but ones that aren't _livable_, whereas A's is commonsensically livable
+	- > St. Thomas aimed only for light, not heat.
+	- Aquinas as one of few able to transcend the bounds of modern philosophy- continental philosophers chase depth at the expense of clarity, analytic philosophers clarity at the expense of depth. A has both.
+	- A as the pinnacle of the Medieval thinker, uniting faith and reason, revelation and philosophy, Biblical and classical traditions
+	- the Summa should be read as a summarized debate, similar to the [[Socratic method]]. the opposing views A discusses should be taken carefully and seriously!
+	- the work is structured as an [[exitus-reditus]]
+	- the "three acts of the mind":
+		- **understanding** (of **terms**, which can be clear or unclear)
+		- **judging** (of **propositions**, which can be true or false)
+		- **reasoning** (of **arguments**, which can be valid or invalid)
+	- the structure of a syllogism, which connects the subject and predicate of the conclusion via the middle term of these three parts:
+		- a **major premise**, stating a general principle
+		- a **minor premise**, stating a particular case under that principle
+		- the **conclusion**, demonstrating the result
+	- the structure of A's work:
+		- divided into four Parts, on major themes
+		- each Part is made up of many Questions, or general issues within that theme
+		- each Question is made up of several Articles, which tackle one specific question
+			- starts with a yes-or-no question as its title and topic, beginning with "whether"
+			- then a list of Objections, which are arguments against A's view, beginning with "it seems that"
+			- then, A's own position, beginning with "on the contrary". usually argued from the Bible, or church fathers, or other wise men
+			- then, the response, beginning "I answer that", in which A argues his point
+			- last, each Objection is addressed by explaining where it went wrong
+- **Book 1**
+	- **Question 1** - the nature and extend of sacred doctrine
+		- 1. whether, besides philosophy, any further doctrine is required?
+			- yes! for A, philosophy is not enough, even theology- this is what man can achieve by reason. but we aim at end end beyond reason, God. so we need certain truths that philosophy cannot reach.
+			- theology insofar as it is sacred doctrine is separate from theology insofar as it is philosophy
+		- 2. whether sacred doctrine is a science?
+			- sure is! it's one of those sciences that "proceeds from the light of a higher science", like music from arithmetic, or perspective from geometry.
+		- 4. whether sacred doctrine is a practical science?
+			- it's both practical and speculative
+		- 8. whether sacred doctrine is a matter of argument?
+			- *can* it be if it's based on matters of faith? for A, it sure can. branches of philosophy don't argue about the principles that are their foundation, but start from principles and apply them to obtain further results. that's what we can dispute about
+			- [[argument from authority]] is not necessarily wrong, when the authorities are granted that authority by God. such as prophets
+		- 9. whether holy scripture should use metaphors?
+			- it should! mankind by nature understands things through our senses and intellect, and God provides for all things according to their nature. so we learn spiritual truths through metaphorical analogy to material things.
+			- pulls from [[Pseudo-Dionysius]] ([[De Coelesti Hierarchia]]):
+				- > We cannot be enlightened by the divine rays except they be hidden within the covering of many sacred veils.
+		- 10. whether in holy scripture a word may have several senses?
+			- sure can! for A, God has the power not just to signify with words (as mankind also does), but with things themselves. so, beyond the literal meaning of the words, the things themselves they describe signify the spiritual sense. and there can be multiple spiritual senses- allegorical, moral, anagogical...
+			- references book XII of [[The Confessions]] of [[St. Augustine]] for backup
+	- **Question 2** - the existence of God
+		- 1. whether the existence of God is self-evident?
+			- nope! from [[Aristotle]] ([[Metaphysics (Aristotle)]]), nobody can mentally admit the opposite of what is self-evident. but from scripture itself, "the fool said in his heart, There is no God"
+			- however, there are two types of self-evident: self-evident in itself, and self-evident to us. A argues that "God exists" _is_ self-evident when properly understood, but we do not inherently understand it
+		-

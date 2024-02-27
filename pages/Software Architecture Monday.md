@@ -29,7 +29,7 @@ tags:: software engineering, software architecture, Mark Richards
 	- even if you use tools like [[Splunk]] or [[Logstash]], that's not enough on its own!
 	- two styles:
 		- log consolidation: have services log out to something like Splunk, Logstash, etc. which will consolidate it together
-		- log streaming: *stream* the logs to something like [[Kafka]], then use a subscriber to consolidate
+		- log streaming: *stream* the logs to something like [[Apache Kafka]], then use a subscriber to consolidate
 			- the power is that now you can do any ad-hoc analysis you want!
 	- 4 steps you need to take to make either of these work:
 		- **define request context ids.** without this, we can't know what the event flow was.

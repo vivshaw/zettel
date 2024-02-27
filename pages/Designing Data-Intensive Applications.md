@@ -6,7 +6,7 @@ alias:: DDIA
 	- what is a **data-intensive system**? one where "data is its primary challenge—the quantity of data, the complexity of data, or the speed at which it is changing—as opposed to compute-intensive, where CPU cycles are the bottleneck."
 	- such an application is usually built from "building blocks" like: databases, caches, search indexes, stream processing tools, batch processing tools...
 	- why should we lump all these building blocks under the name "data system" when they're so different?
-		- nowadays, many of those building blocks have converged! see [[Redis]], a data store that can be used as a [[message queue]], and [[Kafka]], a message queue with database-like guarantees
+		- nowadays, many of those building blocks have converged! see [[Redis]], a data store that can be used as a [[message queue]], and [[Apache Kafka]], a message queue with database-like guarantees
 		- many modern applications are complex enough that no one tool does the trick! so, you break down your work into smaller tasks which _can_ be done on one tool, and stitch those tools together with application code- effectively abstracting them into your own data system
 	- what core aspects should a data-intensive app aspire to?
 		- **Reliability:** *"The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of adversity (hardware or software faults, and even human error)."*
@@ -163,7 +163,7 @@ alias:: DDIA
 		- sort order and compression combine to let you compress the first few sort keys a lot with RLE!
 		- compressed data, and bitwise operations on the bitmasks, make very efficient use of CPU cache and cycles
 		- writes are very hard, as you need to modify every column. how to do this efficiently? [[LSM-tree]]s!
-		- hybrid: [[Bigtable]]/[[Cassandra]]/[[HBase]] have **column families**, but is not truly column-oriented: the columns are busted out into families, but *within* each family, the data is stored row-oriented.
+		- hybrid: [[Bigtable]]/[[Apache Cassandra]]/[[HBase]] have **column families**, but is not truly column-oriented: the columns are busted out into families, but *within* each family, the data is stored row-oriented.
 - **Chapter 4: Encoding and Evolution**
   collapsed:: true
 	- how do we encode data usefully, and evolve it as the app grows?
@@ -244,6 +244,7 @@ alias:: DDIA
 	- it's not important whether events were _literally_ concurrent in time to determine whether they're concurrent in the data sense. clocks may not be aligned between nodes, and data takes time to travel from a node to another. all that is necessary for A and B to be concurrent is that we can't prove A happened before B, or vice-versa
 		- in a sense, this is a little like [[relativity]]!
 - **Chapter 6: Partitioning**
+  collapsed:: true
 	- aka [[sharding]] !
 	- primarily, we move to sharding to make an application more [[scalable]]. by moving to a system like this, we can distribute the data across many nodes that individually couldn't handle the whole
 	- typically, used in tandem with [[replication]]
@@ -257,4 +258,26 @@ alias:: DDIA
 			- there can also still be hotspots! imagine you assigned Twitter read/writes by username as the key. certain users are read/written much more than others!
 	- partitioning is hard when there are secondary indexes! two approaches:
 		- **document-based partitioning:** (aka **scatter/gather**) each partition is completely separate, and maintains its own set of secondary indices. when you *write*, you don't have to care about anything but the partition you write to. but when you *read*, you need to query _all_ partitions
-		-
+		- **term-based partitioning:** construct a global index, which itself must be partitioned so as not to become a bottleneck. can partition on the term itself (good for numbers) or a hash (good for load distribution)
+			- generally, index updates are async! [[AWS/DynamoDB]] works this way, for example
+	- sometimes, you might need to rebalance the partitions. we'd hope that this makes the load more even, allows reads/writes during rebalancing, and minimizes data transfers
+		- _don't_ use "hash mod N"! this will get you relatively even load, but require moving basically every piece of data if the number of nodes changes!
+		- **fixed # partitions:** instead, create many more partitions than nodes. then never reassign keys to partitions- just move whole partitions between nodes
+		- **dynamic partitioning** is good for key-range partitioned data. when the data grows above a certain size, split it into two partitions.
+			- [[MongoDB]] does this
+		- **partitions proportional to nodes:** set a fixed number of partitions _per node_, but create more partitions when you create nodes
+			- [[Apache Cassandra]] does this
+	- should rebalancing be manual or automatic?
+		- it can be unpredictable and have high overhead, so you may not want to do it willy-nilly. so, better to have a human in the loop
+	- how the heck do we route the requests?
+		- this is basically the same problem as [[service discovery]] in general
+		- options:
+			- let clients contact any node, and automagically route to the right one
+				- [[Apache Cassandra]] and [[Riak]] do this, via a [[gossip protocol]]
+			- make clients talk to a routing tier that routes to the right node
+				- [[Apache Kafka]] does this via [[Apache ZooKeeper]]
+			- require clients to be aware of partitions and hit the right node
+				-
+	-
+- **Chapter 7: Transactions**
+	-
