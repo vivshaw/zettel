@@ -10,7 +10,7 @@ tags:: software engineering, software architecture, Mark Richards
 			- ![image.png](../assets/image_1705018515144_0.png)
 - **Lesson 2 - How Kafka Differs From Standard Messaging (posted Jan 29, 2018)** #event-driven #distsys
   collapsed:: true
-	- [[Apache Kafka]] payloads are typically [[key-value pairs]] with atomic values, whereas "standard queues" like [[RabbitMQ]]/ [[ActiveMQ]] are typically more structured
+	- [[Apache Kafka]] payloads are typically [[key-value pairs]] with atomic values, whereas "standard queues" like [[RabbitMQ]]/ [[Apache ActiveMQ]] are typically more structured
 	- Kafka streams a continuous flow of data, others have distinct, bounded messages
 	- Kafka can handle throughput up to 1M messages/sec in a tuned instance, 100K/sec on an average instance. standard queues tend to handle 4K-10K throughput
 	- Kafka is especially good for *operational data*- about the health of the system. standard queues are good for transactional data

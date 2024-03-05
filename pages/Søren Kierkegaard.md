@@ -32,3 +32,4 @@ alias:: Kierkegaard
 - Hegelians criticized the law of the excluded middle, the "either/or" principle, which ignited a controversy- folks like [[Mynster]] called out how it was a cornerstone of logic dating back to [[Aristotle]], which folks like [[Martensen]] called out how it conflicted with Christian doctrine
 	- this inspired K's [[Either-Or]]. contra Hegel, the truth is not found by mediating the either/or, but in front of it
 - Kierkegaard thought that, though Socrates was not a Christian, modern day Christianity had much to learn from him
+- though he didn't write on politics, was a royalist- felt that popular rule would reduce the world to the lowest common denominator of public opinion. but refused to be drawn into politics and refused King Christian VIII's overtures to have him serve a role similar to Prussia's appointment of [[Schelling]] to stem the tides of left-Hegelian

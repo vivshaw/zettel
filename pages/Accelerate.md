@@ -10,6 +10,7 @@ tags:: books, devops, software engineering
 	- this only works if there's senior leadership support. with actions as well as words
 - # Part 1: What We Found
 - **Ch. 1: Accelerate**
+  collapsed:: true
 	- "business as usual" isn't good enough. we need to accelerate delivery of value to the custojmer- in the form of goods and services, market engagement to detect demand, anticipation of regulatory changes, risk response...
 	- in the modern world, software is at the core of this
 	- the practices developed by the [[devops]] movement are what this book will address and measure

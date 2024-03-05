@@ -272,6 +272,7 @@ tags:: books, management
 	- if you have any doubts on your readiness to add in negative feedback, wait. clearly, what you doing now is working well enough that you still have your job. better to stick with the imperfect-but-OK thing for a few extra days or weeks, than rush into the new thing and mess it up!
 	- most importantly, **keep the emphasis positive**. positive feedback is more powerful than negative. don't go overboard when you start mixing in the negative feedback and have it crowd out the positive.
 - **10: Ask for More - Coaching** #coaching #performance #pedagogy
+  collapsed:: true
 	- **coaching is a way to supervise the self-driven improvement process of a direct over time**
 		- it can be done in as little as 5-10 minutes/week
 		- it isn't the same as feedback, it isn't the same as a heavy 6-month planning process
@@ -281,4 +282,84 @@ tags:: books, management
 			- **adults learn by doing**
 			- do this by describing a behavior or result, starting with a deadline. for example, "by Feburary 1, you will obtain your AWS Solutions Architect Associate cert"
 			- **DBQ goal model**- Deadline, Behavior, Quality
-			- how far away should the deadline be? at least 4 months, otherwise it should just be feedback. if you're not sure, take your best guess and double it.
+			- how far away should the deadline be? at least 4 months, otherwise it should just be feedback. if you're not sure, take your best guess and double it. better to set a longer goal and have your direct feel awesome for crushing it, then a shorter goal that they barely skate by and feel like a failure.
+			- this has got to be behavior _they_ want to improve! this is self-directed, not top down.
+			- you can make this easier by giving them a heads-up in a 1:1 in advance! that way, they'll know to come ready to talk about their goals
+		- **step 2: collaborate to brainstorm resources**
+			- you, the manager don't know everything. yet, if you can only coach on the things you know, there will be barely any things you can coach on. how do you get around this?
+			- you need to a) collaborate with your direct, and b) plan on finding and using outside resources, *even though you don't know which is best yet*
+			- so, having your direct do research as part of this process is normal, and sometimes picking a resource that turns out to be a flop is normal and not a waste!
+			- how to brainstorm? we each take 2-3 minutes to guess some resources we _think_ might be _potentially_ helpful. go for volume, not accuracy. you don't know what the plan is! so your goal is to get all the options on the table. then, share our lists.
+		- **step 3: collaborate to create a plan**
+			- we've got a goal, we've got some ideas... that's enough to start a plan!
+			- together, pick 1-2 resources to start with, and a series of deliverables for the direct. each deliverable has a deadline, a behavior, and reporting that it's done.
+			- as in the first two steps, the direct takes the lead. they'll be doing the work, so they should pick work they want to do!
+			- **only plan the first 1-2 weeks**. do **not** waterfall it. it would take too long, we don't know enough, and things will change. keep your coaching agile and very short in scope
+			- close deadlines also encourage action! "due next month = do next month". so keeping terms short encourages actual follow-through.
+			- remember from [[project management]]- every project is in danger of being delayed by the longest subtask!
+			- reporting the task as done is important! even when it's done _in the mind of the doer_, it has no use to the organization until the world _knows_ it's done. and it's best for the direct to own communicating this. they're the first to know, and their efforts to communicate it are the lowest cost.
+		- **step 4: the direct acts and reports on the plan**
+			- we've now set some short term goals, and are getting regular updates. check in in the weekly 1:1! briefly chat about progress at the end of the 1:1. if they aren't making the goals, we can give some negative feedback, following our usual feedback patterns. if they do meet the goals, give positive feedback.
+			- then we just continue iterating from here until the DBQ goal is reached! and when they do, celebrate with them!
+		- if the direct runs out of tasks, brainstorm some new ones next 1:1
+		- if a resource is unhelpful, drop it! don't [[sunk-cost]] your way to failure.
+- **11: How to Coach Remote Directs** #coaching #performance #pedagogy
+  collapsed:: true
+	- it's not _that_ much more difficult to coach remote directs. the vast majority of the work is identical, and 95% of your portion will be done in the usual 1:1 you're already having.
+	- consider these differences:
+		- if 1:1s are already long, consider a separate coaching meeting
+		- because you don't see your directs as often, you won't intuitively know their progress as much, so you may need to ask more explicitly
+	- **make sure you're setting deliverables!** this was already important, but is even more important when remote. you don't want to remotely chase down the status of every task, nor do you want to wait for a week-long feedback loop!
+	- consider a shared status board, like a Kanban thingy or spreadsheet. that'll both help you stay in sync, and let you reflect on progress once you're been working on it for a while
+- **12: How to Start Coaching**
+  collapsed:: true
+	- it's gonna be a lot like 1:1s and feedback. brief your team first. walk through the model.
+	- if you're following this book's guidance, this isn't gonna start until 8 months after you start 1:1s (and 4 months after you start feedback).
+	- don't start coaching everyone at once. start with top performers. it's a bit easier, and has lower stakes than coaching low performers where improvement is a must.
+- **13: Push Work Down - Delegation** #delegation
+  collapsed:: true
+	- moving from IC to manager is about moving from being smart about *stuff*, to smart about *people*
+	- when you make the jump to manager, your job isn't to throw yourself at problems, it's to _make other more effective at working on problems_
+	- the single biggest kiss of death for executives is failure to delegate. so you need to start learning this early.
+	- > **[W]hen you look up at the top of your organization, what you call politics, those executives call collaboration.**
+	  (p. 199)
+	- delegation is key for organizational growth. by transferring work from a high-cost area (management) to a lower cost area (directs), you've freed up time and resources for other things. at the same time, you've given your direct a stretch to grow their own skills.
+	- delegate one or more of your _small_ responsibilities to your directs. don't pick a bit one- what's big for you will be _crushing_ for them! small for you will be big for them.
+	- delegate a _settled, routine_ responsibility. you don't know how new responsibilities should be properly done, so how could you delegate them?
+	- won't this overload the IC who ends up with a new task, who was already full? yes, absolutely- *so they should drop some existing tasks to make room*. let them "delegate to the floor" what they need to in order to make room. taking on new responsibilities will end up deprioritizing others, and that's just life.
+	- don't delegate your primary responsibilities. delegate the side work.
+	- don't think about yourself. don't delegate the stuff you don't like, don't need, etc. your directs will realize you're just pushing work ont hem that you don't want, and they'll say "no" or not do it! this is the "push model" of delegation. don't do it.
+	- delegate work that fits the direct: what they **want to do**, **like to do**, **need for growth**, and **are good at**. this is the "pull model" of delegation.
+	- don't judge by whether "I could do it quicker/better". you can't do everything, and it's not your job to. your job is to enable others to do it! so, ask instead: "can my direct do it at the level I did when I first started?" you were good enough back then, so if they can do it at that level, they're also good enough.
+	- not every thing that comes to "us" is coming to us personally. much of it is to "our role" or "our office". and it's our job to figure out what and delegate accordingly.
+	- four no-brainers to consider delegating:
+		- **reporting** - it's not an effective use of your time. _and_ it teaches the direct what execs look at for your team
+		- **meetings** - managers should be doing three things in a meeting- running it, contributing to it, and evaluating their directs' performance in it. if you delegate running it, you can spend more time on the more valuable two.
+		- **presentations** - these are important to get good it, but the way to learn a thing is to do the thing. so if your directs want or need to get good at presenting, you need to let 'em present!
+		- **projects** - you don't need to be de-facto project manager of all projects! let you directs build some PM muscles
+	- how to do it:
+		- **state you'd like help.** just give a high-level, one-sentence version of the task.
+		- **tell why you're asking them in particular.** center it around want/need/like/are good at, as above
+		- **ask for acceptance.** don't tell. that would be using our role power. we want to be using our trust! so, we let our direct choose.
+			- we do this _before_ explaining the fine details! that way, we don't waste time in asking, and if they're interested, they'll be focused on the details as you get into it
+		- **describe the task in detail.**
+		- **go over quality and deadline standards.**
+		- **nail down reporting standards.**
+		- **ask for skill/resource needs.** "What do you need from me?"
+	- what if a direct keeps saying "no" to delegation? well... they _can_ say no, that's intentional. you need to be willing to honor that if you're building trust and not leaning on role power.
+		- after two or more "no"s in a row, reexamine your assumptions. are they overloaded? what's the behavior and tone you observe like? how's attendance. saying "no" is fine, but a general deterioration in the relationship is _not_ fine.
+		- after three, you should have a different conversation. refusing any particular delegation is A-OK, but a general refusal to handle new or different work isn't. organizations grow and change, and the employees need to adapt. talk about how to become a team player, and why they aren't yet.
+- **14: Delegating to Remote Directs** #delegation
+  collapsed:: true
+	- as with coaching, this does not differ much from in-person
+	- you need a high level of trust, which might take longer to build remote, so you might need to wait longer
+	- you can use your 1:1 time for it. give them a heads-up in advance if so! so they don't get blindsided, and can come in with questions and expectations.
+- **15: How to Start Delegating**
+  collapsed:: true
+	- 8 months, when you start coaching, is probably good.
+	- you _can_ go sooner here, but probably still give 3 months or so for 1:1s to build trust.
+	- slide it forward a little for top performers, especially those who are likely to get promoted to management.
+	- as with the other tools, brief the team!
+- **16: The Manager Tools Manager**
+  collapsed:: true
+	- implement these tools with love- the willingness to risk yourself for the benefit of another. these tools _need_ to be used in service of lifting your team up and helping them do their best work. they need to be used with respect, positivity, and care. even the tough parts, like negative feedback or hard conversations. be direct, be kind, and be a good person.

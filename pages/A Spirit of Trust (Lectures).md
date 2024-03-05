@@ -75,3 +75,17 @@ tags:: philosophy, Hegel, idealism
 			- this is the birth of [[sociology]] as much as it is a sea change in philosophy
 			- this is also really the root of the analytic-continental split! *should* we take modernity to be a philosophical problem? or not? for the analytics, maybe the rise of science, but not modernity
 		- Hegel "sees the worm in our apple"- the alienation we feel from our social norms, which is part of modernity. for Hegel, once we understand that, we'll understand what the next phase of Geist must be.
+	- how should we hermeneutically interpret texts? #hermeneutics
+		- easy to fall into a [[Lockean]]/[[Gricean]] picture of meaning, where it's a gem in the mind of the writer, and a successful act of communication is one that reproduces that gem in the mind of the reader
+		- consider [[Borges]]'s *Pierre Menard, Author of the Quixote* - a book about a man who rewrites the Quixote word-for-word, and is acclaimed for its rich literary allusions to the present times of the early 20th century
+		- Brandom follows an **inferential approach to meaning**, which rejects semantic atomism, and focuses on the conceptual and inferential roles things play in reasoning
+		- [[death of the author]] and [[Foucault]]'s writing on French police reports as "a work", [[Quine]]/[[Duhem]] on [[Two Dogmas of Empiricism]]
+		- a Hegelian reading is one that recollectively rationally reconstructs Hegel, just as Hegel in turn read Kant. it is valid to appeal to things that happened after Hegel, and arguments that Hegel did not make but later folks did.
+		- *de dicto* (what did the author really mean to say?), *de traditione* (what is the author's tradition, earlier and later, committed to?), *de re* (what is the author _really_ committed to, whether or not they meant to say it?) readings
+	- recommended reading:
+		- Inwood translation, or Miller
+		- Not Pinkard's translation
+		- [[Hippolyte]] - close to the text *de dicto* reading
+		- [[Kojeve]]
+		- Pinkard's commentary and biography
+		- Carlyle's [[Sartor Resartus]], a first-rate parody of Hegel
