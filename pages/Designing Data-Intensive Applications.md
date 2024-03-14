@@ -280,4 +280,52 @@ alias:: DDIA
 				-
 	-
 - **Chapter 7: Transactions**
+  collapsed:: true
+	- **[[transaction]]s** have been the mechanism of choice for fault tolerance for a long time. they were created to simplify the programming model. not every app needs them, but many do.
+	- the original style of transaction, introduced in [[IBM System R]], is still the most commonly used today, at least among SQL dbs!
+	- the NoSQL wave led to many new DBs dropping transactions, or redefining them as something weaker
+	- the guarantees transaction provide are often described by [[ACID]]. but ACID is a little vague, especially isolation!
+		- non-transaction DBs often go for [[BASE]]
+	- how do you get durability?
+		- historically, this meant backing up to tape
+		- later, to a disk or SSD
+		- nowadays, replication
+		- but none of these are perfect! all have faults- physical-backup systems may be inaccessible during restoration, replicated systems may all go down at once to a [[correlated fault]], etc. and hardware isn't perfect either! backups can fail, drives can die.
+	- atomicity applies to both single and multi-object writes. in a single-object write, what happens if network fails halfway through a JSON blob, or power fails mid-write?
+	- why can't we _just_ use single-object [[atomic operation]]s?
+		- in a [[relational DB]], [[foreign key]] references- when inserting a row, we need to ensure matching rows are inserted in other tables
+		- an a [[document DB]], [[denormalized]] data. (even though foreign keys don't exist, denormalization is still encouraged.)
+		- [[secondary index]]es in any DB that has 'em
+	- what to do about failed transactions? commonly, we retry. but that's not perfect:
+		- what if the network failed, but the trx succeeded? now we have a double trx
+		- what if the DB's overloaded? then retries will make it _worse_!
+		- what if the error is not transient? then a retry will just trip over the same error
+		- what if the trx has side effects outside the DB?
+	- transaction isolation
+		- concurrency is hard to reason about, so DBs would prefer to hide it, by isolating transactions
+		- *serializable* isolation is the ideal, means that transactions that ran in parallel can be treated the same as those that ran in series
+			- most DBs don't actually use this though, as it has a big performance cost!
+			- can implement by _actually_ running in serial. but this only works if transactions are small and fast, datasets fit in memory, and cross-partition writes are rare
+			- can also use [[two-phase locking]], the most common approach. here, writers and readers both get exclusive locks- you can't read while someone else is writing. there may be a "shared mode", where many reads can happen simultaneously.
+				- to prevent [[write skew]], you may need a *predicate lock*- a lock on all objects that meet a certain condition, even if they don't exist yet
+		- *read committed* isolation: 1) when reading from the DB, you'll only see committed data (no dirty reads), and 2) when writing to the DB, you'll only overwrite data that's been committed (no dirty writes)
+			- preventing dirty reads doesn't necessarily prevent race conditions with counters, e.g., [[lost updates]]!
+			- [[read skew]] is still possible
+			- so, might not be good for cases that temporary inconsistency is unacceptable- like backups, analytics queries
+			- often implemented with row-level locks. but read locks would be inefficient. so typically, you might maintain two copies of the data for the locked row, and give the old version to every transaction except the lock holder
+		- *snapshot* isolation: each transaction reads from a consistent snapshot of the database
+			- readers never block writers, and vice versa
+			- this requires [[multi-version concurrency control]], as many transactions might be trying to touch the same data
+			- also does not prevent [[lost updates]]
+		- *serializable snapshot* isolation: a newer type, used in [[FoundationDB]] and recent [[PostgreSQL]], that gives the guarantees of serializable isolation, but with only a small performance penalty from snapshot
+			- an *optimistic* technique- it lets all operations continue, then when it comes time to commit, checks if anything invalid happened, and rejects it if so. can do this by detecting reads of stale MVCC versions, and writes that affect older reads
+	- how to prevent lost updates?
+		- atomic operations that read and write a value in one go
+		- explicit locking of rows
+		- automatic detection
+		- a compare-and-set operation
+		- many of these just don't work in a distributed world! can't lock or compare-and-set if there are multiple DBs
+	- what about [[write skew]]? )(concurrent writes that are individually valid, but leave the DB in an invalid state)
+		- you can deal with this by materializing the conflict- make a table of all the possible state combinations, with no data, used purely for locks. like for a meeting app, a table of 15 minute time slots for each room for the next 6 months.
+- **Chapter 8: The Trouble with Distributed Systems**
 	-

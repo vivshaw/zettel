@@ -53,4 +53,11 @@ tags:: software engineering, software architecture, Mark Richards
 			- in fact, can we really be effective at setting up the devops env _before_ we know what type of services will be in it? we'd just be building with test services, "hello world", etc
 			- working in parallel gets us real live services to base the devop envs around and test it with
 - **Lesson 6 - Classifying Architecture Patterns (posted Feb 26, 2018)** #[[software architecture]]
-	-
+	- monoliths, service-based, microservice, piepline, space-based, layered, microkernel, event-driven... how do we classify all these architecture patterns we have?
+	- one attempt: component-based vs service-based?
+	- better: monolithic vs. distributed
+		- in a distributed world, you need contracts, maintenance, versioning, coordination... you make changes and don't respect this, you break your app!
+		- in a distributed world. time and latency become important
+		- in a distributed world, security needs to be baked in. what might be "just a function" call in a Monolith, might need [[authn]] and [[authz]] in a microservice app!
+		- in a distributed world, logging becomes more complex
+		- in a distributed world, we need to think about transactionality

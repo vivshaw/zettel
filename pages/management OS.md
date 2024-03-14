@@ -6,17 +6,21 @@ tags:: management, engineering management, personal
 	- like a computer's OS, no installation is going to be identical, and I won't always use every part. I will pick and choose what fits my current circumstance, and drop what isn't useful.
 - **concepts:**
 	- **overarching philosophy:** *be like water. adjust to the situation. be pragmatic. source concepts from anywhere, and use precisely what works. be an artist. hone your praxis.*
-	- [[the role of a manager]]: TBD
+	- [[the role of a manager]]: it's about getting results and keeping your people.
 	- [[The Three Gaps]]: why don't our strategies work out in practice? how can we do better?
 	- [[directed opportunism]]: a philosophy of strategy under uncertainty, of building both alignment _and_ autonomy. plan only what can be planned, align  and give people the autonomy to address the rest on their best judgment.
 	- [[independent thinking obedience]]: what do I want out of my reports? neither rote following, nor going off and doing whatever they please- I want independent thinking and execution to achieve a united result.
 	- [[The Executive's Trinity]]: the high-level skills needed to manage with aplomb
 	- [[strategy, operations, and tactics]]: bridging the conceptual gap from strategy to execution
+- **org debugging principles:**
+	- [[POSIWID]]: the things that your organization *actually does* are its purpose, not the things we may _say_ are its purpose. think _de facto_, not _de jure_.
+	- [[revealed preference]]: what people and organizations do reveal what they value.
+	- [[rationality]] (see also [[communicative rationality]], [[bounded rationality]]): people do and say things for reasons. more often than not, good ones, even if you disagree with them.
 - **rituals:**
 	- **overarching philosophy:** *provide just enough structure. no more, no less.*
-	- **1:1s:** TBD
-	- **standups:** TBD
-	- **retrospectives:** TBD
+	- **1:1s:** TBD #one-on-ones
+	- **standups:** TBD #standup
+	- **retrospectives:** TBD #retrospective
 	- **[[strategy briefs]]:** here's how you can plan a good strategy, and cascade it through an organization.
 - **documents:**
 	- **overaching philosophy:** *documents can never lead a change, they can only follow.*
@@ -25,4 +29,6 @@ tags:: management, engineering management, personal
 	- **team onboarding help:** this has two parts. first, an informational document to help the new hire get used to the team, get to know me, understand what we do. second, a [[30-60-90]] plan.
 	- **team rituals doc:** writing down your team rituals encourages being thoughtful about them. you should only have rituals that serve a purpose. to prove one has a purpose, explain it in writing! this also helps you onboard new folks, and track evolution in your rituals over time.
 - **references:**
-	- [[The Art of Action]]: an **excellent** work on [[strategy]]- why it's hard, how it is more an art than a science, and how you can practice that art and make your organization great at it.
+	- [[The Art of Action]]: an **excellent** work on [[strategy]]- why it's hard, how it's more an art than a science, and how you can practice that art and make your organization great at it.
+	- [[The Effective Manager]]: a great guide to becoming or creating a "minimum viable manager"- nailing 1:1s, feedback, coaching, and delegation. this is the book you want if you're starting from zero, or going back to the basics.
+	- [[Thinking in Systems]]: your team and your organization are a complex system. learning some [[systems thinking]] can help you better understand why it works the way it does.

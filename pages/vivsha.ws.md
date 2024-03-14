@@ -18,3 +18,9 @@ alias:: my website
 		- if i'm not committed yet to buying, could start with [Orpheus](https://fonts.adobe.com/fonts/orpheus) as I've got adobe
 	- do i even need a sans? I'm not sure that I do. could go with just one typeface
 		- i _love_ love [Agrandir](https://pangrampangram.com/products/agrandir), would be cool to have an excuse to use it
+- color palette? green scale?
+	- https://components.ai/color-scale/DPVY6RKKmtrTTJiMRVGV
+	- https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41
+	- https://coolors.co/palette/143601-1a4301-245501-538d22-73a942-aad576
+	- https://coolors.co/palette/020202-0d2818-04471c-058c42-16db65
+	-

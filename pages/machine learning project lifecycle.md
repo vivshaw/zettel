@@ -1,0 +1,40 @@
+tags:: machine learning, project management, mlops
+
+- [[Andrew Ng]]'s version:
+	- **scoping**
+		- define the project
+			- what are we working on?
+			- key success metrics: [[accuracy]], [[latency]], [[throughput]]
+			- estimate the resources you need
+	- **data**
+		- define your data and establish a baseline
+			- is the data labeled consistently?
+			- how do you perform [[normalization]]?
+		- label and organize your data
+	- **modeling**
+		- select and train your model
+			- code/algorithm + hyperparameters + data = ML model
+				- in research, we tend to hold the data fixed and vary the code and hyperparameters (e.g. working with known benchmark datasets)
+				- in practice, it can help to hold the code fixed and optimize the data!
+		- perform error analysis
+	- **deployment**
+		- deploy in production
+			- local software on edge device? or centralized serving?
+			- what other software/hardware is needed to run and feed your model? (e.g., speech recognition needs a microphone and [[VAD]] module)
+		- monitor & maintain the system
+			- check for [[concept drift & data drift]]
+	- ml is iterative! any of these steps may uncover problems and lead you to jump back to an earlier step to iterate.
+- [[Chip Huyen]]'s version, from [[Designing Machine Learning Systems]]:
+	- **project scoping**
+		- lay out your goals, objectives, and constraints. estimate and allocate your resources. identify your business stakeholders and get them involved.
+	- **data engineering**
+		- generate tidy, useful training data that fits your project out of raw data
+	- **ML model development**
+		- extract features, and develop initial models using those features
+		- this is the step that requires the most ML expertise
+	- **deployment**
+		- make your model available to users!
+	- **monitoring and continual learning**
+		- monitor for performance decay, and update to meet needs of the changing environment
+	- **business analysis**
+		- now, is your model having the business impact you expected? compare it against business goals and look for business insights.

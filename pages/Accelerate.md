@@ -30,6 +30,7 @@ tags:: books, devops, software engineering
 		- technology age, whether ops or dev team deploy, and whether a change approval board exists are all often cited as making a difference, but empirically they don't!
 		- this book finds 24 empirically-supported capabilities to build. that's what the rest of the book is about!
 - **Ch. 2: Measuring Performance**
+  collapsed:: true
 	- flaws in previous attempt to measure performance:
 		- they focus on *outputs* (e.g., LOC, PR count, story points) rather than *outcomes*. but outputs prioritize busywork!
 		- they focus on *local maxima* over *global maxima*
@@ -50,6 +51,7 @@ tags:: books, devops, software engineering
 	- this has impacts on outsourcing/build-vs-buy decisions. it's a bad call to outsource business-critical software- you need to be bringing delivery capabilities into your org's core priorities. conversely, it's a bad call to in-house non-strategic software like payroll.
 	- critical caveat: these measures need to be considered in tandem with company culture. toxic cultures lead to the use of measurements as a tool of control, and in turn reaction against that leads to bad measurements. so, you need to develop a healthy eng culture first!
 - **Ch. 3: Measuring and Changing Culture**
+  collapsed:: true
 	- "culture is king" - but how do we _measure_ something as squishy and abstract as culture?
 	- org culture exists at three levels:
 		- **basic assumptions** - the things we "just know", formed implicitly over time by working together and making sense of what we experience
@@ -76,3 +78,81 @@ tags:: books, devops, software engineering
 		- first change what people *do*. changing how they *think* comes later.
 		- hypothesis: implementing a particular set of practices (agile/lean management, and continuous delivery) impacts culture
 		- in fact, they do! survey found that both sets of practices impact culture
+- **Ch. 4: Technical Practices**
+	- starts with the birth of [[agile]], [[extreme programming]], and [[continuous integration]]/[[continuous delivery]]
+	- many organizations treat the _technical_ practices of Agile as less important than the organizational and social practices. this research suggests they're actually quite important.
+	- continuous delivery exists to get features to users **safely**, **quickly**, and **sustainably**
+	- 5 key principles of continuous delivery:
+		- **build quality in**. instead of manually inspecting outcomes, build tools and practices that help you get it right by default, and detect issues that slip through quickly.
+		- **work in small batches**. this lets us try things quickly and in small chunks, and course-correct if it doesn't work it. to make this work, it is key to reduce the cost of shipping changes.
+		- **computers perform repetitive tasks, people solve problems**. problem-solving work is what's high-value, so we should ensure people can spend as much time as possible focused on it.
+		- **relentlessly pursue continuous improvement**. high performance isn't static- you need a feedback loop of improvement
+		- **everyone is responsible**. great technical delivery is a system-level outcome, not an individual-level outcome. so we need everyone in the system on-board, and we need ways to make the state of the system visible to them.
+	- foundations of continuous delivery:
+		- **comprehensive config management**: you need to be able to provision environments, build, test, and deploy in an automated, version-controlled way. use [[IaC]]/[[CaC]] tools, not clickops
+		- **continuous integration**: keep branches short-lived, integrate them regularly into `main`, and build & test each change automatically.
+		- **continuous testing**: tests shouldn't just be a thing that happens once a feature is release-ready. it should be an integral part of the dev workflow. no work is done until all automated tests pass!
+	- Forsgren used [[Likert scale]] surveys once again for empirical research into the impact of CD tools and practices
+	- two additional constructs measured:
+		- [[loosely-coupled]], well-[[encapsulated]] architecture
+		- letting teams choose their own tools
+	- empirical impacts of CD:
+		- the technical practices discussed here did indeed correlate with on-demand deploys and fast feedback
+		- CD drove less rework, Westrum generative org culture and software delivery performance (which in turn drive organizational performance)
+		- CD _also_ drove less burnout and less deployment pain
+	- how to measure [[quality]]?
+		- change fail rates
+		- proxy variables:
+			- perception of quality and performance of the app
+			- percentage of time spent on rework & unplanned work. this is "the difference between paying attention to the low fuel warning light on an automobile versus running out of gas on the highway".
+			- percentage of time spent fixing bugs identified by customers
+	- what capabilities should you develop for CD?
+		- **version control** - you should be using VC, both for code and for config
+		- **test automation** - tests should be automated, _reliable_, and primarily written and maintained by the developers who are doing the feature work. these tests should run on every commit
+		- **test data management** - you should have adequate data to run a full test suite of your product's features
+		- **trunk-based development** - don't use long-lived feature branches! merge into trunk continuously. don't use code freezes or stabilization periods either.
+		- **information security** - integrate your infosec practices into your software delivery
+- **Ch. 5: Architecture**
+	- [[software architecture]] can be a barrier to good delivery. plus, can agile practices work in a mainframe world, hardware world, or massive enterprise?
+	- looked at many types of system:
+		- **greenfield**: new, unreleased systems
+		- **systems of engagement**: used directly by end users
+		- **systems of record**: used for data storage
+		- **outsourced custom software**
+		- **in-house custom software**
+		- **off-the-shelf commercial software**
+		- **embedded software**
+		- **user-installed software**, such as mobile apps
+		- **mainframe software**
+		- **self-hosted software**
+		- **cloud-hosted software**
+	- lower performers were more likely to be outsourcing, and more likely to be working on mainframes
+	- in all other cases, there was no significant correlation!
+	- what's important is architectural _characteristics_, not the specific architecture type:
+		- "testability": ability to perform tests without requiring an integrated environment
+		- "deployability": ability to deploy independently of the other services it depends on
+		- loosely-coupled, well-encapsulated architecture
+	- how do we define loose coupling and good encapsulation?
+		- ability to make large-scale changes to their system without permission from outside their team
+		- ability to make large-scale change to their system without depending on other teams to change _their_ systems
+		- ability to complete work without coordinating outside their team
+		- ability to deploy and release on command
+		- ability to do most testing on command
+		- ability to deploy with no downtime during regular business hours
+	- communication bandwidth and systems architecture are tightly linked! see [[Conway's law]]
+		- this means cross-functional teams are crucial
+		- this also means organizations may need to perform a "reverse Conway maneuver", and fix their org structure in order to fix their delivery practices
+	- you can apply the principles of loose coupling and good encapsulation to any technical system. it is not synonymous with [[microservices]]- indeed, it's possible to build a microservice-based architecture that fails all of these capabilities!
+	- impacts of loosely-coupled architecture:
+		- enables scaling by increasing productivity, allowing linear or superlinear productivity growth while growing the team, contra [[The Mythical Man-Month]].
+		- enables better delivery tempo and stability while reducing burnout
+	- many organizations standardize tools, for a few reasons:
+		- reducing environment complexity
+		- ensuring the necessary maintenance skills are there in the org
+		- increasing vendor purchasing power
+		- ensuring correct licensing
+	- *however*, letting teams pick their own tools has benefits that outweigh those! they know their goals and understand the problems they're tackling. let them choose the tools that most effectively serve them
+	- there is a place for standardization though, in infrastructure. it's useful to have a standard platform.
+	- **"architects should focus on engineers and outcomes, not tools or technologies"**
+		- what tools you pick is irrelevant if folks hate using them, or if they don't lead to the outcomes you care about!
+		- people building the platform need to collaborate closely with users of the platform to get this right.

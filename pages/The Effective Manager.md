@@ -52,7 +52,7 @@ tags:: books, management
 		- **Communicate about performance:** feedback
 		- **Ask for more:** coaching
 		- **Push work down:** delegation
-- **4: Get to Know your People - One-on-Ones** #1-1s
+- **4: Get to Know your People - One-on-Ones** #one-on-ones
   collapsed:: true
 	- getting to know your reports is the single most important behavior, and 1:1s are the single best tool to do it.
 	- a one-on-one is: **a scheduled, weekly, 30-minute meeting with each of your directs, where your direct goes first, and you take notes.**
@@ -112,7 +112,7 @@ tags:: books, management
 			- as with scheduling above- everybody has time if you schedule far enough out. people are thinking about how busy they are now.
 			- you're asking for only ~1% of their time!
 			- again, if needed use role power
-- **5: Doing One on Ones with Remote and Hybrid Workers** #1-1s
+- **5: Doing One on Ones with Remote and Hybrid Workers** #one-on-ones
   collapsed:: true
 	- we communicate less with those who are distant from us
 	- so, O3s become *even more necessary*!
@@ -122,7 +122,7 @@ tags:: books, management
 		- "When you look at the top of your organization, what you call politics, they call collaboration."
 		- **The political capital necessary to achieve executive success is nearly impossible to build from a distance.**
 		- **use video calls!** Zoom, Teams, etc.
-- **6: How to Start Doing Manager Tools One on Ones** #1-1s
+- **6: How to Start Doing Manager Tools One on Ones** #one-on-ones
   collapsed:: true
 	- Choose times from your calendar
 	  logseq.order-list-type:: number

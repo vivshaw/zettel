@@ -1,0 +1,90 @@
+tags:: books, machine learning, MLOps, system design, [[Chip Huyen]], data science
+
+- **Preface**
+  collapsed:: true
+	- how do you decide what sort of ML system to build? it depends on a lot of circumstances- even orgs solving a similar problem might end up with very different model needs
+	- this books takes a holistic, [[systems thinking]] approach, based on real-life case studies from industry
+	- when might this book be useful to you?
+		- you have a business problem and raw data, and need to engineer that data
+		- you have a model that's working well in test, and wish to deploy it
+		- you don't have much feedback on model performance in prod, and wish you did! or had better ways to debug
+		- you're on a team for which the machine learning lifecycle is slow and manual
+		- you don't have a unified platform for your org's ML products
+		- you're worried that your ML systems may be biased, and want them not to be
+- **Chapter 1. Overview of Machine Learning Systems**
+  collapsed:: true
+	- Google's 2016 integration of neural network translation into Google Translate as a paradigmatic case, launching the current ML wave
+	- what's the relationship between MLOps and systems design?
+		- [[MLOps]] is effectively the ML version of [[devops]]- it's a set of tools and practices for bringing ML into production, monitoring, and maintaining it
+		- ML [[system design]] takes a systems approach to [[MLOps]]- considers it holistically,  including the many different stakeholders and components needed for an effective system
+	- first and most important question- _should I even use ML?_
+	- you should use ML for: **learning** of **complex patterns** from **existing data**, and using those patterns to **make predictions** on **unseen data**
+		- **learning** - it needs to be a usecase where you want the system to learn and improve, not one where you can lay down the solution up-front
+		- **complex patterns** - ML can only accomplish anything when there's a pattern, no use learning the results of a coinflip. and it needs to be a pattern that's complex- if it's a simple one anyone could solve, then there's no need to bring in the cost and complexity of ML
+			- keep in mind, what's complex to machines is different than what's complex to people!
+		- **existing data** - can't learn from nothing! you need to either have the data, or know you can collect it.
+			- caveat: [[zero-shot learning]] does exist
+			- launching without data can happen too with online learning from production data. however, you'll have poor accuracy to start, so you'd need to be OK with that.
+			- some companies "fake-it-til-you-make-it" and have humans sub in for ML until enough data is there
+		- **predictions** - models make predictions, so you better have a predictive problem!
+			- predictive problems don't necessarily need to be about the future- you can reframe many problems as predictions
+			- ML is especially good when you can benefit from lots of cheap-but-approximate predictions
+		- **unseen data** - there's unseen data that shares a pattern with the training data, and which you will use for inference. they should come from similar distributions.
+	- some extra characteristics that might make ML especially appealing:
+		- **repetitive tasks** - humans are great at [[few-shot learning]], ML generally requires many examples. repetitive tasks, by nature, have many examples.
+		- **low cost of bad predictions** - the lower the downside, the more it's OK to be approximate. e.g. recommender systems- the worst that happens with a bad rec is the user doesn't click.
+		- **at scale** - ML takes a lot of resources to do, so it'd better be for a problem at sufficient scale thaqt it's worth it
+		- **the patterns are constantly changing** - if the problem has a stable solution, you could probably find the pattern and write up a non-ML solution. that's hard with problems where the answer changes. but ML learns by nature, and can be set up to adapt to the change.
+	- when _not_ to use ML:
+		- when it's unethical
+		- when there's a simpler solution
+		- when it's not cost-effective
+	- _but_, even if your problem isn't a good use case for ML, you might be able to break out smaller chunks that _are_. e.g., you might find you can't build a customer-service chatbot, but you _can_ build an model that routes customers to appropriate FAQs, and to live support if not.
+	- what use cases exist in the real world?
+		- consumer apps:
+			- [[recommender system]]s
+			- [[predictive typing]]
+			- [[machine translation]]
+			- [[smart home]]s/[[personal assistant]]s
+		- enterprise apps
+			- [[fraud detection]]
+			- price optimization
+			- demand forecasting
+			- [[customer acquisition]] insights
+			- [[churn prediction]]
+			- automated support ticket classification
+			- brand monitoring
+			- healthcare applications
+	- ML for consumers is different from ML for enterprise
+		- enterprise tends to have stricter accuracy requirements, but more lenient about latency. users may be OK with losing 1% accuracy, but lose interest if they have to wait an extra few seconds.
+	- ML in production has very different needs than research:
+		- production teams have many stakeholders and requirements, that differ from case to case. might involve engineers, sales folks, product folks, platform folks, managers... all with different desires. business priorities matter, cost matters
+			- in research, tends to be about achieving one clearly-defined SOTA result. may use techniques like [[ensembling]] that are uncommon in industry. may use complex and bespoke models that are challenging to apply in the field.
+		- production teams need to care about fast inference and low latency. training the model happens not that often, but inference is nonstop. so it's the bottleneck for success.  (references [[DDIA]] on latency, and suggests here we just care about response time, not the other stuff.)
+			- research tends to focus on fast training and higher throughput, for quicker modeling iteration and bigger datasets.
+			- latency is a distribution, not a single number! you should think in percentiles, and look for outliers.
+		- production teams deal with collecting their own data, noisy or missing data, lack of structure, unknown bias, missing labels... also, privacy and regulatory concerns. so a huge amount of effort is needed for good data.
+			- research tends to be on well-known benchmark datasets, with tidy data ready to use. often historical data. not much effort spent on data.
+		- fairness is critically important in production! massive algorithmic bias is out there in the world- see [[Weapons of Math Destruction]]. and when it is deployed at scale, it discriminates at scale.
+			- research teams often don't need to think about it, because it's just for research, not application
+			- > ML algorithms don't predict the future, but encode the past
+		- industry tends to care about [[interpretability]]. users need to be able to trust why the model made the decision it did. and it's also critical for debugging
+			- research usually doesn't care as long as performance goes up
+		- most jobs are in *productionizing* ML, not research!
+		- how does MLE differ from standard SWE?
+			- in SWE, code and data are and should be separate. in ML, your model is a mixture of data and code. improving your _data_ is often more valuable than improving your code!
+			- in SWE, you only test and version code. in ML, you also need to test and version data. and that is much harder than code!
+			- size is a challenge- cutting edge ML models are _massive_, which requires lots of resource investment in their infrastructure, and making 'em fast enough
+			- monitoring ML models is nontrivial! especially when interpretability is low!
+- **Chapter 2. Introduction to Machine Learning System Design**
+	- how to start a project? first, **focus on the business metrics!** ML engineers tend to focus on technical details like [[F1 scores]], inference [[latency]], etc, but that's not what earns the business money
+		- it can be hard to map ML models to their business impact! you may need custom metrics (e.g. Netflix's take rate- # of quality plays / # of recs seen). you may need a framework for A/B testing and other experimentation
+		- returns on investment can be great, but will not happen magically overnight. it will also depend a lot on the maturity of your ML adoption.
+	- 4 requirements for ML systems:
+		- **[[reliability]]** - "the system should continue to perform the correct function at the desired level of performance, even in the face of adversity (software or hardware faults, and even human error.)"
+		- **[[scalability]]** - your system can grow to meet your needs as you grow. it may grow in many different ways - model complexity, traffic volume, model count... your system should be able to scale to meet these needs reasonably. that may also include scaling _down_! this also requires [[artifact management]] for an increasing number of artifacts.
+		- **maintainability** - your ML workloads and infrastructure should be set up in a way that all stakeholders can interact with it in the ways they need to, with the tools they need: MLEs, devops folks, subject matter experts... Everything should be versioned and documented. And the system should be debuggable when problems occur.
+		- **adaptability** - it should be possible to find performance improvements in the system, and to update it without downtime. ML systems are part code and part data, and data can change quickly. so you need to be able to evolve quickly too.
+	- machine learning is iterative! you need to continually monitor and update the models you deploy.
+	- rundown of the [[machine learning project lifecycle]]
+	-

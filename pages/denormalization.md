@@ -1,0 +1,2 @@
+alias:: denormalized
+tags:: db
