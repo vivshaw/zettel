@@ -1,3 +1,77 @@
 tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing
 
--
+- **Introduction**
+  collapsed:: true
+	- the book is about a central contradiction, between business's role in destroying the natural environment, native cultures, and equality on the one hand, with its generative capacity to make food, employ people, cure disease, and other good things on the other. can business do the good stuff without losing our souls in the process?
+	- it's also about a climbing hippie stumbling his way into business success, despite his disdain for the establishment and money-making
+	- and it's also about the rise of Patagonia as a new kind of business- one that takes [[ESG]] responsibility seriously, doesn't chase unchecked growth, and flouts conventional business wisdom to do the right thing
+- **Ch. 1 - History**
+  collapsed:: true
+	- starts with a biography of Yvon
+	- he was the child of a Quebecois farmer, and dreamed of being a fur trapper growing up
+	- family moved to California for health reasons
+	- Yvon was an outcast at school due to language and cultural differences, so spent his time off by himself in nature, often fishing
+	- > I learned at an early age that it's better to invent your own game; then you can always be a winner. I found my games in the ocean, creeks, and hillsides surrounding Los Angeles.
+	- got into falconry together with a gaggle of other weirdos, forming the Southern California Falconry Club, and helping to enact the first falconry regulations in CA
+	- both picked up a love of climbing while searching for falcon aeries, and had his first near-death experience almost falling off a cliff from a rope malfunction
+	- after school, went out to Yosemite with Sierra Club climbers, and picked up blacksmithing to make his own climbing gear, starting with climbing pitons and carabiners
+		- most gear was European, but Euro and American climbers had different philosophies:
+		- > We American climbers were brought up reading the transcendental writers like [[Emerson]], [[Thoreau]], and [[John Muir]]. You climb the mountains or visit the wilderness but leave no trace of having been there.
+	- lived off the land and the climbing equipment sales, while camping out illegally in national parks.
+		- > We took special pride in the fact that climbing rocks and icefalls had no economic value in society. We were rebels from the consumer culture.
+		- > It's not the goal of grand alpinism to face peril, but it is one of the tesets one must undergo to deserve the joy of rising for an instant above the state of crawling grubs.
+		  Lionel Terrary, *Conquistadors of the Useless*
+	- got called up for the draft in Korea, but shirked duties and spent time AWOL climbing with Korean buddies
+	- after the war, came straight back to Yosemite, summited the North American Wall on El Capitan, then started "hiring" his first "employees"
+	- kept a focus on great quality because "they were their own best customers", they were [[dogfooding]] their product, and might die if they didn't keep quality up!
+	- fun [[Antoine de Saint-Exupéry]] quote re: aviation
+		- > In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything left to take away, when a body has been stripped down to its nakedness.
+	- studying [[Zen]] led Yvon to prefer simplicity too, as did [[free solo]] climbing
+		- treated smithing with the seriousness and grace of Zen archery, mastering each movement until fluid and effortless. similar to [[Mastery (book)]]!
+	- everyone took turns going off on lengthy climbing trips, and paid themselves hourly for the time they spent minding the shop while not off climbing. the business was just a means to an end
+	- by 1970, was the US's leading supplier of climbing gear! but they started to become "environmental villains"- their pitons were damaging rock faces across America
+		- pivoted to [[clean climbing]]- introduced the Stopper and Hexcentric, which were nondamaging. even though this cannibalized their core market in pitons, they were able to launch a revolution in climbing culture and make it a success
+	- branches out into clothing as Yvon had personal desires for better climbing clothes, that caught on- like durable corduroy or canvas-duck pants custom-built for purpose, imported rugby shirts better than standard US men's shirts
+		- by 1974 opened first contract with a clothes supplier, which was a disaster- quality was terrible, shipments were late... turned out supply chain for clothing was a totally different problem from hard goods!
+	- brought on a new general manager in 1979, who made it her job to translate Yvon's visions into reality, and to start from square 1 and learn how to run it from scratch
+	- > If you want to understand the entrepreneur, study the juvenile delinquent. The delinquent is saying with his actions, "This sucks. I'm going to do my own thing."
+	- 80 percenter anecdote
+	- experimented with new fabrics to solve outdoor clothing needs- synthetic pile sweaters rather than natural layers, so they wouldn't soak and freeze (first made form material intended for toilet seat covers!), and synthetic long johns (made from polypropylene like marine rope or diaper linings).
+	- taught the base/insulator/shell layering concept which is so prevalent nowadays
+	- fabrics were developed collaboratively with Malden Mills, coming out of bankruptcy after fake fur coat market crashed. close involvement with a company with more capital and resources were critical to the new products! but shortcomings with the fabric led to significant investment in internal R&D capacity
+		- once again made a huge shift to polyester, cannibalizing their own bunting and polypropylene sales- but scoring a hit, and staying one step ahead of competition. had to trust in the power of the product- knowing what they wanted and having a vision of the next level.
+	- after a restructure and new office in 1984, brought in open-plan offices and at-work childcare. things that were weird at the time, but a matter of practicality for Patagonia, and nowadays have caught on
+		- some of the folks involved were later part of the federal push for parental leave
+	- Yvon became more concerned about environmental causes after seeing beloved destinations deteriorate. began putting Patagonia money toward restoration of the Ventura River- and it worked! so, pledged 1% of sales or 10% of pretax profits to enviro causes, ranging from river restoration to GMOs to automotive pollution
+		- also got involved in anti-globalization activism against [[NAFTA]] and [[GATT]]
+	- didn't just agitate for the environment externally, started reducing Patagonia's own environmental footprint, with adoption of recycled materials for magazines and clothes
+	- Yvon doesn't use computers!
+	- in the late 80s, pace of innovation slowed, and international expansion was a struggle. litigation also grew, with multiple lawsuits against Chouinard Equipment. this led to Chapter 11 bankruptcy, an employee buyout, and a rebrand as Black Diamond
+	- tried to up the tempo in the early 90s by splitting into 8 product lines, appointing product czars to lead 'em, and building and hiring out to support massive growth. it didn't land. the org structure was too complex, there wasn't enough training for new leaders, they didn't have the processes to work together toward the right goals
+	- in 91, it came to a head. growth was only 20%, rather than the 40% they planned for. the bottom fell out of the economy. their primary band had money problems and reduced credit. and they had to do a 20% layoff to survive. Yvon sees this as the darkest day in the company's history.
+	- put together a board of directors of trusted advisors, including environmentalists like [[Jerry Mander]]. adopted a new set of corporate values, recognizing that we're living in a world where survivability, quality of human life, and decline in the health of the natural world are paramount and that the economic and corporate values we lived by were hurting us. so instead, they needed to adopt an ecology of new values, in which profit was secondary, and unchecked growth an explicit non-goal.
+		- realized he was trying to create, in business, values he had learned as an individual sportsman. risk sports / can't "have it all" anecdote
+		- this finally led him to realize why he was in business. it was to create a new model of business that others could learn from, one that would let them be successful without killing the planet
+		- > Make the best product, cause no unnecessary harm, and use business to inspire and implement solutions to the environmental crisis.
+- **Ch. 2 - Philosophies**
+	- this chapter outlines the philosophies Patagonia follows, which are guidelines more than rules, and are communicated to everybody. they are only a rough map, but in the rapidly changing world of business, a rough map is the only kind that's useful!
+	- **product design**
+		- "make the best product" is key- Patagonia is a product-driven company, so they're nothing without high quality products. second-best isn't good enough!
+		- but what does it mean to be the best? is a Patagonia shirt better than a handwoven Italian haute couture shirt?
+			- it is, _for its purpose_! you can't pop that Italian shirt in the wash & dry, or wear it through dirty, rugged wilderness for 3 weeks, or take it up a strenuous rock climb. so that's the goal- make the _best in class_
+		- for quality to be an effective goal, _it has to be objective_, not just taste
+			- [[checklists]] are a good tool for this!
+		- Patagonia's quality standard:
+			- **is it functional?** the function should determine the design and materials. this is the _opposite_ of how much of the fashion industry works, where form is foremost. and the function must be something someone actually needs!
+			- **is it multifunctional?** why buy two pieces of gear when one will do the trick? this derives from the mountain climbing tradition of carrying as little as possible. it also ties in to environmental responsibility- every extra piece of gear is more emissions, more waste... so do as much as possible, so as little as possible is necssary.
+				- also references [[John Muir]]'s habit of taking only a tin cup, a loaf of bread, and an overcoat
+				- and [[Thoreau]]'s advice: "I say beware of all enterprises that require new clothes..."
+			- **is it durable?** the overall durability of a product is only as good as its weakest element. so the goal is a product whose parts a) last a long time, and b) wear out at about the same rate.
+				- this is the opposite of the electronics world's [[planned obsolescence]], or the disposability of fast fashion
+				- shades of the [[Vimes Boots Theory]], haha
+			- **is it repairable?** no matter how durable, clothing will eventually wear through. when it does, how easy is it to mend? can a zipper be repaired without taking apart the whole jacket? Patagonia offers repair services, and sources DIY repair guides, _and_ offers recycling for the un-repairable stuff.
+				- "repair is a radical act"
+				- shades of [[right to repair]]
+			- **does it fit our customer?** small/medium/large is not enough, people have different builds, and the type of person and thus build may even differ from activity to activity! fit should also be consistent so folks know what they're getting. and, functional clothes may be worn in layers- will they fit in that case?
+			- **is it as simple as possible?** [[complexity]] often means that the functional needs weren't solved!
+				- from Dieter Rams, "good design is as little design as possible"

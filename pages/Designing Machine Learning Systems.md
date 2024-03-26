@@ -77,7 +77,7 @@ tags:: books, machine learning, MLOps, system design, [[Chip Huyen]], data scien
 			- size is a challenge- cutting edge ML models are _massive_, which requires lots of resource investment in their infrastructure, and making 'em fast enough
 			- monitoring ML models is nontrivial! especially when interpretability is low!
 - **Chapter 2. Introduction to Machine Learning System Design**
-	- how to start a project? first, **focus on the business metrics!** ML engineers tend to focus on technical details like [[F1 scores]], inference [[latency]], etc, but that's not what earns the business money
+	- how to start a project? first, **focus on the business metrics!** ML engineers tend to focus on technical details like [[F1 score]]s, inference [[latency]], etc, but that's not what earns the business money
 		- it can be hard to map ML models to their business impact! you may need custom metrics (e.g. Netflix's take rate- # of quality plays / # of recs seen). you may need a framework for A/B testing and other experimentation
 		- returns on investment can be great, but will not happen magically overnight. it will also depend a lot on the maturity of your ML adoption.
 	- 4 requirements for ML systems:

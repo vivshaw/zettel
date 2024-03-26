@@ -1,0 +1,2 @@
+- a box plot of the actual positive and negative labels, versus your model's positive and negative predictions. this allows you to distinguish false negatives and false positives
+- you can use this to calculate [[accuracy]], [[precision]], and [[recall]]

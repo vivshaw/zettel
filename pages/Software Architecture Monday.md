@@ -53,6 +53,7 @@ tags:: software engineering, software architecture, Mark Richards
 			- in fact, can we really be effective at setting up the devops env _before_ we know what type of services will be in it? we'd just be building with test services, "hello world", etc
 			- working in parallel gets us real live services to base the devop envs around and test it with
 - **Lesson 6 - Classifying Architecture Patterns (posted Feb 26, 2018)** #[[software architecture]]
+  collapsed:: true
 	- monoliths, service-based, microservice, piepline, space-based, layered, microkernel, event-driven... how do we classify all these architecture patterns we have?
 	- one attempt: component-based vs service-based?
 	- better: monolithic vs. distributed
@@ -61,3 +62,10 @@ tags:: software engineering, software architecture, Mark Richards
 		- in a distributed world, security needs to be baked in. what might be "just a function" call in a Monolith, might need [[authn]] and [[authz]] in a microservice app!
 		- in a distributed world, logging becomes more complex
 		- in a distributed world, we need to think about transactionality
+- **Lesson 7 - Structural Decay** #[[software architecture]]
+	- an architect needs to monitor and examine the application architecture for architecture vitality
+	- part of this is looking for **structural decay**. by analogy to [[architecture]], think of a cracking bridge pylon
+	- the thing we're analyzing isn't _really_ the source code- it's the structure holding up the code and infra. the patterns and "-ilities" ([[scalability]], [[reliability]], [[observability]]...), the architecture decisions and design principles...
+- **Lesson 8 - Components** #[[software architecture]]
+	- components are the architect-defined building blocks of an application, which are in turn implemented in code by engineers (as classes, functions, services, etc.)
+		-

@@ -29,7 +29,7 @@ tags:: books, devops, software engineering
 	- we should use evidence to guide our efforts!
 		- technology age, whether ops or dev team deploy, and whether a change approval board exists are all often cited as making a difference, but empirically they don't!
 		- this book finds 24 empirically-supported capabilities to build. that's what the rest of the book is about!
-- **Ch. 2: Measuring Performance**
+- **Ch. 2: Measuring Performance** #metrics
   collapsed:: true
 	- flaws in previous attempt to measure performance:
 		- they focus on *outputs* (e.g., LOC, PR count, story points) rather than *outcomes*. but outputs prioritize busywork!
@@ -50,7 +50,7 @@ tags:: books, devops, software engineering
 		- also overperformed on non-financial measures like quantity targets, customer satisfaction, etc
 	- this has impacts on outsourcing/build-vs-buy decisions. it's a bad call to outsource business-critical software- you need to be bringing delivery capabilities into your org's core priorities. conversely, it's a bad call to in-house non-strategic software like payroll.
 	- critical caveat: these measures need to be considered in tandem with company culture. toxic cultures lead to the use of measurements as a tool of control, and in turn reaction against that leads to bad measurements. so, you need to develop a healthy eng culture first!
-- **Ch. 3: Measuring and Changing Culture**
+- **Ch. 3: Measuring and Changing Culture** #culture
   collapsed:: true
 	- "culture is king" - but how do we _measure_ something as squishy and abstract as culture?
 	- org culture exists at three levels:
@@ -79,6 +79,7 @@ tags:: books, devops, software engineering
 		- hypothesis: implementing a particular set of practices (agile/lean management, and continuous delivery) impacts culture
 		- in fact, they do! survey found that both sets of practices impact culture
 - **Ch. 4: Technical Practices**
+  collapsed:: true
 	- starts with the birth of [[agile]], [[extreme programming]], and [[continuous integration]]/[[continuous delivery]]
 	- many organizations treat the _technical_ practices of Agile as less important than the organizational and social practices. this research suggests they're actually quite important.
 	- continuous delivery exists to get features to users **safely**, **quickly**, and **sustainably**
@@ -112,7 +113,8 @@ tags:: books, devops, software engineering
 		- **test data management** - you should have adequate data to run a full test suite of your product's features
 		- **trunk-based development** - don't use long-lived feature branches! merge into trunk continuously. don't use code freezes or stabilization periods either.
 		- **information security** - integrate your infosec practices into your software delivery
-- **Ch. 5: Architecture**
+- **Ch. 5: Architecture** #[[software architecture]]
+  collapsed:: true
 	- [[software architecture]] can be a barrier to good delivery. plus, can agile practices work in a mainframe world, hardware world, or massive enterprise?
 	- looked at many types of system:
 		- **greenfield**: new, unreleased systems
@@ -156,3 +158,35 @@ tags:: books, devops, software engineering
 	- **"architects should focus on engineers and outcomes, not tools or technologies"**
 		- what tools you pick is irrelevant if folks hate using them, or if they don't lead to the outcomes you care about!
 		- people building the platform need to collaborate closely with users of the platform to get this right.
+- **Ch. 6: Infosec** #security
+	- infosec teams tend to be a) understaffed, and b) only involved at the end of the software lifecycle. so despite the importance of security, it gets treated as an afterthought!
+	- many non-security engineers don't know stuff like the [[OWASP Top 10]]
+	- book recommends [[shifting left]] on security- integrating it into the dev cycle earlier, as part of the delivery process. what does that mean?
+		- security reviews for all major features, performed in a way that doesn't slow down the dev process
+		- infosec integrated into the whole lifecycle, from dev through ops
+		- it is easy for devs to do the right thing for security- good automated tools in place, packages available for security needs, processes that help you fall into the pit of success
+	- overall, this is a shift from "having security teams do reviews" to "having security teams give devs the means to build in security". this has a few benefits:
+		- it's easier for security teams to make sure that folks are doing the right things in-process than to inspect complete, fully-built systems.
+		- security teams don't have the capacity to review as frequently as we wish to deploy, so this reduces the bottleneck.
+	- devops high performers from the survey spent ~50% less time on security issue remediation
+	- names for this approach:
+		- [[DevSecOps]]
+		- [[Rugged DevOps]]
+	- to make it work, everyone needs to be held responsible for security
+- **Ch. 7: Management** #[[engineering management]]
+	- originally, the [[project management]] and [[program management]] approaches of folks like [[PMI]] and [[PRINCE]] were king
+	- later, [[agile]] gained traction
+	- at the same time, [[lean manufacturing]] ideas started getting applied to software engineering- see Poppendieck & Poppendieck's [[Lean Software Development]]
+	- principles of Lean, as addressed by this survey:
+		- limit work-in-progress
+		- "visual management" - create visual displays showing the core productivity and quality metrics #dashboard
+			- e.g., [[kanban]]
+		- "feedback from production" - use data from performance and infrastructure monitoring tools to make business decisions
+		- lightweight change approvals
+	- *only* when these tools are combined do we see a significant positive effect on software delivery performance. just limiting WIP won't cut it!
+		- these tools _also_ lead to more generative culture, and decrease burnout!
+	- approval by an external body _actively worsens_ stability! so not only does it slow you down, it defeats its own purpose!
+	- the book's recommendation is a peer-review-based change approval, like [[pair programming]] or within-team [[code review]]
+		- this should be combined with a [[continuous integration]] pipeline to catch bad changes, so that not everything has to be manual
+		- this should be used not just for code, but infrastructure and database changes!
+	-

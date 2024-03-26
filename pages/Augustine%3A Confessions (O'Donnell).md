@@ -4,7 +4,7 @@ tags:: St. Augustine, theology, philosophy, books, The Confessions
   collapsed:: true
 	- *anxiety* is a central theme of the Confessions, to the extend it changes the writing structure
 	- > Augustine believes that human beings are opaque to themselves no less than to others. We are not who we think we are. One of the things Augustine had to confess was that he was and had been himself sharply different from who he thought he was. Not only was this true of his wastrel youth (to hear him tell it), but it remained true at the time of confessing - he did not know to what temptation he might next submit
-		- this is an interesting prefiguration of a favored hobby-horse of mine, [[skepticism about introspection]]- which I learned from [[Scwitzgebel]] and took to be a far more recent development!
+		- this is an interesting prefiguration of a favored hobby-horse of mine, [[skepticism about introspection]]- which I learned from [[Schwitzgebel]] and took to be a far more recent development!
 	- standard readings of the Confessions don't do him justice. we ignore what doesn't make sense to us. or, we try to make Augustine our contemporary. or we propose an "essentially Gnostic reading", where some hidden key makes it all make sense- i.e. the hidden [[Neo-Platonic]] core of A.'s thought
 		- it's equally wrongheaded to treat the work as perfect!
 	- we have a faulty view of Christianity that hinders our understanding

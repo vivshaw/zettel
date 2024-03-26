@@ -1,7 +1,7 @@
 tags:: ml, mlops
 
-- techniques you may use:
-	- a monitoring dash, to visually track a bunch of metrics you might care about:
+- via [[Andrew Ng]], techniques you may use:
+	- a monitoring [[dashboard]], to visually track a bunch of metrics you might care about:
 		- software metrics: memory, compute, latency, throughput, load
 		- input metrics: characteristics of the input values, to ensure the distribution hasn't changed
 		- output metrics: how often do you get no result? how do users interact with it? determine whether the outputs are still accurate
