@@ -13,3 +13,5 @@ tags:: books, personal
 - Ellul
 - Edith Stein
 - Agamben's *The Highest Poverty*
+- E.F. Schumacher's *A Guide for the Perplexed*
+- Jason Josephson Storm's *Metamodernism*

@@ -159,6 +159,7 @@ tags:: books, devops, software engineering
 		- what tools you pick is irrelevant if folks hate using them, or if they don't lead to the outcomes you care about!
 		- people building the platform need to collaborate closely with users of the platform to get this right.
 - **Ch. 6: Infosec** #security
+  collapsed:: true
 	- infosec teams tend to be a) understaffed, and b) only involved at the end of the software lifecycle. so despite the importance of security, it gets treated as an afterthought!
 	- many non-security engineers don't know stuff like the [[OWASP Top 10]]
 	- book recommends [[shifting left]] on security- integrating it into the dev cycle earlier, as part of the delivery process. what does that mean?
@@ -174,6 +175,7 @@ tags:: books, devops, software engineering
 		- [[Rugged DevOps]]
 	- to make it work, everyone needs to be held responsible for security
 - **Ch. 7: Management** #[[engineering management]]
+  collapsed:: true
 	- originally, the [[project management]] and [[program management]] approaches of folks like [[PMI]] and [[PRINCE]] were king
 	- later, [[agile]] gained traction
 	- at the same time, [[lean manufacturing]] ideas started getting applied to software engineering- see Poppendieck & Poppendieck's [[Lean Software Development]]
@@ -190,3 +192,54 @@ tags:: books, devops, software engineering
 		- this should be combined with a [[continuous integration]] pipeline to catch bad changes, so that not everything has to be manual
 		- this should be used not just for code, but infrastructure and database changes!
 	-
+- **Ch. 8: Product Development** #product
+	- [[agile]] "won", but a lot of it is fake Agile- organizations borrowing Agile rituals and trapping while continuing to follow a waterfall model and ignoring user research
+	- in contrast, [[lean]] product dev involves centering user research from the beginning
+	- four capabilities of an org practicing lean product dev:
+		- slicing up products and features into small batches, that can be completed in less than a week, and released frequently
+		- understanding of and visibility into the flow of work top-to-bottom, all the way out to the customer
+		- actively and regularly seeking customer feedback, and incorporating it into the design of the product
+		- teams having the authority to create and change specs as part of the dev cycle without requiring outside approval
+	- these factors predict software delivery performance, generative culture, and low burnout, and software delivery performance in turn predicts Lean practices. a virtuous cycle!
+	- these factors are also interrelated:
+		- collecting customer feedback can only be effective if teams have the authority to act on it
+		- delivering in small batches is crucial for taking an experimental, feedback-driven approach to product dev
+- **Ch. 9: Making Work Sustainable** #burnout
+	- we'd like to make sure that software delivery performance doesn't come at the cost of human misery. so let's look at burnout and deployment pain.
+	- where we see the worst deployment pain, is also where we see the worst delivery performance, org performance, and culture/ that is to say, the practices that give us speed and stability when delivering, also reduce deployment stress.
+	- if deployments have to happen outside business hours, that's a bad sign!
+	- what makes deployments miserable?
+		- software not designed with deployment in mind. brittle config and poor errors when it fails. (these are also qualities that make it worse for [[distributed systems]]!)
+		- need for manual intervention in production in the deploy process, which can lead to typo errors and [[configuration drift]]
+		- deployments requiring multiple handoffs between teams, e.g., when devs, DBAs, infosec specialists, and testers work on separate siloed teams
+	- so instead, we should:
+		- build systems that can be deployed easily, are robust against failures in their environments, and can have components updated independently
+		- ensure the state can be reproduced deterministically and automatically via [[IaC]] and [[CaC]]
+		- make the deploy process as simple as possible for the deployer
+	- **burnout** is "physical, mental, or emotional exhaustion caused by overwork or stress". it often manifests as a feeling of helplessness, or loss of interest. it's correlated with wasteful make-work and pathological cultures.
+	- stressful jobs can be as bad for your health as secondhand smoke! it wrecks individuals' lives, as well as teams and organizations
+	- managers often try to fix the _person_ and ignore the _work environment_. this cannot work.
+	- instead, we should:
+		- foster respectful, supportive environments that treat failure as a learning opportunity rather than an opportunity for blame
+		- communicate a strong sense of purpose
+		- invest in employee development
+		- actually _ask_ employees what's stopping them from achieving their goals, then fixing those things
+		- give employees time, space, and resources to experiment and learn
+		- give employees the authority to make real decisions about their work
+	- common causes of burnout:
+		- work overload
+		- lack of control
+		- insufficient reward
+		- breakdown of community
+		- absence of fairness
+		- value conflicts
+	- the book's research found that good technical practices and lean practices were correlated with less burnout.
+	- from the research, the best factors to nail in order to stop burnout, in order:
+		- work culture
+		- deployment pain
+		- effectiveness of leaders
+		- organizational investments in DevOps
+		- organizational performance
+	- invest in skills and learning! if you don't, you will fail to adopt good practices, and you'll burn people out.
+	- support experimentation, failure, and learning! not just that- give engineers time to do experimental, creative work during the work week! if they have to stick around after hours to try new things, they will either not do it, or they'll burn out. examples like Google's 20% time support this
+	- behind all this, it's important for the org's values to be aligned with its people. that is to say, the real, de facto, lived values of the org. not the nice words it puts in its values statement. alignment leads to thriving, mismatch leads to burnout.

@@ -1,5 +1,7 @@
 tags:: project management
+alias:: Project Management Body of Knowledge
 
+- the [[PMI]]'s standard body of knowledge for project management
 - breaking down the PMBOK:
 	- **5 process groups**- "what you do"
 	- **10 knowledge areas**- "what you know"

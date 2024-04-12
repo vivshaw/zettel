@@ -55,7 +55,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing
 		- > Make the best product, cause no unnecessary harm, and use business to inspire and implement solutions to the environmental crisis.
 - **Ch. 2 - Philosophies**
 	- this chapter outlines the philosophies Patagonia follows, which are guidelines more than rules, and are communicated to everybody. they are only a rough map, but in the rapidly changing world of business, a rough map is the only kind that's useful!
-	- **product design**
+	- ## product design philosophy
 		- "make the best product" is key- Patagonia is a product-driven company, so they're nothing without high quality products. second-best isn't good enough!
 		- but what does it mean to be the best? is a Patagonia shirt better than a handwoven Italian haute couture shirt?
 			- it is, _for its purpose_! you can't pop that Italian shirt in the wash & dry, or wear it through dirty, rugged wilderness for 3 weeks, or take it up a strenuous rock climb. so that's the goal- make the _best in class_
@@ -75,3 +75,29 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing
 			- **does it fit our customer?** small/medium/large is not enough, people have different builds, and the type of person and thus build may even differ from activity to activity! fit should also be consistent so folks know what they're getting. and, functional clothes may be worn in layers- will they fit in that case?
 			- **is it as simple as possible?** [[complexity]] often means that the functional needs weren't solved!
 				- from Dieter Rams, "good design is as little design as possible"
+			- **is the product line simple?** too many choices lead to choice paralysis, especially when it's important to make an intelligent decision.
+				- from the Dalai Lama, too much choice brings unhappiness
+				- each new Patagonia product requires, on average, hiring 2.5 new employees
+			- **is it an innovation or an invention?** it's easier to succeed by having a product so unique and excellent that it has no competition, than to compete on fundamentals like price, distribution, and promotion
+				- inventions are hard! most successful inventors only have a few marketable inventions in a lifetime. so, focus on innovations.
+				- it's [[remix]] culture! treat the original as inspiration, but do your own thing with it. or like [[fusion cuisine]]!
+			- **is it a global design?** think of not just an American business operating globally, but a business that tailors its products specifically to local markets around the globe.
+			- **is it easy to care for and clean?** cleaning turns out to be one of the biggest environmental villains in the lcothing industry, causing up to 4x as much harm as the manufacture process! plus, finicky cleaning is a chore.
+			- **does it have added value?** only 10% to 15% of American household budgets go towards raw essentials. the rest is upgrades. so, is your product a real upgrade?
+				- great customer service is part of this
+			- **is it authentic?** the product needs to deliver exactly what consumers need out of that type of product. rugby shirts should actually be suitable for rugby.
+			- **is it beautiful?** #fashion
+				- products should look good! but- chase art, not fashion.
+				- > Fashion is happening only now, and art is timeless. In fact, fashion is always passé because it is a response to an event in the past. It may recycle someday, but it will certainly be dead tomorrow.
+				- > When I'm working on a problem, I never think about beauty. I think only about how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.
+				  — [[Buckminster Fuller]]
+			- **are we just chasing fashon?** Patagonia is too slow to get in on trends. product dev lifecycle is generally 18 months, fabrics are not off-the-shelf and existing prints are not used. trying to chase fashion just makes Patagonia less effective, so why try?
+			- **are we designing for our core customer?** not all customers are equal! Patagonia's core customers are the pros out in the field, who define the state of the art. these people often have trouble even affording the clothing- thus the Pro Purchase Program to get preferred rates. benefits to other customers are a side gig.
+			- **does it cause any unnecessary harm?** the way to do the least harm, is to know exactly what you are doing, every step of the way. otherwise, you will slip into doing business just like everybody else.
+				- **use organic cotton.** cotton farming uses highly toxic pesticides, and leaves the earth barren for years. switching to organic cotton was a huge undertaking that involved going directly to the few farmers that did it and the mills to convince them to process it. but it worked.
+					- this involved a transitional phase, of cotton made with organic practices, but not yet certified
+					- it also involved phases of clothing being made with organic fabric, but synthetic dyes and treatment. moving those to be organic took even longer!
+				- **use other fibers according to harm.** cotton requires more resources than linen or hemp. you'd think wool would be less harmful, but just meeting the output of one Orlon mill would require devoting much of the eastern US to sheep agriculture! so, use synthetic fibers, but ones that are recyclable. and when using wool, try to limit the harms of grazing in fragile environs.
+				- **dyes and synthetics.** doesn't make much sense to take all the toxicity and damage out of the production process, only to put it back in. this required a level of care in choosing dyes that most businesses would not consider, as well as phasing out popular materials like PVC, and inventing new materials like a neoprene substitute.
+	- ## production philosophy
+		-
