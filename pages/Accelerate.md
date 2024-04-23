@@ -193,6 +193,7 @@ tags:: books, devops, software engineering
 		- this should be used not just for code, but infrastructure and database changes!
 	-
 - **Ch. 8: Product Development** #product
+  collapsed:: true
 	- [[agile]] "won", but a lot of it is fake Agile- organizations borrowing Agile rituals and trapping while continuing to follow a waterfall model and ignoring user research
 	- in contrast, [[lean]] product dev involves centering user research from the beginning
 	- four capabilities of an org practicing lean product dev:
@@ -243,3 +244,17 @@ tags:: books, devops, software engineering
 	- invest in skills and learning! if you don't, you will fail to adopt good practices, and you'll burn people out.
 	- support experimentation, failure, and learning! not just that- give engineers time to do experimental, creative work during the work week! if they have to stick around after hours to try new things, they will either not do it, or they'll burn out. examples like Google's 20% time support this
 	- behind all this, it's important for the org's values to be aligned with its people. that is to say, the real, de facto, lived values of the org. not the nice words it puts in its values statement. alignment leads to thriving, mismatch leads to burnout.
+- **Ch. 10: Employee Satisfaction, Identity, and Engagement**
+	- the book's research suggests that engagement and satisfaction help drive good organizational outcomes.
+	- Net Promoter Score ([[NPS]]) is used as a measure of employee loyalty, both at the orga nd the team level. they find that high-performing orgs have a 2.2x higher NPS on average.
+	- empirical studies have shown that more engaged companies have better revenue growth and higher stock value.
+	- NPS was significantly correlated with:
+		- the extent to which customer feedback is used
+		- the ability to visualize the flow of features through dev all the way out to the customer
+		- the extent to which employees identify with their organization's values and goals
+	- > [W]hen employees see the connection between the work they do and tits positive impact on customers, they identify more strongly with the company's purpose, which leads to better software delivery and organizational performance.
+	- tried to use a series of Likert scales to measure to what extent employees identified with the organization- found that it predicted generative, performance-oriented culture. also that it conflicted with the top-down workflow and planning processes of many orgs!
+	- they found that continuous delivery and Lean practices both positively impacted job satisfaction, which in turn positively impacted organizational performance
+		- it makes sense that adopting a DevOps approach helps with job satisfaction. humans are bad at and dislike repetitive schleps. so, give those tasks to machines, so we can focus on what we're good at and enjoy!
+	- empirical research found that diversity matters too. teams with more diversity tended to have better team performance and better business outcomes.
+		- their survey found a much _lower_ rate of women respondents than expected!

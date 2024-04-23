@@ -3,7 +3,6 @@
 - I think about many topics, ranging from [[software engineering]] to [[philosophy]], [[heavy metal]] to [[management]].
 - not sure where to start?
 	- you could check out [:a {:href "#/all-journals"} "my journal"], which I use as a combination journal/linkdump/fun fact stash.
-	- you could check out what I think is [[sick]] and [[jacked]]
 	- you could check out what [[books]] I'm thinking about lately, or what [[music]] I have on the brain
 	- you could start with stuff I'm currently studying:
 		- [[engineering management]], which is my job

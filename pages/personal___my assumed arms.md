@@ -12,3 +12,4 @@ tags:: heraldry
 - idea 2- "*Per chevron Or and Vert, a wolf sejant Or, 2 oak trees Vert*"
 - motto:
 	- *"Loquere, ut te videre"* - "Speak, that I may see you"
+- idea 3- "*Per fess wavy Or and Vert, in chief 3 trees Vert, in base a book Or.*"

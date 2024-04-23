@@ -1,4 +1,4 @@
-tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing
+tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing, product
 
 - **Introduction**
   collapsed:: true
@@ -100,4 +100,124 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing
 				- **use other fibers according to harm.** cotton requires more resources than linen or hemp. you'd think wool would be less harmful, but just meeting the output of one Orlon mill would require devoting much of the eastern US to sheep agriculture! so, use synthetic fibers, but ones that are recyclable. and when using wool, try to limit the harms of grazing in fragile environs.
 				- **dyes and synthetics.** doesn't make much sense to take all the toxicity and damage out of the production process, only to put it back in. this required a level of care in choosing dyes that most businesses would not consider, as well as phasing out popular materials like PVC, and inventing new materials like a neoprene substitute.
 	- ## production philosophy
+		- starts with the example of hand-knit sweaters for Irish fishermen. Patagonia can create a lot _more_ sweaters than a hand knitter. but at maintaining quality, Patagonia has a _disadvantage_! she has a single set of eyes and hands, and she knows her level of skill. Patagonia has a large number of industrial facilities and many employees and suppliers.
+		- the challenge, then, is how to re-create that devotion to quality that a hand-craftsman has, on the industrial scale. #quality #craftsmanship
+		- some principles, then, to keep in mind:
+			- **business is a race.** being first matters. chasing trends won't get you there. inventing or discovering new things is just about the strongest advantage you can have.
+				- but it's hard to maintain a sense of urgency within a business. even moreso with outside suppliers!
+				- > The entrepreneurial way is to immediately take a forward step and if that feels good, take another, if not, step back. Learn be doing, it is a faster process.
+			- **involve the designer with the producer.** building things proceeds more smoothly when the folks designing it collaborate with the folks building it. otherwise, you'll submit impossible designs and trip over avoidable problems in practice.
+				- concurrent, not asssembly-line production
+				- this doesn't just mean up-front collab- it's ongoing! will everyone in the process follow through according to plan, or will they deviate?
+			- **develop long-term relationships with suppliers and contractors.** Patagonia, rather than working with many suppliers and chasing the lowest cost, develops deep relationships with a small number of supplier that they know can meet the quality bar. the supply chain needs to be a "functioning, interconnected system".
+				- this has a risk! it ties your success to those suppliers! hopefully, the result is one of mutually linked success, not of being dragged down
+				- Patagonia also puts a lot of effort into vetting suppliers, and into how Patagonia contacts rep the Patagonia philosophy and image to them
+				- nowadays, this has expanded into helping train the suppliers to meet Patagonia's bar. you can't always expect everyone to already meet your standards.
+			- **weigh quality first, against on-time delivery and low cost.** ideally, you need to be pursuing all three goals as complementary. but when push comes to shove, sometimes you have to put one first. if your goal is to create the best possible product, quality needs to be the one you put first. (but you still can't give up on the others!) #quality
+			- **go for it, but do your homework.** success is not just about taking risks- it's about taking the right risks, in an informed way. do your research, and test your ideas.
+				- there are many types of test- quick-and-dirty test of a new idea, "living with the product", testing prod samples, test marketing...
+				- > Like the Zen approach to archery or anything else, you identify the goal and then forget about it and concentrate on the process.
+			- **measure twice, cut once.** if a customer discovers a mistake, you lose their trust. better to discover it in QC. even _better_ to discover it on the production line. or even in advance!
+				- I think this ties into [[shifting left]], and/or to [[lean manufacturing]]!
+			- **fair trade certification.** [[Fair Trade]] certified items have a community development premium added, that goes to the worker coops that produced the product. by participating in this Patagonia reinvests in the folks that they rely on.
+			- **borrow ideas from other disciplines.** the world is constantly changing, and you need to be practicing [[continuous improvement]] to keep up. borrow ideas from anywhere, even places that seem quite different!
+				- the drive for quality also doesn't end at the product- it has to extend into building quality into the ways we work, how we organize ourselves, how we learn...
+	- ## distribution philosophy
+		- a company that is not diversified in its product and operations is as risky as a farm practicing monoculture! #ecology
+		- Patagonia pursues many channels- self-owned retail stores, wholesale, mail order, e-commerce... and does this across many countries. this provides balance- when one country's in a recession, others might not. when one channel's doing poorly, another might improve.
+		- each channel requires its own unique expertise! you can't just tack 'em on- you need to understand what makes that method of distribution tick.
+		- retail and wholesale allow folks to connect in-person and build community, in a way other channels can't. this is important to forming the next generation of sportsmen.
+		- channels in more detail:
+			- **mail order.** they've been in it since the 1950s!
+				- they treat the catalog as their "soapbox"- an opportunity to sell not jsut the product, but themselves & their philosophy. e.g., educating folks on layering systems, or environmental issues. the primary purpose is to communicate with the customer. that communication doesn't need to be in the form of purchasing goods.
+				- for this channel, it's especially important not to be out of stock. if someone just receives a catalog and the item they want is already gone, why would they order again?
+				- but you can't target 100% fulfillment rate. the amount of inventory you need to hold is nonlinear- e.g., you might need to double it just to get from 95% to 98%. so Patagonia targets 93-95%
+				- for mail-order, "on-time delivery" means "when the customer wants it"
+				- the model for customer services is the old-school hardware store owner, who spends time with each customer to find the specific widget for the job, no matter how long it takes.
+				- regaining trust is far more expensive than not losing it in the first place. but when you do lose it, you really should go that extra mile to regain it.
+				- break the rules that don't apply to you! Patagonia doesn't do square-inch analysis, focus groups, write vanity or greed focused copy...
+				- they've actually seen _decreases_ in sales when they gave more space to product!
+			- **ecommerce.** runs similarly to mail order, except that it can react much more quickly!
+				- can be a mass communication channel, or very targeted! e.g., email campaigns for jackets targeted specifically at places with cold forecasts.
+				- ecom is active, not passive! a customer can't just passively flip through it. you need to actively get 'em to click.
+				- ecom has now eclipsed mail order for Patagonia!
+			- **retail.**
+				- started out because in the 60s and 70s, the outdoor goods market was not that great for clothing! no dealers carried much Patagonia stuff, it was all mixed together and presented poorly, and hard goods were the real focus
+				- instead of buying expensive real estate in a prime location, bought an old auto garage and renovated it into a destination store. Patagonia continued with this approach, insisting on buildings that respected local culture and history, and that could last for another 100 years.
+				- opening stores in cities didn't cut into wholesaler sales! in fact, they went up.
+				- turning over inventory faster is more profitable than high margins!
+			- **wholesale.**
+				- requires a much smaller investment to get the product into customers' hands
+				- the way to get Patagonia's philosophy across, is to actually pursue close relationships with the wholesalers. this is much harder and more time-consuming than just dealin' with everybody and axing the contracts that don't work out. but it gets a better, less-risky result.w
+				- works to have 20-25% of the wholesaler's business and/or to be it's first or second largest partner. this aligns incentives- a dealer is likely to go along with someone that supplies 25% of their revenue.
+				- specialty outdoor stores tend to be a hodgepodge of stuff. they have a bit of everything, but it's hard to find any particular thing in depth. so the customer can't find what they actually need to go and do their outdoor activity! Patagonia wants to avoid this.
+				- Patagonia doesn't sell to department stores or massive sport chains. so, its wholesale dealers have shrunk since the 80s.
+		- interesting aside on entering the Japanese market- the traditional wisdom is, for a foreign company to enter Japan, they'll need local partners. this is because the system of distribution is very complex, involving networks of trading companies, banks, and jobbers. Patagonia _tried_ doing it that way, but it didn't work! so Patagonia ignored the usual guidance, and decided to enter as a wholly-owned operation, doing things California style. and it worked! Chouinard's suggestion is that companies traditionally fail _because_ they follow the received wisdom about Japan. what's wrong is _actually_ that their quality wasn't up to Japanese standards. #Japan #business
+		- another aside on environmental costs of transportation- a Patagonia shirt requires about 110,000 BTUs to manufacture. but shipping it across the US costs another 50,000 BTUs. almost 50% of the environmental cost in the shipping! that's hard to solve. Chouinard's suggestions for a healthier way of distributing: #environmentalism
+			- produce locally whenever possible.
+			- discourage airfreight specifically. the environmental costs are much higher than the small benefits of getting something early.
+			- the globalized economy simply isn't sustainable. there's no method that doesn't depend on burning huge amounts of fossil fuel.
+		- a digression on Patagonia's philosophy of architecure: #architecture #philosophy
+			- **don't build a new building unless it's absolute necessary.** choose a building that's already there. renovate if needed!
+			- **try to save old or historic buildings from being torn down.** remove fake "improvements" by former tenants, and restore buildings to be "a gift to the neighobrhood"
+			- **if you can't be retro, build quality.** "the esthetic life expectancy of the building should be as long as the physical material's life span"
+			- **use recycled, and recyclable, materials.**
+			- **anything that is built should be repairable and easily maintained.**
+			- **buildings should be constructed to last as long as possible.**
+			- **each store must be unique.**
+	- ## marketing philosophy
+		- we all spend our lives cultivating a public image, whether we realize or not. so do companies!
+		- that public image can sometimes be very different from who the company really is. Patagonia takes a different tack- just tell the customer who we really are. fiction is more difficult than nonfiction! it's harder to lie your way into customer trust than to go earn it and say so.
+		- things at the heart of Patagonia's image: hard-core outdoor authenticity, use by the folks that make it, wildness, environmentalism, humanity
+		- > Patagonia's image is a human voice. It expresses the joy of people who love the world, who are passionate about their beliefs, and who want to influence the future. It is not processed; it won't compromise its humanity. This means that it will offend, and it will inspire.
+		- how Patagonia tackles this:
+			- **telling the entire story.** Patagonia "makes products for a deeper, less distracted experience of the world and its wild places". so its image has to do the same!
+				- the catalog is the foundation, because it can tell a story, can command attention, encourages reading and focus... the rest of the advertising is built from the foundation the catalog establishes
+				- the catalog's primary goal is "to share and encourage a particular philosophy of life". product sales grow out of that, not vice versa.
+			- **photography.** "honesty is what we strive for in our marketing and photography".
+				- Patagonia doesn't use models- instead, uses real sportsmen in real situations, and otherwise photos of the clothes without people in 'em. the photos are customer-submitted and carefully chosen to pick what matches the philosophy.
+			- **copy.**
+				- two basic kinds of copy: personal stories that illustrate a value or promotes a cause, and descriptive copy to sell product. so, not just ad copy- stuff like the Clean Climbing essay, field reports, environmental causes.
+				- write as though you are the customer, and [[golden rule]] it!
+				- as sales have moved away from mail order and toward retail and ecom, new channels are needed for this copy. so Patagonia started a books imprint, started making films, and embraced social media.
+			- **promotion.** "Our promotional efforts begin with the product."
+				- it's easiest to promote products that are game-changers or best in class. if you have no competition, where else will folks go?
+				- 3 principles:
+					- inspire and educate, rather than promote
+					- prefer to earn credibility, rather than buy it
+					- advertise only as a last resort, and only in sport-focused magazines
+				- people most value advice from a trusted friend, after that, from a recognized expert.... only distant last an advertiser
+				- provide gear (and even money!) to top sportsmen. if they like what you provide, they'll become ambassadors and trusted experts, and advise you on how to make your product betters
+				- seek positive coverage through 3rd-party press. but do it by actually having things to say. accomplish things that matter, then sell the story.
+	- ## financial philosophy
+		- businesses are not ultimately responsible to their customers, shareholders, employees... they're responsible to their resource base. without a healthy environment, there _is_ no business
+		- Patagonia is product-driven. the product comes first. this is different than distribution companies... or worse, companies that exist just to be sold!
+		- Patagonia's mission statement, surprisingly, says nothing about turning a profit! in fact, they consider the _real_ bottom line to be the amount of good they have done.
+		- but... you still have to be profitable is you want to accomplish good, _as a business_. so Patagonia assumed the responsibility of leadership, trying to show corporate America by example how to be better.
+		- > It's okay to be eccentric, as long as you're rich; otherwise you're just crazy.
+		- customers expect quality now. you need to treat finance as just one factor among many important ones- product quality, corporate responsibility, sustainability...
+		- Patagonia is privately owned and does not plan to go public, it does not plan to expand outside its market, it does not want to be financially leveraged. it grows at a natural rate, even if that rate is slower
+		- > We never wanted to be a big company. We wanted to be the best company, and it's easier to try to be the best small company than the best big company.
+		- Patagonia is a [[B Corp]], and a member of [[B Lab]]- working to promote new forms of business which are less destructive. this also bakes in Patagonia's values to its charter- were it ever to be sold, these values would need to be kept without a 100% vote to change them.
+	- ## human resource philosophy
+		- > A master in the art of living draws no sharp distinction between his work and his play; his labor and his leisure; his mind and his body; his education and his recreation. He hardly knows which is which He simply pursues his vision of excellence through whatever he is doing, and leaves others to determine whether he is working or playing. To himself, he always appears to be doing both.
+		  — L.P. Jacks
+		- Patagonia has no dividing line between those that make the products and those that use them. the interest of the customer should be the same as that of the employee.
+		- Patagonia should feel like home for people who feel a bit alienated, as early climber culture did, and who want to change the world. environmentalism, [[opposition to unnecessary heirarchy]], [[anti-consumerism]], and opposition to a passive approach to life. these values are familiar there.
+			- **culture.** to maintain a culture, you need to hire the right people, treat them right, and train them to treat other people right. otherwise the culture you built will vanish out from under you!
+				- Patagonia wants ensembles players, not folks who seek the limelight
+				- Patagonia also seeks users of their core products
+				- in the US, 50% of upper management are women
+				- as much as possible, they hire from within
+			- **benefits.** Patagonia values employees who lead rich, rounded lives. that requires benefits that support those lives.
+				- Patagonia has flexible hours- as long as the work gets done, without negatively impacting others. this is the "Let My People Go Surfing" flextime policy.
+				- health insurance is offered even to part-timers- if it was only for full-timers, they wouldn't be able to entice pro outdoorsmen to part-time.
+				- onsite child care is provided, because parents are more productive if they don't have to worry about their kids' safety. Patagonia's childcare is even bilingual! and parents are encouraged to take time out to say hi to their kids. and childcare is in fact a profit center, not a wasted expense- it would cost a lot more to replace all the highly-qualified parents, than it does to care for their children.
+				- onsite food is healthy and organic
+				- showers are provided, so folks can pursue sport on breaks
+	- ## management philosophy
+		- > It's not the strongest species that survives, nor the most intelligent, but the one most responsive to change.
+		  — Charles Darwin
+		- Patagonia doesn't want drones to order around- they want folks who will think for themselves.
+			- see also [[independent thinking obedience]]!
 		-

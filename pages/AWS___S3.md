@@ -21,3 +21,13 @@ tags:: aws, cloud, storage
 		- no complex structure! all objects are stored at the same level
 			- if you use names with `/`s, it will _look_ like a folder. but it ain't. this is often called a 'prefix'
 		- 100 bucket soft limit, 1000 bucket hard limit
+- security:
+	- private by default
+	- can add security policies to buckets, to determine who can access. this can add or deny access to ids from _different_ accounts! or even anonymous principals!
+	- can also add **ACLs**, but these are legadcy. they're super inflexible and you should use policies instead.
+	- you can use Block Public Access to override your ACLs and policies to stop public access. this is useful if you're worried about data leaks from misconfiguration.
+- access:
+	- is normally through AWS APIs
+	- *but*, you can set up static website hosting to access it through HTTP!
+		- you can set an Index and Error document
+		- ⚠️ if you want to set a custom domain in [[AWS/Route53]], the bucket name _needs_ to match that URL!
