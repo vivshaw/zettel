@@ -1,4 +1,4 @@
-tags:: philosophy, Hegel, idealism
+tags:: philosophy, Hegel, idealism, absolute idealism
 
 - [[Robert Brandom]]'s acclaimed graduate seminar on Hegel's [[Phenomenology of Spirit]] - now open courseware on YouTube!
 - ref:

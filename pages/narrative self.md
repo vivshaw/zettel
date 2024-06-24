@@ -8,7 +8,7 @@ tags:: philosophy, personal identity
 - this is a distinct axis of explanation from theories of personal identity like [[animalism]] or [[psychological continuity]]. these explain "what makes me me?" in the same sense as "what makes this billiard ball this billiard ball?"- it's distinct in spatiotemporal location and properties. but that doesn't say anything about how I came to be the person I am
 - Strawson thinks not all of us are narrativists- he divides us into **diachronics**, who do think of ourselves as beings that existed in the past and will exist into the future, and **episodics**, who do not.
 	- e.g., Meursault from Camus' "The Stranger", who sees no contradiction in attending a comdey the day after the death of his mother
-	- ref: [Against Narrativity](https://lchc.ucsd.edu/mca/Paper/against_narrativity.pdf)
+	- ref: [Against Narrativity](https://lchc.ucsd.edu/mca/Paper/against_narrativity.pdf) #papers
 - the Buddhist doctrine of [[anatta]] also rejects the narrative self
 - there's a sense in which the narrative self is a particularly Western and romantic one
 - ties into the [end of history illusion](https://www.ted.com/talks/dan_gilbert_the_psychology_of_your_future_self)- we think our lives are a story ending in us becoming the person we were meant to be, have now become, and always will be. but that's not true- we change drastically more than we think, throughout our lives!

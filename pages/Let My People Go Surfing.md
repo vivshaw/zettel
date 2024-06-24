@@ -56,6 +56,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 - **Ch. 2 - Philosophies**
 	- this chapter outlines the philosophies Patagonia follows, which are guidelines more than rules, and are communicated to everybody. they are only a rough map, but in the rapidly changing world of business, a rough map is the only kind that's useful!
 	- ## product design philosophy
+	  collapsed:: true
 		- "make the best product" is key- Patagonia is a product-driven company, so they're nothing without high quality products. second-best isn't good enough!
 		- but what does it mean to be the best? is a Patagonia shirt better than a handwoven Italian haute couture shirt?
 			- it is, _for its purpose_! you can't pop that Italian shirt in the wash & dry, or wear it through dirty, rugged wilderness for 3 weeks, or take it up a strenuous rock climb. so that's the goal- make the _best in class_
@@ -100,6 +101,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 				- **use other fibers according to harm.** cotton requires more resources than linen or hemp. you'd think wool would be less harmful, but just meeting the output of one Orlon mill would require devoting much of the eastern US to sheep agriculture! so, use synthetic fibers, but ones that are recyclable. and when using wool, try to limit the harms of grazing in fragile environs.
 				- **dyes and synthetics.** doesn't make much sense to take all the toxicity and damage out of the production process, only to put it back in. this required a level of care in choosing dyes that most businesses would not consider, as well as phasing out popular materials like PVC, and inventing new materials like a neoprene substitute.
 	- ## production philosophy
+	  collapsed:: true
 		- starts with the example of hand-knit sweaters for Irish fishermen. Patagonia can create a lot _more_ sweaters than a hand knitter. but at maintaining quality, Patagonia has a _disadvantage_! she has a single set of eyes and hands, and she knows her level of skill. Patagonia has a large number of industrial facilities and many employees and suppliers.
 		- the challenge, then, is how to re-create that devotion to quality that a hand-craftsman has, on the industrial scale. #quality #craftsmanship
 		- some principles, then, to keep in mind:
@@ -123,6 +125,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 			- **borrow ideas from other disciplines.** the world is constantly changing, and you need to be practicing [[continuous improvement]] to keep up. borrow ideas from anywhere, even places that seem quite different!
 				- the drive for quality also doesn't end at the product- it has to extend into building quality into the ways we work, how we organize ourselves, how we learn...
 	- ## distribution philosophy
+	  collapsed:: true
 		- a company that is not diversified in its product and operations is as risky as a farm practicing monoculture! #ecology
 		- Patagonia pursues many channels- self-owned retail stores, wholesale, mail order, e-commerce... and does this across many countries. this provides balance- when one country's in a recession, others might not. when one channel's doing poorly, another might improve.
 		- each channel requires its own unique expertise! you can't just tack 'em on- you need to understand what makes that method of distribution tick.
@@ -166,6 +169,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 			- **buildings should be constructed to last as long as possible.**
 			- **each store must be unique.**
 	- ## marketing philosophy
+	  collapsed:: true
 		- we all spend our lives cultivating a public image, whether we realize or not. so do companies!
 		- that public image can sometimes be very different from who the company really is. Patagonia takes a different tack- just tell the customer who we really are. fiction is more difficult than nonfiction! it's harder to lie your way into customer trust than to go earn it and say so.
 		- things at the heart of Patagonia's image: hard-core outdoor authenticity, use by the folks that make it, wildness, environmentalism, humanity
@@ -190,6 +194,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 				- provide gear (and even money!) to top sportsmen. if they like what you provide, they'll become ambassadors and trusted experts, and advise you on how to make your product betters
 				- seek positive coverage through 3rd-party press. but do it by actually having things to say. accomplish things that matter, then sell the story.
 	- ## financial philosophy
+	  collapsed:: true
 		- businesses are not ultimately responsible to their customers, shareholders, employees... they're responsible to their resource base. without a healthy environment, there _is_ no business
 		- Patagonia is product-driven. the product comes first. this is different than distribution companies... or worse, companies that exist just to be sold!
 		- Patagonia's mission statement, surprisingly, says nothing about turning a profit! in fact, they consider the _real_ bottom line to be the amount of good they have done.
@@ -200,6 +205,7 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 		- > We never wanted to be a big company. We wanted to be the best company, and it's easier to try to be the best small company than the best big company.
 		- Patagonia is a [[B Corp]], and a member of [[B Lab]]- working to promote new forms of business which are less destructive. this also bakes in Patagonia's values to its charter- were it ever to be sold, these values would need to be kept without a 100% vote to change them.
 	- ## human resource philosophy
+	  collapsed:: true
 		- > A master in the art of living draws no sharp distinction between his work and his play; his labor and his leisure; his mind and his body; his education and his recreation. He hardly knows which is which He simply pursues his vision of excellence through whatever he is doing, and leaves others to determine whether he is working or playing. To himself, he always appears to be doing both.
 		  — L.P. Jacks
 		- Patagonia has no dividing line between those that make the products and those that use them. the interest of the customer should be the same as that of the employee.
@@ -216,8 +222,80 @@ tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing,
 				- onsite food is healthy and organic
 				- showers are provided, so folks can pursue sport on breaks
 	- ## management philosophy
+	  collapsed:: true
 		- > It's not the strongest species that survives, nor the most intelligent, but the one most responsive to change.
 		  — Charles Darwin
 		- Patagonia doesn't want drones to order around- they want folks who will think for themselves.
 			- see also [[independent thinking obedience]]!
-		-
+		- *since* they don't want mindless drones, it follows that they have to either be convinced that what they're doing is right, or see for themselves that it is.
+		- rejects the idea of management by sitting behind a screen and telling people what to do. you need to get out with your people, and build consensus
+		- Patagonia doesn't have private offices, and is all open-plan
+		- > Systems in nature appear to us to be chaotic but in reality are very structured, just not in a top-down centralized way. Deborah Gordon, a professor at Stanford University who studies ant colonies, says that there is no specific ant in charge in a colony, no central control. Yet each ant knows what its job is, and ants communicate with one another by way of very simple interactions; altogether they produce a very effective social network.
+		- top-down systems of control take huge amounts of force to keep together, and eventually collapse
+		- it's important to know the difference between a manager and a leader. a manager is here to keep things cruising along as they currently are. a leader is here to take risks, have a long-term vision, and instigate change.
+		- leadership runs on trust, and trust should be built by example
+		- Yvon has found that, when senior leaders leave, there's little chaos- the work continues as though they were still there. they build a self-regulating system. #[[transition planning]]
+			- kinda like the Tao Te Ching- "With the greatest leader above them, people barely know one exists."
+		- keeping the company smallish helps keep it manageable. Yvon believes that ideally, no more than 100 people would work from one location.
+			- similar to how democracy works best in small societies, and many social issues and specialized roles don't appear until a society is big enough for people to no longer feel personal responsibility and direct impact.
+			- also references [[Creativity in Small Groups]], suggesting that groups of 4 to 7 are more successful at problem solving, because they're more egalitarian.
+		- Patagonia has always had a CEO, in addition to Yvon & Malinda's leadership. it's hard to find a CEO that's good at everything. but according to a study, one thing all good CEOs have in common is, they work with their hands. they have the problem-solving skills to tackle a problem with their own hands. that's directly proportional to the skills to solve problems and adapt in the workplace.
+		- the effective CEO doesn't immediately hire a consultant when a problem crops up. consultants don't know your business the way you do, and often come from failed businesses anyway.
+		- brings up the [[Five Whys]] and [[Toyota Production System]]
+		- layoffs should be avoided at all costs, only a last resort
+		- owners of a business who want it to be around in 100 years had better love change! the most important role of a manager is to instigate change. change is an opportunity to grow and evolve to a higher level.
+		- uses the analogy of climbing Everest. you can do it by yourself. or you can do it with the help of a team that does all the hard stuff for you, so you don't have to do any work. but that latter option misses the point of climbing Everest in the first place- the challenge that forces you to rise to it.
+			- similarly, just like risk sports force you to grow, a company should constantly stress itself in order to cause growth.
+			- > When there is no crisis, the wise leader or CEO will create one. Not by crying wolf but by challenging the employees with change.
+			- when times are good, it's important to move on, just as when times are bad! easy living leads to complacency, which will ruin you when a real crisis hits.
+			- quotes [[Teddy Roosevelt]]'s "In pleasant peace and security, how quickly the soul of a man begins to die". and [[Bob Dylan]]'s "He not busy being born is busy dying."
+	- ## environmental philosophy
+		- > Anyone who thinks you can have infinite growth on a finite planet is either a madman or an economist.
+		  —Kenneth Boulding
+		- Yvon is a pessimist about our treatment of the natural world, as are many environmentalists and natural scientists. we may be in the middle of another great extinction, of our own making.
+		- references E.O. WIlson's [[The Future of Life]], calling our time "nature's last stand"
+		- but despite being a pessimist, you gotta do something. if you don't, the impact is the same as the naive optimist who insists everything is fine.
+		- Yvon also believes that evil, generally speaking, is stronger than good- over time, things have generally tended to work more evil.
+		- but he takes a [[Buddhist]] view of it all. things change, and there's a beginning and end to everything. perhaps even the human species.
+		- the key to doing the right thing is to plan on the premise that we'll still be around in 100 years. if we did, our actions would probably look a lot less short-sighted.
+		- "sustainable" is a word so overused it's become meaningless, like "gourmet". there are only a few *truly* sustainable economic endeavors that Yvon thinks can be done at all, other than on the microscale. selective forestry, fishing, and large-scale agriculture.
+		- the [[Green Revolution]] in agriculture is completely nonsustainable. to feed the entire world the way Americans eat would use up the world's petroleum reserves in a few short years.
+		- talks about the struggle of starting his own garden, even just getting the soil to be nutritious enough to grow
+		- think of the inside of Patagonia like an ecosystem. it has a lot of interdependent parts in a dynamic equilibrium. messing with or eliminating one part would have unexpected consequences on the others. that's exactly what's happening in the environment!
+		- environmental damage is the result of a mismatch between short-term busines principles and long-term impact. neither businesses nor governments use [[full-cost accounting]] that takes environmental harms into account. we measure success by GDP, not by cleanliness of the environment.
+		- wilderness is perhaps the most radical idea of all- nature that exists for its own sake, and not for any human's. it's gone, increasingly. if you define wilderness as a place that's more than a day's walk from human habitation, there is no true wilderness left in America.
+		- elements of Patagonia's environmental philosophy:
+			- **lead an examined life**
+			  logseq.order-list-type:: number
+				- Yvon doesn't really believe that humans are evil, just ignorant. we're the only animal stupid enough to foul our own nest. we don't think about the negative consequences of what we do, and we have blind faith that things will turn out alright.
+				- so instead, we need to ask ourselves lots of hard questions.
+				- corporations exist to accrue profit, and limited liability allows their owners to economically, psychologically, and legally ignore the consequences they inflict. that's just how it works. to ignore this would be to ignore the whole history and practices of our culture, the incentives we have, everything.
+				- Patagonia started with just a concern about non-wasteful, high-quality gear, and leaving to trace when climbing. but the environmentalism grew. in 1991, Patagonia began looking for the environmental "land mines" in its own business practices and found many terrible ones!
+				- following the [[Five Whys]] is hard because asking follow-up questions might lead you to the real source of your problems and force you to change, or accept guilt. and there's endless money to be made in working on symptoms. so most of us don't address the cause.
+				- we need to admit that yes, _we_ caused this environmental mess, and so we should clean it up. each of us, as individuals.
+			- **clean up our own act**
+			  logseq.order-list-type:: number
+				- before we can encourage _others_ to act responsible, we have to do so *ourselves*. leading by example is the only option.
+				- you have to go deeper than buzzwords that look nice.
+					- just asking for "organic cotton" wasn't good enough for Patagonia to be confident it's environmentally-friendly- need to know where the water comes from that the farm uses!
+					- just offering "recycling" of polyester clothing didn't have high uptake- turned out, consumers were attached to their clothes, and what they really wanted was _repair_
+				- while being more environmentally conscious is costly upfront, it's often resulte din long-term savings. so doing the right thing often paid off too
+				- but the problems get harder the wider the scope is. it's hard enugh just inside the company. at the scale of society, it's brutal!
+					- while Patagonia tries to focus on reducing nonrenewable use until it can be fully substituted with renewables, governments focus on kicking the can and subsidizing pet industries, like lumber
+				- company sustainability efforts should include individual employees! Patagonia doesn't just tithe profits for the environment, it has a matching program to encourage employees to donate to their own favorite environmental groups too.
+					- they also subsidize public transit, walking, and biking via a Drive Less program
+					- and, they allow employees to bring in home recycling
+				- employees are encouraged to spend company time getting involved with Patagonia's environmental efforts. for example, the declaration of the Black Rock Desert in Nevada as wilderness was an employee project
+				- people want a better future for their children, but don't act on it. some of us rationalize the bad choices. other see 'em , but can't change 'em due to the insitutional factors that caused 'em, like the governments we choose. and it's easier to blame _others_, than it is to change *yourself*.
+					- in all these cases, folks end up thinking: "I'm not the problem, so I'm not the solution."
+				- brings up [[Silent Spring]] as the thing that shook him out of his [[dogmatic slumber]]
+			- **do our penance**
+			  logseq.order-list-type:: number
+				- part of responsibility is paying  for one's sins when they aren't avoidable.
+				- after the OPEN crisis, Japan and Europe taxes petroleum products, causing them to develop conservations measures. the US did not. that's part of why we're as bad with fossil fuels as we are today.
+			- **support civil democracy**
+			  logseq.order-list-type:: number
+			- **do good**
+			  logseq.order-list-type:: number
+			- **influence other companies**
+			  logseq.order-list-type:: number

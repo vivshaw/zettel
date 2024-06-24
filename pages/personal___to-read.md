@@ -15,3 +15,7 @@ tags:: books, personal
 - Agamben's *The Highest Poverty*
 - E.F. Schumacher's *A Guide for the Perplexed*
 - Jason Josephson Storm's *Metamodernism*
+- Dogen on [Uji](https://en.wikipedia.org/wiki/Uji_(Being-Time))
+- Shinshu Roberts - Being-Time
+- Wadensjo - *Interpreting As Interaction*
+- Gillian Rose

@@ -206,6 +206,7 @@ tags:: books, devops, software engineering
 		- collecting customer feedback can only be effective if teams have the authority to act on it
 		- delivering in small batches is crucial for taking an experimental, feedback-driven approach to product dev
 - **Ch. 9: Making Work Sustainable** #burnout
+  collapsed:: true
 	- we'd like to make sure that software delivery performance doesn't come at the cost of human misery. so let's look at burnout and deployment pain.
 	- where we see the worst deployment pain, is also where we see the worst delivery performance, org performance, and culture/ that is to say, the practices that give us speed and stability when delivering, also reduce deployment stress.
 	- if deployments have to happen outside business hours, that's a bad sign!
@@ -245,6 +246,7 @@ tags:: books, devops, software engineering
 	- support experimentation, failure, and learning! not just that- give engineers time to do experimental, creative work during the work week! if they have to stick around after hours to try new things, they will either not do it, or they'll burn out. examples like Google's 20% time support this
 	- behind all this, it's important for the org's values to be aligned with its people. that is to say, the real, de facto, lived values of the org. not the nice words it puts in its values statement. alignment leads to thriving, mismatch leads to burnout.
 - **Ch. 10: Employee Satisfaction, Identity, and Engagement**
+  collapsed:: true
 	- the book's research suggests that engagement and satisfaction help drive good organizational outcomes.
 	- Net Promoter Score ([[NPS]]) is used as a measure of employee loyalty, both at the orga nd the team level. they find that high-performing orgs have a 2.2x higher NPS on average.
 	- empirical studies have shown that more engaged companies have better revenue growth and higher stock value.
@@ -258,3 +260,4 @@ tags:: books, devops, software engineering
 		- it makes sense that adopting a DevOps approach helps with job satisfaction. humans are bad at and dislike repetitive schleps. so, give those tasks to machines, so we can focus on what we're good at and enjoy!
 	- empirical research found that diversity matters too. teams with more diversity tended to have better team performance and better business outcomes.
 		- their survey found a much _lower_ rate of women respondents than expected!
+- **Ch. 11: Leaders and Managers** #[[engineering management]]

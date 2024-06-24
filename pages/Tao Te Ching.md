@@ -1,4 +1,4 @@
-tags:: theology, philosophy
+tags:: theology, philosophy, Taoism, China
 
 - **verse 17:**
   id:: 6558ed16-1515-4a47-9cf7-8f238d135098

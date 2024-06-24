@@ -1,1 +1,2 @@
--
+tags:: math
+alias:: statistics

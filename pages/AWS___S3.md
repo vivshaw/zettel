@@ -31,3 +31,31 @@ tags:: aws, cloud, storage
 	- *but*, you can set up static website hosting to access it through HTTP!
 		- you can set an Index and Error document
 		- ⚠️ if you want to set a custom domain in [[AWS/Route53]], the bucket name _needs_ to match that URL!
+- objects can be **versioned**
+	- when a bucket is versioned, you can access multiple versions of the same object.
+	- versions of the same object are distinguished by `id`. (if versioning is off, `id` is `null`.)
+	- ⚠️ once bucket versioning is turned on, you can never turn it off! you _can_ suspend it.
+	- if we delete a versioned object
+		- **without specifying an `id`**, we soft-delete by creating a **delete marker**.
+		- **with specifying an `id`**, we actually delete the specified version.
+- **MFA delete**
+	- if MFA delete is turned on, MFA verification is needed to delete object versions or to change the versioning state
+- **uploads**
+	- **single PUT upload** (default): by default, objects are uploaded as a single data stream. this means that if the upload fails partway through, it's a full restart. and speed is often bad, due to lack of parallelism. maximum size is 5GB.
+	- **multi-part upload**: instead, we can break up the object into chunks. individual parts can fail and be restarted. transfers are quicker due to parallelism. minimum size is 100MB. there are a maximum of 10K parts, and parts can range in size from 5MB to 5GB
+		- ⚠️ the *last* part can be smaller than 5MB.
+- **S3 accelerated transfer**
+	- defaults to off. without acceleration, traffic from users routes over the public internet. with acceleration, the user hits an [[AWS/Cloudfront]] edge location near them. this can get you lower latency.
+- **encryption**
+	- buckets aren't encrypted. objects are. each object has its own key. you can configure differetn encryption for objects in the same bucket.
+	- client-side encryption: objects are encrypted by the client *before* being uploaded to S3
+	- server-side encryption: objects are encrypted by S3 after upload. there are three types:
+		- **SSE-C**: with customer-provided keys
+		- **SSE-S3**: with S3-managed keys **(default)**
+			- there's no role separation here! anyone with S3 admin access can decrypt any object!
+			- you have no control at all over the keys
+		- **SSE-KMS**: with [[AWS/KMS]]-managed keys
+			- you can use a default KMS key, or a customer-managed one. that gives you a lot of flexibility.
+			- permissions are isolated and roles are separated. you also get CloudTrail logging on the key
+			- you can also use a **bucket key**. without it, each encryption calls out to KMS, which costs money and can hit throttling limits (5500/s-50000/s depending on region). with it, KMS generates a time-limited key and passes it to the bucket, so S3 can handle encryption instead
+		- ⚠️ SSE is on by default, and is mandatory!

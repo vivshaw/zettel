@@ -8,7 +8,7 @@ tags:: finance, management
 			- `i_expected` is the investors' expected rate of return
 			- `r_rf` is the risk-free rate of return (i.e., a short term gov't bond)
 			- `r_m` is the average return of the stock market
-			- `β` is [[beta (β)]], a measure of the risk associated with the company relative to the whole stock market
+			- `β` is [[beta (β) (finance)]], a measure of the risk associated with the company relative to the whole stock market
 	- ...and whaddaya know, that's just [[CAPM]]!
 - **what about taxes?** interest payments are tax-deductible, so we need to adjust interest payments for the corporate tax rate:
 	- `i_after_tax = i_before_tax (1 - tax_rate)`
