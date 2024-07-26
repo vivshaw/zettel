@@ -19,3 +19,4 @@ tags:: books, personal
 - Shinshu Roberts - Being-Time
 - Wadensjo - *Interpreting As Interaction*
 - Gillian Rose
+- Brown - *Ethical Programs: Hospitality and the Rhetorics of Software*

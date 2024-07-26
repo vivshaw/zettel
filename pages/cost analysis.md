@@ -1,7 +1,7 @@
 tags:: finance, management, cost
 
-- `product costs = direct materials costs + direct labor costs + MOH (manufacturing overhead costs)`
-	- there are multiple types of MOH as well:
+- $product\ costs = direct\ materials\ costs + direct\ labor\ costs + MOH$
+	- there are multiple types of manufacgtoring overhead cost (MOH) as well:
 		- Indirect material costs- cleaning supplies, machine oil
 		- Indirect labor costs- supervisors, drivers, cleaning staff
 		- Other costs- equipment depreciation, insurance, property taxes

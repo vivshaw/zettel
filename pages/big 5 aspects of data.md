@@ -1,4 +1,5 @@
 tags:: data, stats
+alias:: dispersion, location, central tendency
 
 - **location** or **central tendency**
 	- these describe how the data bunches up around a center.

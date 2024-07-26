@@ -4,4 +4,4 @@ tags:: stats, data
 - it is the most frequently occurring value in the dataset.
 - unlike [[median]] and [[mean]], can be used on [[nominal data]]!
 - symbols:
-	- **M_o** for populations, **X_mode** for samples
+	- $M_o$ for populations, $X_{mode}$ for samples

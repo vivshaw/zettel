@@ -8,4 +8,4 @@ alias:: cross-tabulation, cross-tabulated
 	  | --- | --- | --- |
 	  | Bar 1 | 5 | 6 |
 	  | Bar 2 | 2 | 0 |
-- in [[R]], we can use `xtabs()`, or [[lolcat]]'s `transform.individual.format.to.xt()`
+- in [[R]], we can use `xtabs()`, or [[lolcat]]'s `transform.individual.format.to.xt()`, or `table()`

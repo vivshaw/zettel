@@ -4,4 +4,3 @@ tags:: finance
 	- <6 years: **bills**
 	- 6-12 years: **notes**
 	- 12+ years: **bonds**
--

@@ -1,0 +1,11 @@
+- top 5:
+	- Ulcerate - Cutting the Throat of God #metal #[[death metal]] #dissotech
+	- DVNE - Voidkind #metal #[[prog metal]] #[[sludge metal]]
+	- Piah Mater - Under the Shadow of a Foreign Sun #metal #[[prog metal]] #[[death metal]] #melodeath
+- honorable mention:
+	- Selbst - Despondency Chord Progression #metal #[[black metal]] #atmoblack
+	- Saidan - Visual Kill #metal #[[black metal]] #meloblack
+	- Hulder?
+	- Ihsahn?
+	- Octoploid?
+	- JFAC?
