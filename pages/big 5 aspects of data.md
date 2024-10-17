@@ -14,4 +14,4 @@ alias:: dispersion, location, central tendency
 	- indicates the stability of a process through time
 - **relationship**
 	- the strength of the relationship between two variables.
-	- for continuous data, we talk about **correlation**. for discrete, we talk about **association**.
+	- for continuous data, we talk about **[[correlation]]**. for discrete, we talk about **[[association]]**.

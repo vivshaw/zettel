@@ -8,3 +8,4 @@ tags:: stats, data
 - for [[variance]], the [[Central Limit Theorem]] doesn't hold, so we need to use a [[chi-square test]]
 - for a [[proportion]], we'll use a [[binomial test]]
 - for a [[Poisson distribution]] rate, we use a [[Poisson test]]
+- in [[R]], the `confint()` function may be of interest

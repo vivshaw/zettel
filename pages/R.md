@@ -38,4 +38,8 @@ tags:: lang, stats, data
 	  ```
 		- `~` is also [[overloaded]] by libraries like ggplot, lattice, and dplyr for their own purposes.
 		- the `+` operator is also spicy - when in a formula like the above case, it is [[overloaded]] to mean "calculate a regression coefficient for this stuff"
+		- as is `*` - it is overloaded to mean "include both these things, and an interaction term"
+			- you can use `:` for just an interaction term
+		- you can use `I()` to apply stuff that would otherwise have special meanings, e.g., `^2`
 		- see [this StackOverflow](https://stackoverflow.com/questions/8055508/in-r-formulas-why-do-i-have-to-use-the-i-function-on-power-terms-like-y-i/8055683#8055683) for more on `~` and `+`
+	- `lm()` will automatically turn factors into dummy variables!

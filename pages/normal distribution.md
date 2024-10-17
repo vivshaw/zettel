@@ -1,5 +1,5 @@
 tags:: stats, data, distributions
-alias:: normal, normally distributed, normality
+alias:: normal, normally distributed, normality, Gaussian
 
 - a distribution for [[continuous data]], and one of the most common
 - characteristics:

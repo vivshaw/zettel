@@ -4,3 +4,4 @@ tags:: stats
 	- each trial has only two possible outcomes
 	- the probability of each outcome is constant
 	- the outcomes are independent
+- its results are modeled by the [[Bernoulli distribution]]

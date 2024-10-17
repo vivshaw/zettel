@@ -20,3 +20,13 @@ tags:: books, personal
 - Wadensjo - *Interpreting As Interaction*
 - Gillian Rose
 - Brown - *Ethical Programs: Hospitality and the Rhetorics of Software*
+- FSG Originals x Logic
+- # software
+	- A Philosophy of Software Design
+	- Release It!
+	- Thinking in Distributed Systems
+	- Working Effectively with Legacy Code
+- # sci-fi
+	- too like the lightning
+	- a psalm for the wild-built
+-

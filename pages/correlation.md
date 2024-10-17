@@ -7,3 +7,4 @@ tags:: stats, data
 	- **ρ_xy** for populations, **r_xy** for samples
 - can be calculated with:
 	- the [[Pearson product-moment coefficient of correlation]]
+- in [[R]], we can use `rplot()` to see a correlation matrix

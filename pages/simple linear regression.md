@@ -1,0 +1,21 @@
+tags:: stats, regression
+
+- $y = \beta_0 + \beta_1x + \epsilon$
+- estimating the coefficients with [[least squares]]:
+	- let $y_i \approx \hat{\beta_0} + \hat{\beta_i}x_i \forall i$
+	- then, for each observation $i$, the residual is $e_i = y_i - \hat{y}_i$
+	- the [[residual sum of squares]] (RSS) is then $RSS = \sum^n_{i=1}{e_i^2}$
+	- you can minimize that RSS like so:
+		- $\hat{\beta_0} = \bar{y} - \hat{\beta_1}\bar{x}$
+		- $\hat{\beta_1} = \dfrac{\sum^n_{i=1}{(x_i - \hat{x})(y_i - \hat{y})}}{\sum^n_{i=1}{(x_i - \hat{x})^2}}$
+- once we have estimated some coefficients, we can estimate their accuracy like so:
+	- $SE(\hat{\beta_0})^2 = \sigma^2[\dfrac{1}{n} + \dfrac{\bar{x}^2}{\sum^n_{i=1}{(x_i - \hat{x})^2}}]$
+	- $SE(\hat{\beta_1})^2 = \sigma^2[\dfrac{1}{n} + \dfrac{1}{\sum^n_{i=1}{(x_i - \hat{x})^2}}]$
+	- $\sigma^2 = Var(\epsilon)$
+		- we don't really know $\sigma$, but we can estimate it as the [[residual standard error]]:
+			- $RSE = \sqrt{\dfrac{RSS}{n-2}}$
+- we can also estimate model accuracy with a [[coefficient of determination]]:
+	- first, we want a [[total sum of squares]]: $TSS = \sum^n_{i=1}{(y_i - \bar{y})^2}$
+	- then, $R^2 = 1 - \frac{RSS}{TSS}$
+- we can calculate the [[correlation]] like so:
+	- $r = \dfrac{\sum^n_{i=1}{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\sum^n_{i=1}{(x_i - \bar{x})^2}} \sqrt{\sum^n_{i=1}{(y_i - \bar{y})^2}}}$

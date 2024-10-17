@@ -1,6 +1,6 @@
 tags:: stats, [[relationship (stats)]]
 
-- a measure of [[correlation]] invented by [[Karl Pearson]]. used with continuous random variables.
+- a measure of [[correlation]] invented by [[Karl Pearson]]. used with continuous random variables, and linear relations.
 - calculated as:
 	- for a population, $\rho_{X,Y}= \frac{\operatorname{cov}(X,Y)}{\sigma_X \sigma_Y}$
 		- where $\operatorname{cov}$ is the [[covariance]]

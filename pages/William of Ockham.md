@@ -6,4 +6,3 @@ alias:: Occam
 - commented on [[Peter Lombard]]'s [[Libri Quatuor Sententiarum]]
 - developer of the [[principle of parsimony]], "Occam's Razor"
 - pondered logical topics such as [[de Morgan's laws]] and [[ternary logic]]
--
