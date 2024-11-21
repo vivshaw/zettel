@@ -12,6 +12,8 @@ tags:: books, personal
 - Habermas
 - Ellul
 - Edith Stein
+- Teilhard de Chardin
+- Ivan Illich
 - Agamben's *The Highest Poverty*
 - E.F. Schumacher's *A Guide for the Perplexed*
 - Jason Josephson Storm's *Metamodernism*
@@ -21,6 +23,8 @@ tags:: books, personal
 - Gillian Rose
 - Brown - *Ethical Programs: Hospitality and the Rhetorics of Software*
 - FSG Originals x Logic
+- Bennington - Jacques Derrida
+- Raimon Panikkar - Rhythm of Being
 - # software
 	- A Philosophy of Software Design
 	- Release It!
@@ -29,4 +33,5 @@ tags:: books, personal
 - # sci-fi
 	- too like the lightning
 	- a psalm for the wild-built
+	- children of time
 -

@@ -1,0 +1,2 @@
+- set up mastodon verification: https://mastodon.social/settings/verification
+- set up keybase for website
