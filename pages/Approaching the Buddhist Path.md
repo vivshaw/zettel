@@ -1,4 +1,6 @@
-tags:: books, theology, Buddhism, Dalai Lama, Thubten Chodron
+---
+tags: books, theology, Buddhism, Dalai Lama, Thubten Chodron
+---
 
 - # Prologue
   collapsed:: true

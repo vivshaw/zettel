@@ -1,4 +1,6 @@
-tags:: Buddhism, theology, mindfulness
+---
+tags: Buddhism, theology, mindfulness
+---
 
 - suggests the **four foundations of mindfulness** as the way to overcome suffering and grief:
 	- contemplating the body in the body

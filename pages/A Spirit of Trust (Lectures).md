@@ -4,7 +4,7 @@ tags:: philosophy, Hegel, idealism, absolute idealism
 - ref:
 	- [course notes](https://sites.pitt.edu/~rbrandom/Courses/Hegel%20%282021%29/ST%202021%20Main.html)
 - Lecture 1 - [Why Read Hegel Now?](https://www.youtube.com/watch?v=va1sDoPRTAU)
-	- First big Kantian idea: [[Kant]]'s discovery of the normativity of intentionality- the axiom around which Kant's thought revolves
+	- First big Kantian idea: [[Kant]]'s discovery of the normativity of [[intentionality]] - the axiom around which Kant's thought revolves
 		- what distinguishes knowers from nonconscious natural objects is not some mysterious "mind-stuff". it's that judgments and intentional doings are commitments- exercises of a type of authority. they're all normative.
 		- we are creatures who live, move, and have our being in a normative space, articulated by our judgments, responsibilities, and exercises of our authority
 		- at the core of what we're responsible for is *having reasons for our commitments*
@@ -55,7 +55,7 @@ tags:: philosophy, Hegel, idealism, absolute idealism
 		- normative statuses are attitude-dependent- what you are committed to depends on what you take yourself to be dependent to.
 		- there are canonical pathologies of recognition when it is asymmetric
 		- [[Kojeve]]'s seminars were when this Hegelian idea really came to the fore
-	- Hegel vs [[Wittgenstein]] - they are both committed to the same project of sociality, with a common approach... except Hegel is a systematic metaphysicist, and Wittgenstein is very much not!
+	- Hegel vs [[Wittgenstein]] - they are both committed to the same project of sociality, with a common approach... except Hegel is a systematic metaphysician, and Wittgenstein is very much not!
 	- **Hegel's second insight: "the historical move"** normative creatures don't have natures- they have histories!
 		- as essentially self-conscious beings, what we are _for_ ourselves (our attitudes) are an essential part of what we are _in_ ourselves (our statuses)
 		- we can *change* what we are *in* ourselves via changing what we are *for* ourselves, in a reciprocal way:
@@ -81,7 +81,7 @@ tags:: philosophy, Hegel, idealism, absolute idealism
 		- Brandom follows an **inferential approach to meaning**, which rejects semantic atomism, and focuses on the conceptual and inferential roles things play in reasoning
 		- [[death of the author]] and [[Foucault]]'s writing on French police reports as "a work", [[Quine]]/[[Duhem]] on [[Two Dogmas of Empiricism]]
 		- a Hegelian reading is one that recollectively rationally reconstructs Hegel, just as Hegel in turn read Kant. it is valid to appeal to things that happened after Hegel, and arguments that Hegel did not make but later folks did.
-		- *de dicto* (what did the author really mean to say?), *de traditione* (what is the author's tradition, earlier and later, committed to?), *de re* (what is the author _really_ committed to, whether or not they meant to say it?) readings
+		- *de dicto* (what did the author really say?), *de traditione* (what is the author's tradition, earlier and later, committed to?), *de re* (what is the author _really_ committed to, whether or not they meant to say it?) readings
 	- recommended reading:
 		- Inwood translation, or Miller
 		- Not Pinkard's translation

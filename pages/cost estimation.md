@@ -12,16 +12,16 @@ tags:: project management, finance, management, cost
 	- **index method**- use an estimate from a prior year, indexed to cost changes over time
 		- you can weight an average of indices for an estimate that covers multiple cost components
 	- **power sizing method**- estimate equipment cost from a similar, but differently-scaled piece of equipment
-		- `Ca = Cb (Sa / Sb)^x`
-			- where `Ca` and `Cb` are the cost of the two pieces of equipment, `Sa` and `Sb` their output, and `x` the _cost capacity factor_
-			- the cost capacity factor represents the equipment's economy of scale. at `1`, cost is linear. if `>1`, we have diseconomy of scale. if `<1`, we have economy of scale.
+		- $C_a = C_b (S_a / S_b)^x$
+			- where $Ca$ and $Cb$ are the cost of the two pieces of equipment, $Sa$ and $Sb$ their output, and $x$ the _cost capacity factor_
+			- the cost capacity factor represents the equipment's economy of scale. at $1$, cost is linear. if $>1$, we have diseconomy of scale. if $<1$, we have economy of scale.
 	- **parametric curve-fitting**- use stats to fit a curve to observed cost data
 	- **learning curve analysis**- the more you do something, the more efficient you become. eventually, you hit the steady-state level of efficiency. you can estimate costs taking this into account.
 		- **learning curve rate (LCR)**- the % reduction in cost when doubling quantity.
 			- in practice, usually between .8 and 1
 		- use a [[log-log model]] to make the learning curve linear for easy estimation
-			- originally, `Tn = T0 n^m`
-			- `log(Tn) = m log(n) + log(T0)`
-			- now estimate the slope: `m = (log(T1) - log(T0)) / (log(n1) - log(n0))`
-			- by definition of the LCR, let `n1 = 2 n0`, and `T1 = LCR * T0`
-			- then `m = log(LCR)/log(2)`
+			- originally, $T_n = T_0\ n^m$
+			- $log(T_n) = m\ log(n) + log(T_0)$
+			- now estimate the slope: $m = (log(T_1) - log(T_0)) / (log(n_1) - log(n_0))$
+			- by definition of the LCR, let `n_1 = 2\ n_0$, and $T_1 = LCR * T_0$
+			- then $m = \frac{log(LCR)}{log(2)}$

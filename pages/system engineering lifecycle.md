@@ -1,0 +1,38 @@
+tags:: engineering, systems engineering, systems thinking
+
+- the lifecycle:
+	- **planning**
+		- determine why we need this system. is there a gap in capabilities or knowledge?
+		- determine whether there's actually demand for the system
+		- develop a few rough concepts that might fill the need
+		- do a feasibility analysis, to select the best approach from among those concepts based on cost and timeline
+		- estimate a budget for the system
+		- **output:**
+			- our first draft of requirements (usually called **operational requirements**)
+			- our preferred concept for the system
+	- **development**
+		- design, verification, and initial production all happen in here!
+		- gather requirements for all the system components
+		- do our top-down system design tasks: define the architecture and the system's interfaces
+		- do our bottom-up system design tasks: integrate individual components into higher-level systems
+		- test our system!
+		- start building out our production process, which will require documentation, automation, and tooling.
+		- **output:**
+			- detailed specs for the system and all its components
+			- system test procedures and plans
+			- a low-volume production line
+	- **production**
+		- we build the thing!
+		- validate that the production process runs smoothly
+		- establish process controls
+		- work to eliminate waste - this is where [[lean]] and such comes in!
+	- **sustainment**
+		- do maintenance on the system
+		- upgrade the system to support new capabilities
+		- address defects that we discover after going to production
+		- train system users on how to use it effectively
+	- **disposal**
+		- when do we retire the system? what do we do with it once we do? disposal, storage, etc.
+- we should...
+	- adopt a lifecycle view as early as possible. the early stages is where a lot of the most critical things are locked in.
+	- see the lifecycle as cyclical! all systems are eventually retired, and new systems arise in their place

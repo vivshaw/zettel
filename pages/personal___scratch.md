@@ -1,0 +1,2 @@
+- under the blanket of a black infinity, fireworks in the skull. there is a blackness in the black. a hole in the understanding
+- in muscle, in skin, I will not find you there. in grimace, in grin. I will not find you there. in water, in wind. I will not find you there

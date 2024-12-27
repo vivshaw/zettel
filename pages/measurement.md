@@ -1,5 +1,5 @@
 tags:: data, stats
-alias:: nominal data, ordinal data, interval data, ration data, absolute data
+alias:: nominal data, ordinal data, interval data, ratio data, absolute data
 
 - **measurement** is the process of assigning numbers to an event. it produces **data** as its output.
 - a good measurement system should be:

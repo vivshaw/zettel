@@ -1,0 +1,21 @@
+tags:: math, robotics, engineering, kinematics
+
+- we care about both:
+	- **translation** (positioning the object within the space)
+	- **rotation** of the object
+- representing rotation requires a three-axis system. but it's possible to represent that with only four numbers, for example, via a [[quaternion]]
+	- each vector needs to be orthogonal to all others
+	- we typically use normal vectors for the axes for mathemetical simplicity. if they are normal, you can compute one given the other two.
+	- we follow the "right hand rule": making your first three fingers orthogonal, the thumb is the X axis, the index is the Y axis, and the middle finger is the Z axis
+		- there's a second "right hand rule"- if you align your thumb with an axis, the direction your fingers curl is the direction of positive rotation
+- how can we translate between a world coordinate system, and a robot coordinate system that has rotated around Z axis? we make a **rotation matrix**:
+	- $p_w = \begin{bmatrix} \overrightarrow{x_r} \cdot \overrightarrow{x_w}  & \overrightarrow{y_r} \cdot \overrightarrow{x_w} & \overrightarrow{z_r} \cdot \overrightarrow{x_w} \\ \overrightarrow{x_r} \cdot \overrightarrow{y_w} & \overrightarrow{y_r} \cdot \overrightarrow{y_w} & \overrightarrow{z_r} \cdot \overrightarrow{y_w} \\ \overrightarrow{x_r} \cdot \overrightarrow{z_w} & \overrightarrow{y_r} \cdot \overrightarrow{z_w} & \overrightarrow{z_r} \cdot \overrightarrow{z_w} \end{bmatrix} p_r$
+		- where we take the [[dot product]], $\overrightarrow{x_r} \cdot \overrightarrow{x_w} = cos(\alpha)\ \lvert\overrightarrow{x_r}\rvert\ \lvert\overrightarrow{x_w}\rvert$.
+		- why does that work? well, that $\rvert \lvert$ is the [[L2 norm]], which is also the Euclidean distance. so you can think of that as taking the distance. but then there's that $cos()$. so you can think of it as projecting the vector $x_r$ onto the unit vector $\hat{x}w$ and then measuring the projection
+	- you can invert a rotation matrix by transposing it
+	- you can compose two rotation matrices by multiplying them
+- you can combine rotation and translation by first rotating, then adding the base vector
+	- we can express this in a single matrix multiplication, with what's called a **homogeneous transform**:
+		- $\begin{bmatrix} A_Q \\ ... \\ ... \\ 1 \end{bmatrix} = \begin{bmatrix} R^A_B & ... & ... & A_P \\ ... & ... & & ... \\ ... & & ... & ... \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} B_Q \\ ... \\ ... \\ 1 \end{bmatrix}$
+		- more succinctly, $\begin{bmatrix} p′ \\ 1 \end{bmatrix}=T \begin{bmatrix} p \\ 1 \end{bmatrix}$, where $T$ is the **transformation matrix**, which has one additional dimension beyond the rotation matrix.
+		- we can combine as many homogeneous transforms as we want to get to the desired coordinate system

@@ -1,0 +1,23 @@
+tags:: systems engineering
+
+- per ISO, the purpose of requirements is to transform the user-oriented view of the desired capabilities into a technical view if how to do it
+- requirements should be about capabilities, **not** about how to provide them
+- communication is key- there should be an unbroken chain of custody on the requirements doc from the top level to the rank-and-file. as it gets handed along, other engineers might need to translate the requirements to a lower and more specific level
+- in SE, requirements must be "shall" statements! by using the same wording, we can track exactly which things are requirements and which are not.
+- the requirements should cover the **complete** scope of the user's needs.
+- there are many types of requirements:
+	- functional- what does it do?
+	- performance- how well does it do it?
+	- interface- how does it exhcnage information or material with other systems?
+	- operational- under what conditions does it do it?
+	- physical- what contraints do we have about materials and physical properties? (weight, etc.)
+	- design- what constraints do we have around what choices the engineer can make? ("It needs to use GPS", etc)
+	- logistical- what else needs to happen for it to do it? packaging, handling, shipping, training, documentation, etc.
+- cost generally **shouldn't** be a requirement. we should figure it out through negotiation and trading off capabilities
+- a requirement should include:
+	- a description of the need
+	- a rationale for why it's needed
+	- some way to verify that the need was meet
+- requirements must be considered as a whole, not just as individuals! you should verify that none of your requirements contradict each other or the user's needs
+- don't make too many requirements! they take work and cost money. specify only what's necessary.
+- requirements may be nested in a parent-child relationship, as you flesh out the specifics
