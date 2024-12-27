@@ -1,4 +1,6 @@
-tags:: stats, dataviz, PCA
+---
+tags: stats, dataviz, PCA
+---
 
 - a plot of the principal components of some data, against their [[eigenvalues]]:
 	- ![SCREE_plot.jpg](../assets/SCREE_plot_1728012063919_0.jpg)

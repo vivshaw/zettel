@@ -1,4 +1,6 @@
-tags:: stats, data, [[relationship (stats)]]
+---
+tags: stats, data, [[relationship (stats)]]
+---
 
 - a measure of [[relationship (stats)]] between two variables, used when both variables are nominal.
 - we might use these variations on the [[chi-square distribution]] to calculate it:

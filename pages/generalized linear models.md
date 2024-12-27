@@ -1,5 +1,7 @@
-tags:: stats, regression
-alias:: GLM
+---
+tags: stats, regression
+alias: GLM
+---
 
 - an approach that unifies multiple different regression models- [[linear regression]], [[logistic regression]], [[Poisson regression]]...
 	- we generalize linear regression, by applying a [[link function]] that transforms the result. we pick a link function based on the distribution of the data we wish to estimate.

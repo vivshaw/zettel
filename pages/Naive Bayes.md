@@ -1,4 +1,6 @@
-tags:: stats, classification
+---
+tags: stats, classification
+---
 
 - a [[generative model]] that further relaxes the assumptions made by [[linear discriminant analysis]] and [[quadratic discriminant analysis]]. a special case of the [[Bayes classifier]].
 	- Naive Bayes assumes _nothing_ about the distribution, while both of those assume $f_k(x)$ is normal.

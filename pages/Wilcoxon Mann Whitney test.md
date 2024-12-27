@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a non-parametric test of whether two samples came from the same distribution
 - assumptions:

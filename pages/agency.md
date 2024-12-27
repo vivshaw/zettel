@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - according to social cognitive theory, has four components:
 	- **intentionality** - awareness and will to act based on a particular idea or mental state.

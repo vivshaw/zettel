@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - a company can finance itself with [[debt financing]] - taking loans, or issuing bonds
 - or, with [[equity financing]] - by offering shares of ownership in itself on the stock market

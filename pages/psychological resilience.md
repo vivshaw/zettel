@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - a "dynamic process encompassing positive adaptation within the context of significant [[adversity]]" (Luthar et al., 2000)
 - when knocked out of your comfort zone, how effectively can you get back into [[homeostasis]]?

@@ -1,4 +1,6 @@
-tags:: db
+---
+tags: db
+---
 
 - databases that store their data in a [[graph]] format
 - examples: [[Neo4j]], [[Datomic]], [[RethinkDB]]

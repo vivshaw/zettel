@@ -1,5 +1,7 @@
-tags:: philosophy, Denmark, existentialism, theology, 1800s
-alias:: Kierkegaard
+---
+tags: philosophy, Denmark, existentialism, theology, 1800s
+alias: Kierkegaard
+---
 
 - 1813-1855, Denmark's greatest philosopher
 - early life: youngest of 7 children. born to a rich family in Copenhagen during a time when Denmark had just gone bankrupt.

@@ -1,4 +1,6 @@
-tags:: Locke, philosophy, philosophy of mind
+---
+tags: Locke, philosophy, philosophy of mind
+---
 
 - ref:
 	- SEP: https://plato.stanford.edu/entries/molyneux-problem/

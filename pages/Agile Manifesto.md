@@ -1,4 +1,6 @@
-tags:: agile, project management, software engineering, engineering management
+---
+tags: agile, project management, software engineering, engineering management
+---
 
 - https://agilemanifesto.org/
 - **Agile values:**

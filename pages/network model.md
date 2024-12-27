@@ -1,5 +1,7 @@
-tags:: db
-aliases:: CODASYAL model
+---
+tags: db
+aliases: CODASYAL model
+---
 
 - a generalization of the older [[heirarchical model]]
 - stores data in records that can each have any number of parents and children. they reference them via pointers

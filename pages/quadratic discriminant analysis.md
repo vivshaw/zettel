@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a [[generative model]] similar to [[linear discriminant analysis]], but with relaxed assumptions. a special case of the [[Bayes classifier]].
 	- specifically, it removes the assumption of equal variance. QDA assumes that each class has its own [[covariance]] matrix $\Sigma$. the rest is just like LDA!

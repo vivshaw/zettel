@@ -1,4 +1,6 @@
-tags:: linux, hardware
+---
+tags: linux, hardware
+---
 
 - MBR can only contain 4 primary partitions per disk!
 - If you need more, can create an extended partition (treated like another disk, basically)

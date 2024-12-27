@@ -1,4 +1,6 @@
-tags:: communication, psychology
+---
+tags: communication, psychology
+---
 
 - what sorts of non-verbal comms exist? [via Verywell](https://www.verywellmind.com/types-of-nonverbal-communication-2795397):
 	- Facial expressions

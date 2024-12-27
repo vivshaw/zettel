@@ -1,5 +1,7 @@
-tags:: data, dataviz
-alias:: bar chart
+---
+tags: data, dataviz
+alias: bar chart
+---
 
 - helps to view the dispersion, central tendency, and shape of some data
 - can be grouped (values bucketed into class intervals) or ungrouped (one bar per unique value)

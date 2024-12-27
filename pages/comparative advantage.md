@@ -1,1 +1,3 @@
-tags:: economics
+---
+tags: economics
+---

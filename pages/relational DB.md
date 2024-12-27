@@ -1,5 +1,7 @@
-tags:: db
-aliases:: relational model
+---
+tags: db
+aliases: relational model
+---
 
 - stores data as tuples, grouped into relations
 - most popular DB model

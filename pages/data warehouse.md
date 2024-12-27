@@ -1,4 +1,6 @@
-tags:: db
+---
+tags: db
+---
 
 - a read-only copy of all the aggregated data from an org's many [[OLTP]] instances
 - optimized for [[OLAP]]- get all the data in one place, query it however without impacting prod

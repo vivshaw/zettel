@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a [[two-sample test]] for Poisson rates
 - assumptions:

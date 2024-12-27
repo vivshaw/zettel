@@ -1,4 +1,6 @@
-tags:: stats, [[relationship (stats)]]
+---
+tags: stats, [[relationship (stats)]]
+---
 
 - a measure of [[correlation]] invented by [[Karl Pearson]]. used with continuous random variables, and linear relations.
 - calculated as:

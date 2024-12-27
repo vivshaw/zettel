@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a measure of how much the variance increases from adding a predictor into a larger model. commonly used to assess [[multicollinearity]].
 - $VIF(\hat{\beta_i}) = \dfrac{Var(\hat{\beta_i})\ full\ model}{Var(\hat{\beta_i})\ simple\ model}$

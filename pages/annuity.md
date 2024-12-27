@@ -1,6 +1,8 @@
-tags:: finance
+---
+tags: finance
+---
 
-	- an **annuity** is series of payments with some uniform value A
+- an **annuity** is series of payments with some uniform value A
 		- an **ordinary annuity** is paid at the end of the period
 		- conversely, an **annuity due** is paid at the beginning of the period
 	- **value of an annuity:** $FV = A * \dfrac{(1+i)^N - 1}{i}$

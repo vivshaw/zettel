@@ -1,5 +1,7 @@
-tags:: stats
-alias:: independent samples, dependent samples
+---
+tags: stats
+alias: independent samples, dependent samples
+---
 
 - in an **independent sample**:
 	- each item within a given sample is independent from all the others in that sample

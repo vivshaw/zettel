@@ -1,4 +1,6 @@
-tags:: aws, software engineering, cloud
+---
+tags: aws, software engineering, cloud
+---
 
 - an **AWS account** is a container for **identities** and **resources**
 - each account has a root user, which has access to everything.

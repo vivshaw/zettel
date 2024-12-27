@@ -1,4 +1,6 @@
-tags:: data, management
+---
+tags: data, management
+---
 
 - Key Performance Indicators are high-level metrics showing the health of the business
 - often established at the highest level of the business, and cascaded down through the organization

@@ -1,4 +1,6 @@
-tags:: finance, management, cost
+---
+tags: finance, management, cost
+---
 
 - $product\ costs = direct\ materials\ costs + direct\ labor\ costs + MOH$
 	- there are multiple types of manufacgtoring overhead cost (MOH) as well:

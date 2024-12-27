@@ -1,4 +1,6 @@
-tags:: math, coordinate systems
+---
+tags: math, coordinate systems
+---
 
 - can be converted to Cartesian coordinates via:
 	- $x = r\ cos(\phi)$

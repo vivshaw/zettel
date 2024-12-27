@@ -1,4 +1,6 @@
-tags:: The Art of Action, management, strategy, management OS
+---
+tags: The Art of Action, management, strategy, management OS
+---
 
 - from [[The Art of Action]], a taxonomy of the skills managers need. in the past, we lumped everything under "managing" lately, we lump everything under "leadership". in reality, there are three spheres:
 - **directing:** authority, responsibility, and duty of direction

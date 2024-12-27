@@ -1,4 +1,6 @@
-tags:: finance
+---
+tags: finance
+---
 
 - financial analysis of a company based on ratios of the values one might find in their financial statements, such as the [[balance sheet]], [[cash flow statement]], and [[income statement]]
 - **liquidity ratios:**

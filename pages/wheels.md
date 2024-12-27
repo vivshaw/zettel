@@ -1,5 +1,7 @@
-tags:: kinematics, robotics, engineering
-alias:: wheeled robot
+---
+tags: kinematics, robotics, engineering
+alias: wheeled robot
+---
 
 - in a two-wheeled system:
 	- if a wheel is not in motion and the other is, the stationary wheel acts as a pivot

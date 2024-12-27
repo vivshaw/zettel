@@ -1,4 +1,6 @@
-tags:: distsys, db
+---
+tags: distsys, db
+---
 
 - in an eventually-consistent replica set, how can we ensure that when a user writes data and reads back, they see it?
 	- could use a principle like "anything the user _can_ edit, read from the leader. everything else, read from a follower". but that only works if only a subset of the data is editable by the user

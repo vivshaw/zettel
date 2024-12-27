@@ -1,5 +1,7 @@
-tags:: stats, regression, regularization
-alias:: Tikhonov regularization
+---
+tags: stats, regression, regularization
+alias: Tikhonov regularization
+---
 
 - a form of regression that's useful when there is [[multicollinearity]] . it deals with it by regularizing with the [[L2 norm]]- all parameter estimates are limited to within the L2 norm.
 - to minimize:

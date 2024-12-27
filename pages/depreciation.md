@@ -1,4 +1,6 @@
-tags:: finance, accounting
+---
+tags: finance, accounting
+---
 
 - a financial measure of how a tangible asset loses value over time
 - for intangible assets, see [[amortization]]

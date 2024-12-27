@@ -1,4 +1,6 @@
-tags:: stats, math
+---
+tags: stats, math
+---
 
 - a set of [[distributions]] with a particular form, that happens to makes them useful in statistics
 - $y$ is a random variable from the exponential family if:

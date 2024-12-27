@@ -1,5 +1,7 @@
-tags:: Judaism, Jewish philosophy, philosophy, theology, Spain, Almoravids, medicine, Egypt, Ayyubids
-alias:: Rambam
+---
+tags: Judaism, Jewish philosophy, philosophy, theology, Spain, Almoravids, medicine, Egypt, Ayyubids
+alias: Rambam
+---
 
 - Moses bin Maimon, one of history's greatest Jewish thinkers, and personal physician to [[Saladin]]
 - influenced by [[al-Farabi]]

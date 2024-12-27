@@ -1,4 +1,6 @@
-tags:: HCI, engineering, psychology, human factors, CSE, adages
+---
+tags: HCI, engineering, psychology, human factors, CSE, adages
+---
 
 - from "Human engineering for an effective air navigation and traffic control system" (1951), a framework for deciding which tasks ought to be delegated to machines, and which ought to be done by humans. still influential!
 	- aka "MABA-MABA"

@@ -1,4 +1,6 @@
-tags:: AWS, cloud, logging, security
+---
+tags: AWS, cloud, logging, security
+---
 
 - CloudTrail logs all API calls / AWS activities as CloudTrail Events
 - by default, stores up to 90 days in the Event History

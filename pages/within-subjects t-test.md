@@ -1,5 +1,7 @@
-tags:: stats, statistical tests
-alias:: repeated measures t-test, matches pairs t-test
+---
+tags: stats, statistical tests
+alias: repeated measures t-test, matches pairs t-test
+---
 
 - a [[mean]] test for [[dependent samples]], using a [[t-test]]. operates on pairs of scores.
 	- you can use this either with paired samples or repeated samples.

@@ -1,4 +1,6 @@
-tags:: books, personal
+---
+tags: books, personal
+---
 
 - Ernst Cassirer
 - Eric Voegelin

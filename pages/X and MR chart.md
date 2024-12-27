@@ -1,5 +1,7 @@
-tags:: spc, dataviz, stats
-alias:: individual and moving range chart
+---
+tags: spc, dataviz, stats
+alias: individual and moving range chart
+---
 
 - a continuous [[control chart]] for individual units. you might use it when measures are very expensive, or extremely homogenous, or don't fall into logical subgroups.
 	- some disadvantages: it's less sensitive to shifts in the mean, it's less obvious when you're using the wrong distribution, and [[autocorrelation]] can mess 'em up

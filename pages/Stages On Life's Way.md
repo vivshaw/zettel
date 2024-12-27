@@ -1,4 +1,6 @@
-tags:: books, Kierkegaard, philosophy
+---
+tags: books, Kierkegaard, philosophy
+---
 
 - a sort of sequel to [[Either-Or]], with a similar framing device of an editor claiming to have found the works
 	- the layered pseudonyms, framing device, and appearances of other of K's pseudonyms make this seem a precursor to [[metaficton]] and/or [[ergodic literature]]!

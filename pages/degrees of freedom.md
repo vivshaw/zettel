@@ -1,5 +1,7 @@
-tags:: robotics, engineering, kinematics
-alias:: DoF
+---
+tags: robotics, engineering, kinematics
+alias: DoF
+---
 
 - how many ways can something move? e.g., a jet plane has 6: its x/y/z coordinates, and pitch/yaw/roll
 - when it comes to rotations, **order matters**- the same rotations in different sequence may lead you to a different pose

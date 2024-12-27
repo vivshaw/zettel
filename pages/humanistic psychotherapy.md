@@ -1,1 +1,3 @@
-tags:: psychology, psychotherapy, humanism
+---
+tags: psychology, psychotherapy, humanism
+---

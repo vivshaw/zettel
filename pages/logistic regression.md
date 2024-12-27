@@ -1,4 +1,6 @@
-tags:: stats, regression
+---
+tags: stats, regression
+---
 
 - commonly used for modeling binary classifiers / [[qualitative data]] . we use a logistic curve, and call everything above the midpoint a 1, and everything below the midpoint a 0.
 - simple logistic regression for a binary classifier looks like:

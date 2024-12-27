@@ -1,3 +1,5 @@
-tags:: stats, distributions
+---
+tags: stats, distributions
+---
 
 -

@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a **z-score** can be used to normalize observations that are [[normally distributed]]. it does so by calculating how far the observation is from the mean, in [[standard deviation]] units.
 	- `z = (x - mu) / sigma`

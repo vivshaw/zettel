@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - a **schema** is a pattern of thinking and behavior that people use to interpret the world. it is a cognitive shortcut that lets us reduce the massive quantity of information of the external world into a mental model we can fit in our heads and reason about
 - [[Jean Piaget]] introduced them in his theory of cognitive development

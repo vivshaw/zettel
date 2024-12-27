@@ -1,4 +1,6 @@
-tags:: project management
+---
+tags: project management
+---
 
 - project is developed iteratively in incremental cycles. the team works collaboratively with the customer.
 - often used when requirements aren't well-known up-front.

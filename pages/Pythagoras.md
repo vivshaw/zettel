@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, presocratic, ancient, math
+---
+tags: philosophy, Greece, presocratic, ancient, math
+---
 
 - src:
 	- https://historyofphilosophy.net/pythagoras

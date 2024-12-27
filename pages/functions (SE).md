@@ -1,4 +1,6 @@
-tags:: systems engineering
+---
+tags: systems engineering
+---
 
 - functions define what the system does
 	- they don't specify how it does it! they also don't specify how well it performs.

@@ -1,5 +1,7 @@
-tags:: management, strategy, The Art of Action, management OS
-alias:: Three Gaps
+---
+tags: management, strategy, The Art of Action, management OS
+alias: Three Gaps
+---
 
 - *taken from [[The Art of Action]]: an explanation of why we are often so bad about strategy, and what we can do about it.*
 - we are flawed humans, acting in a world we have limited information about, and full of other agents taking competing actions. this leads to constant **friction** between our plans and reality. this friction manifests itself in the form of **Three Gaps**:

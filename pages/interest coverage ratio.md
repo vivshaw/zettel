@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - measures the company's ability to pay for the interest on its debt
 - $ICR = \dfrac{EBITDA}{interest\ expenses}$

@@ -1,4 +1,6 @@
-tags:: stats, [[statistical tests]]
+---
+tags: stats, [[statistical tests]]
+---
 
 - any time you do a two-sample test, you must test (in this order!) for:
 	- [[normality]] (which verifies our assumptions about the variance)

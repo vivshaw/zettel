@@ -1,4 +1,6 @@
-tags:: stats
-alias:: RSE
+---
+tags: stats
+alias: RSE
+---
 
 -

@@ -1,4 +1,6 @@
-tags:: economics, management
+---
+tags: economics, management
+---
 
 - analysis of the use and distribution of assets within markets.
 - "3 Pillars of Finance:"

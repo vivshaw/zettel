@@ -1,4 +1,6 @@
-tags:: aws, cloud, iaas
+---
+tags: aws, cloud, iaas
+---
 
 - [[IaaS]] provider, gives you virtual machine instances. you manage from the OS on upwards
 - private by default

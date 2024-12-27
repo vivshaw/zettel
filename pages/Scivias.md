@@ -1,1 +1,3 @@
-tags:: theology, books
+---
+tags: theology, books
+---

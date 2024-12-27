@@ -1,4 +1,6 @@
-tags:: risk, management, uncertainty
+---
+tags: risk, management, uncertainty
+---
 
 - how to make decisions when there isn't just one final attribute we care about (e.g. profit)? for example, choosing a vehicle, or choosing where to open an office- non-financial factors are important to both of these!
 - instead:

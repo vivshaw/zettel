@@ -1,4 +1,6 @@
-tags:: linux, software engineering
+---
+tags: linux, software engineering
+---
 
 - shell gotchas: #footguns
 	- you need to escape `*` whenever you use it! it is, by default, reserved for globbing.

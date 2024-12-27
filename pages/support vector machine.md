@@ -1,5 +1,7 @@
-tags:: stats, ml
-alias:: SVM
+---
+tags: stats, ml
+alias: SVM
+---
 
 - a tool for [[classification]]. conceptually, it tries to find a line the separates the classes with the **maximum margin** around the boundary line (or hyperplane, in a higher-dimensional space)
 - consider:

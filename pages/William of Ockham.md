@@ -1,5 +1,7 @@
-tags:: philosophy, theology, Catholicism, Franciscans, Scholasticism, 1200s, 1300s, England
-alias:: Occam
+---
+tags: philosophy, theology, Catholicism, Franciscans, Scholasticism, 1200s, 1300s, England
+alias: Occam
+---
 
 - both inherited from and reacted against [[Duns Scotus]]
 - a father of [[nominalism]]

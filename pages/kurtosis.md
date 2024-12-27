@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a measure of [[shape (stats)]]
 - how peaked vs. fat-tailed is the distribution?

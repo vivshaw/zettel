@@ -1,4 +1,6 @@
-tags:: engineering, computer science
+---
+tags: engineering, computer science
+---
 
 - what is a robot?
 	- "[...] a system which exists in the physical world and autonomously senses its environment and acts in it"

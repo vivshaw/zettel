@@ -1,4 +1,6 @@
-tags:: software architecture, software engineering, event-driven
+---
+tags: software architecture, software engineering, event-driven
+---
 
 - via Software Architecture Monday:
 	- ![image.png](../assets/image_1705018458830_0.png)

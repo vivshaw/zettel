@@ -1,4 +1,6 @@
-tags:: distsys, SRE
+---
+tags: distsys, SRE
+---
 
 - "the property that allows a system to continue operating properly in the event of the failure of some (one or more faults within) of its components"
 - throughout a failure, the system needs to keep operating normally for the user

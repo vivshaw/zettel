@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a measure of [[shape (stats)]]
 - how asymmetrical is the distribution? basically, a measure of "lopsidedness".

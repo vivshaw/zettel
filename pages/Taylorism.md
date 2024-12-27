@@ -1,5 +1,7 @@
-tags:: management, history
-alias:: scientific management
+---
+tags: management, history
+alias: scientific management
+---
 
 - Frederick Winslow Taylor felt we ought to view management as a machine. he figured we could use scientific principles to determine the optimal way for a factory to run. just as we used engineering skill to optimize the machines in the factory, we could do the same to the factory itself and the workers within it.
 - *"The Principles of Scientific Management"* is his most famous work.

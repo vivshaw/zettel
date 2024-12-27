@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a measure of the strength of [[relationship (stats)]] between two variables.
 - used when both variables are continuous

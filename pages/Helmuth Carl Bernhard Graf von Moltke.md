@@ -1,5 +1,7 @@
-tags:: Prussia, Germany, history, military, strategy, 1800s
-alias:: von Moltke
+---
+tags: Prussia, Germany, history, military, strategy, 1800s
+alias: von Moltke
+---
 
 - from *"Guidance for Large Unit Commanders"*:
 	- > With darkness all around you, you have to develop a feeling for what is right, often based on little more than guesswork, and issue orders in the knowledge that their execution will be hindered by all manner of random accidents and unpredictable obstacles. In this fog of uncertainty, the one thing that must be certain is your own decision… the surest way of achieving your goal is through the single-minded pursuit of simple actions.

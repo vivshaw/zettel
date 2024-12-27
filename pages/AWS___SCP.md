@@ -1,5 +1,7 @@
-tags:: aws, cloud, security
-alias:: service control policy
+---
+tags: aws, cloud, security
+alias: service control policy
+---
 
 - SCPs are **account permissions boundaries**. they limit what the account can do.
 	- this *includes* the account root user!

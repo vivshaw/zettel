@@ -1,4 +1,6 @@
-tags:: philosophy, personal identity
+---
+tags: philosophy, personal identity
+---
 
 - the **narrative self** is the self as the subject of the story of one's life
 	- we are fundamentally sense-making creatures- "*homo narans*"

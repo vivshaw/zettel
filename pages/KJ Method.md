@@ -1,5 +1,7 @@
-tags:: anthropology, user experience, design
-alias:: affinity mapping
+---
+tags: anthropology, user experience, design
+alias: affinity mapping
+---
 
 - a method of research in which you write all the individual facts, opinions, observations, events, etc. onto notecards, and then group them by physically arranging them in space. as you group and categorize, patterns and explanations start to emerge.
 	- background via Christopher Roosen: [What Came Before the Affinity Map - Reconsidering Professor Jiro Kawakita and The KJ Method](https://www.christopherroosen.com/blog/2020/7/17/what-came-before-the-affinity-map-reconsidering-professor-jiro-kawakita-and-the-kj-method)

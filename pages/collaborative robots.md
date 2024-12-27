@@ -1,4 +1,6 @@
-tags:: robotics, HCI, ergonomics
+---
+tags: robotics, HCI, ergonomics
+---
 
 - **collaborative robots** are designed to work together with humans. they monitor the space around them to avoid collisions.
 - there are four levels of collaboration:

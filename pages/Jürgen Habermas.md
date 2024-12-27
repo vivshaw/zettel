@@ -1,5 +1,7 @@
-tags:: philosophy, Germany, pragmatism, critical theory
-alias:: Habermas
+---
+tags: philosophy, Germany, pragmatism, critical theory
+alias: Habermas
+---
 
 - concepts:
 	- **communicative rationality**:

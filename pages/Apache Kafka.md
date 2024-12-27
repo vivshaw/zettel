@@ -1,4 +1,6 @@
-tags:: message queue, distsys, data, Apache
+---
+tags: message queue, distsys, data, Apache
+---
 
 - unclear errors and how to solve them:
 	- did you get an error like: `error while creating ephemeral at /brokers/ids/1, node already exists`?

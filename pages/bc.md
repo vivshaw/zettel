@@ -1,4 +1,6 @@
-tags:: linux, utils
+---
+tags: linux, utils
+---
 
 - [bc is `basic calculator`](https://www.gnu.org/software/bc/manual/html_mono/bc.html)- a simple calc language included in GNU
 - useful for [[shell]] math

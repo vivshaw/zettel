@@ -1,4 +1,6 @@
-tags:: stats, [[statistical tests]]
+---
+tags: stats, [[statistical tests]]
+---
 
 - a test that uses the [[t-score]] .
 - underlying assumptions:

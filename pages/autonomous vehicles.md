@@ -1,4 +1,6 @@
-tags:: robotics, autonomous systems, ml
+---
+tags: robotics, autonomous systems, ml
+---
 
 - levels of autonomy:
 	- **1** - the driver can delegate either steering or acceleration/deceleration to the system. the system performs a single driving task.

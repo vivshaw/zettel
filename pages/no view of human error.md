@@ -1,4 +1,6 @@
-tags:: engineering, resilience engineering, human error, Hollnagel
+---
+tags: engineering, resilience engineering, human error, Hollnagel
+---
 
 - ref:
 	- https://erikhollnagel.com/ideas/no-view-of-human-error.html

@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a [[mean]] test for two samples, when we don't know the population variance, but believe it to be equal. it is a type of [[t-test]].
 - assumptions:

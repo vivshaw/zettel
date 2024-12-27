@@ -1,5 +1,7 @@
-tags:: spc, dataviz, stats
-alias:: mean and range chart
+---
+tags: spc, dataviz, stats
+alias: mean and range chart
+---
 
 - a continuous [[control chart]] for small samples ($<8$).
 - it consists of two charts: one of the [[mean]], and another of the [[range]].

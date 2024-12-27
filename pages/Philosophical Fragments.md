@@ -1,4 +1,6 @@
-tags:: Kierkegaard, philosophy, books
+---
+tags: Kierkegaard, philosophy, books
+---
 
 - the title is often taken as a protest against systematic philosophy
 - the work is an exploration of Socrates' role as a teacher

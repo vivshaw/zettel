@@ -1,4 +1,6 @@
-tags:: finance, accounting
+---
+tags: finance, accounting
+---
 
 - when a piece of equipment is purchased, that can be accounted for in two ways:
 	- **expensing:** the full amount is "expensed" on the [[income statement]] in the year of purchase

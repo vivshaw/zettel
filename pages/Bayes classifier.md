@@ -1,4 +1,6 @@
-tags:: stats, Bayes, classification
+---
+tags: stats, Bayes, classification
+---
 
 - a classifier that uses [[Bayes' theorem]]. it assigns the class prediction to the class with the highest conditional probability, like so:
 	- $p_k(x) = \dfrac{\pi_k \cdot f_k(x)}{\sum_{l=1}^k{\pi_l \cdot f_l(x)}}$

@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a measure of the ability to detect something. the probability of correctly rejecting a false [[null hypothesis]].
 - calculated as $1 - \beta$ (the [[type-2 error]])

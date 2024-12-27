@@ -1,2 +1,4 @@
-tags:: philosophy
-alias:: process-relational
+---
+tags: philosophy
+alias: process-relational
+---

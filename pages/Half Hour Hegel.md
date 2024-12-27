@@ -1,4 +1,6 @@
-tags:: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
+---
+tags: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
+---
 
 - [Half Hour Hegel](https://www.youtube.com/playlist?list=PL4gvlOxpKKIgR4OyOt31isknkVH2Kweq2), an effort to close-read the entirety of [[G.W.F. Hegel]]'s [[Phenomenology of Spirit]] in half-hour chunks as YouTube videos
 	- uses [[Kojeve]] and [[Hippolyte]] commentaries as a basis- "Kojeve is fireworks, Hippolyte is a more careful, scholarly attitude"

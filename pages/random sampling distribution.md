@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a probability [[distribution]] representing all the possible sample statistics of a given size, that could have been obtained from a given [[population (statistics)]].
 - the RSD of the sample mean:

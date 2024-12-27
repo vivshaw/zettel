@@ -1,4 +1,6 @@
-tags:: Kierkegaard, philosophy, theology
+---
+tags: Kierkegaard, philosophy, theology
+---
 
 - Journal AA
 	- > This also explains a not uncommon phenomenon, a certain stinginess with ideas. Precisely because life is not healthy but knowledge too predominant, ideas are not understood as the natural flowerings on the tree of life, and are not adhered to as such, nor understood to acquire their meaning only in this sense—but as individual glimpses of light, as though such a mass of, as it were, external ideas (sit venia verbo—aphoristically) made life richer. They forget that ideas are like Thor’s hammer, which returns to where it was thrown from, even if in an altered guise.

@@ -1,4 +1,6 @@
-tags:: ml, mlops, error analysis
+---
+tags: ml, mlops, error analysis
+---
 
 - from [[Andrew Ng]], one technique would be: grab a handful of examples your algorithm misrecognizes, go through them by hand, and look for and tag patterns. for example, if you're doing speech recognition, maybe you'll find that examples with car noise or background voices are misrecognized. or for a recommender system, maybe you'll find that it recommends poorly for a specific demographic.
 	- tag those in your dataset! then you can focus in on the ones that give you the greatest opportunity for improvement.

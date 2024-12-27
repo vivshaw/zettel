@@ -1,5 +1,7 @@
-tags:: spc
-alias:: common cause, special cause
+---
+tags: spc
+alias: common cause, special cause
+---
 
 - every [[process (SPC)]] has **variability!** the output is always slightly different.
 	- this can be due to many factors- the materials, the machinery, the measurement, human action, the environment...

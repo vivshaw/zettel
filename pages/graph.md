@@ -1,3 +1,5 @@
-tags:: math, data structure
+---
+tags: math, data structure
+---
 
 -

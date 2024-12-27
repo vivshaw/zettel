@@ -1,4 +1,6 @@
-tags:: management
+---
+tags: management
+---
 
 - a particular striking one, used at Summa Healthcare:
 	- > You are what people see when they arrive here.

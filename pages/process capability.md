@@ -1,4 +1,6 @@
-tags:: spc
+---
+tags: spc
+---
 
 - a measure of how well we can meet the design spec.
 	- we can only analyze this for processes that are in a state of [[statistical control]].

@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a tool to transform the skewed distribution of $r$ into something approximally [[normal]], making it easier to use the [[one-sample test]]s and [[two-sample test]]s we might wish to use.
 - calculated as:

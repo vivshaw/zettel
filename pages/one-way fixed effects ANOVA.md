@@ -1,5 +1,7 @@
-tags:: stats, ANOVA
-alias:: Fisher ANOVA
+---
+tags: stats, ANOVA
+alias: Fisher ANOVA
+---
 
 - an ANOVA version that is one-way and assumes equal variance between the groups.
 	- see also [[Welch's ANOVA]] for cases with _unequal_ variance

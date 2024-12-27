@@ -1,4 +1,6 @@
-tags:: management, risk, [[uncertainty]]
+---
+tags: management, risk, [[uncertainty]]
+---
 
 - techniques for risk estimation:
 	- [[scenario analysis]]

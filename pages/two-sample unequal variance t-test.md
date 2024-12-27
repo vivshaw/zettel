@@ -1,5 +1,7 @@
-tags:: stats, statistical tests
-alias:: Welch's test
+---
+tags: stats, statistical tests
+alias: Welch's test
+---
 
 - a [[mean]] test for two samples, when we don't know the population variance, but believe it to be unequal. it is a type of [[t-test]].
 - assumptions:

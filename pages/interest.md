@@ -1,5 +1,7 @@
-tags:: finance, economics
-alias:: interest rate
+---
+tags: finance, economics
+alias: interest rate
+---
 
 - **simple interest:** $P * i * N$
 	- where:

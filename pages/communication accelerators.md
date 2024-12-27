@@ -1,4 +1,6 @@
-tags:: management, communication
+---
+tags: management, communication
+---
 
 - basic written and oral communication skills are good fundamentals, but not enough to succeed as an engineering leader! we need a little more than that.
 - this "something extra" we can call a communication accelerator

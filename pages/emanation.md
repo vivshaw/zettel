@@ -1,5 +1,7 @@
-tags:: philosophy, Greece, Neo-Platonism, theology
-alias:: emanate, emanates
+---
+tags: philosophy, Greece, Neo-Platonism, theology
+alias: emanate, emanates
+---
 
 - ἀπόρροια *aporrhoia*, "flowing forth"
 - in the [[Neo-Platonism]] of [[Plotinus]], emanation is a type of derivation which brings no change to the form from which the derivation took place. e.g., the world of Intellect emanating from [[the One]]

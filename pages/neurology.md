@@ -1,1 +1,3 @@
-tags:: medicine, brain, cogsci, biology
+---
+tags: medicine, brain, cogsci, biology
+---

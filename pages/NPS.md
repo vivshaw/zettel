@@ -1,5 +1,7 @@
-tags:: data
-alias:: Net Promoter Score
+---
+tags: data
+alias: Net Promoter Score
+---
 
 - "How likely is it that you would recommend our company/product/service to a friend or colleague?"
 - measured on a scale of 0-10:

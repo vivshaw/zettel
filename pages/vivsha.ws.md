@@ -1,5 +1,7 @@
-tags:: web, software engineering, design, personal
-alias:: my website
+---
+tags: web, software engineering, design, personal
+alias: my website
+---
 
 - https://vivsha.ws, my webbed site
 	- just got the URL- point this at my website instead of the old vivshaw.net

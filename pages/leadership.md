@@ -1,4 +1,6 @@
-tags:: management
+---
+tags: management
+---
 
 - before we can lead others well, we need to [lead ourselves well](personal leadership).
 - sometimes the best leadership looks like doing nothing at all:

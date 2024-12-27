@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - $EpS = \dfrac{net\ income}{\#\ of\ shares\ outstanding}$
 	- see [[net income]]

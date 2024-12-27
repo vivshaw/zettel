@@ -1,4 +1,6 @@
-tags:: networking
+---
+tags: networking
+---
 
 - a DNS server exists to convert hostnames to IP addresses.
 	- we use this instead of manually specifying hostnames, e.g. in `/etc/host`

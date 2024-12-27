@@ -1,5 +1,7 @@
-tags:: spc, dataviz, stats
-alias:: mean and standard deviation chart
+---
+tags: spc, dataviz, stats
+alias: mean and standard deviation chart
+---
 
 - a continuous [[control chart]] for large samples ($>=8$). it is less influenced by extreme values than the [[X-bar and R chart]].
 - it consists of two charts: one of the [[mean]], and another of the [[standard deviation]].

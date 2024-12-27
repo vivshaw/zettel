@@ -1,3 +1,5 @@
-tags:: stats
+---
+tags: stats
+---
 
 - contrast with [[classification]]

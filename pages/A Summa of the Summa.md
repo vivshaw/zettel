@@ -1,4 +1,6 @@
-tags:: books, Aquinas, Summa Theologica, theology, philosophy, Thomism
+---
+tags: books, Aquinas, Summa Theologica, theology, philosophy, Thomism
+---
 
 - **Introduction**
 	- > The study of philosophy is not the study of what men have opined, but of what is the truth.

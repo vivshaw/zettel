@@ -1,4 +1,6 @@
-tags:: robotics, engineering
+---
+tags: robotics, engineering
+---
 
 - a refinement of [[proportional control]]. PID control factors in not just the current error, but the integral and derivative of the error.
 	- given the time $t$, error at that point in time $e(t)$, and weights for each of the PID factors $K_p$, $K_i$, & $K_d$, we calculate:

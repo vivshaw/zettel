@@ -1,4 +1,6 @@
-tags:: security
+---
+tags: security
+---
 
 - **multi-factor authenticaion** is a way to secure access to a resource more robustly than a simple name/password.
 - a **factor** is a piece of evidence which proves your identity. you can achieve greater security by combining multiple factors, such as:

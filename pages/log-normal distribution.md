@@ -1,5 +1,7 @@
-tags:: stats, distribution
-alias:: log-normal
+---
+tags: stats, distribution
+alias: log-normal
+---
 
 - a distribution which, if you take its natural log, is [[normally distributed]].
 	- can be useful for data which is positively skewed, but mesokurtic.

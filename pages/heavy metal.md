@@ -1,1 +1,3 @@
-alias:: metal
+---
+alias: metal
+---

@@ -1,5 +1,7 @@
-tags:: philosophy, logic, metaphysics
-alias:: problem of prescience
+---
+tags: philosophy, logic, metaphysics
+alias: problem of prescience
+---
 
 - if "I will drink wine tomorrow" is contingently true, but God (necessarily, eternally) knows I will do it, then isn't it *necessarily* true?
 - addressed first by [[Aristotle]], then later by [[Boethius]], [[Duns Scotus]] (in turn starting to develop a more modern [[modal logic]])

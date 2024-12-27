@@ -1,4 +1,6 @@
-tags:: stats
-alias:: RSS
+---
+tags: stats
+alias: RSS
+---
 
 -

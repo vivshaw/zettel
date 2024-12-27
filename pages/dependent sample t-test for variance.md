@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a [[variance]] test for [[dependent samples]], using a [[t-test]]
 - assumptions:

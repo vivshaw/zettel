@@ -1,4 +1,6 @@
-tags:: finance
+---
+tags: finance
+---
 
 - US government bonds have different names depending on maturity:
 	- <6 years: **bills**

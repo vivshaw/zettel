@@ -1,5 +1,7 @@
-tags:: data
-alias:: high dimensional, high dimensionality
+---
+tags: data
+alias: high dimensional, high dimensionality
+---
 
 - the number of unique measurements associated with each data point.
 	- an example high dimensional data might be the US Census- it collects many distinct measurements on each person surveyed

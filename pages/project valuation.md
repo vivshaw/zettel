@@ -1,4 +1,6 @@
-tags:: management, finance, financial management
+---
+tags: management, finance, financial management
+---
 
 - two sides of justifying a project:
 	- **value proposition:** why should the customer buy it?

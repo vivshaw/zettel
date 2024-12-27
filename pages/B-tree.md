@@ -1,4 +1,6 @@
-tags:: db, data structure
+---
+tags: db, data structure
+---
 
 - commonly used by [[relational DB]]s
 - keeps key-value pairs in a balanced tree sorted by key, but maps them to fixed-size *blocks* or *pages*

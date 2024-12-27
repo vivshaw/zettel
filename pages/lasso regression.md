@@ -1,4 +1,6 @@
-tags:: stats, regression, regularization
+---
+tags: stats, regression, regularization
+---
 
 - similar to [[ridge regression]], except regularizes with the [[L1 norm]] instead of the [[L2 norm]]. useful when there is [[multicollinearity]].
 	- LASSO = Least Absolute Shrinkage and Selection Operator

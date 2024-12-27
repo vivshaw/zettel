@@ -1,5 +1,7 @@
-tags:: ml
-alias:: data drift, concept drift
+---
+tags: ml
+alias: data drift, concept drift
+---
 
 - when your data and reality drift apart over time
 - e.g., what if you're building speech recognition, but language evolves over a few years? or, new cellphone have different mics that pick up the words differently?

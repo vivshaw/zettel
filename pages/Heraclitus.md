@@ -1,4 +1,6 @@
-tags:: philosophy, ancient, presocratic, Greece
+---
+tags: philosophy, ancient, presocratic, Greece
+---
 
 - lived in [[Ephesus]]
 - referred to by the ancients as the Riddler, or Heraclitus the Obscure. he wrote largely in fragmentary, paradoxical statements

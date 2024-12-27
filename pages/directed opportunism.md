@@ -1,5 +1,7 @@
-tags:: management, strategy, The Art of Action, management OS
-alias:: planful opportunism
+---
+tags: management, strategy, The Art of Action, management OS
+alias: planful opportunism
+---
 
 - an approach to business strategy in a world of uncertainty and competition, based on planning only what can be planned, and building both alignment and autonomy for teams to tackle the unpredictability independently as it happens.
 	- this borrows from *[[Auftragstaktik]]* and [[mission command]] in the realm of military strategy, but adapts it to the world of modern business.

@@ -1,4 +1,6 @@
-tags:: Neo-Platonism, philosophy, theology
+---
+tags: Neo-Platonism, philosophy, theology
+---
 
 - creation and departure, and return
 - comes originally from the [[Neo-Platonist]]s, who held that all [[emanates]] from [[the One]] and all returns to it

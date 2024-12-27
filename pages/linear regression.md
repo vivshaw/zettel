@@ -1,4 +1,6 @@
-tags:: stats, regression
+---
+tags: stats, regression
+---
 
 - how do we work with [[qualitative data]]?
 	- if two levels, we make one dummy variable.

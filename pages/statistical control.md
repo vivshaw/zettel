@@ -1,4 +1,6 @@
-tags:: spc
+---
+tags: spc
+---
 
 - > A phenomenon will be said to be controlled when, through the use of past experience, we can predict at least within limits, how that phenomenon may be expected to vary in the future.
   — Shewhart (1931)

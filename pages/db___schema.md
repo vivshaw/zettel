@@ -1,5 +1,7 @@
-tags:: db
-aliases:: schema-on-read, schema-on-write
+---
+tags: db
+aliases: schema-on-read, schema-on-write
+---
 
 - **schema-on-read vs schema-on-write:**
 	- in schema-on-read, no format is enforced on data as it's written to DB. instead, it's assumed at write time.

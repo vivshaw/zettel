@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a distribution for [[continuous data]].
 - good for representing physical processes that have a restraint, like the distance of a hole from a reference edge.

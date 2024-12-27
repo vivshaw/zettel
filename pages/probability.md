@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - if you ask a [[frequentist]], the likelihood that an [[event (statistics)]] will happen. if you ask a [[Bayesian]], the degree of rational belief that it will.
 - typically expressed as a number between 0 and 1

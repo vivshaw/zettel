@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - a **population** is the group of all items with a common characteristic we want to research.
 - it is rarely possible to measure the entire population. so instead, we use [[sampling]].

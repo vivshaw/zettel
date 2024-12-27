@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - used to measure inter-rater reliability for [[qualitative data]]. measures "the proportion of agreement in excess of chance".
 - calculated as:

@@ -1,4 +1,6 @@
-tags:: stats, regression
+---
+tags: stats, regression
+---
 
 - the process of building a regression model through a multi-step procedure. this is especially common in [[data mining]]
 - 3 commons paths:

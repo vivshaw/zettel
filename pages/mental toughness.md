@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - similar in some ways to [[perseverence]] and [[psychological resilience]], but not identical!
 - > A plastic personality trait which determines, in some part, how individuals respond when exposed to stressors, pressure, opportunity, and challenge, irrespective of the prevailing situation.

@@ -1,5 +1,7 @@
-tags:: project management, management
-alias:: project management office
+---
+tags: project management, management
+alias: project management office
+---
 
 - > a management structure that standardizes the project-related governance processes and facilitates the sharing of resources, methodologies, tools, and techniques
   PMBOK *(PMI, 2013a, p. 10)*

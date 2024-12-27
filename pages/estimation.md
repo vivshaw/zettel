@@ -1,5 +1,7 @@
-tags:: stats
-alias:: estimate
+---
+tags: stats
+alias: estimate
+---
 
 - two types of estimate:
 	- **point estimate** - a single number used to estimate an unknown population parameter

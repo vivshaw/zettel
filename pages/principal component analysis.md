@@ -1,5 +1,7 @@
-tags:: stats
-alias:: PCA
+---
+tags: stats
+alias: PCA
+---
 
 - a method of [[dimensionality (data)]] reduction, visualizing [[high dimensional]] data, or feature extraction
 - imagine your data $X$ is an $n \times m$ matrix- n samples of m measurements.

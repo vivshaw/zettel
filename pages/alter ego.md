@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - lit. "other self"
 	- in one sense, an alternate identity. a *nom de plume*.

@@ -1,4 +1,6 @@
-tags:: cloud, aws
+---
+tags: cloud, aws
+---
 
 - AWS is responsible for security **of** the cloud
 	- hardware / AWS global infra

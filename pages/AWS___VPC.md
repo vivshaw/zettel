@@ -1,4 +1,6 @@
-tags:: aws, networking, security
+---
+tags: aws, networking, security
+---
 
 - an AWS Virtual Private Cloud is a virtual private network, by default isolated from the public internet unless you say so
 - you can allow a VPC to access the public Internet or the AWS public zone with [[AWS IGW]]

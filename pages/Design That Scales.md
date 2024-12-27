@@ -1,4 +1,6 @@
-tags:: books, design, systems thinking, frontend
+---
+tags: books, design, systems thinking, frontend
+---
 
 - **Introduction**
   collapsed:: true

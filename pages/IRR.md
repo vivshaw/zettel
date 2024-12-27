@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - Internal Rate of Return is the rate of return that makes the PV of cash inflows equal to the PV of the cash outflows
 	- that's a way to say, it's the actual rate of return on the project

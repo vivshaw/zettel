@@ -1,4 +1,6 @@
-tags:: Islam, Islamic philosophy, philosophy, 800s, 900s, political philosophy, Iraq
+---
+tags: Islam, Islamic philosophy, philosophy, 800s, 900s, political philosophy, Iraq
+---
 
 - hailed as the father of Islamic [[Neo-Platonism]] and the father of Islamic political philosophy
 - primarily influenced by the [[Aristotelian]] tradition

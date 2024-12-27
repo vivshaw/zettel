@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - when we know the population [[standard deviation]], we can find our minimum sample size...
 	- for directional hypotheses, with `n = (z_alpha + z_beta)^2 * sigma^2 - delta^2`, where `delta` is the effect size

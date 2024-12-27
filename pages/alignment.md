@@ -1,4 +1,6 @@
-tags:: management, psychology
-alias:: aligned
+---
+tags: management, psychology
+alias: aligned
+---
 
 -

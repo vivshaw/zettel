@@ -1,5 +1,7 @@
-tags:: design
-alias:: semantic tokens
+---
+tags: design
+alias: semantic tokens
+---
 
 - from W3C design Tokens Community Group:
 	- > the single source of truth to name and store a design decision, distributed so teams can use it across design tools and coding languages

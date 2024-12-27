@@ -1,5 +1,7 @@
-tags:: ml, mlops, stats, error analysis
-alias:: skewed datasets
+---
+tags: ml, mlops, stats, error analysis
+alias: skewed datasets
+---
 
 - a **skewed dataset** is one where the grand majority fall into one category. for example, a dataset of an extremely rare medical condition, where 99% of examples are healthy tissue
 - with a dataset like this, [[accuracy]] isn't very useful, because you can get 99% far with just `print(False)`!

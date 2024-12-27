@@ -1,1 +1,3 @@
-tags:: mastery, learning, psychology
+---
+tags: mastery, learning, psychology
+---

@@ -1,4 +1,6 @@
-tags:: St. Augustine, theology, philosophy, books, The Confessions
+---
+tags: St. Augustine, theology, philosophy, books, The Confessions
+---
 
 - **Prolegomena**
   collapsed:: true

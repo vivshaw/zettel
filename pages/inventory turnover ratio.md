@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - aka "inventory turns", how many times per year is [[inventory]] replaced?
 - $inventory\ turnover = \dfrac{COGS}{inventory}$

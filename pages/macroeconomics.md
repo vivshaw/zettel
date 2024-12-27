@@ -1,2 +1,4 @@
-tags:: economics
-alias:: macroeconomic
+---
+tags: economics
+alias: macroeconomic
+---

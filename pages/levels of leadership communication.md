@@ -1,4 +1,6 @@
-tags:: communication, management
+---
+tags: communication, management
+---
 
 - not all leadership communication is the same! same require more advanced technique
 - **level 1**

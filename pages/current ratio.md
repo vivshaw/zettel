@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - measures whether a company can pay its short term debts (time scale of a few months)
 - $current\ ratio = \dfrac{current\ assets}{current\ liabilities}$

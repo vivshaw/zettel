@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, presocratic, ancient
+---
+tags: philosophy, Greece, presocratic, ancient
+---
 
 - src:
 	- https://historyofphilosophy.net/xenophanes

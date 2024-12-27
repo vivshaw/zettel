@@ -1,4 +1,6 @@
-tags:: R, packages
+---
+tags: R, packages
+---
 
 - a package for goodness-of-fit testing for distributions.
 - `fitdist()` will fit a distribution, and `gofstat()` will calculate goodness-of-fit values.

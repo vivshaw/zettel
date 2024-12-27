@@ -1,5 +1,7 @@
-tags:: machine learning, software engineering, data science, neural network
-alias:: RNN
+---
+tags: machine learning, software engineering, data science, neural network
+alias: RNN
+---
 
 - an RNN is a [[neural network]] where the output of a node can influence the input of that same node. it is bidirectional, unlike a basic [[feedforward neural network]]
 	- effectively, "a neural network with loops in". per colah:

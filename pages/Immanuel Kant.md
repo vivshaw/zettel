@@ -1,2 +1,4 @@
-tags:: philosophy, Germany, idealism, German Idealism
-alias:: Kant
+---
+tags: philosophy, Germany, idealism, German Idealism
+alias: Kant
+---

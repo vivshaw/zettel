@@ -1,4 +1,6 @@
-tags:: stats, regression
+---
+tags: stats, regression
+---
 
 - $y = \beta_0 + \beta_1x + \epsilon$
 - estimating the coefficients with [[least squares]]:

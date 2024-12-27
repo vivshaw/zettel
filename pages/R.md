@@ -1,4 +1,6 @@
-tags:: lang, stats, data
+---
+tags: lang, stats, data
+---
 
 - gotchas: #footguns
 	- R is 1-indexed, not 0-indexed!

@@ -1,4 +1,6 @@
-tags:: finance, management, time
+---
+tags: finance, management, time
+---
 
 - the Payback Period is the time necessary for an investment to be fully recovered
 - two ways to calculate:

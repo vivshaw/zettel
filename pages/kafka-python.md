@@ -1,4 +1,6 @@
-tags:: python, Apache Kafka, message queue
+---
+tags: python, Apache Kafka, message queue
+---
 
 - the Python library for interacting with [[Apache Kafka]]
 	- [docs](https://kafka-python.readthedocs.io/en/master/)

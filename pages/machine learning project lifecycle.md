@@ -1,4 +1,6 @@
-tags:: machine learning, project management, mlops
+---
+tags: machine learning, project management, mlops
+---
 
 - [[Andrew Ng]]'s version:
 	- **scoping**

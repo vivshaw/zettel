@@ -1,5 +1,7 @@
-tags:: project management
-alias:: Project Management Body of Knowledge
+---
+tags: project management
+alias: Project Management Body of Knowledge
+---
 
 - the [[PMI]]'s standard body of knowledge for project management
 - breaking down the PMBOK:

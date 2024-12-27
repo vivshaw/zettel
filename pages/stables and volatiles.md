@@ -1,4 +1,6 @@
-tags:: engineering management, management, Michael Lopp
+---
+tags: engineering management, management, Michael Lopp
+---
 
 - original article: [Stables and Volatiles](https://randsinrepose.com/archives/stables-and-volatiles/)
 - stables and volatiles are types of engineers

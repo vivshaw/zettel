@@ -1,4 +1,6 @@
-tags:: data, dataviz
+---
+tags: data, dataviz
+---
 
 - used to display data corresponding to percentiles of a dataset. it doesn't care about the distribution, so you can use it to compare data with disparate shapes.
 - based on 5 numerical measures:

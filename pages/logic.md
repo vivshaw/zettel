@@ -1,1 +1,3 @@
-tags:: math
+---
+tags: math
+---

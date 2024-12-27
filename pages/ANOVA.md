@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - **analysis of variance** is a test of differences in [[mean]]s for more than two groups. it allows us to test hypotheses with > 2 levels. it works by comparing variation _between_ groups, to variation _within_ groups
 	- we use this over running multiple [[t-test]]s because running multiple tests inflates [[type-1 error]]!

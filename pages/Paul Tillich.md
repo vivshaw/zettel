@@ -1,4 +1,6 @@
-tags:: theology, philosophy, socialism, Germany, 1900s
+---
+tags: theology, philosophy, socialism, Germany, 1900s
+---
 
 - the first non-Jewish professor to be stripped of his post by Hitler for his anti-fascist views
 - brought [[Horkheimer]] onto the Frankfurt philosophy faculty, and supervised [[Adorno]]'s dissertation

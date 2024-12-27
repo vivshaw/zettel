@@ -1,4 +1,6 @@
-tags:: spc, stats, dataviz
+---
+tags: spc, stats, dataviz
+---
 
 - control charts allow us to distinguish between [[common cause]] and [[special cause]] variation
 - these charts typically plot a variable against a centerline, usually the average value, and upper and lower control limits, which show the expected variation

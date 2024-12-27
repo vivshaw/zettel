@@ -1,5 +1,7 @@
-tags:: stats, data, tables
-alias:: independent format, dependent format
+---
+tags: stats, data, tables
+alias: independent format, dependent format
+---
 
 - in **independent format**, data has a column for the grouping variable, and a column for the value, like so:
 	- | Group | Foo |

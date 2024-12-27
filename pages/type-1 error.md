@@ -1,5 +1,7 @@
-tags:: stats
-alias:: false positive
+---
+tags: stats
+alias: false positive
+---
 
 - the probability of rejecting the [[null hypothesis]], given that it is in fact true. for example, convicting an innocent person.
 - represented with the Greek letter α

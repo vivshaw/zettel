@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - to compare the benefits of projects that have their benefits at different times in the future, we discount their values to today's dollars (calculate PV).
 - for a single cash flow: $PR = \dfrac{FV}{(1 + i)^N}$

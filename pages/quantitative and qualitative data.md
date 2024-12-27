@@ -1,5 +1,7 @@
-tags:: stats, data
-alias:: quantitative data, qualitative data, discrete data, continuous data
+---
+tags: stats, data
+alias: quantitative data, qualitative data, discrete data, continuous data
+---
 
 - **quantitative** data is measured on a numerical scale. it has two types:
 	- **continuous** data, which falls along a continuous scale. e.g., the weight of a puppy in kg.

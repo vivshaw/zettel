@@ -1,4 +1,6 @@
-tags:: philosophy, theology, Kierkegaard, books
+---
+tags: philosophy, theology, Kierkegaard, books
+---
 
 - **Problema I**
 	- **Is there a teleological suspension of the ethical?**

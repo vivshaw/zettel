@@ -1,4 +1,6 @@
-tags:: spc, stats
+---
+tags: spc, stats
+---
 
 - a set of constants that can be used to estimate the standard deviations for variables we wish to measure on [[control chart]]s. the are empirical estimates based on the [[sample size]].
 - we can use these to calculate:

@@ -1,4 +1,6 @@
-tags:: finance
+---
+tags: finance
+---
 
 - there are several types!
 	- security analysis- determine what the ideal price of a stock or bond asset should be

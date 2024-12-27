@@ -1,4 +1,6 @@
-tags:: spc
+---
+tags: spc
+---
 
 - a **process** is everything that interacts to produce an output
 - sometimes modeled with the **SIPOC model**

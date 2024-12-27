@@ -1,4 +1,6 @@
-tags:: aws, cloud, IaC
+---
+tags: aws, cloud, IaC
+---
 
 - allows you to use [[JSON]] or [[YAML]] templates to automate creating, configuring, and deleting AWS resources
 - a *template* of logical resources is instantiated as a *stack* of actual resources

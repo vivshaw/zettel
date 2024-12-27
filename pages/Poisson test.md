@@ -1,4 +1,6 @@
-tags:: stats, [[statistical tests]]
+---
+tags: stats, [[statistical tests]]
+---
 
 - a test for discrete data, using the [[Poisson distribution]].
 - assumptions:

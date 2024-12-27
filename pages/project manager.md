@@ -1,4 +1,6 @@
-tags:: project management, management
+---
+tags: project management, management
+---
 
 - [per PMI](https://www.pmi.org/about/learn-about-pmi/who-are-project-managers):
 	- > Project managers are organized, goal-oriented professionals who use passion, creativity, and collaboration to design projects that are destined for success.

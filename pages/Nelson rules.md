@@ -1,4 +1,6 @@
-tags:: spc
+---
+tags: spc
+---
 
 - a set of rules for assessing whether a process is in control via its [[control chart]], from Nelson (1984)
 - **1 - outside limits rule**

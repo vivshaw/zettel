@@ -1,4 +1,6 @@
-tags:: robotics, engineering, electronics
+---
+tags: robotics, engineering, electronics
+---
 
 - sensors can be:
 	- **active** sensors, which emit a signal and measure how the environment reacts

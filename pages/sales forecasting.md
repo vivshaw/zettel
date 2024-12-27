@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - qualitative methods:
 	- **executive opinions:** form a consensus across upper management.

@@ -1,4 +1,6 @@
-tags:: existentialism, Christianity, philosophy
+---
+tags: existentialism, Christianity, philosophy
+---
 
 - concepts:
 	- **ontological need** - a deeply need, for something in life that's not just contingent

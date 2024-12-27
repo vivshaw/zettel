@@ -1,4 +1,6 @@
-tags:: architecture, medieval, 1100s
+---
+tags: architecture, medieval, 1100s
+---
 
 - a style of European architecture from the High and Late Middle Ages, starting in [[France]], characterized by pointed arches, great heights, cavernous spaces, the [[flying buttress]]
 - the cathedral is probably the archetypical Gothic building

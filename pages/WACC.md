@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - the **weighted average cost of capital** is used to calculate a company's [[discount rate]]
 - for projects funded with loans or bonds, the cost of capital is a weighted average of the interest rates on those assets

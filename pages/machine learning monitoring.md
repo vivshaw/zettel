@@ -1,4 +1,6 @@
-tags:: ml, mlops
+---
+tags: ml, mlops
+---
 
 - via [[Andrew Ng]], techniques you may use:
 	- a monitoring [[dashboard]], to visually track a bunch of metrics you might care about:

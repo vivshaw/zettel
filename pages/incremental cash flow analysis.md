@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - how can we assess a project that is costs only? for example, a cost reduction project, rather than a revenue-generating one.
 - we can't use [[NPV]]- it will be negative! or [[IRR]]- it won't exist!

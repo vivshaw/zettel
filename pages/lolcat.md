@@ -1,4 +1,6 @@
-tags:: R, packages, stats
+---
+tags: R, packages, stats
+---
 
 - an extremely useful package of stats utilities for R.
 	- [documentation on RDRR](https://rdrr.io/github/burrm/lolcat/)

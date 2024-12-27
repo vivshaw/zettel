@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - [[ordinary least squares]] assumes that the errors of the model are independent and identically distributed. what can we do if they aren't? for example, what if the data is [[heteroscedastic]]?
 - **generalized least squares** instead assumes the error terms have a non-diagonal covariance matrix $\Omega$.

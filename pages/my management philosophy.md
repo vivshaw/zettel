@@ -1,4 +1,6 @@
-tags:: management
+---
+tags: management
+---
 
 - values:
 	- **cultivate openness, autonomy, and trust.**

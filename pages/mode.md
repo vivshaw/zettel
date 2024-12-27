@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a measure of [[central tendency]]. can be seen as the peak of the dataset.
 - it is the most frequently occurring value in the dataset.

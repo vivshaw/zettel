@@ -1,4 +1,6 @@
-tags:: stats, data, distributions
+---
+tags: stats, data, distributions
+---
 
 - a discrete distribution for [[ordinal data]] or [[absolute data]] . for example, the number of occurrences of an event within some interval, or the number of defects per item.
 - calculated as: `P(X) = (lambda^X / X!) * e^-lambda`

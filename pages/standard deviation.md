@@ -1,5 +1,7 @@
-tags:: stats, data
-alias:: SD
+---
+tags: stats, data
+alias: SD
+---
 
 - a measure of [[dispersion]]
 - the square root of the average squared distance from the mean

@@ -1,4 +1,6 @@
-tags:: distsys, kubernetes
+---
+tags: distsys, kubernetes
+---
 
 - [Helm](https://helm.sh/), "the package manager for Kubernetes", is a tool to help mange the complexity of deploying a full app on k8s.
 	- without Helm, you could write an indvidual YAML file for each and every service, then `kubectl apply` them all in the right order, providing the right secrets... Helm lets you *not* do that.

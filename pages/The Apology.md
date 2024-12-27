@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, Plato, Socrates
+---
+tags: philosophy, Greece, Plato, Socrates
+---
 
 - an account of Socrates' defense in his trial for corrupting the youth
 - Socrates outlines his view that he is not a teacher, and knows nothing. his task is to interrogate those who *think* they know something. and it turns out, none of them do! the wisest are the most foolish, while the common folk are closest to wisdom

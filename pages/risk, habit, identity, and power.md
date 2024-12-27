@@ -1,4 +1,6 @@
-tags:: sociology, power, risk, identity
+---
+tags: sociology, power, risk, identity
+---
 
 - from [a study on why doctors won't adopt smartphone apps, and prefer pagers](https://www.npr.org/transcripts/1197955913), and I learned it [via Fred Hebert](https://ferd.ca/notes/rhip-doctors-and-pagers.html)
 	- **Risk**: Doctors often felt cell phones didn't have enough battery to go through a full shift; Pagers had fewer dead zones than cell phones; During big emergencies, the pager network has less of a tendency to be overloaded than the phone network

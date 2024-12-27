@@ -1,4 +1,6 @@
-tags:: cloud, sre, distsys
+---
+tags: cloud, sre, distsys
+---
 
 - "an aim to ensure an agreed level of operational performance, usually uptime, for a higher than normal period"
 - typically measured in 9's- 99.9% (3 9's), 99.999% (5 9's), etc

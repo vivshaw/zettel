@@ -1,4 +1,6 @@
-tags:: finance, accounting, financial statements
+---
+tags: finance, accounting, financial statements
+---
 
 - the **income statement** is a summary of a company's financial performance over one year
 - key elements, in order:

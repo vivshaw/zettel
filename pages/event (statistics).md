@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - one or more possible outcomes of a situation or experiment, to which a probability is assigned
 - events can be:

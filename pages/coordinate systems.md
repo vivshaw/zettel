@@ -1,4 +1,6 @@
-tags:: math, robotics, engineering, kinematics
+---
+tags: math, robotics, engineering, kinematics
+---
 
 - we care about both:
 	- **translation** (positioning the object within the space)

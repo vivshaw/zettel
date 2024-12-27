@@ -1,4 +1,6 @@
-tags:: stats, regression, non-parametric regression
+---
+tags: stats, regression, non-parametric regression
+---
 
 - a class of techniques for non-parametric estimation of functions
 	- the [[kernel]] must satisfy $\int^{\infty}_{-\infty} k(x)dx = 1$

@@ -1,4 +1,6 @@
-tags:: systems engineering
+---
+tags: systems engineering
+---
 
 - **analysis** is a task that uses well-founded analytic technique, like mathematical or computer models, to understand the system or an element in it.
 	- we might use analysis together with data we gather from [[testing (SE)]] to build confidence that the results are as expected.

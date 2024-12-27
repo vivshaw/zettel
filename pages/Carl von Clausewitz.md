@@ -1,5 +1,7 @@
-tags:: military, history, strategy, Prussia, Germany, 1700s
-alias:: Clausewitz
+---
+tags: military, history, strategy, Prussia, Germany, 1700s
+alias: Clausewitz
+---
 
 - Prussian general in the late eighteenth and early nineteenth century, during the Napoleonic era. Author of the monumental work of military strategy, *Vom Kriege*
 - saw Prussia's defeat at the hands of [[Napoleon]], and through military reform, helped turn it around and defeat Napoleon

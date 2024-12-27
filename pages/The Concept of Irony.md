@@ -1,4 +1,6 @@
-tags:: philosophy, Kierkegaard, irony, books, histphil
+---
+tags: philosophy, Kierkegaard, irony, books, histphil
+---
 
 - examines various types of subjectivism and relativism that are used as critiques of tradition. Like, "oh, that law isn't a universal moral law, it's just relative"
 - Kierkegaard calls these tendencies *irony*

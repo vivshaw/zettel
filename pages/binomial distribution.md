@@ -1,4 +1,6 @@
-tags:: stats, data, distributions
+---
+tags: stats, data, distributions
+---
 
 - a distribution used for a discrete random variable with two outcomes
 - based on a repeated [[Bernoulli process]]

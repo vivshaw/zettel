@@ -1,4 +1,6 @@
-tags:: linux, FHS
+---
+tags: linux, FHS
+---
 
 - `/etc` stores host-specific system-wide configuration files.
 - It should contain static config files, and no binaries.

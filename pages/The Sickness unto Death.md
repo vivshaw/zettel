@@ -1,4 +1,6 @@
-tags:: books, Kiekegaard, philosophy, anxiety
+---
+tags: books, Kiekegaard, philosophy, anxiety
+---
 
 - similar to [[The Concept of Anxiety]], addresses despair and anxiety as sin
 - appeals to [[Socrates]] and against the crowd, and uses the negative of Socratic ignorance to guard Christianity against the mistaken positive views of his day

@@ -1,4 +1,6 @@
-tags:: finance, accounting, financial statements
+---
+tags: finance, accounting, financial statements
+---
 
 - a statement reporting a company's assets, liabilities, and shareholder equity at a specific point in time.
 - **assets:** what the company owns

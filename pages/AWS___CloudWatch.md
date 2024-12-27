@@ -1,4 +1,6 @@
-tags:: aws, cloud
+---
+tags: aws, cloud
+---
 
 - collects and manages operational data, such as logs
 - you can namespace stuff in CloudWatch

@@ -1,4 +1,6 @@
-tags:: books, management
+---
+tags: books, management
+---
 
 - concepts:
 	- types of power:

@@ -1,3 +1,5 @@
-tags:: web, design
+---
+tags: web, design
+---
 
 - wrote [[Atomic Design]]

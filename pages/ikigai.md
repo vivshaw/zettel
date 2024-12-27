@@ -1,4 +1,6 @@
-tags:: philosophy, sociology, psychology, Japan
+---
+tags: philosophy, sociology, psychology, Japan
+---
 
 - *ikigai* is a state of wellbeing that arises from devotion to activities one enjoys, which also brings a sense of fulfillment (Kumano 2017)
 - different from momentary pleasure- more like the classical Greek [[eudaimonia]]

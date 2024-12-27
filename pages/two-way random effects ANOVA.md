@@ -1,3 +1,5 @@
-tags:: stats, ANOVA
+---
+tags: stats, ANOVA
+---
 
 -

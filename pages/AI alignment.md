@@ -1,4 +1,6 @@
-tags:: machine learning, software engineering
+---
+tags: machine learning, software engineering
+---
 
 - [AI alignment](https://research.ibm.com/blog/what-is-alignment-ai) is the process of getting AI models to follow human values and seek human goals. Norbert Weiner thought it up in 1960:
 	- > If we use, to achieve our purposes, a mechanical agency with whose operation we cannot interfere effectively… we had better be quite sure that the purpose put into the machine is the purpose which we really desire.

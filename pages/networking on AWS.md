@@ -1,4 +1,6 @@
-tags:: aws, networking
+---
+tags: aws, networking
+---
 
 - **3 networking zones:**
 	- the public Internet

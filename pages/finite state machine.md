@@ -1,5 +1,7 @@
-tags:: compsci
-alias:: state machine, FSM
+---
+tags: compsci
+alias: state machine, FSM
+---
 
 - a construct that defines **states** and **transitions** between those states. something like this:
 	- ![image.png](../assets/image_1732606255353_0.png){:height 283, :width 648}

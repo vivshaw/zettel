@@ -1,5 +1,7 @@
-tags:: stats
-alias:: bootstrap (stats)
+---
+tags: stats
+alias: bootstrap (stats)
+---
 
 - **bootstrapping** is sampling from the data we observed, to estimate a distribution. we repeatedly sample the data we observed to construct a sampling distribution. usually, we sample with replacement.
 	- for example, we might repeatedly sample our data, fit our model, and get our predictors. then, look at the sampling distribution of the mean of those predictors, and use it to estimate the true mean.

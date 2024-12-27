@@ -1,4 +1,6 @@
-tags:: safety, robotics
+---
+tags: safety, robotics
+---
 
 - **active safety** involves controlling the robot in ways that avoid harm.
 	- you might do this by controlling the voltage of all actuators, combined with a dynamic model of how much force the robot _should_ be applying

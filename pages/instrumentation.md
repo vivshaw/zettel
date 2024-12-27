@@ -1,3 +1,5 @@
-tags:: observability, software engineering, SRE
+---
+tags: observability, software engineering, SRE
+---
 
 - software that emits [[telemetry]]

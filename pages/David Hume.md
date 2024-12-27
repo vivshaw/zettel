@@ -1,2 +1,4 @@
-tags:: philosophy, empiricism, Scotland, Enlightenment
-alias:: Hume
+---
+tags: philosophy, empiricism, Scotland, Enlightenment
+alias: Hume
+---

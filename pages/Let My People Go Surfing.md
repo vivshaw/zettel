@@ -1,4 +1,6 @@
-tags:: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing, product
+---
+tags: books, environmentalism, Yvon Chouinard, management, Patagonia, climbing, product
+---
 
 - **Introduction**
   collapsed:: true

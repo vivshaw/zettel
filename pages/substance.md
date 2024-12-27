@@ -1,2 +1,4 @@
-tags:: philosophy, metaphysics
-alias:: substances
+---
+tags: philosophy, metaphysics
+alias: substances
+---

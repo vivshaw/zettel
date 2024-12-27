@@ -1,4 +1,6 @@
-tags:: ml, mlops
+---
+tags: ml, mlops
+---
 
 - from [[Andrew Ng]], software issues you might confront when taking a model to deployment:
 	- do you need realtime inference, or is batch processing OK?

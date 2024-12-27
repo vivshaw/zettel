@@ -1,4 +1,6 @@
-tags:: data, dataviz
+---
+tags: data, dataviz
+---
 
 - a **density plot** can be thought of like a smooth version of a [[histogram]]
 - used for [[discrete data]]

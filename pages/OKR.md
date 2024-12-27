@@ -1,5 +1,7 @@
-tags:: engineering management, management, metrics
-alias:: key results
+---
+tags: engineering management, management, metrics
+alias: key results
+---
 
 - Objectives and Key Results, a framework for measuring goals pioneered by [[John Doerr]] (see [[Measure What Matters]]) and [[Google]]. you set goals in groups of an objective an one or more key results:
 	- an **objective** is a statement of your goal

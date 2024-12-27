@@ -1,4 +1,6 @@
-tags:: theology, Eastern Christianity, Orthodoxy
+---
+tags: theology, Eastern Christianity, Orthodoxy
+---
 
 - quite common in [[Eastern Christianity]]
 - some examples:

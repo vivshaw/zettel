@@ -1,4 +1,6 @@
-tags:: aws, cloud
+---
+tags: aws, cloud
+---
 
 - an Amazon Resource Identifier is a unique identifier for a particular AWS resource
 - valid formats

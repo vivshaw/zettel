@@ -1,4 +1,6 @@
-tags:: spc
+---
+tags: spc
+---
 
 - **quality** in SPC comes from two places:
 	- **design quality**, knowing the right targets to aim for

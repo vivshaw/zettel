@@ -1,4 +1,6 @@
-tags:: engineering, systems engineering, systems thinking
+---
+tags: engineering, systems engineering, systems thinking
+---
 
 - the lifecycle:
 	- **planning**

@@ -1,4 +1,6 @@
-tags:: psychology, communication
+---
+tags: psychology, communication
+---
 
 - "the ability to sense what others are feeling"
 - how do we do this?

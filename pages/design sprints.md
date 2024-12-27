@@ -1,4 +1,6 @@
-tags:: Google, design, agile
+---
+tags: Google, design, agile
+---
 
 - a methodology from Google for doing design in an agile way
 - 5 steps:

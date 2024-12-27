@@ -1,4 +1,6 @@
-tags:: stats, [[relationship (stats)]]
+---
+tags: stats, [[relationship (stats)]]
+---
 
 - $\rho_{pbi}$, a measure of [[correlation]] between a continuous variable and a two-outcome nominal variable.
 - assumptions:

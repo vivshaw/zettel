@@ -1,2 +1,4 @@
-tags:: philosophy
-alias:: histphil
+---
+tags: philosophy
+alias: histphil
+---

@@ -1,4 +1,6 @@
-tags:: finance, accounting
+---
+tags: finance, accounting
+---
 
 - Earnings Before Interest & Taxes - a measure of operating income
 - $EBIT = earnings + interest + taxes$

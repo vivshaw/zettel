@@ -1,4 +1,6 @@
-tags:: systems engineering
+---
+tags: systems engineering
+---
 
 - per ISO, the purpose of requirements is to transform the user-oriented view of the desired capabilities into a technical view if how to do it
 - requirements should be about capabilities, **not** about how to provide them

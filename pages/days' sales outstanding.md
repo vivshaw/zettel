@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - measures the average time it takes to collect on [[accounts receivable]]
 - $avg.\ revenue\ per\ day = \dfrac{annual\ revenue}{365}$

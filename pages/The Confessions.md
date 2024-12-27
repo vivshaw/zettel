@@ -1,4 +1,6 @@
-tags:: St. Augustine, theology, books
+---
+tags: St. Augustine, theology, books
+---
 
 -
 - **Book 1**

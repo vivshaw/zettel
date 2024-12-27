@@ -1,4 +1,6 @@
-tags:: engineering, resilience engineering
+---
+tags: engineering, resilience engineering
+---
 
 - the ability of a system to stretch and adjust to handle surprises
 - if your system can't stretch and adjust, it is brittle! it may operate great in "normal" situations, but will collapse rapidly when outside the expected situation

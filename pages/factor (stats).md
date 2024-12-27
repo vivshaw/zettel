@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - an independent or treatment variable, having a number of levels
 - can be either:

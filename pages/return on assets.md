@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - measures on average how profitable investments by the company have been
 - $ROA = \dfrac{net\ income}{total\ assets}$

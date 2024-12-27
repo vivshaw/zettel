@@ -1,4 +1,6 @@
-tags:: finance
+---
+tags: finance
+---
 
 - a **perpetuity** s a series of [[annuity]] payments that go on forever.
 - calculated with: $PV = A / i$

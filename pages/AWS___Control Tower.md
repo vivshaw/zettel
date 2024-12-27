@@ -1,4 +1,6 @@
-tags:: aws, cloud
+---
+tags: aws, cloud
+---
 
 - makes it quick to set up multi-account environments by orchestrating other AWS services, such as:
 	- [[AWS/Organization]]

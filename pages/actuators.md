@@ -1,4 +1,6 @@
-tags:: engineering, robotics, electronics
+---
+tags: engineering, robotics, electronics
+---
 
 - **motors** tend to rotate
 	- electric motors use electromagnetism to force a shaft to rotate

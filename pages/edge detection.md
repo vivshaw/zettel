@@ -1,4 +1,6 @@
-tags:: computer vision, math
+---
+tags: computer vision, math
+---
 
 - we can detect edges via convolution, using what's called a Sobel [[kernel]]:
 	- $s_x(x, y) = \begin{pmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{pmatrix}$ (for vertical edge detection)

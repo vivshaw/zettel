@@ -1,4 +1,6 @@
-tags:: stats, data, tables
+---
+tags: stats, data, tables
+---
 
 - a format for data in which each column is a variable, and a column is added for the frequency of the given combination of variables.
 - e.g.:

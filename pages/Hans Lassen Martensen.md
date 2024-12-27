@@ -1,5 +1,7 @@
-tags:: Denmark, philosophy, theology, 1800s
-alias:: Martensen
+---
+tags: Denmark, philosophy, theology, 1800s
+alias: Martensen
+---
 
 - A Danish philosopher, professor at the University of Copenhagen, and bishop
 - travelled Germany and became interested in [[Hegel]]

@@ -1,4 +1,6 @@
-tags:: engineering, systems engineering, systems thinking
+---
+tags: engineering, systems engineering, systems thinking
+---
 
 - SoS engineering differs in a number of ways from regular ol' [[systems engineering]]
 - requirements:

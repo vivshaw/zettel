@@ -1,4 +1,6 @@
-tags:: cost, finance, management
+---
+tags: cost, finance, management
+---
 
 - **discrete cost modeling**- choose the minimum cost among several discrete options
 	- e.g., maybe you're evaluating a choice between two different electric motors to use in your factory.

@@ -1,1 +1,3 @@
-tags:: Greco-Roman paganism
+---
+tags: Greco-Roman paganism
+---

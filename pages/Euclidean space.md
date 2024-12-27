@@ -1,4 +1,6 @@
-tags:: math, geometry
+---
+tags: math, geometry
+---
 
 - equivalent to the set $\R^n$ of tuples of $n$ real numbers, plus the [[dot product]]
 - we can compute distance in a 2-d Euclidean space between two points $x$ and $y$ by using the [[Pythagorean Theorem]] to measure the hypotenuse of a triangle defined by them, like so:

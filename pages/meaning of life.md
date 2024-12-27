@@ -1,4 +1,6 @@
-tags:: psychology, philosophy
+---
+tags: psychology, philosophy
+---
 
 - src:
 	- Martela & Steger - [The Three Meanings of Meaning in Life](https://www.its.caltech.edu/~squartz/Martela-Steger-JOPP.pdf)

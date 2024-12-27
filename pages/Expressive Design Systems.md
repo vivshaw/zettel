@@ -1,4 +1,6 @@
-tags:: design, books, design system, systems thinking
+---
+tags: design, books, design system, systems thinking
+---
 
 - **Introduction**
   collapsed:: true

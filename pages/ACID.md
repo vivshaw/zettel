@@ -1,4 +1,6 @@
-tags:: db
+---
+tags: db
+---
 
 - **Atomicity**
 	- different from [[atomic operation]]s

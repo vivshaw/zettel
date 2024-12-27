@@ -1,5 +1,7 @@
-tags:: management
-alias:: pm
+---
+tags: management
+alias: pm
+---
 
 - the art of management with respect to [[pm/project]]s
 	- "the use of specific knowledge, skills, tools, & techniques to deliver something of value to people"

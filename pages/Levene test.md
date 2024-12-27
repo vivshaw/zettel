@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a statistical test for [[mean absolute deviation]], which uses a [[t-test]] for two samples, or the [[ANOVA]] for more than two
 - assumes that the data is [[normal]]

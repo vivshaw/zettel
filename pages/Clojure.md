@@ -1,3 +1,5 @@
-tags:: lang, lisp, fp
+---
+tags: lang, lisp, fp
+---
 
 - Clojure is [[sick]] as hell.

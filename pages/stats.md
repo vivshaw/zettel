@@ -1,2 +1,4 @@
-tags:: math
-alias:: statistics
+---
+tags: math
+alias: statistics
+---

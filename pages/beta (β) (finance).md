@@ -1,5 +1,7 @@
-alias:: beta
-tags:: finance, economics
+---
+alias: beta
+tags: finance, economics
+---
 
 - beta ($\beta$) is a term from the [[CAPM]]. The beta of a given security is the [[covariance]] of that individual security’s [[volatility]] with the volatility of the market as a whole.
 - effectively, it’s a measure of co-movement with the market, or [[systematic risk]]:

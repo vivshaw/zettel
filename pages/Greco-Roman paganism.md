@@ -1,1 +1,3 @@
-alias:: Greco-Roman pagan
+---
+alias: Greco-Roman pagan
+---

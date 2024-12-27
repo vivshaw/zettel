@@ -1,4 +1,6 @@
-tags:: management, military, books, history, strategy
+---
+tags: management, military, books, history, strategy
+---
 
 - **Preface**
 	- starts with an analysis of [[Rommel]]'s success in [[WWII]]. some had falsely thought that military success was owed to national character, some inherent superiority of the Germans as a people. that's obviously not the case (and views like that led to horrible consequences, not success!). others thought it owed to individuals- perhaps he was a brilliant [[great man]] who changed the tide of war. but what if it's neither of those things? what if it's all about organization and practice?

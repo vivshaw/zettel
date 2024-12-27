@@ -1,4 +1,6 @@
-tags:: books, devops, software engineering
+---
+tags: books, devops, software engineering
+---
 
 - **Foreward/Intro**
 	- this book dispels the myth that there's a tradefoff between speed and safety.

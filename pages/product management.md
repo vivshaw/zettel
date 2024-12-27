@@ -1,2 +1,4 @@
-tags:: management
-alias:: product manager
+---
+tags: management
+alias: product manager
+---

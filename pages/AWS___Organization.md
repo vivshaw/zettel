@@ -1,4 +1,6 @@
-tags:: aws, cloud
+---
+tags: aws, cloud
+---
 
 - a tool for grouping AWS accounts
 - has a **management account:** the account your created it with

@@ -1,4 +1,6 @@
-tags:: sensors, robotics, electronics
+---
+tags: sensors, robotics, electronics
+---
 
 - we might start with simple **reflection**
 	- a common way to do this is with a light emitter-receiver pair, relying on the nonlinear reduction in intensity we'll have as a light moves farther away.

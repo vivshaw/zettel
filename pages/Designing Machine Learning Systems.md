@@ -1,4 +1,6 @@
-tags:: books, machine learning, MLOps, system design, [[Chip Huyen]], data science
+---
+tags: books, machine learning, MLOps, system design, [[Chip Huyen]], data science
+---
 
 - **Preface**
   collapsed:: true

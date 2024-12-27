@@ -1,3 +1,5 @@
-tags:: philosophy, Germany, 1900s
+---
+tags: philosophy, Germany, 1900s
+---
 
 -

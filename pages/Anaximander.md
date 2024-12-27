@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, presocratic, ancient, Milesian school
+---
+tags: philosophy, Greece, presocratic, ancient, Milesian school
+---
 
 - src
 	- https://www.historyofphilosophy.net/anaximander-anaximenes

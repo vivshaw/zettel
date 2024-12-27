@@ -1,5 +1,7 @@
-tags:: philosophy, France
-alias:: Ellul
+---
+tags: philosophy, France
+alias: Ellul
+---
 
 - concepts:
 	- **technique**:

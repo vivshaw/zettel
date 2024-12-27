@@ -1,4 +1,6 @@
-tags:: linux
+---
+tags: linux
+---
 
 - [official docs](https://systemd.io/)
 - use [[systemctl]] to control services, and [[journalctl]] to view the logs for a service

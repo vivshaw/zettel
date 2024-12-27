@@ -1,4 +1,6 @@
-tags:: management, psychology, systems thinking
+---
+tags: management, psychology, systems thinking
+---
 
 - intentional change theory (ICT) is a theory about what it takes to make a sustained, desired change in one's behavior. it is a [[complex systems]] perspective, that applies to both individuals and organizations.
 - refs:

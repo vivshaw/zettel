@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, ancient
-alias:: Socratic
+---
+tags: philosophy, Greece, ancient
+alias: Socratic
+---
 
 -

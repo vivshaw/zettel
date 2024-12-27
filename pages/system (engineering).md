@@ -1,4 +1,6 @@
-tags:: engineering, systems engineering, systems thinking
+---
+tags: engineering, systems engineering, systems thinking
+---
 
 - per [[INCOSE]]:
 	- > A system is a construct or collection of different elements that together produce results not obtainable by the elements alone.

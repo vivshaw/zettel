@@ -1,4 +1,6 @@
-tags:: stats, Poisson, regression
+---
+tags: stats, Poisson, regression
+---
 
 - a regression used to model counts.
 	- $P(y=k) = \dfrac{e^{-\lambda} \cdot \lambda^k}{K!}$

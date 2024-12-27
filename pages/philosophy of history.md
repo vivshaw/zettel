@@ -1,2 +1,4 @@
-tags:: philosophy
-alias:: philhist
+---
+tags: philosophy
+alias: philhist
+---

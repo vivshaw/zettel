@@ -1,4 +1,6 @@
-tags:: cloud, aws
+---
+tags: cloud, aws
+---
 
 - **Key Management Service** is a regional, public service that creates, stores, and manages keys
 - can work with both symmetric and asymmetric keys

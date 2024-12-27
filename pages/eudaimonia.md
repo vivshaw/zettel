@@ -1,4 +1,6 @@
-tags:: philosophy, psychology, Greece
+---
+tags: philosophy, psychology, Greece
+---
 
 - literally meaning "good spirit", but popularized by [[Aristotle]] as meaning "the highest human good", or "doing and living well"
 - not the same as pleasure, or other commonly-held sources of well-being:

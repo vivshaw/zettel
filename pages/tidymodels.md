@@ -1,4 +1,6 @@
-tags:: R
+---
+tags: R
+---
 
 - you can create a model like:
 	- ```R

@@ -1,5 +1,7 @@
-tags:: Keynesianism, economics, macro
-alias:: Keynes
+---
+tags: Keynesianism, economics, macro
+alias: Keynes
+---
 
 - misc quotes:
 	- > "Let us clear from the ground the metaphysical or general principles upon which, from time to time, *laissez-faire* has been founded. It is *not* true that individuals possess a prescriptive 'natural liberty' in their economic activities. There is *no* 'compact' conferring perpetual rights on those who Have or on those who Acquire. The world is *not* so governed from above that private and social interest always coincide. It is *not* so managed here below that in practice they coincide. It is *not* a correct deduction from the Principles of Economics that enlightened self-interest always operates in the public interest. Nor is it true that self-interest generally *is* enlightened; more often individuals acting separately to promote their own ends are too ignorant or too weak to attain even these. Experience does *not* show that individuals, when they make up a social unit, are always less clear-sighted than when they act separately.

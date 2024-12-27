@@ -1,1 +1,3 @@
-tags:: philosophy
+---
+tags: philosophy
+---

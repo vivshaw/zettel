@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - refs:
 	- [Boyatzis, R.E.](https://www.emerald.com/insight/search?q=Richard%20E.%20Boyatzis) and [Akrivou, K.](https://www.emerald.com/insight/search?q=Kleio%20Akrivou) (2006), "[The ideal self as the driver of intentional change](https://www.researchgate.net/publication/242203714_The_ideal_self_as_the_driver_of_intentional_change)", *[Journal of Management Development](https://www.emerald.com/insight/publication/issn/0262-1711)*, Vol. 25 No. 7, pp. 624-642.

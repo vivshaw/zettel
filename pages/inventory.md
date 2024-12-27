@@ -1,4 +1,6 @@
-tags:: management, finance
+---
+tags: management, finance
+---
 
 - Types of inventory:
 	- Raw materials (both _really_ raw and "purchased finished") -> Works in process-> Finished Goods

@@ -1,4 +1,6 @@
-tags:: psychology, death
+---
+tags: psychology, death
+---
 
 - src:
 	- "When Death is Good for Life: Considering the Positive Trajectories of Terror Management" (Vail & Juhl 2012)

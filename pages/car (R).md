@@ -1,4 +1,6 @@
-tags:: R, packages, dataviz
+---
+tags: R, packages, dataviz
+---
 
 - "Companion to Applied Regression", a useful library of regression tools built as part of Fox & Weisberg's "An R Companion to Applied Regression"
 	- [docs on RDRR](https://rdrr.io/cran/car/)

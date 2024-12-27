@@ -1,4 +1,6 @@
-tags:: data, distsys, db
+---
+tags: data, distsys, db
+---
 
 - src:
 	- mostly, [[DDIA]]

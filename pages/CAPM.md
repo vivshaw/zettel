@@ -1,4 +1,6 @@
-tags:: economics, finance
+---
+tags: economics, finance
+---
 
 - [Capital Asset Pricing Model](https://en.wikipedia.org/wiki/Capital_asset_pricing_model)
 - $E(R_i) = R_f + \beta_{i}(E(R_m) - R_f)$

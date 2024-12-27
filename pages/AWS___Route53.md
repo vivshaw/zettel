@@ -1,4 +1,6 @@
-tags:: aws, networking, cloud
+---
+tags: aws, networking, cloud
+---
 
 - Route53 is AWS's [[DNS]] service and domain registrar
 - Global service, globally resilient

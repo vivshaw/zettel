@@ -1,1 +1,3 @@
-tags:: theology, aphorisms
+---
+tags: theology, aphorisms
+---

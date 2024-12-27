@@ -1,4 +1,6 @@
-tags:: philosophy, theology, Rome, ancient
+---
+tags: philosophy, theology, Rome, ancient
+---
 
 - a Roman senator and philosopher
 - trained in Greek and Latin, translated [[Aristotle]] and wrote commentaries on him

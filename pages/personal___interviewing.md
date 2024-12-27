@@ -1,4 +1,6 @@
-tags:: personal, engineering management, software engineering, management
+---
+tags: personal, engineering management, software engineering, management
+---
 
 - how to crack the interview and get good offers?
 - resources:

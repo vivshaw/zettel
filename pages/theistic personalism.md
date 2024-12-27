@@ -1,4 +1,6 @@
-tags:: philosophy, theology
+---
+tags: philosophy, theology
+---
 
 - quite common in Western Christianity
 - > Theistic personalism simpliciter (TPS): there exists a person, P, such that, P

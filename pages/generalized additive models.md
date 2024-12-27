@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - compare a [[linear model]] to this *additive model*
 	- $E(Y_i | X_i) = \Beta_0 + r_1(X_{i1}) ... r_p(X_{ip})$

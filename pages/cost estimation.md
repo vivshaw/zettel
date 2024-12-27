@@ -1,4 +1,6 @@
-tags:: project management, finance, management, cost
+---
+tags: project management, finance, management, cost
+---
 
 - top-down estimate- use historical data to get a rough back-of-the-envelope estimate
 - bottom-up estimates- break the project into small pieces, estimate their costs, and sum them

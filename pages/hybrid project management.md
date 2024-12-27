@@ -1,4 +1,6 @@
-tags:: project management
+---
+tags: project management
+---
 
 - a combination approach of [[waterfall project management]] and [[agile]]
 - will differ a lot from place to place! the exact blend used depends on the organization and project's needs.

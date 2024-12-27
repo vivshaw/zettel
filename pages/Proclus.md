@@ -1,4 +1,6 @@
-tags:: Greece, Philosophy, Neo-Platonism, ancient, theology, Greco-Roman paganism
+---
+tags: Greece, Philosophy, Neo-Platonism, ancient, theology, Greco-Roman paganism
+---
 
 - one of the last major Classical philosophers, a [[Neo-Platonist]] in Athens
 - [[Hegel]] regarded his Platonic theology as the turning point between ancient and modern philosophy

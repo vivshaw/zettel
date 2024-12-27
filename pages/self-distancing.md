@@ -1,4 +1,6 @@
-tags:: psychology
+---
+tags: psychology
+---
 
 - experimentally, distancing from oneself can lead to higher executive function and better decisions
 - could be as simple as speaking to oneself in the third person. or as elaborate as consructing an [[alter ego]]- Bruce Wayne's Batman, Beyonce's Sash Fierce

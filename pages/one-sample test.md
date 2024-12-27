@@ -1,4 +1,6 @@
-tags:: stats, [[statistical tests]]
+---
+tags: stats, [[statistical tests]]
+---
 
 - a statistical test in which we draw only a single sample. e.g.:
 	- has the failure rate of this engine part changed from its historical rate?

@@ -1,4 +1,6 @@
-tags:: books, design, management
+---
+tags: books, design, management
+---
 
 - **foreword**
 	- design orgs can be thought of in a way much like we see the bigger picture of a design as rippling out from the smaller details:

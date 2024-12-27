@@ -1,4 +1,6 @@
-tags:: robotics, engineering
+---
+tags: robotics, engineering
+---
 
 - a naive method to map a space would be to use a grid. divide the spaces into discrete cells, and mark each cell occupied that you detect a point in.
 	- but this is memory-intensive, and slow to access. an $n \times n$  grid containing $m$ points requires $n^2$ bytes to store, and $n^2$ operations to access all occupied grid squares (need to check every square)

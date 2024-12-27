@@ -1,5 +1,7 @@
-tags:: philosophy, Germany, idealism, German Idealism, 1800s
-alias:: Fichte
+---
+tags: philosophy, Germany, idealism, German Idealism, 1800s
+alias: Fichte
+---
 
 - Fichte held that what we can know immediately is the subject, the I, and all other knowledge derives from it. the Ego is the Absolute.
 	- think of it as perhaps a more radical spin on [[Descartes]], influenced by [[Kant]]'s [[transcendental idealism]]

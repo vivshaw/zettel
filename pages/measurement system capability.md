@@ -1,4 +1,6 @@
-tags:: stats, spc, measurement systems analysis
+---
+tags: stats, spc, measurement systems analysis
+---
 
 - we would hope that:
 	- the variability from the measurement system erro isn't a significant portion of the process specs, _or_ of the [[natural tolerance]]

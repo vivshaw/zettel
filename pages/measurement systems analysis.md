@@ -1,4 +1,6 @@
-tags:: stats, spc
+---
+tags: stats, spc
+---
 
 - the use of statistical technqiues to assess and validate [[measurement]] processes
 - in terms of **resolution**, we hope that it's at least as fine as 1/10 the [[natural tolerance]]

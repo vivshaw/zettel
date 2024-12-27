@@ -1,4 +1,6 @@
-tags:: stats
+---
+tags: stats
+---
 
 - multicollinearity is when predictors in a regression model are correlated. it generally reduces the quality of a model, leading to high p-values and large standard error
 - we can assess multicollinearity using a [[variable inflation factor]]

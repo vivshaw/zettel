@@ -1,1 +1,3 @@
-alias:: distsys
+---
+alias: distsys
+---

@@ -1,5 +1,7 @@
-tags:: finance, economics, time
-alias:: TVM
+---
+tags: finance, economics, time
+alias: TVM
+---
 
 - a sum of money now is worth more than the same sum later
 - why? three reasons:

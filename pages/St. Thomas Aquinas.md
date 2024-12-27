@@ -1,5 +1,7 @@
-tags:: philosophy, theology, Thomism, Catholicism, Dominicans, Scholasticism, 1200s, Italy
-alias:: Aquinas
+---
+tags: philosophy, theology, Thomism, Catholicism, Dominicans, Scholasticism, 1200s, Italy
+alias: Aquinas
+---
 
 -
 - influenced by [[Avicenna]] and [[Averroes]], he felt that [[Aristotle]] was largely right, and that Christian theology completed Aristotle's system

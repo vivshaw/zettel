@@ -1,1 +1,3 @@
-alias:: eventual consistency
+---
+alias: eventual consistency
+---

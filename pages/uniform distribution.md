@@ -1,2 +1,4 @@
-tags:: stats, data, distributions
-alias:: uniform
+---
+tags: stats, data, distributions
+alias: uniform
+---

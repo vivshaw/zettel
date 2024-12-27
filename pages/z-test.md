@@ -1,5 +1,7 @@
-tags:: stats, [[statistical tests]] 
-alias:: normal test
+---
+tags: stats, [[statistical tests]]
+alias: normal test
+---
 
 - a test that uses the [[z-score]].
 - underlying assumptions:

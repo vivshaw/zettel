@@ -1,5 +1,7 @@
-tags:: stats
-alias:: generative model
+---
+tags: stats
+alias: generative model
+---
 
 - [[classification]] models in which, rather than estimating the probability $P(Y=K | X = x)$, we instead estimate $P(X = x | Y = K)$, then flip the model with [[Bayes' theorem]].
 	- said differently, models on the [[joint probability distribution]] of the predictor X and target Y.

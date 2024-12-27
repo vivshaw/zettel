@@ -1,1 +1,3 @@
-tags:: data structure
+---
+tags: data structure
+---

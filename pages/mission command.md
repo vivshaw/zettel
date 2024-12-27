@@ -1,4 +1,6 @@
-tags:: military, strategy
+---
+tags: military, strategy
+---
 
 - per the JCS:
 	- > Mission command is the conduct of military operations through decentralized execution based upon mission-type orders

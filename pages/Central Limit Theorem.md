@@ -1,4 +1,6 @@
-tags:: stats, math
+---
+tags: stats, math
+---
 
 - regardless of the population distribution, as the sample size increases...
 	- the [[random sampling distribution of the mean]] approaches normal distribution

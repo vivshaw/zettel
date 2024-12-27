@@ -1,4 +1,6 @@
-tags:: project management, management
+---
+tags: project management, management
+---
 
 - a **program** is "a group of related [[projects]] managed in a coordinated manner"
 	- think of it as one meta-level up from [[project management]]!

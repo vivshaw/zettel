@@ -1,4 +1,6 @@
-tags:: linux, hardware
+---
+tags: linux, hardware
+---
 
 - LVM lets you group one or more physical volumes or partitions into a *volume group*, then define any number of *logical volumes* you like atop that
 - you can freely resize logical volumes, as long as there's space

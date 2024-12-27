@@ -1,4 +1,6 @@
-tags:: philosophy, Greece, Ancient, Neo-Platonism
+---
+tags: philosophy, Greece, Ancient, Neo-Platonism
+---
 
 - led a revival of [[Platonism]], in a refined [[Neo-Platonist]] form
 - whereas Plato taught a two-leveled theory of reality, in which [[the Forms]] have primacy and the everyday world derives from them, Plotinus taught a tri-leveled metaphysics of three [[hypostases]]:

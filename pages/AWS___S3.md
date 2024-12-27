@@ -1,4 +1,6 @@
-tags:: aws, cloud, storage
+---
+tags: aws, cloud, storage
+---
 
 - global storage platform, regional resilience
 	- you selecct region when you upload stuff

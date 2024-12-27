@@ -1,3 +1,5 @@
-alias:: SSE, sum of squared errors
+---
+alias: SSE, sum of squared errors
+---
 
 -

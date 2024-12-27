@@ -1,4 +1,6 @@
-tags:: books, philosophy, theology
+---
+tags: books, philosophy, theology
+---
 
 - not a defense of Kierkegaard's work, but an explanation of what he's trying to do
 	- didn't just idealize Socrates as a philosopher, but regarded himself as a Socratic figure persecuted by the crowd, and engaged in a Socratic refusal to defend himself

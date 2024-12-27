@@ -1,4 +1,6 @@
-tags:: systems engineering
+---
+tags: systems engineering
+---
 
 - **verification** is a check for **correctness**. it answers the question, "did you build it right?"
 	- it gathers evidence that the system performs all of the functions it should, and meets all the specified requirements from the requirements docs.

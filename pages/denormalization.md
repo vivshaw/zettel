@@ -1,2 +1,4 @@
-alias:: denormalized
-tags:: db
+---
+alias: denormalized
+tags: db
+---

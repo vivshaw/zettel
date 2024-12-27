@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a test for [[proportion]]s in [[dependent samples]].
 	- operates on a 2x2 [[contingency table]], and uses a [[chi-square test]] only using the changed values

@@ -1,4 +1,6 @@
-tags:: notes
+---
+tags: notes
+---
 
 - i'm interested in compiling my various notes and knowledge into a personal knowledge management system.
 	- i've found that the [[outliner]] approach works best for me, like [[Roam Research]] or [[Logseq]].

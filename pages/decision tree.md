@@ -1,4 +1,6 @@
-tags:: stats, data, machine learning
+---
+tags: stats, data, machine learning
+---
 
 - a binary tree of decision nodes that recursively splits a data set until it's left with leaf nodes of only a single class.
 - useful for classification in cases that are not linearly separable

@@ -1,5 +1,7 @@
-tags:: machine learning, software engineering, data science, neural network
-alias:: long short-term memory
+---
+tags: machine learning, software engineering, data science, neural network
+alias: long short-term memory
+---
 
 - a **long short-term memory** model is a type of [[recurrent neural network]] that is designed to retain memory of the information it processes for a long time.
 	- this is particularly useful when working with [[time-series data]]. e.g., speech recognition, text-to-speech, machine language

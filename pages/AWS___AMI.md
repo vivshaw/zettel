@@ -1,4 +1,6 @@
-tags:: aws, cloud, vm
+---
+tags: aws, cloud, vm
+---
 
 - an Amazon Machine Image is a VM image for use on AWS.
 	- not so different from a QEMU image, etc. etc.

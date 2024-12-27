@@ -1,5 +1,7 @@
-tags:: project management
-title:: pm/project
+---
+tags: project management
+title: pm/project
+---
 
 - **what is a project?**
 	- A **project** is a temporary effort that creates value.

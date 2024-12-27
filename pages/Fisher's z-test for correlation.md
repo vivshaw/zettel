@@ -1,4 +1,6 @@
-tags:: stats, [[relationship (stats)]]
+---
+tags: stats, [[relationship (stats)]]
+---
 
 - a [[one-sample test]] for whether a [[correlation]] differs from a given *non-zero* value, using [[Fisher's z-transformation]] to transform $r$ into a $z$-value, and a [[z-test]]
 - calculated as: $Z_F = \dfrac{r_{tr} - \rho_{tr}}{\sqrt{\dfrac{1}{n - 3}}}$, where $r_{tr}$ and $\rho_{tr}$ are the transformed values.

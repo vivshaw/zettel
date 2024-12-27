@@ -1,4 +1,6 @@
-tags:: history, eras
+---
+tags: history, eras
+---
 
 - what even are the Middle Ages?
 	- it's not a neutral term! coined by [[Petrarch]] during the rise of humanism and the [[Renaissance]]. he held the view that Rome had grand cultural and intellectual treasures, which had been lost or obscured for centuries after Rome's fall, and only in his time were regained. it was a celebration of his own times' alleged roots in the [[ancient]], and a critique of the intervening years

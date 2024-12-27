@@ -1,3 +1,5 @@
-tags:: existentialism, phenomenology, France, philosophy
+---
+tags: existentialism, phenomenology, France, philosophy
+---
 
 - concepts:

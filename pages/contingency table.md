@@ -1,5 +1,7 @@
-tags:: stats, data, tables
-alias:: cross-tabulation, cross-tabulated
+---
+tags: stats, data, tables
+alias: cross-tabulation, cross-tabulated
+---
 
 - a format for data in which we compare variables by placing each on their own axis.
 	- in spreadsheets, these are often created with [[pivot tables]]

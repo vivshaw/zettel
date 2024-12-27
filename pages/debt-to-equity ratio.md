@@ -1,4 +1,6 @@
-tags:: finance, ratio analysis
+---
+tags: finance, ratio analysis
+---
 
 - measures the company's debt versus its net worth
 - $Debt\text{-}to\text{-}equity\ Ratio = \dfrac{Total\ Liabilities}{Ahareholder\ Equity}$

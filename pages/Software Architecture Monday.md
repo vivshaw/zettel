@@ -1,4 +1,6 @@
-tags:: software engineering, software architecture, Mark Richards
+---
+tags: software engineering, software architecture, Mark Richards
+---
 
 - [A treasure trove of bite-sized resources on architecture](https://www.developertoarchitect.com/lessons/)
 	- I'm working few this 3-4 vids a week on Wednesdays, to fill out my understanding of architecture!

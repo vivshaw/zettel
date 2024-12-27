@@ -1,1 +1,3 @@
-alias:: capital gain
+---
+alias: capital gain
+---

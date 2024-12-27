@@ -1,2 +1,4 @@
-tags:: philosophy
-alias:: teleological
+---
+tags: philosophy
+alias: teleological
+---

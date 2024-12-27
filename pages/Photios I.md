@@ -1,4 +1,6 @@
-tags:: theology, Orthodoxy, Eastern Christianity, Greece, 800s
+---
+tags: theology, Orthodoxy, Eastern Christianity, Greece, 800s
+---
 
 - a patriarch of the Eastern church and saint
 - he collected a *Bibliotheca*, composed of hundreds of reviews and quotations of books he had read

@@ -1,4 +1,6 @@
-tags:: management, engineering management, personal
+---
+tags: management, engineering management, personal
+---
 
 - my **management OS** is a package of rituals, documents, and references that I carry with me between jobs. it is the living body of the wisdom I've picked up as my career has progressed.
 	- like a computer's OS, it gives me the basic structure to stand up an engineering team and get things rolling.

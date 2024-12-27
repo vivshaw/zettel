@@ -1,4 +1,6 @@
-tags:: project management
+---
+tags: project management
+---
 
 - aka "traditional" or "predictive" project management. the plans drive the project forward. started as a discipline in the 1950s.
 - works best when the needs and requirements are known up-front, activities have a strict sequence, and changes are rare

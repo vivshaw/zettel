@@ -1,1 +1,3 @@
-tags:: message queue, distsys
+---
+tags: message queue, distsys
+---

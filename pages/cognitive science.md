@@ -1,2 +1,4 @@
-tags:: brain, medicine, psychology
-alias:: cogsci
+---
+tags: brain, medicine, psychology
+alias: cogsci
+---

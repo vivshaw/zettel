@@ -1,5 +1,7 @@
-tags:: ml
-alias:: modeling
+---
+tags: ml
+alias: modeling
+---
 
 - model development is iterative!
 	- your algorithm, data, and hyperparameters are all inputs to your model. you should analyze them as you iterate.

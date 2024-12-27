@@ -1,4 +1,6 @@
-tags:: db
+---
+tags: db
+---
 
 - the first database model, from the 1960s
 - stores data in a tree structure. each record can have many children, can only have one parent

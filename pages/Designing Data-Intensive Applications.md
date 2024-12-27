@@ -1,5 +1,7 @@
-tags:: books, distsys, sre, devops, software engineering, software architecture
-alias:: DDIA
+---
+tags: books, distsys, sre, devops, software engineering, software architecture
+alias: DDIA
+---
 
 - **Chapter 1: Reliable, Scalable, and Maintainable Applications**
   collapsed:: true

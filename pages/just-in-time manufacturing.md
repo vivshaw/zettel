@@ -1,4 +1,6 @@
-tags:: engineering management, management, manufacturing, lean
+---
+tags: engineering management, management, manufacturing, lean
+---
 
 - just-in-time (JIT) manufacturing tries to meet demand in the most efficient way possible, by:
 	- only manufacturing goods that have in fact been ordered

@@ -1,5 +1,7 @@
-tags:: stats, classification
-alias:: LDA
+---
+tags: stats, classification
+alias: LDA
+---
 
 - a [[generative model]] that tries to find some linear combination of features to separate the problem space into classes. a special case of the [[Bayes classifier]].
 	- it can also be used for dimensionality reduction

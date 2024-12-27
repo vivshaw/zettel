@@ -1,4 +1,6 @@
-tags:: stats, statistical tests
+---
+tags: stats, statistical tests
+---
 
 - a [[two-sample test]] for [[proportion]]s.
 - assumptions:

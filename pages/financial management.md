@@ -1,4 +1,6 @@
-tags:: finance, management
+---
+tags: finance, management
+---
 
 - what investments should a company make? where should the money come from? how should the cost and price be determined? how do we manage day-to-day financial acivities?
 - Dr. Michael Readey's definition:

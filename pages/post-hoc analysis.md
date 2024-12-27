@@ -1,4 +1,6 @@
-tags:: stats, ANOVA
+---
+tags: stats, ANOVA
+---
 
 - if we reject the null hypothesis in an ANOVA, we know some of the levels have different means. but we'd like to know *where* those differences are. that's post-hoc analysis.
 - we ca do **comparison** to assess the difference between two means, or **contrast** to assess the difference between groups of means.

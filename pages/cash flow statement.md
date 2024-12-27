@@ -1,4 +1,6 @@
-tags:: finance, accounting, financial statements
+---
+tags: finance, accounting, financial statements
+---
 
 - a statement summarizing the flow of [[cash and cash equivalents]] that flowed in and out of a company, usually over the past year
 - generally contains:

@@ -1,4 +1,6 @@
-tags:: stats, data
+---
+tags: stats, data
+---
 
 - a **confidence interval** for a given [[estimate]] is a range within which we'd expect to see the real population parameter, given a certain confidence level
 	- the [[type-1 error]] for the interval, is in fact the same as the confidence level!

@@ -1,4 +1,6 @@
-tags:: management, risk, uncertainty
+---
+tags: management, risk, uncertainty
+---
 
 - instead of preparing a single forecast for a situation, prepare three:
 	- a **base case**, your best estimate

@@ -1,4 +1,6 @@
-tags:: Kierkegaard, philosophy, books
+---
+tags: Kierkegaard, philosophy, books
+---
 
 - can be seen as a next step from [[The Concept of Irony]], that moves from a third-person to first-person description of the ironist, and from an academic to a literary work
 	- main character be seen as an extension of the analysis of [[Schlegel]] and the romantics from the second half of [[The Concept of Irony]]. the Aesthete borrows from the young Julius, and Judge William from the mature Julius.

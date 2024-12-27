@@ -1,4 +1,6 @@
-tags:: heraldry
+---
+tags: heraldry
+---
 
 - I want a bicolor look, vert and or.
 	- vert represents growth, life, and the natural world

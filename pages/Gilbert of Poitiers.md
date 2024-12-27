@@ -1,4 +1,6 @@
-tags:: Catholicism, theology, philosophy, 1000s, France, Scholasticism
+---
+tags: Catholicism, theology, philosophy, 1000s, France, Scholasticism
+---
 
 - a bishop and logician, and intellectual rival of [[Peter Abelard]]
 - his thought derived heavily from [[Boethius]]

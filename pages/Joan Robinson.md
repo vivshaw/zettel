@@ -1,4 +1,6 @@
-tags:: economics, Keynesianism, Cambridge School, UK
+---
+tags: economics, Keynesianism, Cambridge School, UK
+---
 
 - misc quotes:
 	- > "It is possible to defend our economic system on the ground that, patched up with Keynesian correctives, it is, as he put it, the 'best in sight'. Or at any rate that it not too bad, and change is painful. In short, that our system is the best system that we have got.

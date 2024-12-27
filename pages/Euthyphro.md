@@ -1,4 +1,6 @@
-tags:: Plato, Socrates, Greece, philosophy
+---
+tags: Plato, Socrates, Greece, philosophy
+---
 
 - a dialogoue on the nature of piety and justic
 - opens with Socrates accused of corrupting the youth of Athens, of impiety, of inventing new gods and neglecting the proper gods, because he says he receives divine revelation

@@ -1,4 +1,6 @@
-tags:: machine learning, software engineering, papers
+---
+tags: machine learning, software engineering, papers
+---
 
 - [Bleu: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040/), Papineni et al. 2002
 - uses modified n-gram similarity as a metric. this helps prevent high-precision but bad translations (e.g., sentences stacked with "likely" words)

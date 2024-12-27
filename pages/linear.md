@@ -1,1 +1,3 @@
-alias:: linearly
+---
+alias: linearly
+---

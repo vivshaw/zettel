@@ -1,4 +1,6 @@
-tags:: networking
+---
+tags: networking
+---
 
 - the Open Systems Intercommunication model is a conceptual model for how networks work
 	- ⚠️this is _not_ a concrete model implemented in code! it's more of a universal pattern language for networks. not every networking stack or application follows this exact structure.

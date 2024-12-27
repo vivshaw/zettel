@@ -1,4 +1,6 @@
-tags:: data, distsys, db
+---
+tags: data, distsys, db
+---
 
 - a [[replication]] strategy in which there are no leaders. writes are given to all nodes directly
 - what happens when a node is down while a write is sent? when it comes back up, that data will be missing!

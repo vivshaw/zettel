@@ -1,5 +1,7 @@
-tags:: stats
-alias:: sample
+---
+tags: stats
+alias: sample
+---
 
 - a **sample** is a representative portion of a [[population (statistics)]], used to reach conclusions about that population.
 - a good sample needs to be both:

@@ -1,5 +1,7 @@
-tags:: philosophy, Plotinus, Neo-Platonism
-alias:: hypostases
+---
+tags: philosophy, Plotinus, Neo-Platonism
+alias: hypostases
+---
 
 - a [[substance]], especially in [[Plotinus]]'s Neo-Platonic philosophy
 	- a hypostasis is infinite and non-spatial

@@ -1,4 +1,6 @@
-tags:: psychology, philosophy
+---
+tags: psychology, philosophy
+---
 
 - Western vs. Eastern perspectives on the self
 	- the Western self:

@@ -1,4 +1,6 @@
-tags:: systems engineering, engineering, systems thinking
+---
+tags: systems engineering, engineering, systems thinking
+---
 
 - a meta- [[system (engineering)]]!
 - DOD defines it thus:

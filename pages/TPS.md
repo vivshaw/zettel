@@ -1,5 +1,7 @@
-tags:: engineering management, lean, management, automotive, Toyota
-alias:: Toyota Production System
+---
+tags: engineering management, lean, management, automotive, Toyota
+alias: Toyota Production System
+---
 
 - the Toyota Production System was developed in the 50's and 60's by Taiichi Ohno and Eiji Toyoda, factoring in ideas from the American automotive industry, supermarkets, [[Taylorism]]/[[scientific management]], and Japan's postwar economic struggles
 - focused on reduce overburden (*muri*), inconsistency (*mura*), and waste (*muda*)

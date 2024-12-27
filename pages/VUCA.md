@@ -1,4 +1,6 @@
-tags:: leadership, strategy
+---
+tags: leadership, strategy
+---
 
 - we live in a world that's **volatile**,  [[uncertain]], **complex**, and **ambiguous**. that's [VUCA](https://hbr.org/2014/01/what-vuca-really-means-for-you)!
 - "how do you eat an elephant? one bite at a time!"

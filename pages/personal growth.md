@@ -1,1 +1,3 @@
-alias:: do better next time
+---
+alias: do better next time
+---

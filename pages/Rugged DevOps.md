@@ -1,4 +1,6 @@
-tags:: devops, sre, security
+---
+tags: devops, sre, security
+---
 
 - an approach to building software similar to [[DevSecOps]], in that it bakes durability in the face of hardship into the software development cycle
 - ## [The Rugged Manifesto](https://ruggedsoftware.org/)

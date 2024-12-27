@@ -1,1 +1,3 @@
-alias:: Scholastics
+---
+alias: Scholastics
+---

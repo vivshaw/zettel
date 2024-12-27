@@ -1,3 +1,5 @@
-tags:: finance
+---
+tags: finance
+---
 
 - [[revenue]] less [[COGS]]

@@ -1,4 +1,6 @@
-tags:: engineering, resilience engineering, safety
+---
+tags: engineering, resilience engineering, safety
+---
 
 - refs:
 	- https://erikhollnagel.com/ideas/safety-i%20and%20safety-ii.html

@@ -1,5 +1,7 @@
-tags:: stats
-alias:: precise
+---
+tags: stats
+alias: precise
+---
 
 - of all the examples your model _thought_ were positive, what fraction were right?
 - $Precision = TruePos / (TruePos + FalsePos)$

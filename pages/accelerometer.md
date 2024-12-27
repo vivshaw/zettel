@@ -1,4 +1,6 @@
-tags:: sensors, robotics, electronics
+---
+tags: sensors, robotics, electronics
+---
 
 - measures translational [[acceleration]]. we can then integrate to find speed and distance
 - a basic accelerometer is a mass hanging on a damped spring. but the type we use in electronics are typically tiny [[MEMS]] devices nowadays

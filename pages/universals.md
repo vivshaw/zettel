@@ -1,5 +1,7 @@
-tags:: philosophy, metaphysics
-alias:: problem of universals
+---
+tags: philosophy, metaphysics
+alias: problem of universals
+---
 
 - a classic problem in metaphysics: some things are the same- "all the animals in that field are horses". in what *way* are they the same? are there just many particular entities that happen to be similar enough that we call them "horse", or is there some additional, abstract entity Horse, in respect of which they are the same?
 - **nominalists** think not- there are universals in language, but not universal things in reality. [[Aristotle]] kicked off the chain of thinking, though he was more properly a moderate realist

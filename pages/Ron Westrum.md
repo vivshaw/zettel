@@ -1,1 +1,3 @@
-tags:: sociology
+---
+tags: sociology
+---

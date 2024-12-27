@@ -1,4 +1,6 @@
-tags:: project management, management
+---
+tags: project management, management
+---
 
 - portfolio management is a way to bridge the gap between strategy & implementation. it oversees all the projects and programs in an organization.
 	- focuses primarily on high-level goals, and not the day-to-day of the projects

@@ -1,5 +1,7 @@
-tags:: stats
-alias:: KNN
+---
+tags: stats
+alias: KNN
+---
 
 - for optimal performance, it's important that the predictors be normalized, so they all have the same influence.
 - can be used for either classification or regression:
