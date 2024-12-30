@@ -1,3 +1,7 @@
+---
+tags:: music, metal, personal
+---
+
 - top 5:
 	- Ulcerate - Cutting the Throat of God #metal #[[death metal]] #dissotech
 	- DVNE - Voidkind #metal #[[prog metal]] #[[sludge metal]]
