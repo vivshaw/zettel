@@ -1,3 +1,4 @@
+- https://x.com/shl/status/1162031786248900609
 - p1: easy to get lost in metrics in software engineering
 - p2: I put it to you that none of these things measure what makes or breaks your software. We build software so that humans may use it.
 - p3: One person who understood this better than most was Heidegger. [Synopsis of ready-to-hand/present-at-hand]

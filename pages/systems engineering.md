@@ -27,7 +27,7 @@ alias: syseng
 		- do [[risk management]]
 		- do system design
 		- plan and coordinate [[testing (SE)]]
-		- prep for design reviews
+		- prep for [[design review (SE)]]
 		- decision analysis
 - systems engineering helps us:
 	- decompose huge projects into a tiered or heirarchical system of human-scale pieces

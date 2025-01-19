@@ -23,3 +23,7 @@ tags: systems engineering
 - requirements must be considered as a whole, not just as individuals! you should verify that none of your requirements contradict each other or the user's needs
 - don't make too many requirements! they take work and cost money. specify only what's necessary.
 - requirements may be nested in a parent-child relationship, as you flesh out the specifics
+- you might use a tool like JAMA or IBM DOORS to track the reqs
+- NASA's version of the requirements definition process:
+	- ![image.png](../assets/image_1737268730566_0.png){:height 435, :width 588}
+-

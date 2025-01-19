@@ -1,0 +1,6 @@
+- [MDN on Stacking Contexts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context)
+- [CSS2 elaborate description](https://www.w3.org/TR/CSS21/zindex.html)
+- [In flow and out of flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/In_flow_and_out_of_flow)
+	- > When you do anything to remove or shift an item from where it would be placed in normal flow, you can expect to need to do some managing of the content and the content around it to prevent overlaps.
+- Stackblitz: https://stackblitz.com/edit/vitejs-vite-twa3zdhe?file=README.md
+- [Stacking Without z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_without_z-index)

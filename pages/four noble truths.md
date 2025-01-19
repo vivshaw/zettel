@@ -1,5 +1,5 @@
 ---
-tags:: Buddhism, theology
+tags: Buddhism, theology
 ---
 
 - the first noble truth: the truth of suffering, or [[duhkka]]

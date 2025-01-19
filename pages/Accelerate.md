@@ -1,5 +1,5 @@
 ---
-tags: books, devops, software engineering
+tags: books, devops, software engineering, engineering management
 ---
 
 - **Foreward/Intro**
