@@ -26,7 +26,7 @@ alias: syseng
 		- define the interfaces between parts of the system
 		- do [[risk management]]
 		- do system design
-		- plan and coordinate [[testing (SE)]]
+		- plan and coordinate [[syseng/testing]]
 		- prep for [[design review (SE)]]
 		- decision analysis
 - systems engineering helps us:

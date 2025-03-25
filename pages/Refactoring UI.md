@@ -1,0 +1,33 @@
+---
+tags: books, design, frontend, CSS, software engineering, HCI, design system
+---
+
+- # Starting from Scratch #[[design tokens]]
+	- **Start with a feature, not a layout**
+		- don't think about the shell of the app first. top bars, side navs, etc...
+		- instead, think about the actual piece of functionality you wish to deliver. like "search for a flight". then, add the necessary pieces of UI to support that.
+	- **Detail comes later**
+		- start as lo-fi as possible. this forces you not to get hung up on the details.
+		- don't even include color to begin with. design in greyscale, so that spacing, contrast, and size do the heavy lifting
+		- don't over-invest! a mockup is not a product. a user can't accomplish their needs with it.
+	- **Don't design too much**
+		- you don't need to resolve every design question, feature, and edge case all at once. you will get paralyzed if you do.
+		- **work iteratively.** get a _simple, basic_ design for the most _simple, basic_ question. once you're happy with it, then **actually build it.** then iterate from there.
+		- the problems with designs will become much more clear once they're used in practice.
+		- **be a pessimist.** don't put functionality in your designs that you aren't willing to build. remove every "nice-to-have". design and build the smallest viable solution.
+			- this crosses over interestingly with non-product-design questions. like API design or org design. our interfaces should only imply the existence of what is really there! if we don't, we set ourselves up for failure.
+	- **Choose a personality**
+		- personality isn't as abstract and handwavy as it seems. a few concrete factors matter.
+		- **[[typography]]** - serifs might feel more elegant, rounded sans might feel more playful, neutral sans might feel plainer.
+		- color - choosing a key color might involve some color psychology and guesswork about associations
+		- border radius - sharp borders tend to feel more formal, rounder borders tend to feel more playful
+		- language - the personal or impersonal tone and formality or casual lingo you choose will impact the feel.
+		- probably, you'll already have a gut feel of what you're aiming for, so this will be a matter of finding what aligns with that gut feel. **if you don't**, try looking at the sites of people you want to reach and borrowing their approach.
+	- **Limit your choices**
+		- the more design constraints you have, the fewer decisions you have to make. you life will become easier if you use constraints to eliminate irrelevant decisions.
+		- **define systems in advance** - it's way harder to pull this stuff out of an existing organically-growing product, than to settle on the system and use it as a foundation. choose the values once, not every time you iterate.
+		- use the process of elimination! take a few guesses and rule out the ones that look off.
+		- **systematize everything you can.** fonts, colors, spacing, shadows, layouts... also, any time you find yourself making a laborious decision.
+		- you don't need to have this all set in stone up front! just make sure you're following this approach each time you make a decision.
+- # Hierarchy is Everything #hierarchy #[[information architecture]]
+	-

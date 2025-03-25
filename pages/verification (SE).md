@@ -8,7 +8,7 @@ tags: systems engineering
 	- contrast with [[validation (SE)]]
 - ideally, each of the [[requirements (SE)]] should have a specified method to verify it!
 - in systems engineering, there are several **methods of verification**:
-	- [[testing (SE)]]
+	- [[syseng/testing]]
 	- [[analysis (SE)]]
 	- [[inspection (SE)]]
 	- [[demonstration (SE)]]

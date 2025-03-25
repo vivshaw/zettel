@@ -1,0 +1,12 @@
+---
+tags: syseng, management
+---
+
+- the single source of truth for all the management aspects of the syseng process. it'll contain:
+	- a description of the project. we want to clarify the system's goals and scope.
+	- structure for work, communication, and decision making. what roles and responsibilities are there? including a description of team structure, and any resources required by each team
+	- any important objectives during the project's lifetime
+	- a communications plan, and communication standards for the involved teams
+	- a [[syseng/risk management]] plan
+	- an integration and testing plan
+- in practice, a lot of this document might be boilerplate that's shared between most of your company's projects.

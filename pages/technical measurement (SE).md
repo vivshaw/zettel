@@ -24,8 +24,7 @@ alias: MOEs, MOPs, TPMs
 - **MOPs**, measures of performance
 	- from INCOSE:
 		- > The measures that characterize physical or functional attributes relating to the system
-		  operation, measured or estimated under specified testing and/or operational environment
-		  conditions.
+		  operation, measured or estimated under specified testing and/or operational environment conditions.
 	- a measure of a physical or functional requirement, that we'll measure with specific tests or under specific conditions
 	- these often roll up to KPPs, and/or map to [[requirements (SE)]]
 	- we use these to evaluate if we're meeting our MOEs, as well as to support [[analysis of alternatives]]

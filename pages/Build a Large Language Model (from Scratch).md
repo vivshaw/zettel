@@ -28,4 +28,19 @@ tags: books, LLMs, ml, NLP, Sebastian Raschka
 	- we will probably want some [[special tokens]], like `<|endoftext|>` for the end of the input, and `<|unk|>` to handle unknown input
 		- we might want others, like `<|BOS|>`/`<|EOS|>` for the beginning and end of sequences, or `<|PAD|>` for padding texts out to an equal length.
 	- [[byte pair encoding]] is a more sophisticated method
--
+	- to do word prediction, we want a dataset of input-target pairs, which we can produce with a pair of sliding windows spaced one token apart.
+	- we'll use an embedding layer to convert tokens into embedding vectors.
+		- this works much like [[one-hot encoding]] plus matrix multiplication, but we let the NN optimize it
+		- [[PyTorch]]'s `torch.nn.Embedding` can do this
+	- but word embeddings isn't enough. sentences are ordered, so we need position information if we're gonna retain all the information.
+		- there are two types we could use. an _absolute_ position-aware embedding assigns a unique embedding to each position. a _relative_ position-aware embedding instead assigns embeddings based on the distance between tokens.
+- # Chapter 3: Coding attention mechanisms
+	- now that we have a dataset, we need the mechanisms that we'll build the neural network on
+	- why do we need attention?
+		- suppose we're doing [[machine translation]]. it's not possible to do word-for-word translation, because that's not how language works! we need context from elsewhere in the sentence, word order, etc.
+		- typically, we use [[encoder-decoder models]]
+		- in the past, we'd use [[RNN]]s, which can handle sequential information. the encoder RNN stores that information in a hidden context, then the decoder RNN uses that hidden state as its initial state. but they're very limited! the RNN has only one hidden state at a time, which needs to encapsulate the _entire_ context.
+	- attention mechanisms can give us direct access to previous tokens of the input. this was first done by Bahndau et al, who added an attention mechanism to an RNN. that mechanism let the decoder access all the input tokens selectively.
+		- but... we discovered that you don't really need the RNN to make this work. just attention is enough. [[transformer]] models use **self-attention**, in which each position of a sequence can determine the relevance of each other position in that sequence.
+		- we call it *self*-attention as opposed to, say, [[sequence-to-sequence]] models, where we pay attention to a _different_ sequence
+		-

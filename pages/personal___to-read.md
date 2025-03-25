@@ -7,6 +7,7 @@ tags: books, personal
 - Paul Tillich
 - Karl Barth
 - Hans-Georg Gadamer
+- Merleau-Ponty
 - Husserl
 - Thomas Altizer
 - Levinas

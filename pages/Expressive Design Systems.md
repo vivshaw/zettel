@@ -240,7 +240,7 @@ tags: design, books, design system, systems thinking
 		- [[The Timeless Way of Building]]
 		- [[Seeing Like a State]]
 	- design:
-		- [[Design Systems]] by [[Alla Kholmatova]]
+		- [[Design Systems (book)]] by [[Alla Kholmatova]]
 		- [[Interactions of Color]] by Josef Albers
 		- [[Designing Interface Animation]] by Val Head
 	- service design:
