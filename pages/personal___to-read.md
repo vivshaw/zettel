@@ -33,6 +33,7 @@ tags: books, personal
 	- Release It!
 	- Thinking in Distributed Systems
 	- Working Effectively with Legacy Code
+	- https://aosabook.org/en/index.html
 - # sci-fi
 	- too like the lightning
 	- a psalm for the wild-built

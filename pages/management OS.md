@@ -26,9 +26,9 @@ tags: management, engineering management, personal
 	- **[[strategy briefs]]:** here's how you can plan a good strategy, and cascade it through an organization.
 - **documents:**
 	- **overaching philosophy:** *documents can never lead a change, they can only follow.*
-	- **team outline:** who are we? what do we do? what do we value? how can you get in touch with us? these questions help us know who we are as a team, help others learn about us
+	- **team outline:** who are we? what do we do? what do we value? how can you get in touch with us? these questions help us know who we are as a team, help others learn about us.
 	- **team vision:** we need a North Star that we can all navigate by.
-	- **team onboarding help:** this has two parts. first, an informational document to help the new hire get used to the team, get to know me, understand what we do. second, a [[30-60-90]] plan.
+	- **team onboarding help:** this has two parts. first, an informational document to help the new hire get used to the team and understand what we do. second, an individual [[30-60-90]] plan.
 	- **team rituals doc:** writing down your team rituals encourages being thoughtful about them. you should only have rituals that serve a purpose. to prove one has a purpose, explain it in writing! this also helps you onboard new folks, and track evolution in your rituals over time.
 - **references:**
 	- [[The Art of Action]]: an **excellent** work on [[strategy]]- why it's hard, how it's more an art than a science, and how you can practice that art and make your organization great at it.

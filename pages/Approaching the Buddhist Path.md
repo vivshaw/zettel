@@ -182,4 +182,40 @@ tags: books, theology, Buddhism, Dalai Lama, Thubten Chodron
 	- humans are emotional beings. but some of our emotions lead to harm, and others to happiness. both on the personal and societal level, it's worthwhile to cultivate the good ones and subdue the negative ones.
 	- Buddhas have eliminated all *afflictive* emotions, but that doesn't mean they're emotionless! on the contrary, while gradually overcoming the negative emotions, they've built up incredible amounts of constructive emotions, like love and compassion.
 	- ## Buddhism, science, and emotion
+		- science generally describes [[emotion]] as having 3 parts: physiological, experiential, and behavioral
+		- from a Buddhist perspective, emotions are mental states and subjective experiences. (Buddhism doesn't deny that the mind and body influence each other, though!) emotions are mental states in living beings. there's no emotion without mind.
+		- there's some difference in primacy between the scientific and Buddhist view. where many scientists view the physiological brain event as the cause, Buddhists view the mental state as prior to the physiological changes.
+		- our [[actions]] are generally preceded by [[intentions]], which in turn are preceded by our emotions
+		- cultivating well-being and positive emotion can have physiological effects! [[neuroplasticity]] allows the brain to adapt over time.
+		- what differentiates positive and negative emotion? not how they feel in the moment! it's about the long-term beenfit or harm that comes from them.
+			- > Here, when someone feels a certain kind of pleasant feeling, nonvirtuous states increase in him and virtuous states diminish; but when someone feels another kind of pleasant feeling, nonvirtuous states diminish in him and virtuous states increase. Here, when someone feels a certain kind of painful feeling, nonvirtuous states increase in him and virtuous states diminish; but when someone feels another kind of painful feeling, nonvirtuous states diminish in him and virtuous states increase.
+			  — the Buddha
+		- **reflections:**
+			- When you act against your ethical values, how do you feel at the moment of doing the action? How do you feel later, when reflecting on your action?
+			- When you give up an immediate pleasure due to your sense of personal integrity or for the sake of long-term happiness, how do you feel at the time? How do you feel later, when reflecting on your action?
+			- How integral is ethical conduct to your happiness? Based on what you conclude here, make some determinations about how you want to live.
+	- ## emotions and kleshas
+		- there's not an exact parallel word for "emotion" in Tibetan. in Buddhist terminology, there are things like [[vedanas]] and [[kleshas]], neither quite exactly the same
+		- ### attachment
+			- [[attachment]] is a tricky word. it can refer to something very important and valuable- our connections and closeness to other humans. but it can also refer to one of the [[three poisons]] and [[six root afflictions]]
+			- attachment can be sneaky! the positive thing we call attachment can turn into the negative thing!
+			- pursuing the Buddha and nirvana is not attachment. but there is the possibility for subtle attachment to distorted views of them to arise. careful practice and education will help dispel this.
+			- **reflections:**
+				- What are some of the common meanings of the English word attachment?
+				- What are the disadvantages of the afflictive type of attachment?
+				- Is it easy to tell when attachment in the sense of affection and respect slips into exaggeration and expectations?
+		- ### fear
+			- fear also has a double aspect. the sort of fear that is panic, anxiety, and distress is indeed negative. but another kind of fear has an element of wisdom, and warns us of real possible danger.
+			- some meditations are designed to deliberately provoke the wise kind of fear!
+			- historically, some Buddhists would meditate in dangerous situations to cultivate fearlessness
+			- it's sometimes said that a [[bodhisattva]] has fear of [[samsara]] and [[nirvana]]. this isn't the negative kind of fear, it's rooted in a desire to aid all sentient beings as soon as possible
+		- ### anger
+			- anger tends to be destructive, even when it feels justified. even moral outrage at unjust conditions. sure, it can spur us to cause change and tackle injustice. but so can [[compassion]]. compassion doesn't mean passivity! it means actively intervening to help, without anger or hatred.
+			- the sutra path sees all anger as a distortion. the tantra path sees anger as possible to use on the path, in some circumstances.
+		- ### disillusionment
+			- another double aspect. often it's negative and leads us to depression and cynicism. but disillusionment with samsara is accurate and healthy!
+	- ## emotions and survival
+		- there's a biological basis for emotions. positive or negative, they help us to survive.
+		- why then do Buddhists see them as afflictions? well, they perform their function, but they do so in an unreasonable way, full of exaggeration and grasping.
+		- by examining the afflictions over time, we'll eventually get tired of them running our lives. then we can make a decision to consciously cultivate positive emotions in their place.
 		-

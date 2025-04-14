@@ -30,4 +30,35 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system
 		- **systematize everything you can.** fonts, colors, spacing, shadows, layouts... also, any time you find yourself making a laborious decision.
 		- you don't need to have this all set in stone up front! just make sure you're following this approach each time you make a decision.
 - # Hierarchy is Everything #hierarchy #[[information architecture]]
-	-
+	- **Not all elements are equal.**
+		- if all elements share similar visual importance, they will compete for your focus, and it will be hard to tell what matters
+		- deliberately de-emphasizing secondary and tertiary info helps highlight the primary info!
+	- **Size isn't everything**
+		- font size is a useful tool, but you can't rely on it too much without making things illegibly small or comedically huge
+		- try using font color or font weight!
+		- try to stick to ~2-3 colors (primary, secondary, tertiary), and two font weights (normal and bold). that should be enough for most needs.
+	- **Don't use grey text on colored backgrounds!**
+		- this will mess up your contrast
+		- what you actually want is a color closer to the BG color. but simply using transparency won't work, especially if there are patterns
+		- instead, pick a custom color that's closer to the background
+	- **Emphasize by de-emphasizing**
+		- instead of piling on more and more to emphasize an unclear element, try de-emphasizing everything around it.
+	- **Labels are a last resort**
+		- don't go "Name: Foo Bar, Phone Number: 555-555-5555", etc. folks already know what names and numbers are! you can probably skip the labels entirely in many cases.
+		- in cases where the label is actually _meaningful_, try to combine it with the value. for example, instead of `In Stock: 12`, try `12 left in stock`. (and emphasize the `12`)
+		- in cases where a separate label is needed, make it secondary, so that it does not distract from the content
+		- there are some cases you might skip these rules. for example, if you're nuilding a page that should have skimmable structure data, like product dimensions
+	- **Separate visual hierarchy from document hierarchy**
+		- don't tie visual hierarchy to semantic tags!
+		- we are often trained to think of `h1` as meaning `big`- but in reality, some `h1` uses might be more like a label than a visually primary piece of content!
+		- you might even include some sections for #a11y, that are _totally hidden_ visually
+	- **Balance weight and contrast**
+		- color and weight actually play a similar role in how dark UI elements are psychologically perceived to be
+		- icons, especially solid ones, therefore might feel pretty emphasized! you can counteract that by choosing a lighter color
+		- conversely, sometimes is you need to emphasize something with a light color, widening it may help
+	- **Semantics are secondary**
+		- when designing a page with buttons, don't just map button semantic -> color and call it a day! you need a hierarchy of actions.
+		- in most flows, there's probably just 1 primary action, a couple of secondary ones, and a couple of less-frequently used tertiary ones.
+		- reserve bright colors for primary actions. secondary actions can be more muted. tertiary actions can probably be styled like links!
+		- you don't need a big red button for every destructive action. even if destructive, actions should be treated according to the hierarchy.
+			- what you might _actually_ want instead, is a separate confirmation step where the destructive action _is_ primary!

@@ -1,5 +1,6 @@
 ---
 tags: cloud, sre, distsys
+alias: availability
 ---
 
 - "an aim to ensure an agreed level of operational performance, usually uptime, for a higher than normal period"

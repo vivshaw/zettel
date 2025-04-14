@@ -1,5 +1,5 @@
 ---
-tags:: compsci, robotics
+tags: compsci, robotics
 ---
 
 - a refinement of [[finite state machine]]s to support more complex behaviors.

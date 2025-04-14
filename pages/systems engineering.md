@@ -3,7 +3,7 @@ tags: engineering, systems thinking
 alias: syseng
 ---
 
-- application of engineering to [[system (engineering)]]s
+- application of engineering to [[system]]s
 - per [[INCOSE]]:
 	- > Systems Engineering is a [[transdisciplinary]] and [[integrative]] approach to enable the successful realization, use, and retirement of engineered systems, using systems principles and concepts, and scientific, technological, and management methods.
 - per DOD:

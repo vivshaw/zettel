@@ -2,7 +2,7 @@
 tags: systems engineering, engineering, systems thinking
 ---
 
-- a meta- [[system (engineering)]]!
+- a meta- [[system]]!
 - DOD defines it thus:
 	- > A set or arrangement of systems that results when independent and useful systems are integrated into a larger system that delivers unique capabilities.
 	- four categories from DOD:

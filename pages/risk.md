@@ -1,0 +1,9 @@
+- typology of risks:
+	- **diversifiable** vs. **nondiversifiable** (can we counteract it with a good portfolio?)
+	- **pure** vs. **speculative** (is it all downside, or is there a potential upside?)
+	- **direct** vs **indirect** (did you lose business because your Main Street store burned down and you lost it, or because Main Street has roadwork so there's less foot traffic?)
+	- **systemic** (does it affect the whole system rather than just you?)
+	- **liability** (are you legally responsible for a risk that impacted someone else, like an accident on your property?)
+	- **accidental** (was it a fluke, or did it result from a deliberate choice you made?
+	- **natural** vs. **human**
+-

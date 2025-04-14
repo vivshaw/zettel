@@ -1,0 +1,95 @@
+---
+tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors
+---
+
+- # Preface
+  collapsed:: true
+	- this book presents DBRE as the next generation of DB professionals. the DBA was the classic DB professional, and had deep expertise in everything pertaining to DBs. but they were "in the business of crafting silos and snowflakes", siloed away in the DB world.
+	- a DBRE is instead a great regular "RE" with a deep domain-specific knowledge of the DB world
+- # 1. Introducing Database Reliability Engineering
+  collapsed:: true
+	- what is reliability engineering?
+		- > fundamentally doing work that has historically been done by an operations team, but using engineers with software expertise, and banking on the fact that these engineers are inherently both predisposed to, and have the ability to, substitute automation for human labor.
+		  — Ben Treynor, VP Engineering at Google
+	- "today's database professionals must be engineers, not administrators". we need to take a devops mindset where nothing is "somebody else's problem", and an engineering mindset where we design and build things with expertise and repeatable processes.
+	- **what are the guiding principles of a DBRE?**
+		- **protect the data.**
+			- have an automated backup and recovery process
+			- have a standard security procedure
+			- use the right DB for the job, considering DB as you do
+			- use redundant storage
+			- use automated provisioning and deployment
+		- **self-service for scale.**
+			- DBREs are rare, so you can't promise to handle everyone's data needs for them! instead, increase your leverage by creating self-service platforms
+			- empower and guide others, rather than functioning as a gatekeeper
+		- **elimination of toil.**
+			- use automation and standardization to eliminate operational busywork (that is repetitive, non-creative, and non-challenging)
+			- for example, building an automated rolling schema change utility, rather than a manual deployment process
+		- **databases are not special snowflakes.**
+			- what's important is the business value. the database isn't any more or less important than any other technical component. ideally, we should be able to survive their outages and replace them at-will, like any other component.
+			- [[pets vs. cattle]]: it's caught on for servers, but database tend to be holdouts that we treat as pets
+		- **eliminate the barriers between software and operations.**
+			- infrastructure, config, data models, scripts... those are all software too! so, DBREs should participate in the software engineering lifecycle the same as and other software engineer.
+			- this can't be unidirectional! you can't only demand that ops people learn to code- software people need to learn ops.
+			- DBREs might be directly embedded in an engineering team
+	- what is operations?
+		- > Operations at a macro level is not a role. Operations is the combined sum of all of the skills, knowledge, and values that your company has built up around the practice of shipping and maintaining quality systems and software. It's your implicit values as well as your explicit values, habits, tribal knowledge, and reward systems. Everybody, from tech support to product people to the CEO participates in your operational outcomes.
+		  — p. 20
+		- many orgs do this super poorly! bad ops culture can become a burnout factory.
+		- it's common to think that serverless means you can stop doing ops. that's completely incorrect. in fact, it's a world where application engineers are constantly doing ops, and need to be much better at it than they usually are!
+	- **the database heirarchy of needs:** much like humans with [[Maslow's hierarchy of needs]], databases have one too! what would you do on day 1, and in sequence from there? which needs are most fundamental?
+		- **survival and safety.** backups, retention, failover. making sure the data is safe and the servers are alive. this is also when you might *start* thinking about scale- but don't scale prematurely
+		- **love and belonging.** make your data a first-class citizen. break down technical and cultural silos. educate and empower folks to make changes.
+		- **esteem.** observability, debuggability, introspection, instrumentation. your DB should tell you when there are problems, rather than relying on dashboard gazing. have just enough graphs, not so many that the signal gets hidden by the noise. have knobs to selectively degrade service instead of falling over.
+		- **self-actualization.** this is unique for each org! you have the right data infrastructure to get you to where we need to go.
+- # 2. Service-Level Management
+	- when we design and build a service, we need a set of requirements about what it does. that's an [[SLA]]. within the SLA, the [[SLO]]s are commitments by the architects and engineers that guide the design and operation of the system.
+	- SLOs are hard! finding the right things to measure and ways to measure them is non-obvious. examples:
+		- if I am calculating the % of successfully served API requests... measured by who? the API? (what if the load balancers are down? or a database is unavailable?)
+		- which services do we measure? would we rather have 99.95% availability for the API and 97% for out batch processor, or 99% for both?
+		- what if you count error percentages? well, which errors are due to system failures, and which due to malformed user input?
+		- what if failures are not evenly distributed? for example, 95% of users have great availability but 5% only 30-50%.
+		- what if your availability is great, but the latency is so bad the service is practically unusable?
+		- what if availability is low for some users because of factors beyond your control? (like their network infra?)
+	- what indicators might be useful to consider?
+		- **[[latency]]:** how long does it take for a request to receive a response?
+		- **[[availability]]:** what percentage of the time is the system able to return responses?
+		- **[[throughput]]:** how many successful responses happen in a given unit of time?
+		- **[[durability]]:** how much data is successfully persisted, rather than lost?
+		- **[[cost]]** or **[[efficiency]]**
+	- defining SLOs:
+		- you should build your SLOs from the same set of requirements that product features are built. stay user-focused!
+		- probably, you only want ~3 or so. more than that, and there's a high chance you're measuring symptoms rather than the thing you really care about
+		- SLOs are an iterative process. don't expect to get it right on the first try. once they're right, don't expect the system to remain the same over time!
+	- **latency SLOs** could be expressed like: "request latency must be less than 100ms". we might not want to leave the lower bound undefined, though! it might be that 5ms latency is much faster than any client can actually process. so we might say, "between 25ms and 100ms"
+		- you need to think about latency as a [[distribution]]. and it's basically never [[Gaussian]]. so summary stats like [[standard deviation]], [[median]], etc. aren't going to be informative
+			- you might need to use averages _to visualize_, but make sure you store the actual measurements. averaging is lossy.
+		- to get a sense of the effect of outliers, you might instead use [[percentiles]] like P95, P99, etc. percentiles are a great fit because we know there will always be outliers. we must choose how many outliers we're willing to tolerate, and measure it.
+	- **availability SLOs** will typically be expressed in 9's. "five 9's" = 99.999%, etc. we can use these %s to figure out how much downtime is allowed each year. consider each extra 9 a new level of engineering complexity and difficulty.
+		- you might also consider measuring [[mean time between failures]] and [[mean time to recover]]
+		- in increasing availability, we can't focus on eliminating failures! we need to look at [[resilience]] over [[robustness]]. we instead emphasize:
+			- low MTTR, so the system gets back up fast. (we can do this with automated recovery proccesses.)
+			- low impact during failures. (we can do this with distributed and redundant envs.)
+			- treating failure as a normal event in the system, and making sure remdiation (whether manual or automatic) is an integrated part of everyday life
+		- scope your availability SLOs! over what time period do we measure? what's the maximum incident duration we'll tolerate? what's the maximum % of affected users? etc.
+		- knowing how much downtime we allow allows us to also treat it as an investment. if 10 minutes per week is OK, we know we _can_ lock tables to generate an index for 10 minutes if we need to.
+	- **throughput SLOs** should be something like the maximum value the service can support while maintaining the other SLOs.
+		- you need these because a system that's highly available and low-latency won't necessarily have great throughput! there can be bottlenecks that wreck throughput without tipping over your system
+	- **cost SLOs** have to be driven by business value, so there's no one-size-fits-all here. probably pick the action that generates the most value.
+	- **how to monitor and report on SLOs?**
+		- let's start with **availability**. at first, low-level metrics like host uptime etc. may seem useful. but in a massively distributed environment, low-level measures stop working. how do you do this for 1000 hosts?
+		- instead, start at the broadest level- error rates from real user requests with [[real user monitoring]] (RUM).
+		- make sure to store this data as raw as possible. averages are lossy! you should probably slurp your server logs through syslog into some [[time-series database]]
+		- it's useful to not just see when we've broken the SLO, but also predict whether we will in the near future. we might do that by comparing our current week to previous weeks, using a decaying function to ensure that more recent (and more similar) weeks get more weight.
+		- [[synthetic monitoring]] is useful too! we can create automated coverage to ensure that everything we want to be tested, is tested, even if users aren't active on those code paths at that time.
+		- on to **latency**. we can use the same log data we stored when we were tracking availability, and use that to calculate latency.
+		- on to **throughput.** again, we'll already have the data we need.
+			- but this is tricky, because your system may organically have traffic below your minimum. so you may need to think about periodic [[load tests]] to ensure it's good.
+		- on to **cost.** this can be tricky to measure, because some costs are not easily quantifiable. if you're using a cloud service, there's probably a cost tracking system you can use. but if you're on bare metal, you'll need to estimate a lot of stuff yourself. cost data may also not be very granular.
+			- think also of the cost of the staff who maintain the service.
+	- why do SLOs matter?
+		- > We cannot emphasize enough that **all actions must be a result of planning to avoid violations of our SLOs.** The SLOs create the rules of the game that we are playing. We use the SLOs to decide what risks we can take, what architectural choices to make, and how to design the processes needed to support those architectures.
+		  — p.49
+	- q's:
+		- the authors suggest we can't focus on robustness, only resilience. what do you think about that?
+		- should _all_ actions be a result of avoiding SLO violations? does this doom us to fover being reactive?
