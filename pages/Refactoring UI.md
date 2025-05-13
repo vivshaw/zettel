@@ -3,6 +3,7 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system
 ---
 
 - # Starting from Scratch #[[design tokens]]
+  collapsed:: true
 	- **Start with a feature, not a layout**
 		- don't think about the shell of the app first. top bars, side navs, etc...
 		- instead, think about the actual piece of functionality you wish to deliver. like "search for a flight". then, add the necessary pieces of UI to support that.
@@ -30,6 +31,7 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system
 		- **systematize everything you can.** fonts, colors, spacing, shadows, layouts... also, any time you find yourself making a laborious decision.
 		- you don't need to have this all set in stone up front! just make sure you're following this approach each time you make a decision.
 - # Hierarchy is Everything #hierarchy #[[information architecture]]
+  collapsed:: true
 	- **Not all elements are equal.**
 		- if all elements share similar visual importance, they will compete for your focus, and it will be hard to tell what matters
 		- deliberately de-emphasizing secondary and tertiary info helps highlight the primary info!
@@ -62,3 +64,80 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system
 		- reserve bright colors for primary actions. secondary actions can be more muted. tertiary actions can probably be styled like links!
 		- you don't need a big red button for every destructive action. even if destructive, actions should be treated according to the hierarchy.
 			- what you might _actually_ want instead, is a separate confirmation step where the destructive action _is_ primary!
+	-
+- # Layout and Spacing #spacing #layout
+  collapsed:: true
+	- **start with too much white space.** it's easier to remove space from something with extra, than to add extra space into an already-cramped UI. don't just give things the bare minimum necessary to not be actively bad!
+		- dense UIs have their place. like a data dash. just make sure it's a deliberate choice
+	- **establish a spacing and sizing system.** every second you spend nitpicking something by `1px` is a second you don't spend on things that matter.
+		- don't use a linear scale. that's not really how visual hierarchy works, and it won't help you avoid nitpicking. your system needs to account for relative size
+		- a sensible way to do this is start with one decent base value, then use multiples and divisions of it
+	- **you don't have to fill the whole screen.** figure out how much space you need, then use that much.
+		- too much space between related elements makes things harder to understand
+		- this is applicable both to the whole page layout, and to individual elements within
+		- shrink the canvas itself if you gotta! try designing at mobile sizes first. then when you scale it up to mobile, only change whatever felt like a compromise
+		- if something feels _really_ unbalanced in a wider UI, try a column layout!
+	- **grids are overrated.** a 12-column grid can simplify your layout decisions, but you can't use it for _everything_
+		- grids are about fluidity, but not everything should be fluid. for example, a layout sidebar. probably you don't want it to shrink and overflow on smaller screens! probably best to use a static sidebar, then grid *within* the content area
+		- don't shrink until you need to. many elements should perhaps be capped in size with a max-width, and prevented from shrink smaller than that.
+	- **relative sizing doesn't scale.** you can't just take a design that works at one size, scale everything up or down by a fixed %, and expect it to still work.
+		- this applies to em sizing for your typography too! just because a 2.5em heading looks great on desktop, doesn't mean it will still be the right heirarchy on mobile. You might need to shrink it more and compress your type scale.
+		- the same is true for spacing and sizing within elements. you might want to add more padding add larger sizes, or remove it at smaller
+	- **avoid ambiguous spacing.** spacing should make it visual obvious which elements belong to which group. that means probably, don't place subordinate elements at equal spacing
+		- pay attention with things like labels, bulleted lists, headings...
+- # Designing Text #typography
+  collapsed:: true
+	- **establish a type scale.** don't use too many font sizes! it leads to inconsistencies, and slows you down. instead, settle on some constraints.
+		- **choose a scale.** same as with sizing and spacing, a linear scale won't work.
+		- one approach for scaling is "modular scaling", using a ratio like the golden ratio. this isn't perfect in practice, because it won't line up with where you want sizes in practice.
+		- a better approach is to use a hand-crafted scale.
+		- constrain yourself just enough to reduce needless options, without leaving out any text size you'll really need.
+		- **avoid using `em`s!** they are relative to the _current_ font size, so they will often compute out to a value that ain't in your scale.
+	- **use good fonts.** your typography is only as good as the typeface you use!
+		- **play it safe.** a neutral sans-serif is a good starting point. like Helvetica, or the system font stack.
+		- ignore typefaces with less than 5 weights. in general, the more weights available, the more effort was put into tuning the typeface to be great.
+		- optimize for legibility! make sure your font is legible at the sizes you plan to use it.
+		- trust the wisdom of the crowd. popular fonts are generally good!
+		- steal from sites and apps that have invested a lot of effort in great typography
+	- **keep your line length in check.** overly long lines harm readability.
+		- you want to be within about 45-75 characters per line.
+		- even when mixing paragraph text with other wider content, keep it narrow!
+	- **use baseline alignment, not center.** mixed font sizes will look awkward when center-aligned.
+	- **make line-height proportional.** 1.5x may be a nice start, but it's not as simple as that.
+		- the width of your content matters. wider content may need a taller line-height.
+		- the font size also matters. at small scales, you may need a taller line-height to give your eyes more help.
+	- **not every link needs a color.** you _should_ make links visually distinct and obviously clickable in some way. but using a pop of primary color on all of them can get visually exhausting.
+		- also think about heirarchy- secondary and tertiary links may need less visual highlighting
+	- **align with readability in mind.** start with the default for the language your app's in.
+		- don't center any long-form text, only short things like headlines
+		- right-align numbers, for visual alignment of digit places
+		- if you justify paragraph text, enable hyphenization
+	- **use letter spacing effectively.** by default, trust the type designer and leave it alone.
+		- you might choose to track in headlines and other very large text. don't do this the other way around, though!
+		- you might increase the spacing of all-caps text for better legibility
+- # Working with Color #color
+	- **ditch hex for HSL.** in hex and RGB, many colors that look similar visually look nothing alike in code. [[HSL]] fixes this, by specifying color in terms of hue, saturation, and lightness- all meaningful to the human eye.
+	- **you need more colors than you think.** you can't just have a palette of 5 primaries! you need:
+		- **greys**, because almost everything in an interface is a shade of grey. probably 8-10 shades. true black tends to look unnatural, so use a really dark grey as the top-end of the grey scale.
+		- **primary**, most apps need just one. *maybe* two. you'll also want a scale of 8-10.
+		- **accents**, for communicating different things to the user, like success/failure states. you'll want multiple shades of these too
+		- altogether, you'll probably have up to 10 different colors, with up to 5-10 shades each
+	- **define your shades up front.** don't use lighten and darken preprocessor functions on the fly!
+		- start by picking a base color. this will be one in the middle, from which you'll derive lighter and darker shades.
+		- next, find the lightest and darkest ends of the scale. the darkest is usually used for text, and the lightest is usually used for background tints, so something like an alert component can be a good place to test this.
+		- last, fill in the gaps. you might call your middle shade 500, your light and dark ends 100 and 900, then fill in the remaining slots.
+		- don't be afraid to tweak things manually. a mathematical approach will only get you so far. human eyes are the final arbiter of quality.
+	- **don't let lightness kill your saturation.** in HSL, as a color gets closer to 0% or 100% lightness, the impact of saturation is reduced. so you'll need to boost it on both ends of the scale.
+		- you can use [[perceived brightness]] to your advantage. the human eye sees certain hues as brighter than others, like yellow. so, you can lighten a color by rotating toward the nearest bright hue (60, 180, 360) or darken by rotating toward dark hues (0, 120, 240).
+		- this is especially useful when building color scales for light colors like yellow, where a naive lightness-only approach will get you a scale full of gross muddy browns
+	- **greys don't have to be grey.** "true" grey has no saturation at all, but many IRL greys have lots of saturation!
+		- think about color temperature, like when you buy lightbulbs. "cooler" greys are blue-saturated. "warmer" greys are yellow or orange-saturated.
+		- as with the lightness discussion above, you need to adjust saturation at the ends of the scale for visual consistency
+	- **accessible doesn't have to mean ugly.** [[WCAG]] recommends a 4.5:1 contrast ration for normal text, and 3:1 for larger text. that's easy with black & white, but tricky with colors. how do we do it? #a11y
+		- flip the contrast when needed. using dark colored text on a light colored background can be easier than white text on a dark colored background.
+		- when you can't reduce or increase lightness to create hierarchy without getting inaccessible, try rotating hues
+	- **don't rely on color alone.** what if a use is red-green colorblind, for example?
+		- never use color as the only means to communicate something. communicate each piece of info in multiple ways. for example, color _and_ an icon, or color _and_ sizing.
+		- rely on contrast rather than hue. for example, bar charts in all shades of one color rather than many colors.
+- # Creating Depth
+	-

@@ -28,12 +28,18 @@ tags: books, personal
 - FSG Originals x Logic
 - Bennington - Jacques Derrida
 - Raimon Panikkar - Rhythm of Being
+- Kastrup - The Idea of the World
+	- Panarchy - Gunderson and Holling
 - # software
 	- A Philosophy of Software Design
 	- Release It!
 	- Thinking in Distributed Systems
 	- Working Effectively with Legacy Code
 	- https://aosabook.org/en/index.html
+	- the software architect elevator
+	- kill it with fire
+	- software architecture: the hard parts
+	- programmers at work
 - # sci-fi
 	- too like the lightning
 	- a psalm for the wild-built

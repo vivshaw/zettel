@@ -18,3 +18,4 @@ tags: resilience engineering
 	- from the sciences:
 		- > The ability to prepare and plan for, absorb, recover from or more successfully adapt to actual or potential adverse events.
 		  — NAS 2012
+- see [[human resilience]]

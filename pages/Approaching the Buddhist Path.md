@@ -179,6 +179,7 @@ tags: books, theology, Buddhism, Dalai Lama, Thubten Chodron
 		- in the Buddhist approach, erroneous mental states can be diminished by cultivating their opposites. they're not removed through prayer, the Buddha's power, or concentration [[samadhi]]. they're removed through our own effort to understand and act rightly.
 		- since we can separate the defilement from mind, the ultimate nature of the mind must be free from defilement. this ultimate nature is called [[Buddha-nature]].
 - # Ch. 3: Mind and Emotions #[[philosophy of emotion]]
+  collapsed:: true
 	- humans are emotional beings. but some of our emotions lead to harm, and others to happiness. both on the personal and societal level, it's worthwhile to cultivate the good ones and subdue the negative ones.
 	- Buddhas have eliminated all *afflictive* emotions, but that doesn't mean they're emotionless! on the contrary, while gradually overcoming the negative emotions, they've built up incredible amounts of constructive emotions, like love and compassion.
 	- ## Buddhism, science, and emotion
@@ -217,5 +218,70 @@ tags: books, theology, Buddhism, Dalai Lama, Thubten Chodron
 	- ## emotions and survival
 		- there's a biological basis for emotions. positive or negative, they help us to survive.
 		- why then do Buddhists see them as afflictions? well, they perform their function, but they do so in an unreasonable way, full of exaggeration and grasping.
-		- by examining the afflictions over time, we'll eventually get tired of them running our lives. then we can make a decision to consciously cultivate positive emotions in their place.
-		-
+		- by examining the afflictions over time, we'll eventually get tired of them running our lives. then we can make a decision to consciously cultivate positive emotions in their place. for example, we can respond to being harmed by others by recognizing they're a person like us, who also wishes to be happy.
+		- our reasons for not harming other progressively develop over time
+			- we might start purely to avoid punishment. our motive is purely selfish.
+			- later, we might consider them nonvirtuous according to a religion, and fear punishment after death. our motive is still selfish, but begins to consider ethics.
+			- later still, we might recognize that the other is a sentient being like us, worthy of the same respect as us. our motive becomes centered on others and the effects they will suffer.
+			- even later, we might realize harming others restrains us from awakening and benefiting sentient beings. this is the effect of having [[bodhicitta]].
+	- ## working with afflictions
+		- each affliction has an antidote. the constructive emotional states do not. furthermore, the antidotes can be cultivated until they are natural to us, and don't require repeated effort.
+		- awareness of our bodily sensations can help us recognize our emotional states more accurately
+		- intelligence is also a factor that can work for or against us! some afflictions are called "corrupted intelligence", because they involve an analytic process, but apply it deeply wrong.
+		- just saying to ourselves that a view is wrong won't make us stop holding it! we have to actively cultivate wisdom and understanding.
+		- we also need to make our mind more receptive to constructive qualities. we want to practice things like compassion until they become habitual
+		- one method sometimes used is to repeat short phrases during everyday activities. another is to use the imagination as an antidote to an affliction
+		- an antidote might initially make us feel worse, but that's not the point. we should pick the right remedy for the current affliction.
+			- **reflections:**
+				- how can you distinguish a destructive emotion from a constructive one?
+				- what are the benefits of subduing disturbing emotions and cultivating wholesome ones?
+				- review the methods to subdue each disturbing emotion and cultivate each wholesome one.
+	- ## cultivating love and compassion
+		- buddhist love and compassion shouldn't be confused with the love and compassion one feels toward one's family. those emotions are strong and positive, but also tainted with attachment. we love them because they please us, which sets us up for disappointment and anger when they don't live up to our expectations and displease us.
+		- we can cultivate love and compassion. we might start with meditation on equanimity, building an understanding that all beings are just like us. we might then move to cultivating the sense that beings are lovable, by remembering their kindness to us. we might then meditate on loving another and wishing them to be happy- then expand that to people more distant to us, then larger groups, then all beings.
+			- see [[lovingkindess meditation]]
+		- habituation is necessary for long-term change. we have to practice something repeatedly to make it a part of our temperament.
+			- **reflections:**
+				- follow the steps for cultivating love and compassion explained above. make your contemplation personal.
+				- enjoy the expansive feeling in your heart as you release anger and judgment and allow unbiased emotions to arise.
+	- ## a good state of mind
+		- what will follow are some techniques to address troublesome mental states.
+		- ### working with fear, developing courage
+			- recall the two types of fear- one that's reasonable, one that's panicked.
+			- panicked fear distorts our perception. sometimes accurate information dispels it- like fearing someone is hiding behind a curtain, then pulling the curtain aside
+			- others might be addressed be realizing the thing we fear is not so bad, and we would overcome it if it happened.
+			- the same situation might cause different fear in different people. some look at the negative state of the world and are galvanized to action, other sink into fretting and despair.
+			- there isn't one single technique that will create courage. it requires developing a great many skills so we can consider things from a braod, balanced perspective.
+		- ### hope, desire, and acceptance
+			- these emotions also have two aspects! when we hope for riches and material success, we become attached and deluded. but we need to have hope for a better future in order to make any kind of change.
+			- desire is the same. we might desire things that are positive, like to liberate other beings! or we might desire selfish and destructive things.
+			- same with acceptance. it can be toxic when it is acquiescence and passivity toward negative things. but it can be good when we accept our and others' faults and strive to improve.
+		- ### comparing ourselves with others and self-worth
+			- just because others excel in areas we do not doesn't make us lesser.
+			- remember our own strengths!
+			- it's important not to make black-and-white judgments. life is complex, and always has a mixture of suffering and happiness.
+		- ### counteracting depression
+			- focusing not on the chemical aspect of severe depression, but the emotional. it's often about a lack of affection, love, and compassion. we are by nature social animals! we appreciate the companionship and care of others, and require it to be healthy.
+			- one way to counteract it is to reflect on our own [[Buddha-nature]], to develop a sense of our own potential
+			- a second way is to consider the nature of cyclic existence. there will always be some kind of problem present as long as we are under the effects of afflictions and karma. if we want things to change, we need to remove their cause
+		- ### disagreement and conflict
+			- even as individuals, we constantly have disagreement within ourselves. we change our minds often. if we can overcome that and not be confused and alarmed, then can't we do the same for the whole human community?
+			- when our disagreement is because one group is taking advantage of another, we may feel spurred to violence. but it just creates more suffering, and rarely improves the situation. we need to instead train in nonviolence, mediation, conflict resolution, and listening.
+			- while violence might feel very human, it also goes against human nature. when we're young, don't we feel terrible when we see others treated roughly, and happy when we see kindness?
+			- from the Buddha:
+				- > There are, O monastics, these six roots of disputes. What six? Here a monastic is (1) angry and vengeful, or (2) contemptuous and domineering, or (3) envious and miserly, or (4) deceitful and hypocritical, or (5) he has evil desires and wrong views, or (6) he adheres to his own views, holding to them tenaciously and relinquishing them with difficulty.
+				- > Such a monk dwells without respect and deference toward the Teacher, the Dhamma, and the Saṅgha, and he does not fulfill the training. Such a monastic creates a dispute in the Saṅgha that leads to the harm and unhappiness of the multitude, to the ruin, harm, and suffering of devas and humans.
+				- > If, monks, you perceive any such root of dispute either in yourselves or in others, you should strive to abandon this evil root of dispute. And if you do not see any such root of dispute either in yourselves or others, you should practice so that this evil root of dispute does not emerge in the future.
+			- what should we do when we catch ourselves in one of these situations? start by not acting out the affliction. then, work with our mind, applying the appropriate antidote. once we are again balanced, we can talk it out with the other person.
+		- ### survival of the most cooperative
+			- we often talk about [[evolution]] as a matter of "survival of the fittest", but it'd be better to understand it as "survival of the most cooperative"
+			- we are social beings, and interdependent. self-sufficiency is an illusion. we rely on each other just to stay alive! civilizations only thrive when they cooperate and work toward the common good. people only thrive when they have others to rely on.
+			- self-centeredness can cause massive damage. it can even wreck civilizations!
+		- **reflections:**
+			- imagine understanding the perspective of someone who has harmed or threatened you or whom you consider an enemy.
+			- imagine having compassion — not pity — for the mental and physical difficulties that person has undergone and will undergo in life.
+			- look at the situation with the eyes of wanting that person to be free from their suffering and to have happiness. After all, if they were happy, they wouldn’t be doing the things you find distressful.
+			- imagine speaking to that person with kindness, clarity, and balance.
+- # Ch. 4: The Spread of the Buddhadharma and Buddhist Canons
+	- the Buddha gave multiple teachings to correspond with the variety of beings there are. different people found different teachings the most applicable to their own minds. that's why there are many Buddhist traditions.
+	-

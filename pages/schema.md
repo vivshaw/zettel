@@ -3,7 +3,7 @@ tags: psychology
 ---
 
 - a **schema** is a pattern of thinking and behavior that people use to interpret the world. it is a cognitive shortcut that lets us reduce the massive quantity of information of the external world into a mental model we can fit in our heads and reason about
-- [[Jean Piaget]] introduced them in his theory of cognitive development
+- [[Jean Piaget]] introduced them in his theory of [[human development]]
 - there are two ways of dealing with new information:
 	- **assimilation:** cram it into an existing schema
 	- **accommodation:** update your schemata to make room for the new information. you might alter an existing schema or form a new one entirely

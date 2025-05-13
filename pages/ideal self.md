@@ -6,7 +6,7 @@ tags: psychology
 	- [Boyatzis, R.E.](https://www.emerald.com/insight/search?q=Richard%20E.%20Boyatzis) and [Akrivou, K.](https://www.emerald.com/insight/search?q=Kleio%20Akrivou) (2006), "[The ideal self as the driver of intentional change](https://www.researchgate.net/publication/242203714_The_ideal_self_as_the_driver_of_intentional_change)", *[Journal of Management Development](https://www.emerald.com/insight/publication/issn/0262-1711)*, Vol. 25 No. 7, pp. 624-642.
 - the ideal [[self]] is partially conscious and partially unsconscious, and both privately conceptualized and socially influenced.
 - in a [[psychoanalytic]] therapeutic model, it's seen as a defensive mechanism, something to be overcome
-- but in a [[positive psychology]] model, it's a good thing- a mechanism of self-regulation and intrinsic motivation. it helps to organize the will to change, and direct it.
+- but in a [[positive psychology]] model, it's a good thing- a mechanism of [[self-regulation]] and intrinsic motivation. it helps to organize the will to change, and direct it.
 	- ![image.png](../assets/image_1699336121717_0.png)
 	- a large component of the ideal self is [[hope]]
 	- processes leading to a healthy ideal self:

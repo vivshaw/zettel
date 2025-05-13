@@ -1,0 +1,5 @@
+---
+tags: infrastructure, Hashcorp, vm
+---
+
+-

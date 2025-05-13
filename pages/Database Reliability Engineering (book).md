@@ -43,6 +43,7 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors
 		- **esteem.** observability, debuggability, introspection, instrumentation. your DB should tell you when there are problems, rather than relying on dashboard gazing. have just enough graphs, not so many that the signal gets hidden by the noise. have knobs to selectively degrade service instead of falling over.
 		- **self-actualization.** this is unique for each org! you have the right data infrastructure to get you to where we need to go.
 - # 2. Service-Level Management
+  collapsed:: true
 	- when we design and build a service, we need a set of requirements about what it does. that's an [[SLA]]. within the SLA, the [[SLO]]s are commitments by the architects and engineers that guide the design and operation of the system.
 	- SLOs are hard! finding the right things to measure and ways to measure them is non-obvious. examples:
 		- if I am calculating the % of successfully served API requests... measured by who? the API? (what if the load balancers are down? or a database is unavailable?)
@@ -93,3 +94,199 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors
 	- q's:
 		- the authors suggest we can't focus on robustness, only resilience. what do you think about that?
 		- should _all_ actions be a result of avoiding SLO violations? does this doom us to fover being reactive?
+- # 3. Risk Management #[[risk management]]
+  collapsed:: true
+	- [[risk management]] is what we do to identify the [[risk]]s possible and reduce their likelihood.
+		- we can't eliminate all risk! we need to prioritize and iterate.
+		- we might use a process like this:
+			- identify possible threats
+			  logseq.order-list-type:: number
+			- assess the likelihood and impact of each risk
+			  logseq.order-list-type:: number
+			- categorize the likelihood and outcome
+			  logseq.order-list-type:: number
+			- identify controls to mitigate impact or reduce likelihood
+			  logseq.order-list-type:: number
+			- prioritize risks
+			  logseq.order-list-type:: number
+			- implement and monitor controls
+			  logseq.order-list-type:: number
+			- repeat!
+			  logseq.order-list-type:: number
+	- what might affect the quality of the risk assessment?
+		- **unknown factors and complexity.** the more complicated a process is, the more room for uncertainty
+		- **availability of resources.** in a scrappy startup environment, you won't be able to get the resources you need for a thorough ongoing process! try to generate value with what time and resources you _can_ get
+		- **human factors.** there are many ways individual human actions can make things go south: inaction, ignoring the familiar, fear, overoptimism...
+		- **group factors.** similarly, at the group level: polarization, risk transfer, decision transfer...
+	- what *not* to do:
+		- don't allow subjective biases to damage the process
+		- don't rely on anecdotes and word of mouth
+		- don't focus only on the past
+		- don't stagnate
+		- don't ignore the human
+		- don't ignore evolving architectures and workflows
+		- don't assume that the current environment is the same as the past
+		- don't create brittle controls or ignore worst cases
+	- how to get a process working:
+		- start with an initial **bootstrap**. your goal is to identify the biggest risks to the system's SLO, most likely risks, or hazards that would destroy long-term viability. don't try to be comprehensive, just get a starting list going.
+		- then, do a **service risk inventory**. sit down with the product owners and evaluate the risk tolerance. what SLOs are defined? what costs from outages are acceptable? what does downtime look like? can downtime undermine the whole company?
+		- next, do an **architecture inventory**. list all the systems and environments that we're responsible for. be detailed- include jobs, roles within components, comms pathways...
+		- next, **prioritize** the risks, assessing failure for each component of your inventory. you can use a risk assessment matrix. be as quantitative as you can with your values!
+		- finally, it's time for **control and decision making**. find technique to mitigate or avoid the highest-priority risks. there are three approaches: avoidance (eliminate the likelihood), reduction (reduce the impact when it happens), or acceptance (decide it's OK and plan for it).
+	- once you have your process bootstrapped and ongoing, you'll add:
+		- **service delivery reviews**, in which you'll reflect on any changes in the service that would impact the risk.
+		- **incident management**, in which you'll learn from real incidents and update your process accordingly
+		- an **architectural pipeline**, where new system components will be brought through the risk management process.
+	- ![image.png](../assets/image_1746936365900_0.png)
+- # 4. Operational Visibility #observability
+  collapsed:: true
+	- we need to have visibility into our database service in order to do DBRE! why?
+		- break/fix: we need to know when stuff breaks so we can fix it!
+		- performance: how well does this actually run?
+		- capacity planning: how much load are we under?
+		- debugging: why did things go wrong?
+		- business analysis: how is the service actually being used?
+		- correlation and causation: what is connected to what?
+	- [[human error]] is never a [[root cause]]. it's always due to underlying system or environment failures. for example, overworking an employee without rest leads to mistakes. or, an overly complex control plane leads to mistakes. also, "root cause" itself is misleading- there's rarely one single issue at the start.
+		- see also [[no view of human error]]
+	- how does traditional monitoring work?
+		- hosts are servers, long-running stable instances
+		- there's a focus on systems, not services
+		- monitoring focuses on utilization and thresholds (symptoms) rather than customer-facing metrics (SLIs)
+		- architecture is siloed, and each silo is monitored separately
+		- low granularity
+		- focus on collection, not analysis
+		- high admin overhead
+	- nowadays, visibility is very different! data stores are massively distributed, analysis is critical, and we care primarily about user impact. what's that mean for us?
+		- we need to treat our OpViz systems like BI systems. don't farm it off to some separate ops team! treat it like you would a data warehouse or big data platform.
+			- a mature OpViz platform can provide not only the state of the infrastructure, but also the state of the application running on the infrastructure
+		- assume that distributed and ephemeral environments are the norm.
+		- we need to store high resolution data. use the timespan at which the metric has enough variability to affect your SLOs to determine what's high-res enough! stuff like CPU usage or DB connection queues probably need subsecond metrics. disk space might not.
+		- keep the architecture simple! in a distributed environment, there is too much that we could measure! keep signal-to-noise ratio good by only letting in data that's meaningful.
+			- focus on metrics directly related to SLOs. latency, availability, call rates, utilization...
+			- you'll also want to standardize the knobs available to engineers, to make it easy to understand.
+	- ## inputs
+		- to create good outputs, we require good inputs. try to use data already generated by your environments (whitebox monitoring), not artificial data (blackbox monitoring). you might use [[observability]] tooling for this, like [[Honeycomb]], to trace a user flow through the whole architecture.
+		- allowing services to send their own monitoring data, rather than pulling it via a monolithic central service, helps you scale
+		- when there's too much data for humans to make sense of, you might need some sort of automated anomaly detection system to find weird patterns that need attention. YMMV!
+		- stuff you might send in:
+			- **metrics**, such as counters, gauges, histograms, or summaries. these are numeric data to which you can apply functions like count, sum, mean, median, or percentile
+			- **events**, discrete actions from your environment
+			- **logs**, data and context created by an event
+	- ## outputs
+		- **alerts**: an interrupt that tells a human something's wrong and a response is needed
+		- **tickets**: a scheduled piece of work for engineers to address later
+		- **notifications:** recording that some event occurred
+		- **automation:** drive responses to situations without human involvement
+		- **visualization:** graphs and dashboards
+	- think of your data as a stream from clients to DBs and back. a DB exists to take in, hold, and serve back data. so, _everything_ we might want to measure can boil down to:
+		- how long does it take to get data in?
+		- how long does it take to get data out?
+		- is the data safely stored? how?
+		- is the data available in redundant locations?
+	- how do we bootstrap a system like this?
+		- we start with zero. there are no metrics by default. furthermore, starting to build an elaborate OpViz platform on day one would be a waste! build it once you actually need it.
+		- we might follow a progression in levels of sophistication like so:
+			- monitor if the DB is up or down
+			  logseq.order-list-type:: number
+			- monitor overall latency, errors, and E2E health metrics
+			  logseq.order-list-type:: number
+			- instrument the application to get latency & errors for every DB call
+			  logseq.order-list-type:: number
+			- gather as many metrics as possible about the system as possible
+			  logseq.order-list-type:: number
+			- create specific checks for known problems
+			  logseq.order-list-type:: number
+	- once bootstrapped, how do we evolve it? key questions to ask yourself:
+		- **is my data safe?** it should be stored in at least 3 live copies if it's mission critical.
+			- but not all data is mission critical! some stuff is fine to lose, like data that can be reconstructed from logs. still store these in n+1 copies, though
+			- you also need backups, with regular verification that the backups actually worked
+			- you might do:
+				- three nodes up?
+				- replications running?
+				- replication <1 second behind?
+				- most recent backup?
+				- most recent restore from backup?
+		- **is the service up?** you need an E2E health check that lets you know if the system's up.
+			- there should be a thorough top-level check, that tests all DB connections in the critical path.
+			- there should also be a simpler liveness check for things like load balancers to use. (if they use an overly-complex check, they might cause system load just from checks!)
+			- have at least some off-premises checks, like a check that your monitoring system is working
+			- you might do:
+				- app-level health check
+				- query against each partition in each datastore
+				- capacity monitoring- disk space, DB connections
+				- error log scraping- DB restarts, corruption
+		- **are my customers in pain?** there are infinite ways your system might break, and you can probably only guess a few % in advance. so, set up the basics, then *go do something else*, and return when you've seen how the system actually breaks and gathered real data to work with.
+	- concretely, how should we instrument?
+		- start by instrumenting the application. the leading indicators of problems will be changes in user and app behavior.
+			- measuring and log all req/res to pages and endpoints
+			- do the same to all external services- DBs, caches, search indices
+			- do the same to any independent jobs or workflows
+			- do the same to any independent, reusable code that touches the DB
+			- monitor how many DB calls are executed for each page/endpoint/method
+			- you can potentially use [[SQL]] comments to add information about where a chunk of SQL was called from in the codebase.
+			- you'll want distributed tracing. it should be possible to determine which bits of SQL are tied to which bits of code are tied to which user actions. otherwise, you'll waste weeks just shuffling data around. ideally, you want to be using shared tools with SWEs, so they can learn!
+			- all events and logs need to be stored. include events like code deploys!
+		- next, instrument the server or instance. collect data regarding the OS's and physical resources behind our datastores. use the [[USE method]]- underutilized, saturated, or erroring. be thorough and measure just about everything about your hardware and OS that you can.
+			- also, send all events and logs
+			- in a cloud environment, you may need to measure **cost** and **steal time** as well
+		- next, instrument the datastore. again, use the USE method. cover each of the connection layer, the internals, the DB objects, queries, and asserts/error events! the goal is to understand any bottlenecks that could cause problems.
+			- internal things you might measure: latency/throughput, commits/redo/journaling, replication, memory structures, locking/concurrency
+			- know how much storage each DB object takes
+- # 5. Infrastructure Engineering #infrastructure
+  collapsed:: true
+	- databases always run as processes on some host. could be a physical server, a virtual server, a container, even some abstracted service.
+	- physical servers are hosts that have OSes and are 100% dedicated to running processes from that OS
+		- in an immature environment, all services might be run from one host! a DBRE's first task then will probably be to get a dedicated host for the DB
+		- you should have a gold-standard kernel and OS configuration, that automatically deploys with your hosts.
+		- topics to address: [[I/O scheduling]], [[memory allocation]] and [[fragmentation]], [[swap]], NUMA, network, storage...
+		- discusses [[jemalloc]]/[[tcmalloc]], [[THP]]
+		- [[linux]] isn't _particularly_ well optimized for low latency/high concurrency data needs. the best you can do is often to make sure you never fully use all your physical memory
+		- an old point of view is that a slow database is better than a down database, so swapping is fine. a newer, DBRE-style view is that latency impacts are as bad as any other, so swapping shouldn't be tolerated. only disable swap if you have a super solid failover process, though!
+		- benefits: physical servers are in a sense the _simplest_ way to host a DB- there are no abstractions in between you and the DB, and your control is complete.
+		- drawbacks: wasted capacity, long deploy times, and difficulty ensuring identifcal configuration
+	- a virtualized approach is another option. [[virtualization]] lets us use software to create dedicated resources from dividing up the hardware. like [[vm]]s.
+		- a [[hypervisor]] creates and runs the VMs
+		- databases within one hypervisor have less potential for concurrency. focus on horizontal scaling across nodes, not vertical scaling within nodes
+		- storage performance is slower, and you generally can't guarantee your writes are flushed to disk if there's a crash!
+		- two options for storage: local VM storage, which is ephemeral, and persistent [[block storage]]. you probably want the block storage. but it's more network-dependent than a traditional disk!
+		- benefits: rapid deployment, self-service platforms
+		- drawbacks: less durability (data loss almost inevitable), instance instability (so you need to invest in failover and recovery), requires horizontal scale (so you need to automate many instances), latency may be more unstable
+	- [[container]]s are another approach. they are lighter than VMs. they sit on a physical host and share its kernel, binary, and libraries.
+		- benefits: they can be much faster to start than VMs. good for quick prototypes
+		- drawbacks: they are less customizable- no kernel-level tweaks. bad at IO-heavy workloads like DBs.
+	- [[DBaaS]] is another approach. a cloud provider manages a database for you.
+		- DBaaS is often sold as a way to get rid of the need for DBA/DBRE specialist skillsets. this isn't quite true. you eliminate a lot of the easier problems and toil, but you run the risk of getting yourself into the _hard_ problems earlier.
+		- early choices like DB version etc. should be made by someone with depth in the DB ecosystem
+		- benefits: service provider handles deployments, failover, upgrades, backup. may have good metrics integration with the rest of cloud platform. may have proprietary high-perf "special sauce"
+		- drawbacks: lack of visibility- you have no access to the underlying OS or hardware. can't use tools like [[top]], [[dtrace]], [[vmstat]]. implementation is a black box where you rely on your vendor to get it right.
+- # 6. Infrastructure Management #infrastructure
+	- we no longer live in the days where a deployment environment is one or two boxes we can manually configure. we have to support many more machines than we have pairs of hands.
+	- to accomplish this, automation is required. we can't have stability without it. our goals are to eliminative any repetitive or manual processes, and to create [[reproducible]] standardized infrastructure.
+	- what to cover?
+		- software installations, including OS and DB
+		- software configuration
+		- bootstrapping data
+		- installing peripheral tooling: monitoring tools, backup utilities, operator toolkits
+		- testing the infra for correctness
+		- compliance testing
+	- the first thing we need is [[version control]] for all components. not just source code! we need [[configuration as code]]. libraries and packages, config files, OS versions, helper scripts... all should be under version control.
+	- you will probably need a configuration mananagement system. something like [[Chef]], [[Puppet]], or [[Ansible]]. these systems are [[declarative]]- you *define* your config rather than scripting it.
+		- these systems have primitives- "recipes" in Chef, "manifests" in Puppet
+		- these primitives are rolled up into "cookbooks" or "playbooks". they can be used to configure different environments (test vs. dev. vs. prod), provide overridable defaults, etc.
+		- we want the actions of these systems to be [[idempotent]]. running the system should semantically mean "take the system in its current state, and bring it to the target state".
+	- once you've got all your config defined, you need to actually build your DB. there are two approaches:
+		- **frying** means dynamic configuration at host deployment time. provision the hosts, deploy the OS, then configure. all the configuration management systems mentioned can do this.
+		- **baking** means configuring a base image at build time. you get a snapshotted "golden image", like an AMI or VM image, that you can deploy in the future. [[Packer]] is a tool that can do this.
+	- once you've built the DB, you need to ensure it remains configured correctly over time. [[configuration drift]] is a real threat. systems that were configured the same on deployment, may end up in different states as folks log in and tweak it over time.
+		- consider [[immutability]]. if you forbid the infra from changing after initial configuration, drift won't happen. all changes will have to occur via changes to the version-controlled definitions and deployed through the standard pipeline. benefits of immutability: simplicity, predictability, recoverability
+		- but immutability has a lot of overhead. especially for frequently-tweaked parameters on a arge cluster.
+		- use tooling to help. most of the config management tools mentioned can do synchronizations. there's also tooling to identify differences and trigger redeploys.
+	- you won't have just one DB instance, you'll have many. so you'll need tools to orchestrate.
+		- you might have a monolithic infrastructure definition, in which everything for every part of your app lives in one big definition. there are lots of downsides. tests are slow and fragile due to testing against the entire definition. changes are prone to break _everything_, not just one part. it's hard to build small subsections of the app without building the whole thing. and big changes tend to be limited to developers who grok the whole stack, causing bottlenecks.
+		- you can improve by separating definitions vertically, one definition per service. this will be challenging if you have multiple services sharing a database tier- you'll need a separate definition for that tier.
+		- you can improve further by separating definitions horizontally, one definition per tier. break out your web server stack, application server stack, and DB stack. you've now reduced your failure domain even further.
+		- [[Terraform]] can be used for this stuff
+	- you should test your infrastructure images! this brings the benefits of [[TDD]] to infra. you can use something like [[ServerSpec]] for this.
+	- in a distributed environment with decoupled, dynamic components, you have all kinds of new complexities, and need things like a service catalog to do [[service discovery]]. tools like [[Apache ZooKeeper]] or [[Consul]] can help you with this. you might need this in the DB world for stuff like failovers, sharding, and boostrap nodes.
+	- you are going to want to test changes in a local development environment before committing them to prod! try to make the local sandbox as close to prod as possible- same OS, same config and orchestration tools, etc. [[Packer]] and [[Vagrant]] can help you here.

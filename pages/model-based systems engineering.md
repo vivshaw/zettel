@@ -17,5 +17,5 @@ alias: MBSE
 - models should go through [[verification (SE)]] and [[validation (SE)]], to ensure they do the thing we want and do it correctly! ()failure to do this, for example, was part of the cause of the Mars lander disaster)
 - MBSE tends to use specific object-oriented modeling languages, like SysML, that provide standard modeling objects. tools like Cameo support this.
 	- similar to [[UML]] and diagrams for [[object-oriented programming]]!
-- MBSE is a great tool to remove "stovepiping". without MBSE, different domains of SE (reqs, behaviors, verification...) will all probably live in different places. that means they can get out of sync! with MBSE, they're all part of on single source of truth.
+- MBSE is a great tool to remove siloing. without MBSE, different domains of SE (reqs, behaviors, verification...) will all probably live in different places. that means they can get out of sync! with MBSE, they're all part of on single source of truth.
 	- one and the same model might have many different views. this lets you re-establish nice interfaces for the domains you care about, within the model.

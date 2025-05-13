@@ -1,0 +1,9 @@
+- Jorgito - 8
+- Oreo - 9 (an odd combination that fit perfectly)
+- Pepitos! - 9 (excellent crunchy cookies, richly chocolaty)
+- Guaymallen Membrillo - 6
+- Bon o Bon Mani - 5 (bad flavor, mediocre ingredients)
+- Jorgelin Blanco - 8
+- Fantoche Chocolate Triple - 6 (too dry, flavor unimpressive)
+- Aguila Minitorta - 10
+- Rasta - 7

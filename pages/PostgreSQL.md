@@ -37,3 +37,6 @@ alias: Postgres
 		  SELECT extname FROM pg_extension;
 		  ```
 	- load extensions with `CREATE EXTENSION IF NOT EXISTS ext_name`
+- useful CLI commands:
+	- `\d` for describe- can describe the overall DB, or specific tables
+	- `\x auto` to automagically use extended output

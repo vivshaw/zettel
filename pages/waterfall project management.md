@@ -14,5 +14,5 @@ tags: project management
 - common tools:
 	- [[Gantt chart]]
 - how to achieve [[quality]]:
-	- PM triangle: imagine a triangle with time, cost, and scope at the vertices. quality is found at the equilibrium.
+	- PM triangle: imagine a triangle with time, cost, and scope at the vertices. quality is found at the [[equilibrium]].
 	- continuous quality management and process quality management can help as the project rolls on

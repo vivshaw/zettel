@@ -8,3 +8,4 @@ tags: systems engineering
 - functions are often demonstrated in "boxes-and-arrows" diagrams
 - we identify the necessary functions by starting with our [[requirements (SE)]], then going through an iterative process: figure out which tasks need to happen, then figure out the ICOMs (inputs, outputs, constraints, mechanisms) for them, then figure out how they need to connect.
 - functions can exist in a heirarchy
+- you might depict a system's functions in a [[functional block diagram]]

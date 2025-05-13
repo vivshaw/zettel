@@ -13,13 +13,15 @@ tags: engineering, systems engineering, systems thinking
 	- a system can help us conceptualize and deal with complexity
 - we could think of something as simple as a stapler as a system. it has various parts that need to work together. but it's not very *interesting*- staplers are rather simple! we'd find the system perspective much more illuminating with a more complex system, like a research facility, or a battleship, or an ecosystem.
 - concepts we might think of:
+	- [[stocks, flows, and variables]]
+	- [[holism]]
 	- internal and external components
-	- boundary conditions
+	- [[boundary conditions]]
 	- inputs and outputs
 	- open or closed systems
 	- whole vs. parts
-	- feedback
-	- homeostasis and self-regulation
+	- [[feedback loops]]
+	- [[homeostasis]], [[self-regulation]], [[autopoiesis]], [[equifinality]]
 - a system is a perspective! it's a conceptual lens we apply to help us understand the world.
 - there can be both physical and conceptual systems, or physical and conceptual components of a given system. *meaning* is part of any sociotechnical system!
 - systems can be closed or open. [[entropy]], in closed systems, increases. but most of the systems we think about are open. so they are able to decrease entropy locally, by increasing it elsewhere outside the system
@@ -30,7 +32,7 @@ tags: engineering, systems engineering, systems thinking
 - a typology of systems, from INCOSE:
 	- a **physical system** is made out of matter and energy.
 	- a **conceptual system** are made out of information. they're arrangements that exhibit meaning which the constituent parts do not.
-	- a **closed system** is completely isolated from its environment
+	- a **closed system** is completely isolated from its environment. (in some terminologies, this is an **isolated system**, and a closed system is one that only exchanges energy)
 	- an **open system** can exchange [[information]], energy, or matter with the external environment
 	- a **natural system** occurs without human intervention
 	- an **artificial system** was created by humans

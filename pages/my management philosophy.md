@@ -1,5 +1,5 @@
 ---
-tags: management
+tags: management, personal
 ---
 
 - values:
