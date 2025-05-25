@@ -3,7 +3,7 @@ tags: systems engineering, testing
 ---
 
 - **testing** is a task intended to gather information on the system's features and operation in a controlled, traceable environment. ideally, it should give us quantitative data as a result.
-	- we might accompany a test with some [[analysis (SE)]]
+	- we might accompany a test with some [[syseng/analysis]]
 	- there are two purposes to any given test:
 		- verifying requirements
 		- reducing risk
@@ -11,13 +11,13 @@ tags: systems engineering, testing
 - it's beneficial to test as early as possible, if you're able. this lets you eliminate risk early, instead of at the end of the process
 - testing can be time-consuming & expensive. how can we keep it under control while maintaining safety?
 	- weigh our risk appetite. how thoroughly we test might depend on how big the consequences are for a miss!
-	- figure out what can be done using [[analysis (SE)]] of a model, and what truly needs a test
+	- figure out what can be done using [[syseng/analysis]] of a model, and what truly needs a test
 	- try [[rapid prototyping]], if applicable
 	- at each sub-component level, test only what **needs** to be tested at that low a level. then lean on higher-level system tests for the rest.
 - two main categories of test:
-	- **developmental test** - done for [[verification (SE)]]
+	- **developmental test** - done for [[syseng/verification]]
 		- test is done throughout the development process, possibly in a lab environment, and usually by a specialized engineer
-	- **operational test** - done for [[validation (SE)]]
+	- **operational test** - done for [[syseng/validation]]
 		- test is done one the system is produced, in realistic conditions, and performed by typical users
 - other types:
 	- **qualification testing**

@@ -1,5 +1,5 @@
 ---
-tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors
+tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors, books
 ---
 
 - # Preface
@@ -239,7 +239,7 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors
 	- physical servers are hosts that have OSes and are 100% dedicated to running processes from that OS
 		- in an immature environment, all services might be run from one host! a DBRE's first task then will probably be to get a dedicated host for the DB
 		- you should have a gold-standard kernel and OS configuration, that automatically deploys with your hosts.
-		- topics to address: [[I/O scheduling]], [[memory allocation]] and [[fragmentation]], [[swap]], NUMA, network, storage...
+		- topics to address: [[IO scheduling]], [[memory allocation]] and [[fragmentation]], [[swap]], NUMA, network, storage...
 		- discusses [[jemalloc]]/[[tcmalloc]], [[THP]]
 		- [[linux]] isn't _particularly_ well optimized for low latency/high concurrency data needs. the best you can do is often to make sure you never fully use all your physical memory
 		- an old point of view is that a slow database is better than a down database, so swapping is fine. a newer, DBRE-style view is that latency impacts are as bad as any other, so swapping shouldn't be tolerated. only disable swap if you have a super solid failover process, though!

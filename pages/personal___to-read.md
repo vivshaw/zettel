@@ -29,7 +29,7 @@ tags: books, personal
 - Bennington - Jacques Derrida
 - Raimon Panikkar - Rhythm of Being
 - Kastrup - The Idea of the World
-	- Panarchy - Gunderson and Holling
+- Panarchy - Gunderson and Holling
 - # software
 	- A Philosophy of Software Design
 	- Release It!
@@ -44,4 +44,4 @@ tags: books, personal
 	- too like the lightning
 	- a psalm for the wild-built
 	- children of time
--
+- Pablo Neruda - Libro de las preguntas

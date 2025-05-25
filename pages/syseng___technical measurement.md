@@ -26,14 +26,14 @@ alias: MOEs, MOPs, TPMs
 		- > The measures that characterize physical or functional attributes relating to the system
 		  operation, measured or estimated under specified testing and/or operational environment conditions.
 	- a measure of a physical or functional requirement, that we'll measure with specific tests or under specific conditions
-	- these often roll up to KPPs, and/or map to [[requirements (SE)]]
+	- these often roll up to KPPs, and/or map to [[syseng/requirements]]
 	- we use these to evaluate if we're meeting our MOEs, as well as to support [[analysis of alternatives]]
 - **TPMs**, technical performance measures
 	- from INCOSE:
 		- > TPMs measure attributes of a system element to determine how well a system or
 		  system element is satisfying or expected to satisfy a technical requirement or goal.
 	- these measure an attribute of a system element to determine how well it's satisfying a technical requirement or goal
-	- they are derived directly from the [[requirements (SE)]]
+	- they are derived directly from the [[syseng/requirements]]
 	- ideally, these are easy enough to measure that we can take repeated snapshots throughout the development cycle!
 	- we want to keep the list lean. keep it down to 5-7
 	- we might measure how well a TPM is doing over time:

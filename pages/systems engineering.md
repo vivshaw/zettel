@@ -22,12 +22,12 @@ alias: syseng
 		- distributes tasks into different stages through time
 	- **role**
 		- broadly, a keeper of the process. managing the SE process & leading technical planning and execution at the system level.
-		- analyze and define [[requirements (SE)]] for the system
+		- analyze and define [[syseng/requirements]] for the system
 		- define the interfaces between parts of the system
 		- do [[risk management]]
 		- do system design
 		- plan and coordinate [[syseng/testing]]
-		- prep for [[design review (SE)]]
+		- prep for [[syseng/design review]]
 		- decision analysis
 - systems engineering helps us:
 	- decompose huge projects into a tiered or heirarchical system of human-scale pieces

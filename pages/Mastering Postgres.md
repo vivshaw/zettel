@@ -3,6 +3,7 @@ tags: courses, postgres, db
 ---
 
 - # Introduction
+  collapsed:: true
 	- why care about db performance? "as fast as your stack is, it's only as fast as your slowest query"
 	- Aaron uses TablePlus as a postgres GUI, and postgres.app as an ez GUI installer
 	- postgres isn't for everything! for example, elasticsearch is generally gonna be better for search
@@ -26,3 +27,97 @@ tags: courses, postgres, db
 		- you can also use these to store values larger than a `bigint`
 		- takes two arguments: `precision` (how many significant unrounded digits to allow), and `scale` (how many digits to the right of the decimal point)
 			- a negative `scale` will round x number of places to the _left_ of the decimal
+	- ## Floating point
+		- limited-precision but fast decimal numbers
+		- `real` aka `float4` is 4 bytes: 1e-37 - 1e37
+		- `double` aka `float8` is 8 bytes: 1e-307 - 1e307
+	- ## Storing money
+		- there is a type called `money`... but don't use it!
+			- it will automatically round to the nearest cent!
+			- its currency formatting depends only on the `ls_monetary` setting, which can be confusing. changing that setting will display as a different currency, while keeping the values the same.
+		- instead, either:
+			- store it as an exact integer (e.g., in cents)
+			- store it as a `numeric` for exact precision decimal parts
+	- ## NaNs and infinity
+		- a `float` or open-ended `numeric` has `Infinity`, but not a closed `numeric`!
+		- in terms of sorting, `NaN` sorts as larger than all numbers, even `Infinity`
+		- all `NaNs` are equal to one another. all `Infinity`s are equal to one another.
+		- `NaN`^0 = 1
+	- ## Castng types
+		- `100::money` is the same as `cast(100 as money)`
+		- you can also do decorated literals, like `integer '100'`, but casts are clearer
+		- you can use `pg_typeof()` to identify the type of something
+		- you can use `pg_coumn_size()` to measure the size of something
+			- some things depend on their column data type for size, like integers
+			- some things size dynamically, like `numeric` or `varchar`
+	- ## Characters types
+		- under the hood, all the text data types are stored in the same structure. this means that performance characteristics you might expect from other DBs
+		- `char()` is for fixed-length char data. data will be padded with spaces up to that length if shorter.
+		- `varchar()` is for varying-length char data, up to a certain limit.
+		- `text` is for arbitrary text
+		- unless you're _super_ sure about your domain's maximum length, consider using an unbounded text data type with some check constraints or in-app validation.
+	- ## Check constraints
+		- we can add a constraint on a column definition like: `price numeric CHECK (price > 0)`
+		- we can name them like `price numeric CONSTRAINT check_must_be_positive CHECK (price > 0)`
+		- we can also add constraints at the table level: `CHECK (price > 0)`. these can also reference multiple columns!
+		- what should go in checks?
+			- stuff that helps enforce data integrity
+			- _not_ stuff for complex business logic
+			- think carefully if multiple sources might put things into your DB! then, whatever you want to be certain of, needs to be enforced by the DB
+	- ## Domain types
+		- a domain combines a data type and a constraint under a name, so you can reuse it
+		- make one like: `CREATE DOMAIN foo AS integer CONSTRAINT less_than_ten CHECK(VALUE< 10);`
+		- match regex like: `VALUE ~ '^\d{10}$'`
+		- you can combine conditions in a check with  logical operators
+		- a domain can only reference one column
+	- ## Charsets and collations
+		- a **character set**, aka [[text encoding]], is how we go from chars on the screen to bytes on disk
+			- the default encoding is [[UTF-8]], which is solid. probably just use it!
+			- make sure your server and client encodings match!
+		- a **collation** is a set of rules about how these characters relate. for example, are `e` and `é` and `E` the same?
+			- you can create custom collations! for example, `CREATE COLLATION en_us_ci(provider = icu, locale = 'en-US-u-ks-level1', deterministic = false)` will create a minimally sensitive collation
+		- you can apply a custom encoding or collation to an individual column
+	- ## Binary data
+		- you can story up to 1GB of binary blob in the `bytea` data type
+		- large binary blobs get [[TOAST]]ed
+		- postgres has `md5()` and `sha256()` functions you can use to hash.
+			- don't use [[MD5]] for anything that needs security!
+			- oddly, the type of the MD5 return is text, but sha256 return is bytea
+			- you can cast MD5 output to `uuid`
+	- ## UUID
+		- Postgres has a dedicated [[UUID]] datatype!
+		- it has a 16-byte column size. that's actually much more compact that storing the same UUID in a text datatype
+		- UUID v7 is particularly interesting, because the first chunk is a timestamp. that means you can sort lexicographically by time, or extract timestamps. it's not available by default, though
+		- a UUID v7 could be a good primary key, but randomly-generated one probably isn't
+			- why? I don't get this yet...
+	- ## Booleans
+		- Postgres BOOLEAN is not just an alias to an integer! it's a dedicated boolean type
+		- it will not just accept `TRUE`/`FALSE`, but also `'true'`/`'false'`, `'t'`/`'f'`, `'yes'`/`'no'`, `'on'`/`'off'`, `'1'`/`'0'`. you can also explicit cast like `1::boolean`
+		- the column size is one byte! way more compact than an integer
+		- don't use it if:
+			- you have more than true/false/unknown
+			- you need to do bitwise operations on it
+	- ## Enums
+		- they get you both compact storage and human readability. to the DB, they look like an int, to us, they look like human-readable text.
+		- they are a discrete, finite list of allowable options
+		- create it like: `CREATE TYPE weather AS ENUM('hot', 'cold', 'rainy')`
+		- you can update to add new values like: `ALTER TYPE weather ADD VALUE 'snowy' AFTER 'hot'`
+		- but you can't _remove_ values! you have to create a new enum and drop the old one. cast the old values to text, and use those to create the new enum
+		- if you `ORDER BY` it, it will be ordered by the declaration order of the enum values
+		- don't use it if:
+			- business logic dictates the options, so they change regularly
+			- when a lookup table would be better, like something that's referenced in my other tables
+	- ## Timestamps
+		- you've got two options: one that stores it with a timezone (`timestamptz`), and one that stores it without (`timestamp`)
+			- the with-timezone version will automatically translate stuff back and forth for you, which can be convenient
+		- you can use `date_trunc()` to round the timestamp if you desire
+	- ## Timezones
+		- timezones are political, not mathematical. that makes them tricky!
+		- keep it in UTC as long as possible. convert it to what the user needs as late as possible
+		- use named timezones, not hour offsets. you may get wrong times if you use offsets! postgres expects `+` offsets where you'd normally use `-`, and vice-versa
+			- that's because postgres expects POSIX-style offsets rather than ISO 8601
+		- using TZs like `America/Chicago` will account for Daylight Savings Time. abbreviations like `CST`/`CDT` will not.
+	- ## Dates and times
+		- if you're storing a date and time together, use a timestamp! only use a date or a time on its own when that's what you actually want to store.
+		- `date_col` stores dates
+		- `time` stores times

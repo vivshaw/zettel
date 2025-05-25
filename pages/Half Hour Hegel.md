@@ -5,7 +5,6 @@ tags: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 - [Half Hour Hegel](https://www.youtube.com/playlist?list=PL4gvlOxpKKIgR4OyOt31isknkVH2Kweq2), an effort to close-read the entirety of [[G.W.F. Hegel]]'s [[Phenomenology of Spirit]] in half-hour chunks as YouTube videos
 	- uses [[Kojeve]] and [[Hippolyte]] commentaries as a basis- "Kojeve is fireworks, Hippolyte is a more careful, scholarly attitude"
 - **1 - [Preface , sec 1](https://www.youtube.com/watch?v=QW8b_cnhql0)**
-  collapsed:: true
 	- why is writing a preface for a philosophical work difficult?
 		- what leads us to write is historically contingent- who met who when, what idea they had- but to Hegel, philosophy is a matter of the *universal*
 		- generalities about the content and result don't matter much
@@ -14,7 +13,6 @@ tags: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 		- science in Hegel's time referred to more than the physical sciences- *Geisteswissenschaften* such as history, linguistics, etc.
 		- philosophy is a science in this sense!
 - **2 - [Preface, sec 2-3](https://www.youtube.com/watch?v=hXfhUYPYZR0)**
-  collapsed:: true
 	- the relationship of antithesis between truth and falsity in philsophy is superficial!
 		- there's this view of a philosophical system that either we accept a view, or contradict it. so, if Aristotle corrected Plato, why read Plato?
 		- Hegel brings up the life cycle of a plant as an example. from bud, to flower, to fruit, to new plant- each of these is a mutually exclusive entity, but a necessary phase in the life of the plant
@@ -23,7 +21,6 @@ tags: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 	- > The aim by itself is a lifeless universal just as the guiding tendency is a mere drive that lacks in real existence, the bare result is a lifeless corpse that has left guiding tendency behind.
 	- the *cycle of philosophical activity* is the real issue! not the result at the end!
 - **3 - [Preface, sec 4-6](https://www.youtube.com/watch?v=c9Q1DWrS3pI)**
-  collapsed:: true
 	- culture is a process of convergence, a becoming-cultured
 		- starts with the immediacy of substantial life. immediacy = nothing is mediating it
 			- similar to [[Kant]]'s "dogmatic slumber" roused by [[Hume]], perhaps
@@ -38,7 +35,6 @@ tags: philosophy, Germany, Hegel, 2000s, 1700s, 1800s, Prussia
 	- you can't grasp truth in a mediated, conceptual, scientific way- you get there through intuition
 	- > For the Absolute is not supposed to be comprehended, it is to be felt and intuited; not the Notion of the Absolute, but the feeling and intuition of it, must govern what is said, and must be expressed by it. The ‘beautiful’, the ‘holy’, the ‘eternal’, ‘religion’, and ‘love’ are the bait required to arouse the desire to bite; not the Notion, but ecstasy, not the cold march of necessity in the thing itself, but the ferment of enthusiasm, these are supposed to be what sustains and continually extends the wealth of substance.
 - **4- [Preface, sec 7-9](https://www.youtube.com/watch?v=-5yrx8kSusk)**
-  collapsed:: true
 	- spirit moving past substantial life- faith, security, certainty, reconciliation with essential being
 	- moves into an insubstantial reflection of itself, onto itself. that hurts! what are we? after the Enlightenment, we're filled with doubt. we can't turn back to the comfort we had before.
 	- what do we demand from philosophy? is it a self-help book? a method to reach the Absolute?

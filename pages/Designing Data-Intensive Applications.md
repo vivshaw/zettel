@@ -195,7 +195,7 @@ alias: DDIA
 			- databases are updated over time! no guarantee all data was marshaled with the same schema
 				- **data outlives code** #aphorisms
 		- **via service calls**
-			- Web services ([[REST]]/[[SOAP]]) vs. other [[RPC]]
+			- Web services ([[REST (API)]]/[[SOAP]]) vs. other [[RPC]]
 			- problems with RPC
 				- local function calls are predictable, and depend only on what you put in. network calls are unpredictable, and depend also on network conditions
 				- local calls succeed, fail, or don't return. network calls can also timeout- which gives you no info
@@ -330,4 +330,35 @@ alias: DDIA
 	- what about [[write skew]]? )(concurrent writes that are individually valid, but leave the DB in an invalid state)
 		- you can deal with this by materializing the conflict- make a table of all the possible state combinations, with no data, used purely for locks. like for a meeting app, a table of 15 minute time slots for each room for the next 6 months.
 - **Chapter 8: The Trouble with Distributed Systems**
-	-
+	- with software on a _single_ computer, there's no fundamental reason it should be flaky. but a distributed system is fundamentally different.
+	- partial failures are a thing! part of the system might keep chugging away while other parts are busted, with nondeterministic effects
+	- there's a spectrum between [[HPC]] (supercomputer) <-> enterprise datacenter <-> cloud computing, where the HPC end is more similar to a single machine
+	- internet services tend to be very different from supercomputers:
+		- they are doing [[online processing]], with constant live availability, not [[offline processing]] like batch jobs
+		- they typically run on commodity hardware
+		- communication is likely distant, over the Internet
+	- the bigger a system is, the more likely something is broken. at a large enough scale, statistically, something will _always_ be broken. your system thus needs to find a way to keep doing useful work, instead of giving up until repair
+	- we need to build a reliable system out of unreliable components. this might sound like a paradox, but it ain't! think of stuff like [[error correcting codes]]
+	- asynchronous packet networks, like Ethernet, are unreliable- there's no guarantee your packet will arrive. worse, you may not eve be able to determine why! could be the request was lost, could be the host went down, could be it got stuck in a queue...
+		- when part of the network is cut off from another part, that's a [[netsplit]]
+		- network faults are surprisingly common, and can be caused by surprising things!
+		- you might _sometimes_ get _some_ feedback when a request fails, but you cannot rely on it to always happen or give you all the info you might need
+	- what _can_ we rely on? timeouts.
+		- how long should the timeout be, though? there's no clear answer. our networks generally have unbounded delays.
+		- you also need to account for the distribution of your latency!
+	- the major cause of delay variability is queueing. packets can get queued in multiple ways:
+		- at the switch, if many things are sending to the same destination
+		- at the destination machine, queued by the OS if it is currently busy
+		- in a virtual environment, during pauses while other vCPUs use the core
+		- at the source machine, since [[TCP]] does flow control
+	- TCP retransmits lost packets. [[UDP]] doesn't (and doesn't do flow control). you might want UDP for something like VoIP
+	- telephone calls work differently. they use a *circuit*- they reserve the necessary 16 bits of space across the whole network to the destination, with a guaranteed frames per second sent, allowing synchronous and bounded transmission.
+		- we don't do this for Internet because that data is *bursty*: sometimes idle, sometimes requesting a blob of stuff of varied size.
+	- time is also important, both for durations and points in time.
+		- but communication is not instantaneous! messages always arrive some variable amount of time after they're sent
+		- each machine's clock may also not be perfectly accurate or not in sync
+		- computers have a time-of-day clock, synchronized with NTP. good for doing what it says. they also have a monotonic clock, good for measuring duration. these clocks may exist per-CPU
+		- it's fine to use monotonic clocks for duration in a distributed system
+		- synchronizing time-of-day clocks is its own challenge. there's drift, there can be jumps when re-syncing, the sync is delayed by network, leap seconds are a thing...
+	- relying on clock time to order stuff like DB writes is dangerous! even if the skew is very low, it can cause the wrong write to win. this means that [[last write wins]] strategies are dangerous
+	- so, think of clock time like a distribution, not a point.

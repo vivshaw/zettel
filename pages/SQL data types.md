@@ -36,3 +36,6 @@ tags: SQL, db
 	- `TRIM(leading | trailing | both [characters] FROM my_string)` lets you remove stuff from the ends of strings. when called without params, it trims whitespace
 		- `LTRIM()` and `RTRIM()` do the same for just one end of the string
 	- `LPAD(my_string, 10, '*')` will expand the string up to a given size using a given char. `RPAD()` will do the same for the other side of the string. space is the default
+- numbers
+	- we can truncate with `TRUNC()`, or round with `ROUND()`
+	- we can use `generate_series(start, end, step)` to create a column with a range prefilled

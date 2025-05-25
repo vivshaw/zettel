@@ -3,7 +3,7 @@ tags: software engineering, software architecture, Mark Richards
 ---
 
 - [A treasure trove of bite-sized resources on architecture](https://www.developertoarchitect.com/lessons/)
-	- I'm working few this 3-4 vids a week on Wednesdays, to fill out my understanding of architecture!
+	- I'm working through this 3-4 vids a week, to fill out my understanding of architecture!
 - **Lesson 1 - Event-Driven Architecture: Request/Reply Processing** #event-driven #distsys
   collapsed:: true
 	- [[request-reply pattern]] is very powerful- but it's asynchronous!
@@ -83,12 +83,13 @@ tags: software engineering, software architecture, Mark Richards
 			- there's no tool that can find all these timing dependencies!
 		- component size
 			- in Mark's experience, generally the larger a component is, the more coupled it is.
-- **Lesson 10 - Analyzing Architecture: Microservices**
+- **Lesson 10 - Analyzing Architecture: Microservices** #microservices
   collapsed:: true
 	- this pattern is perhaps the most prone to structural decay! the more libraries we share, the more cracks in the pylon.
 	- one common form of decay: too much inter-service communication. if a req comes in and requires 2 or more microservices to communication, you might have problems! consider moving back to a monolith...
 	- another is too many orchestration requests. "get all" requests, etc. or aggregation requests, that use state to combine the data.
 - **Lesson 11 - Analyzing Architecture: Code Metrics** #metrics
+  collapsed:: true
 	- one option is [[cyclomatic complexity]] - how many independent paths are there through the flow graph? calculated as $V(G) = edges - nodes + 2$
 	- one limit with metrics- suppose you have a complexity of 3. is that good or bad? who knows! we need to know the trends over time, compare them to other similar areas of code, and incorporate expertise from the engineers that wrote it
 	- 7 metrics Mark uses frequently:
@@ -99,3 +100,51 @@ tags: software engineering, software architecture, Mark Richards
 		- WMC (weighted sum of CC by method/class)
 		- efferent coupling
 		- afferent coupling
+- **Lesson 12 - CQRS and Microservices** #CQRS #microservices
+  collapsed:: true
+	- CQRS is all about separating **commands** from **queries**
+	- our first problem is with the model— reads and writes have different concerns.
+	- our second problem is with performance— things that optimize reads, like adding indices, will slow down writes.
+	- so, first let's make a separate model for entity-driven commands, and aggregate-driven queries
+	- second, let's split the DB into a read and write DB
+	- that's not so dissimilar form microservices! we could choose to split up our services in this same way. that might be especially useful for scalability if we have something that, say, gets read way more often than written.
+	- how to handle the data, though? we could use a cache. only the write service is connected to the DB, but it shares a cache with the query service.
+- **Lesson 13 - Microservices and Reporting** #microservices
+  collapsed:: true
+	- a database pull model for constructing reports doesn't work well in a microservice environment! it breaks encapsulation. any schema change will break the reporting!
+	- instead, you could try an http pull model. ask each microservice itself for the data
+		- but this will likely have performance issues and data volume problems over REST
+	- instead, try an event-based push model. create a dedicated reporting database. have each microservice push it to an event bus, then a data capture service will slurp it all into the reporting db. now you can do your reports from just that one DB
+		- this might cause latency, but that's usually fine
+		- you can also do filtering and transformation in the capture service
+- **Lesson 14 - Refactoring Patterns: Migration vs. Adaptation** #migration
+  collapsed:: true
+	- migration: in this pattern, we replace old components with new ones through a migration over time. when we're done, we can delete the old thing
+		- easier to roll back
+		- less overall risk
+		- requires a period of parallel maintenance
+		- requires switching logic in calling components
+	- adaptation: in this pattern, we rewrite the existing component over time to adopt the new functionality in-place. more of a [[refactoring]] than a replacement!
+		- harder to roll back
+	- no changes to calling components. they don't even need to know the refactor is happening.
+- **Lesson 15 - Refactoring: Business Justification** #[[business case]]
+  collapsed:: true
+	- how do we convince folks that an architectural refactor is actually valuable? we have to put a business reason to it.
+	- terms like robustness, decoupled, application unit, JVM resources... these are part of a solid _technical_ justification, but they won't make it clear why the business should pay money for it!
+	- for example: "robustness will be increased and deployment errors will drop" -> "there will be fewer bugs so user satisfaction will go up", or "deployment time will be accelerated" -> "we can deliver new functionality faster, improving our time to market"
+	- generally, we'll want to reach for one of three metrics:
+		- reduced overall cost
+		- better time-to-market
+		- better user satisfaction
+	- but we can't just pay lip service. we need to be able to *measure* these benefits. so:
+		- cost: estimate with actual # of bugs, or actual hours spent on dev and testing. classify the types of bugs you have an estimate how many of them your project might remove.
+		- time to market: estimate with E2E calendar time, or hours spent on dev and test.
+		- user satisfaction: estimate with # of errors measured, # of user-reported bugs, performance metrics
+			- don't use a survey! they tend to invite general complaint that doesn't tell you much about the specific technical problem folks want answers for
+- **Lesson 16 - The Challenges of Architecture Teams**
+	- an anti-pattern to be aware of is the Witch's Brew. if your architecture has no coherent vision and direction, you might just mix random stuff together with no cohesion. it'll be super complex and won't work.
+	- architects can tend to be egotistical and fall prey to the [[Golden Hammer]], thinking they know exactly what to do & there's one right way to do things
+	- consider selecting a mediator in your architecture team. they're not the head honcho, they're here to resolve conflict. they look at the overall vision and direction, and when conflict arises, use it to make a decision for this individual case.
+	- don't choose this role by rank or seniority. pick it randomly if you have to. consider rotating it regularly.
+	- then, require every architectural decision a team member wants to make comes with a reasonable justification
+	- this only works if we all agree up-front that when conflicts occur, we all have to go with the mediator.

@@ -1,0 +1,53 @@
+---
+tags: courses, Ruby, Rails
+---
+
+- # Introduction
+  collapsed:: true
+	- this course is about leaning into the leverage provided by simple-but-powerful tools like Rails and SQLite
+	- this includes not just local dev, but production deployment
+	- Rails being an old framework is a good thing, not a bad thing. it means that every edge has been explored in depth.
+	- why [[SQLite]]? because it's simple and fast. it's just a file on disk, and it gets embedded in the app's running process. few moving parts, not much to break or slow down.
+	- the combination of Rails and SQLite make them a super high-leverage pair for single developers who would like to build ambitious things fast
+- # Powering your app with SQLite
+	- ## Creating tables
+		- [[ActiveRecord]] uses a `schema_migrations` table to track which migrations have happened and which are pending
+		- in SQLite, an integer primary key can be an alias for the row ID, which already exists. that saves a little space
+			- an autoincrementing key will not reuse any IDs from deleted rows. each ID can be used only once
+	- ## Timestamps
+		- ActiveRecord automagically adds `created_at` and `updated_at` timestamps to ActiveRecord objects
+		- these are stored as ISO 8601 format. SQLite doesn't have a native date/time format. it does support datetime functions that play nice with ISO 8601 text.
+	- ## Column types
+		- ActiveRecord has 11 column types:
+			- `t.binary`
+			- `t.boolean`
+			- `t.string` small bit of text. think, a tweet
+			- `t.text` anything bigger than a string
+			- `t.integer`
+			- `t.float` - low-precision [[floating point]]
+			- `t.decimal` - high-precision [[floating point]]. this will get you deterministic results for basic arithmetic
+			- `t.date`
+			- `t.time`
+			- `t.datetime`
+			- `t.json`
+		- but SQLite only has 4 main storage classes. how do they get stored, then?
+			- `blob`: `t.binary`
+			- `integer`: `t.boolean`, `t.integer`
+			- `text`: `t.string`, `t.text`, `t.date`, `t.time`, `t.datetime`, `t.json`
+			- `real`: `t.float`, `t.decimal`
+	- ## Typeof
+		- we can use the SQLite `typeof` function to see how our data is being stored
+	- ## Ruby types
+		- `t.binary` -> `String`
+		- `t.boolean` -> `TrueClass` / `FalseClass`
+		- `t.string` -> `String`
+		- `t.text` -> `String`
+		- `t.integer` -> `Integer`
+		- `t.float` -> `Float`
+		- `t.decimal` -> `BigDecimal`
+		- `t.date` -> `Date`
+		- `t.date` -> `Time`
+		- `t.datetime` -> `Time`
+			- in Ruby, there isn't any way to store only a clock value, without a corresponding day!
+		- `t.json` -> `Hash`
+	-

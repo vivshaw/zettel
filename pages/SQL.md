@@ -62,3 +62,6 @@ tags: db, data
 		                         ...[your whole query here]...
 		  $$) AS ct (...[your column names]...)
 		  ```
+- `PERCENTILE_DISC($FOO) WITHIN GROUP ($BAR)` and `PERCENTILE_CONT()` can be used to compute a percentile. CONT will interpolate.
+- we can do correlation with `CORR()`
+- we can create temporary tables with `CREATE TEMP TABLE ____ AS` or `SELECT ____ INTO TEMP TABLE ____`
