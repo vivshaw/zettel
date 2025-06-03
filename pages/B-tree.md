@@ -1,5 +1,5 @@
 ---
-tags: db, data structure
+tags: db, data structure, compsci, tree (DS)
 ---
 
 - commonly used by [[relational DB]]s

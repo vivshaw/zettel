@@ -124,6 +124,11 @@
   	- so, the Bayes classifier becomes the seed for a whole class of [[generative model]]s that plug in different functions for $f_k(x)$. [[linear discriminant analysis]], [[quadratic discriminant analysis]], and [[Naive Bayes]] all do this! (with different assumptions.)
   </example>
   
-  Now that you've seen these examples, please summarize the attached files into a similar set of notes. Try to keep it to between 1 and 5 notes, using only as many as you need to capture the content clearly, accurately, and succinctly.
+  Now that you've seen these examples, please summarize the attached files into a similar set of notes. Here are some rules to follow:
+   - Keep it to between 1 and 5 notes, using only as many as you need to capture the content clearly, accurately, and succinctly.
+   - Create only one note per topic. For example:
+      - Don't create a notes titled "Topic X" and a separate note titled "Introduction to Topic X" or "Techniques for Topic X". Instead, create one note for "Topic X", containing all relevant info.
+      - Don't create a note called "Common Algorithm Complexities". Instead, place that information either in the "Algorithm Complexities" note, or spread amongst the specific notes for the algorithms in question.
+      - Don't create a note about a general or vague topic. Your note topics should be as specific as a Wikipedia article title.
   ```
 -

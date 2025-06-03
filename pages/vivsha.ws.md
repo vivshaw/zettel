@@ -4,7 +4,6 @@ alias: my website
 ---
 
 - https://vivsha.ws, my webbed site
-	- just got the URL- point this at my website instead of the old vivshaw.net
 - time for a redesign, i think. i know exactly enough about #design to know that I'm not very good at it 😅
 - thinking about look & feel:
 	- i want to be more minimalist and more typographic. 90% of the space and graphics on my site currently are Pointless. the site should not contain pointless things. text is fine and good.
@@ -19,12 +18,15 @@ alias: my website
 		- on balance, i might like [Canela](https://commercialtype.com/catalog/canela) better, esp. now that it has book faces
 		- if i'm not committed yet to buying, could start with [Orpheus](https://fonts.adobe.com/fonts/orpheus) as I've got adobe
 		- there's [Tobias](https://displaay.net/typeface/tobias/) as well, which I've recently discovered and is _quite_ nice
+		- ended up on MB Type's Equity
 	- do i even need a sans? I'm not sure that I do. could go with just one typeface
 		- i _love_ love [Agrandir](https://pangrampangram.com/products/agrandir), would be cool to have an excuse to use it
+		- ended up on MB Type's Concourse
 - color palette? green scale?
 	- https://components.ai/color-scale/DPVY6RKKmtrTTJiMRVGV
 	- https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41
 	- https://coolors.co/palette/143601-1a4301-245501-538d22-73a942-aad576
 	- https://coolors.co/palette/020202-0d2818-04471c-058c42-16db65
 	- no, let's stay on primarily black & white for now. I'm not good enough at tuning color palettes to make this look better than the existing color scheme.
+	- look at this though, _so_ good: https://www.grovelust.be/
 	-

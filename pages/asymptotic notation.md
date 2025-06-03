@@ -1,5 +1,6 @@
 ---
 tags: math, compsci
+alias: big-O notation
 ---
 
 - a notation that describes the growth rate of a function as its input asymptotically tends to infinity. it can also be used to measure the [[computational complexity]] of an algorithm.
@@ -10,6 +11,8 @@ tags: math, compsci
 	- $\Omega$ is a *lower bound*. "the function grows at least this fast"
 		- $\omega$ is this, except not asymptotically tight. like "grows strictly faster than this"
 	- $\Theta$ is a *tight bound*. "the function grows exactly this fast"
-	- sometimes we might assess this separately for a best-case or worst-case input
+		- this implies both $O$ and $\Omega$
+	- sometimes we might assess these complexities separately for a best-case or worst-case input
 - with this notation, we ignore constant factors, and we ignore lower-order terms. so, for example, $O(3n^2 + n)$ becomes $O(n^2)$
+	- logs of different bases are also equivalent up to a common factor
 - effectively, we are comparing more complex functions to simpler ones we know well, to get a better sense of how they grow
