@@ -1,0 +1,42 @@
+---
+tags: systems engineering, testing
+---
+
+- **testing** is a task intended to gather information on the system's features and operation in a controlled, traceable environment. ideally, it should give us quantitative data as a result.
+	- we might accompany a test with some [[analysis (SE)]]
+	- there are two purposes to any given test:
+		- verifying requirements
+		- reducing risk
+- the whole team should be involved in the testing process, not just the systems engineer!
+- it's beneficial to test as early as possible, if you're able. this lets you eliminate risk early, instead of at the end of the process
+- testing can be time-consuming & expensive. how can we keep it under control while maintaining safety?
+	- weigh our risk appetite. how thoroughly we test might depend on how big the consequences are for a miss!
+	- figure out what can be done using [[analysis (SE)]] of a model, and what truly needs a test
+	- try [[rapid prototyping]], if applicable
+	- at each sub-component level, test only what **needs** to be tested at that low a level. then lean on higher-level system tests for the rest.
+- two main categories of test:
+	- **developmental test** - done for [[verification (SE)]]
+		- test is done throughout the development process, possibly in a lab environment, and usually by a specialized engineer
+	- **operational test** - done for [[validation (SE)]]
+		- test is done one the system is produced, in realistic conditions, and performed by typical users
+- other types:
+	- **qualification testing**
+		- the most hardcore form of testing, and the "graduation event" for the testing process.
+		- cover all the worst-case environments and events the system might operate in. might even include unique conditions like radioactive environments, EM interference, testing in water or other liquids...
+		- test _everything_, comprehensively
+		- once this is done, you should freeze future design changes. if you change the design, you probably need to retest.
+	- **environmental stress screening** (ESS)
+		- performed on every unit, to attempt to screen out defects before delivery
+		- often something like vibration or thermal testing
+		- need to balance the thoroughness of the test, with the portion of the system's life consumer in the test!
+	- **highly accelerated life test** (HALT)
+		- a failure test. go ahead and break it! see what happens when the system wears out.
+		- usually, something like vibration or thermal tests taken to an extreme level
+	- **highly accelerated stress test** (HAST)
+		- another failure test like HALT, this time with corrosion
+	- **proof of life** (POL) or **highly accelerated stress screening** (HASS)
+		- test to estimate how long the system will last. repeat a cycle of ESS tests over and over
+	- **acceptance testing**
+		- the minimal set of tests to demonstrate that the system is acceptable for operational use
+		- we'll probably repeat this many times, so we want to keep it minimal! some things will only be tested in qualification testing. other things will be tested here.
+- tests for particularly complex systems may require planning years in advance!

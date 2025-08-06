@@ -45,9 +45,10 @@ tags: db, data
 - we can put **subqueries** inside any part of our query
 	- a subquery inside `SELECT` can be useful for aggregation
 	- a subquery inside the `FROM` is useful for doing preprocessing on your data before you query it. for example, transforming it into a better format for your actual query. this can be combined with `JOIN`s!
-	- a subquery inside the `WHERE` is useful for comparisons- selecting records with a data point above the average, selecting records that match a list from querying some other table, etc
+	- a subquery inside the `WHERE` or `HAVING` is useful for comparisons- selecting records with a data point above the average, selecting records that match a list from querying some other table, etc
 	- we can nest subqueries inside one another!
 	- we can also do **correlated subqueries**, where the subquery depends on the row values (and so runs again for each row)
+		- `EXISTS` can help us check if a result from such a query is empty or not
 - we can construct **common table expressions** with `WITH ... AS`. this lets us construct a table that we can reference throughout the rest of the query. this can be neater than repeating a subquery over and over again throughout the query
 - `ROLLUP()` can be added to `GROUP BY` to add extra rows when you group. it's especially useful for group totals (if you roll up one `GROUP BY` column) or grand totals (if you roll up all of them)
 	- `CUBE()` will get you _both_ subtotals and grand totals
@@ -62,6 +63,5 @@ tags: db, data
 		                         ...[your whole query here]...
 		  $$) AS ct (...[your column names]...)
 		  ```
-- `PERCENTILE_DISC($FOO) WITHIN GROUP ($BAR)` and `PERCENTILE_CONT()` can be used to compute a percentile. CONT will interpolate.
-- we can do correlation with `CORR()`
 - we can create temporary tables with `CREATE TEMP TABLE ____ AS` or `SELECT ____ INTO TEMP TABLE ____`
+- `lag()` and `lead()` let us push rows up and down. useful for things like, "the interval between this event and the prior", or "how much did sales change each month?"

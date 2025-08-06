@@ -1,5 +1,5 @@
 ---
-tags: math, graphs, algorithms
+tags: math, graph, algorithms
 ---
 
 - steps:

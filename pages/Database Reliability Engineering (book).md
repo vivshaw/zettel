@@ -261,6 +261,7 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors, boo
 		- benefits: service provider handles deployments, failover, upgrades, backup. may have good metrics integration with the rest of cloud platform. may have proprietary high-perf "special sauce"
 		- drawbacks: lack of visibility- you have no access to the underlying OS or hardware. can't use tools like [[top]], [[dtrace]], [[vmstat]]. implementation is a black box where you rely on your vendor to get it right.
 - # 6. Infrastructure Management #infrastructure
+  collapsed:: true
 	- we no longer live in the days where a deployment environment is one or two boxes we can manually configure. we have to support many more machines than we have pairs of hands.
 	- to accomplish this, automation is required. we can't have stability without it. our goals are to eliminative any repetitive or manual processes, and to create [[reproducible]] standardized infrastructure.
 	- what to cover?
@@ -290,7 +291,80 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors, boo
 	- you should test your infrastructure images! this brings the benefits of [[TDD]] to infra. you can use something like [[ServerSpec]] for this.
 	- in a distributed environment with decoupled, dynamic components, you have all kinds of new complexities, and need things like a service catalog to do [[service discovery]]. tools like [[Apache ZooKeeper]] or [[Consul]] can help you with this. you might need this in the DB world for stuff like failovers, sharding, and boostrap nodes.
 	- you are going to want to test changes in a local development environment before committing them to prod! try to make the local sandbox as close to prod as possible- same OS, same config and orchestration tools, etc. [[Packer]] and [[Vagrant]] can help you here.
+- # 7. Backup and Recovery
+  collapsed:: true
+	- data is your most precious commodity. now that you know how to store it, how do we keep ourselves from losing it?
+	- **physical** vs. **logical** backups:
+		- a physical backup backs up the actual files used by the database
+		- a logical backup exports the data to some other portable format. for example, the replication log
+	- **offline** vs. **online** backups:
+		- an offline backup is made while the system is shut down
+		- an online backup is made during live operation. this adds extra complexity because the data will be changing as you copy it! you'll need a way to snapshot a specific point in time.
+	- **full**, **differential**, and **incremental** backups
+		- a full backup copies everything
+		- a differential backup only copies what changed since the last full backup. recovering will mean restoring 2 backups (last full, and this one)
+		- an incremental backup copies what changes since the last backup of any kind, full or incremental. recovery means restoring $n$ arbitrary backups
+	- things to consider about your backup strategy:
+		- is it fast enough to meet your uptime constraints?
+		- is it frequent enough that you meet your durability constraints?
+		- how do you integrate the backup with other systems, like a message queue, which may be eventually-consistent?
+		- how do you handle forward and back compat? what happens when the software that uses the data store updates?
+	- types of recovery:
+		- planned recovery. things like building a new node or cluster, performing a routine ETL process, preparing for a test in a test environment, etc.
+			- plug this into your observability stack! it will give you useful info about capacity issues that makes sure you don't accidentally exceed what your recovery process can support
+		- unplanned recovery. things like user or application errors, OS errors, or hardware failures.
+			- think about the scope of failure events. are they isolated to a single node? cluster-wide? datacenter-wide? these will require different strategies
+			- also think of the scope of affected data. is it a single record? multiple records? the DB metadata?
+			- also consider how your SLOs will be impacted
+	- what pieces does a recovery strategy need?
+		- **detection.** you must know about data loss or corruption as soon as possible.
+			- one valuable way to do this is to disallow running arbitrary scripts in prod. instead, provide a wrapper or API that's well-tested and comprehensively logged. this introduce guardrails to reduce failure, _and_ monitoring to see the failure quickly if it happens
+			- rely on monitoring of logs and metrics to catch OS or hardware failures
+		- **tiered storage.** not every part of your recovery strategy should live in the same data stores!
+			- you'll want online, high-performance storage for your production workloads. things like replacing failed nodes, adding new ones, or standing up test environments. you can probably only afford to keep a few days at this tier.
+			- online, low-performance storage might be used for infrequent or long-running processes that aren't sensitive to latency. things like dealing with user errors or corruption repair. you can probably afford a month or more at this tier.
+			- offline storage, like [[AWS/Glacier]], is cost effective for storing massive amounts of data in the long term, though drastically slower to access. you might use this for compliance or business continuity. you can probably afford to store years of this.
+			- object storage, like [[AWS/S3]], lets you store unstructured data with high availability, API access, versioning, etc.
+		- **a varied toolbox.** you shouldn't put all your recovery eggs in one basket.
+			- replication isn't a backup strategy!!!
+			- take full and incremental, physical and logical backups. full physical is for building out new nodes for capacity or replacing failed ones. incremental physical is for bridging the gaps between expensive full backups. logical backups are useful for forensics and moving data between nodes
+		- **testing.** your recovery is useless if it is broken, so you need to test it to ensure it works.
+			- you can do this by adding recovery into everyday processes, or by adding a separate continuous testing process
+- # 8. Release Management #release
+  collapsed:: true
+	- how can DBREs support fast, efficient software release? how can we protect our data and datastores without becoming a bottleneck?
+	- **education and collaboration**
+		- the better the choices the software engineers make about their data, the less intervention is needed from a DBRE. so, educate teams in your day-to-day interactions and provide them with self-serve resources.
+		- make the education effort measurable. consider measuring things like:
+			- number of database-related tickets that require DBRE intervention
+			- success rate of deployments for db-related tickets
+			- feature velocity
+			- downtime from db changes
+		- become a funnel for useful information. you'll encounter lots of specialty information that general engineers won't know. feed them the best bits.
+		- foster active conversation. try things like brown bag lunches, AMA chats, tech talks, or dedicated chat channels
+		- make your domain-specific knowledge about system architecture and data models legible via docs and standardized tools
+	- **integration**
+		- the more often changes are integrated, the faster we catch errors, and the quicker feedback loops are. make sure any change to the db triggers a fresh build, integration, and tests. but [[continuous integration]] at the database level is uniquely challenging!
+		- you need a version control system, with _everything_ checked in. you need automated builds. you need realistic test data, including large datasets for load testing. you need a migration system. and you need a CI system.
+	- **testing**
+		- encourage abstraction and encapsulation to make it easy to test application components as black boxes, focusing on just the parts that actually touch the data
+		- do post-commit testing that checks whether the changes applied and the app's still up
+		- do pre-build tests for things like SQL errors, static analysis, etc.
+		- the build itself is a sort of test- if it fails, something was wrong!
+		- do a full dataset test to ensure the system still functions under load. look for things like latency and resource utilization.
+		- do downstream tests of things like event workflows and ETL jobs
+		- do operational tests of things like backup and recovery processes, failover, security, etc.
+	- **deployment**
+		- ideally, software engineers should be able to know which changes require DBRE help and which don't. they should also have the tools and expertise to own most changes themselves. and it should be possible to deploy those changes at any time.
+		- use versioned migrations for all changes. consider performance implications of the changes, possible data integrity issues, etc.
+		- you can potentially use rules-based analysis to flag which changes are "safe" and which need more attention. for example, changes that impact more than a certain number of rows, certain datatypes like BLOBs, operations on sensitive tables. these guardrails can help SWEs feel confident about db changes
+		- sometimes, you can use application code to avoid a large locking update. for example, instead of creating a new column and filling it in a batch, creating it empty, then having the app update each row only when the data is accessed
+		- you should have one canonical migration process, not a two-track system (with one for safe changes and one for risky ones). otherwise, the less-used path will be underpracticed and undertested
+		- you may need to do [[rolling upgrade]]s, in which you incrementally deploy a change one node at a time
+		- you should test your rollback process! one way to do this is, for each change, first apply it and test, then roll it back and test, then apply it again and test.
+		- you don't need to rush toward perfect automation.
 - # 9. Security #security
+  collapsed:: true
 	- what's the purpose of security?
 		- protecting data from theft
 		- protecting data from purposeful damage, either from hackers or internal sabotage
@@ -346,4 +420,122 @@ tags: db, SRE, devops, software engineering, Laine Campbell, Charity Majors, boo
 	- data to be concerned about: financial data, health data, PII, military or gov't data, business secrets
 	- use defense-in-depth. don't put all your eggs in one security basket.
 	- recognize you can't test everything. focus on high risk and easy exploitability first.
-	-
+- # 10. Data Storage, Indexing, and Replication
+  collapsed:: true
+	- how do datastores actually store data? everything until now has danced around that. time to dive in.
+	- traditionally, datastores use a combination of **tables** and **indexes**. the table is the main storage mechanism, and the index is and optimized subset of ordered data used to improve performance of access
+	- how do [[relational DB]]s work?
+		- data is stored in **blocks** or **pages** that correspond to a certain amount of space on disk. they're the smallest increment of space that can be read and written.
+		- you don't want your DB block size to be smaller than your OS block size! otherwise, you'll waste cycles on every I/O operation that touches several pages.
+		- a block also requires metadata, describing what's in there
+		- blocks may be organized into a larger data structure called an **extent**
+		- most databases store their data in a [[B-tree]], a tree that keeps itself balanced and its data sorted by key. the primary key of a table will be what the main b-tree sorts by. secondary indices won't store the whole data, only the indexed data.
+		- writing to a B-tree requires finding the node via search. if that node is full, a split has to occur.
+		- greenfield DBs have primarily sequential reads and writes. as the B-tree evolves over time, splits will make it more and more random. performance will drop. this is why you ought to test with realistic data.
+		- you ought to tune your block size for good performance. that can depend on what sort of disk you use. for example, SSDs may work better with smaller block sizes.
+	- another storage option is the **append-only log**. an [[SSTable]] (sorted-string table) is this. this is what [[Bigtable]] and [[Apache Cassandra]] use.
+		- data is stored in files of sorted key/value pairs
+		- one implementation is an [[LSM-tree]], in which there are two data structures: a fast in-memory one, then a slower on-disk one that it periodically flushes to. once data is stored on disk, it is immutable.
+		- a db might use a [[Bloom filter]] to identify which file a key exists in quickly
+	- what other techniques are used for indexing?
+		- hash indices, using a [[hash function]]. a [[hash map]] is a simple data structure that uses this technique
+		- bitmap indices, storing the index as bit arrays. these can be nice on high-cardinality data
+	- how do we handle [[replication]]?
+		- in a **single-leader** model, all writes go to one node, and are replicated from there. reads can come from any node. this is simpler than other options. it also guarantees write consistency
+			- you can replicate synchronously (optimized for durability), asynchronously (optimized for latency), or semi-synchronously (a compromise)
+			- replication requires a replication log. one way to do this is statement-based replication. here, each SQL statement that needs to be executed is run on each follower. this is highly portable, uses little bandwidth, and is easy to audit. but if it involves complex calculations, it can take much longer than simply updating the records. also, SQL can be nondeterministic!
+			- using a [[write-ahead log]] is another option. this is commonly used for reliability, but can be used here too. for each transaction, this log will show what bits need to be changed. this is very fast, and deterministic. but it takes a lot more bandwidth and isn't portable.
+			- row-based replication is a third option, in which you share a log of change events that shows which changes to apply to each row. (also called logical replication). this is a speed and portability compromise between the previous two.
+			- block-level replication, or physical replication, is another. this happens _outside_ the database. this gets us low-latency synchronous replication, but there can't be a running database instance on the follower. so we can't use it for scalability, only for recovery.
+			- you should collect data on: replication lag, latency impacts, replica availability, replication consistency, operational processes
+			- latency can have different sources! try to measure delay in time from leader to follower (in async rep), network latency, write impact (in sync rep)
+		- there are two types of **multi-leader** model, both of which introduce new complexity
+			- in a traditional multi-leader model, there's still a leader and follower role, you just have multiple leaders now.
+				- in an environment that demands multi-leader rep, you'll find that synchronous replication is not feasible. so you are now going to need to worry about conflicting writes.
+				- one way to avoid this is by writing specific subsets of keys to specific nodes.
+				- another common option is [[last write wins]], though watch out for the complexity of timestamps in a distributed environment!
+				- [[CRDT]]s are a more advanced option
+			- in a write-anywhere model, there's no distinction between nodes. writes and reads can go anywhere.
+				- you'll have all the challenges of the past approach, and more!
+				- you are now living in the world of [[eventual consistency]].
+				- you will have to think about read and write quorums, including potentially a [[sloppy quorum]] to allow writes to continue during node downtime
+				- you might have anti-entropy mechanisms like a [[Merkle tree]]
+- # 11. Datastore Field Guide
+  collapsed:: true
+	- now that we understand a lot of the theory behind datastores, how can we indentify them and understand relevant factors "in the wild"?
+	- what conceptual attributes should we look at?
+		- the data model: is it relational? a key-value store? a document store? a graph db?
+		- transactions: are they [[ACID]]? [[BASE]]?
+	- what internal attributes should we look at?
+		- what storage engine is used?
+		- where does it fall re: the [[CAP theorem]]?
+- # 12. A Data Architecture Sampler #[[software architecture]]
+  collapsed:: true
+	- now that we've analyzed how individual data stores work, let's look at how they come together in a multisystem architecture
+	- components you may have:
+		- **frontend datastores**, used directly by the user-facing app for CRUD operations etc. traditionally these are [[OLTP]] databases. it's populated by data from users. the app will not function without it, so it needs to be very fast and high availability
+		- a **data access layer** in the application, which provides a simplified way to access the datastores. for example, an [[ORM]]
+		- **database proxies**, which sit in between the application and the frontend datastore and route the queries. some might sit on [[OSI Model]] layer 4, which will be low-latency but not very configurable. others at layer 7, which will have more latency but access to fine-grained packet details. these can help with availability and scalability by handling failure better and routing traffic more intelligently under load, but may have some latency and data integrity costs.
+		- **event and message systems**, which might be triggered in response to database events. for example, pushing data to downstream analytics, or sending a transaction to fraud review. these can help with availability and scalability by pushing work out of the DB, but with data integrity costs now that it's split across systems. direct DB latency will be lower, but the jobs in event queues will be aynchronous and have _more_ latency
+		- **caches and memory stores**, used to speed up data access using in-memory storage. you might take a few approaches to using a cache- one, writing to DB first, then cache. two, writing to both in parallel. three, writing to the cache first, then letting it write to the DB async (write-through)
+			- caches can help availability by allowing reads even when a DB is down, but also makes it more complex, since now you need to think about availability _of the cache_. they can also introduce [[thundering herd]] problems. similar with scalability.
+			- caches introduce data integrity challenges. they're inherently a static copy of data, so could be stale. if you write to the persistent DB first and then cache, that introduces time when there's stale data. write-through eliminates that possibility, but now you instead need a way to reconstruct the write if the cache crashes before writing to DB
+			- caches can significantly improve latency. you might want to think about failing over to direct reads, though, and see if the application can limp along that way.
+	- the **lambda architecture** is a common pattern at scale currently, using a batch processing, real-time, and query layer to get both good-enough fast queries _and_ accurate queries on massive data:
+		- ![image.png](../assets/image_1751991627769_0.png){:height 328, :width 499}
+		- you'd likely use an event system like [[Apache Kafka]] to create a distributed, immutable log to communicate to the layers
+		- the batch layer is slow-but-accurate, using something like [[MapReduce]], probably backed by something like [[Apache Hadoop]].
+		- the real-time layer is fast-but-inaccurate, using data in realtime as it streams through. think of it as a "delta" that fills in the missing data from the batch layer. once batch processing is complete, it's replaced with the accurate data from there. this is typically built on a streaming data tool like [[Apache Spark]] or [[Apache Storm]], with a low-latency DB like [[Apache Cassandra]]
+		- the serving layer sits behind the application and aggregates the data from the other layers, hiding all this complexity behind its interface. it typically uses something like [[Apache Cassandra]]
+		- one big problem of this architecture is, you need to maintain two parallel codebases! if your real-time and batch jobs get out of sync, you will have problems.
+	- the **kappa architecture** is a newer idea, that uses a distributed log like [[Apache Kafka]] as the datastore:
+		- ![image.png](../assets/image_1751992071301_0.png){:height 291, :width 493}
+		- this eliminates the batch processing system. instead, we expect the streaming system to handle all that work.
+		- we still have an auxiliary store for serving
+	- **event sourcing** is a pattern where we save the application's state as a series of change events in an append-only store. then we can "time travel" and reconstruct the state of the system at any given time in the past. ([[Redux]] must have borrowed this idea!)
+	- **[[CQRS]]** is a pattern where we split off read queries from write queries at the level of the datastore. different application use cases might wish for different views into your data. we can deliver that! we can use read-optimized data stores for reads, and an append-only log for writes (pairing with event sourcing).
+	- the key to each architecture is understanding the lifecycle of the data, and choosing the right components to get it to the right places at the right time. nowadays, almost every organization will ultimately need multiple presentation models while keeping the core data's integrity.
+- # 13. Making the Case for DBRE
+  collapsed:: true
+	- what does a culture that supports database reliability look like? how can we support it?
+	- you might want generic good things like blameless postmortems, automating toil, and structured decision-making. but that's not enough on its own.
+	- DBREs need to avoid siloing and work at much higher levels of abstraction than before.
+	- get involved in the architecture process!
+		- help engineers choose the right datastores for their needs. create a checklist that folks can use. write best practices docs.
+		- if the org's big enough for a self-service catalog, narrow it down to the best options. maybe provide tiered SLAs for less-common data stores.
+		- measure things like:
+			- how many arch processes consulted DBREs or used your templates?
+			- what storage was used?
+			- how many hours of DBRE work were needed per project?
+			- the usual availability, throughput, and latency metrics for your approved storage methods
+	- get involved in the development process!
+		- embed with teams! even if you're not an ace coder, input on features, data modeling, etc. can make a difference.
+		- again, provide best practices docs.
+		- measure things like:
+			- how many pairing hours were there?
+			- how many tickets involved a DBRE?
+			- break down feature metrics across cases that consulted a DBRE and those that didn't
+			- how many on-call shifts involved a DBRE
+	- get involved in migrations!
+		- don't handle all migrations yourself manually, you'll become a bottleneck.
+		- first, incrementally create some heuristics that can identify which changes are safe and which are dangerous.
+		- you can also create a database of good migration patterns that engineers can use
+		- do post-mortems to ensure the patterns you're promoting really work, and to find the gaps.
+		- then, you can start building guardrails around migrations and letting engineers drive the safe ones self-serve
+		- measure things like:
+			- migration pairing hours
+			- how many migrations required a DBRE vs. how many didn't?
+			- migration success/failure
+	- get involved in infrastructure!
+		- use the same code repositories and versioning to store your DB scripts, config files, etc.
+		- work with the ops team to configure and deploy datastores using their orchestration tools of choice
+		- test as you go, and teach the ops folks as you go
+		- measure things like:
+			- how many infra components are under config management vs. not?
+			- how many infra components are orchestrated vs. not?
+			- how many provisions succeed vs. fail?
+			- resource consumption metrics
+			- how many incidents were managed by non-DBREs?
+			- how many escalations from ops to DBREs?
+	- use the data you're gather in the above steps to drive future decisions.
+	- one of the hardest fights may be around data integrity. it's not often that engineers and product teams feel the need to put time and effort toward db recovery and validation tools. you will likely need to be the champion here.

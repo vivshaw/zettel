@@ -1,5 +1,5 @@
 ---
-tags: system engineering
+tags: systems engineering, design
 ---
 
 - an approach to design which focuses on manfacturability.

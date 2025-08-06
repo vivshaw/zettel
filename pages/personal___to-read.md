@@ -30,6 +30,10 @@ tags: books, personal
 - Raimon Panikkar - Rhythm of Being
 - Kastrup - The Idea of the World
 - Panarchy - Gunderson and Holling
+- Pseudo-Dionysus
+- Simone Weil- The Need for Roots / Gravity and Grace / Waiting for God
+- Murdoch - the sovereignty of good
+- Kill It With Fire
 - # software
 	- A Philosophy of Software Design
 	- Release It!

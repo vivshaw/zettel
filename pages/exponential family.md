@@ -15,4 +15,4 @@ tags: stats, math
 - for the Gaussian:
 	- $\theta = \mu$ and $b(\theta) = \dfrac{\theta^2}{2}$
 	- $\phi = \sigma$ and $a(\phi) = \sigma^2$
-	- $c(y, \phi) = - \dfrac{y^2}{2 \cdot \sigma^2} - log(\sigma) - log(\sqrt{2 \cdot \pi})$
+	- $c(y, \phi) = - \dfrac{y^2}{2 \cdot \sigma^2} - \log \sigma - \log \sqrt{2 \cdot \pi}$

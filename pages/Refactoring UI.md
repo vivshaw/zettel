@@ -64,7 +64,6 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system, re
 		- reserve bright colors for primary actions. secondary actions can be more muted. tertiary actions can probably be styled like links!
 		- you don't need a big red button for every destructive action. even if destructive, actions should be treated according to the hierarchy.
 			- what you might _actually_ want instead, is a separate confirmation step where the destructive action _is_ primary!
-	-
 - # Layout and Spacing #spacing #layout
   collapsed:: true
 	- **start with too much white space.** it's easier to remove space from something with extra, than to add extra space into an already-cramped UI. don't just give things the bare minimum necessary to not be actively bad!
@@ -86,6 +85,7 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system, re
 	- **avoid ambiguous spacing.** spacing should make it visual obvious which elements belong to which group. that means probably, don't place subordinate elements at equal spacing
 		- pay attention with things like labels, bulleted lists, headings...
 - # Designing Text #typography
+  collapsed:: true
 	- **establish a type scale.** don't use too many font sizes! it leads to inconsistencies, and slows you down. instead, settle on some constraints.
 		- **choose a scale.** same as with sizing and spacing, a linear scale won't work.
 		- one approach for scaling is "modular scaling", using a ratio like the golden ratio. this isn't perfect in practice, because it won't line up with where you want sizes in practice.
@@ -115,6 +115,7 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system, re
 		- you might choose to track in headlines and other very large text. don't do this the other way around, though!
 		- you might increase the spacing of all-caps text for better legibility
 - # Working with Color #color
+  collapsed:: true
 	- **ditch hex for HSL.** in hex and RGB, many colors that look similar visually look nothing alike in code. [[HSL]] fixes this, by specifying color in terms of hue, saturation, and lightness- all meaningful to the human eye.
 	- **you need more colors than you think.** you can't just have a palette of 5 primaries! you need:
 		- **greys**, because almost everything in an interface is a shade of grey. probably 8-10 shades. true black tends to look unnatural, so use a really dark grey as the top-end of the grey scale.
@@ -138,5 +139,61 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system, re
 	- **don't rely on color alone.** what if a use is red-green colorblind, for example?
 		- never use color as the only means to communicate something. communicate each piece of info in multiple ways. for example, color _and_ an icon, or color _and_ sizing.
 		- rely on contrast rather than hue. for example, bar charts in all shades of one color rather than many colors.
-- # Creating Depth
-	-
+- # Creating Depth #depth
+  collapsed:: true
+	- **emulate a light source.** the rules for simluating light are simpler than you might expect:
+		- light comes from above. any time we see insets or raised areas on a surface, it's based on how the light strikes it and casts shadows from above. so figure out what profile you want, and emulate that
+		- you can't see both the top and bottom edge of something at the same time
+		- to make a raised element, provide a thin lighter-colored border at the top, then a darker box-shadow below
+		- to make an inset element, reverse it! provide a thin lighter border inset at the bottom, then a darker box-shadow inset at the top
+		- don't overuse this, it can get overly busy quick
+	- **use shadows to convey elevation.** degree of shadow helps place elements on a virtual "z-axis" to the eye.
+		- bigger and blurrier shadows appear farther "up", smaller and tighter ones appear farther "down"
+		- you should probably define an elevation system, with prebuilt shadows. you only need 5 or so.
+		- shadows can be used for interaction cues as well, like make a button feel "clicked in" on press, or showing a highlighted table row as you drag it
+	- **shadows can have two parts.** fancier shadow effects might require layering. for example, objects typically have one shadow cast by direct light, but a darker shadow right underneath where ambient light doesn't reach either
+		- interestingly, these shadows react differently to elevation. the direct shadow gets bigger and more diffuse, but the ambient shadow fades and disappears
+	- **even flat designs can have depth.** you don't need to use shadows, gradients, or simulated light to create elevation
+		- color can be used to create depth. lighter colors feel "closer", darker colors feel "farther"
+		- you can use an unblurred, tight shadow that still looks "flat" while providing some depth
+	- **overlap elements to create layers.** for example, placing an element crossing the boundary between its parent and the one below, or making an element break out of its parent
+		- you can even use this at smaller levels, like having an individual control break out
+		- be careful when doing this with images, as they can clash! you can prevent this by putting a background-color border around the floating image, so there's always a gap
+- # Working with Images #images
+  collapsed:: true
+	- **use good photos.** nothing you can do will make a bad photo good! hire professional photographers or use professional stock images.
+	- **text needs good contrast.** you can't throw a line of text over an image that varies in lightness. some parts of the text will be visible and others won't. so, get the image to a consistent tone that your text will be legible over.
+		- you can use an overlay to lighten or darken the whole image
+		- you can reduce the contrast to focus on target areas
+		- you can colorize the image with a theme color
+		- a text shadow might help, but you'll probably still need to reduce the image's contrast a bit.
+	- **every image has an intended size.** yes, even vector graphics! graphics designed to be legible at a tiny size will have less detail than a similar graphic designed at a larger size.
+		- you can use a separate, larger graphic for the large cases
+		- you can keep the icon small, but make the area larger- like putting it in a colored bubble
+		- conversely, don't scale down massive images, like screenshots! you'll end up with tiny illegible text and invisible details. instead, use full-size screenshots taken a smaller screen size. or partial screenshots.
+		- make a dedicated favicon that scales well. don't expect icons for other uses to scale down flawlessly.
+	- **be careful with user-uploaded content.** you have no idea what their images will look like!
+		- don't display them at their natural aspect ratio, which will make your layouts wildly irregular. neither should you squeeze them into a given aspect ratio, which would result in squashed image. instead, scale and crop to a fixed ratio. you can do this easily with `background-size: cover;`
+		- prevent background bleed with something like an inner box-shadow or semi-transparent inner border. (choosing a fixed color border can result in clashing colors.)
+- # Finishing Touches
+  collapsed:: true
+	- **supercharge the defaults.** instead of adding totally new components whenever you need flair, consider modifying your existing patterns. for example, a bulleted list might want a check icon for visual interest, or a lock icon if it's on a security page, etc.
+		- make pull quotes into dedicated components.
+		- give links nice visual styling
+		- customize your form controls! don't settle for browser defaults, build something that follows your color theme.
+	- **add accent borders.** a simple trick that even non-designers can use to add a pop of color, is to use color accents as borders. this can give flair to a card, it can highlight a selected tab, give boldness to an alert...
+	- **decorate your backgrounds.** a simple way is to use a different background color for elements you wish to highlight.
+		- you could also try a gradient. probably, you'll want to stick to hues that are < 30 degrees apart
+		- you could add a repeating pattern, with low contrast to preserve legibil.ity
+		- you could add a simple shape or illustration
+	- **don't overlook empty states.** if your app relies on the user to add content, then an empty state will always be the first thing they see! treat it as a first-class citizen. incorporate colors or illustrations. add a CTA that points them in the right direction.
+		- if the app has a bunch of stuff they can't do yet, consider hiding it until they can.
+	- **use fewer borders.** they can be a bit of a crutch for distinguishing elements.
+		- try a box-shadow instead!
+		- try using two different background colors, which is generally enough on its own to distinguish two elements.
+		- add extra spacing between elements, and you may not need a border
+	- **think outside the box.** you don't have to stick with the simplest and most common version of every pattern you see. for example, a table needn't be plain rows of data, it can have hierarchy and images! or, a plain radio button for an important function might become a set of selectable info cards.
+- # Leveling Up
+  collapsed:: true
+	- **look for decisions you wouldn't have made.** peek through the design of the apps you use on a daily basis, and dig into design decisions that surprise you.
+	- **rebuild your favorite interfaces.** look at your favorite apps, and rebuild them from scratch. *don't look at the devtools or copy code!* piece it together yourself. you'll gradually discover the tips and tricks they used.

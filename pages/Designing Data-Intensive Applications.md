@@ -3,7 +3,7 @@ tags: books, distsys, sre, devops, software engineering, software architecture
 alias: DDIA
 ---
 
-- **Chapter 1: Reliable, Scalable, and Maintainable Applications**
+- # Chapter 1: Reliable, Scalable, and Maintainable Applications**
   collapsed:: true
 	- what is a **data-intensive system**? one where "data is its primary challenge—the quantity of data, the complexity of data, or the speed at which it is changing—as opposed to compute-intensive, where CPU cycles are the bottleneck."
 	- such an application is usually built from "building blocks" like: databases, caches, search indexes, stream processing tools, batch processing tools...
@@ -72,7 +72,7 @@ alias: DDIA
 				- systems change over time as users' needs change!
 				- on the organization side, [[agile]] helps teams deal with change
 				- on the software side, [[TDD]] and [[sustaining engineering]] help
-- **Chapter 2: Data Models and Query Languages**
+- # Chapter 2: Data Models and Query Languages
   collapsed:: true
 	- "The limits of my language mean the limits of my world." [[Wittgenstein]] #aphorisms #philosophy
 	- > Most applications are built by layering one data model on top of another. For each layer, the key question is: how is it represented in terms of the next-lower layer?
@@ -108,7 +108,7 @@ alias: DDIA
 	- things that are _like_ query langs:
 		- [[CSS]] is kinda like a data query lang, in that you declaratively specify elements to style, and the browser engine handles finding 'em and applying the styles for you
 		- [[MapReduce]]
-- **Chapter 3: Storage and Retrieval**
+- # Chapter 3: Storage and Retrieval
   collapsed:: true
 	- *"Wer Ordnung hält, ist nur zu faul zum Suchen."*
 	- there's a big difference between storage engines optimized for transaction processing, and analytics!
@@ -119,7 +119,7 @@ alias: DDIA
 		- key-value data can use [[hash indexing]], much like you might store that data in memory in a [[hash map]]
 			- done in log-structured engines. [[Bitcask]] does this
 			- in most cases, hash table needs to fit in memory, so you're out of luck if you have a huge number of keys. on-disk hash tables aren't fast
-		- SSTables / LSM-Tree:
+		- [[SSTable]] / LSM-Tree:
 			- terminology comes from [[Bigtable]]
 			- store the logs as sorted sequences, sorted by string key
 			- easy to merge data
@@ -166,7 +166,7 @@ alias: DDIA
 		- compressed data, and bitwise operations on the bitmasks, make very efficient use of CPU cache and cycles
 		- writes are very hard, as you need to modify every column. how to do this efficiently? [[LSM-tree]]s!
 		- hybrid: [[Bigtable]]/[[Apache Cassandra]]/[[HBase]] have **column families**, but is not truly column-oriented: the columns are busted out into families, but *within* each family, the data is stored row-oriented.
-- **Chapter 4: Encoding and Evolution**
+- # Chapter 4: Encoding and Evolution
   collapsed:: true
 	- how do we encode data usefully, and evolve it as the app grows?
 	- in a distributed system, we can't upgrade everything in lockstep. we might want to do [[rolling upgrade]]s on the server side, which necessitates two or more versions running at the same time. and there's _nothing_ we can do to force clients to update in a timely manner!
@@ -215,7 +215,7 @@ alias: DDIA
 				- multicast
 				- logically decouples sender and recipient
 			- distributed [[actor framework]]s
-- ## Part II: Distributed Data
+- # Part II: Distributed Data
   collapsed:: true
 	- why might we want to distribute data across multiple machines?
 		- **scalability**
@@ -229,7 +229,7 @@ alias: DDIA
 			- is [[shared-nothing]] architecture
 			- no special hardware is required!
 	- replication vs. partitioning
-- **Chapter 5: Replication**
+- # Chapter 5: Replication
   collapsed:: true
 	- in [[replication]], we keep a copy of the same data on multiple machines connected via a network
 	- why?
@@ -245,7 +245,7 @@ alias: DDIA
 	- **sloppy quorums:** if enough nodes are offline that there are fewer than *w* nodes left within our *n* which own the piece of data we want? instead of erroring, we could allow temporary writes to other nodes outside *n*. then, pass off the writes once the nodes from *n* are back up
 	- it's not important whether events were _literally_ concurrent in time to determine whether they're concurrent in the data sense. clocks may not be aligned between nodes, and data takes time to travel from a node to another. all that is necessary for A and B to be concurrent is that we can't prove A happened before B, or vice-versa
 		- in a sense, this is a little like [[relativity]]!
-- **Chapter 6: Partitioning**
+- # Chapter 6: Partitioning
   collapsed:: true
 	- aka [[sharding]] !
 	- primarily, we move to sharding to make an application more [[scalable]]. by moving to a system like this, we can distribute the data across many nodes that individually couldn't handle the whole
@@ -281,7 +281,7 @@ alias: DDIA
 			- require clients to be aware of partitions and hit the right node
 				-
 	-
-- **Chapter 7: Transactions**
+- # Chapter 7: Transactions
   collapsed:: true
 	- **[[transaction]]s** have been the mechanism of choice for fault tolerance for a long time. they were created to simplify the programming model. not every app needs them, but many do.
 	- the original style of transaction, introduced in [[IBM System R]], is still the most commonly used today, at least among SQL dbs!
@@ -329,7 +329,7 @@ alias: DDIA
 		- many of these just don't work in a distributed world! can't lock or compare-and-set if there are multiple DBs
 	- what about [[write skew]]? )(concurrent writes that are individually valid, but leave the DB in an invalid state)
 		- you can deal with this by materializing the conflict- make a table of all the possible state combinations, with no data, used purely for locks. like for a meeting app, a table of 15 minute time slots for each room for the next 6 months.
-- **Chapter 8: The Trouble with Distributed Systems**
+- # Chapter 8: The Trouble with Distributed Systems
 	- with software on a _single_ computer, there's no fundamental reason it should be flaky. but a distributed system is fundamentally different.
 	- partial failures are a thing! part of the system might keep chugging away while other parts are busted, with nondeterministic effects
 	- there's a spectrum between [[HPC]] (supercomputer) <-> enterprise datacenter <-> cloud computing, where the HPC end is more similar to a single machine

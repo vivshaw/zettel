@@ -1,5 +1,5 @@
 ---
-tags: math, graphs
+tags: math, graph
 ---
 
 - a **traversal** is a path through a graph that visits every node at least once

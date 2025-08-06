@@ -15,7 +15,7 @@ alias: interest rate
 	- how to calculate...
 		- the principal? $P = \dfrac{FV}{(1 + i)^N}$
 		- the interest rate? $i = (\frac{FV}{PV})^{\frac{1}{N}} - 1$
-		- the periods? $N = \dfrac{log(\frac{FV}{PV})}{log(1 + i)}$
+		- the periods? $N = \dfrac{\log(\frac{FV}{PV})}{\log(1 + i)}$
 - **nominal interest rate:** the interest rate expressed on an annual basis. also, APR (annual percentage rate)
 - **compounding:** dividing the APR into sub-periods. for example, 12% interest compounded monthly would be calculated as 1% interest paid per month. this nominal rate of 12% actually ends up paying 12.68% worth of interest!
 - **effective interest rate:** the actual interest on an annual basis

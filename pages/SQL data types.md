@@ -18,6 +18,8 @@ tags: SQL, db
 	- `CURRENT_DATE` and `CURRENT_TIME` will get the date and time respectively
 	- we can extract bits of a timestamp with `EXTRACT(year FROM my_date)` or equivalently `DATE_PART('year', my_date)`
 	- we can truncate timestamps or intervals with `DATE_TRUNC('year', my_timestamp)`
+	- we can grab a string representation of part of a date with `to_char(my_date, 'day')`
+	- we can use `generate_series()` with an interval to create a series of dates or times. this is useful if we're aggregating a dataset with gaps, and want those gaps to show up as `0`s rather than be skipped. also, for binning.
 - `ARRAY`s can be indexed into with brackets
 	- there are array-specific functions, like `'foo' = ANY(my_array)` or `my_array @> ARRAY['foo']` ("contains")
 - strings
@@ -36,6 +38,8 @@ tags: SQL, db
 	- `TRIM(leading | trailing | both [characters] FROM my_string)` lets you remove stuff from the ends of strings. when called without params, it trims whitespace
 		- `LTRIM()` and `RTRIM()` do the same for just one end of the string
 	- `LPAD(my_string, 10, '*')` will expand the string up to a given size using a given char. `RPAD()` will do the same for the other side of the string. space is the default
+	- we can match with `LIKE` and `ILIKE` (case-insensitive), using `%` to match an arbitrary number of characters, and `_` to match one
+	- `SPLIT_PART('foo', delimiter, part`) lets you extract parts from CSV and such
 - numbers
 	- we can truncate with `TRUNC()`, or round with `ROUND()`
 	- we can use `generate_series(start, end, step)` to create a column with a range prefilled

@@ -23,7 +23,7 @@ tags: project management, finance, management, cost
 			- in practice, usually between .8 and 1
 		- use a [[log-log model]] to make the learning curve linear for easy estimation
 			- originally, $T_n = T_0\ n^m$
-			- $log(T_n) = m\ log(n) + log(T_0)$
-			- now estimate the slope: $m = (log(T_1) - log(T_0)) / (log(n_1) - log(n_0))$
-			- by definition of the LCR, let `n_1 = 2\ n_0$, and $T_1 = LCR * T_0$
-			- then $m = \frac{log(LCR)}{log(2)}$
+			- $\log T_n = m \log n + \log T_0$
+			- now estimate the slope: $m = (\log T_1 - \log T_0) / (\log n_1 - \log n_0)$
+			- by definition of the LCR, let $n_1 = 2\ n_0$, and $T_1 = LCR * T_0$
+			- then $m = \frac{\log LCR}{\log 2}$

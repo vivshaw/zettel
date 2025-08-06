@@ -21,7 +21,7 @@ alias: GLM
 			- so $g(x) = x$, that is to say, $g$ is the [[identity (math)]]
 	- for logistic classification:
 		- $y \in \{0, 1\}$
-		- we assume $log(\dfrac{P(y=1 | X)}{1 - P(y=1 | X)}) = \beta^T \cdot X$ for some $\beta \in \mathbb{R}$
+		- we assume $\log(\dfrac{P(y=1 | X)}{1 - P(y=1 | X)}) = \beta^T \cdot X$ for some $\beta \in \mathbb{R}$
 			- so $g(x) = \operatorname{logit}(x)$, the [[logit]]
 - in [[R]], we can use the `glm()` function together with a `family = ` parameter to use a GLM however we'd like. we can then use `predict(glm.fit, type = "response")` to predict.
 	- but we'll get probabilities as our output, so we'll need to transform into class labels, like `ifelse(glm.pred > 0.5, T, F)`

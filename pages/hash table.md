@@ -1,0 +1,23 @@
+---
+tags: hashing, data structures, algorithms
+---
+
+- a data structure that maps keys to values using a [[hash function]].
+	- you can think of it as a generalization of an [[array]], in which the hash function links the items to their indices
+	- that hash function must map all the values to a key in the range $0\ ...\ m-1$ where $m$ is the table size
+- a simpler table might use **direct addressing**, in which the array is the same length of the universe $U$ of possible values, ad each possible value maps to one slot
+	- this uses a lot of space. that makes it wasteful at best, and impractical for large $U$s. that's why we use hash tables instead.
+- what happens when the hash function has a key collision for two values?
+	- we could deal with this by having each slot store a _list_ of key/value pairs, rather than just the value. that's called **chaining**
+	- another option is [[open-address hashing]]
+- what can we do with a hash table?
+	- **insert:** hash the key, append to the list
+		- average-case complexity is $O(1)$
+	- **find:** hash the key, search the list
+		- average-case complexity is $O(1)$
+		- in a table with chaining, this has worst-case [[time complexity]] of $O(n)$ if all keys collide, but is more commonly $O(1 + load\ factor)$
+	- **delete:** hash the key, search the list, delete
+		- average-case complexity is $O(1)$
+- the **load factor** of a hash table is the # of elements / the capacity of the table. or $\alpha = n \div m$.
+	- commonly, when the load factor exceeds 1/2, you might **rehash** into a table twice the size, which is $O(n + m)$. but this cost will be amortized over many operations, since we won't rehash that often.
+- **random hashing** is a technique to improve performance. if you choose any single static hash function, there will be *some* input for which the hash table has awful performance. so instead, create a _family_ of hash functions, then randomly select one.

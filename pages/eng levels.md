@@ -35,3 +35,15 @@ tags: engineering management, software engineering
 	  IC4 for a month
 	  IC3 for ~2 weeks
 	  IC2 for a few days
+- we can move as well to a multidimensional framework. for example:
+	- > Scope: What area do they own?
+	  Impact: What business impact did they accomplish?
+	  Tech: What technical expertise do they bring to the table?
+	  Org: How do they interface with other humans?
+	  Growth: What should they focus on to grow beyond their current point? Are they doing it?
+	- treat it like a radar chart! each level likely has different requirements of each dimension, which might not scale linearly. each engineer is likely "spiky", exceeding more in some areas than others. that's OK! we just want to ensure a rough match between the team's needs, the engineer's profile, and the role's requirements, not absolute uniformity. we'd rather have a variety of folks who greatly excel at particular areas than an overall average.
+	- what does it mean when someone's seriously overperforming in one of those dimensions?
+		- Scope: you should probably get promoted eventually
+		- Impact: You should probably get a top performer grant
+		- Tech: You should probably be given more scope
+		- Org: You should consider the management track

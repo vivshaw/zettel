@@ -29,4 +29,9 @@ alias: my website
 	- https://coolors.co/palette/020202-0d2818-04471c-058c42-16db65
 	- no, let's stay on primarily black & white for now. I'm not good enough at tuning color palettes to make this look better than the existing color scheme.
 	- look at this though, _so_ good: https://www.grovelust.be/
-	-
+- guidance on Sprinkles and Vanilla Extract:
+	- https://sandroroth.com/blog/vanilla-extract-approach/#atoms
+	- https://www.highlight.io/blog/typesafe-tailwind
+- colors to try:
+	- `#1E4941`
+	- `#FBCBBC`

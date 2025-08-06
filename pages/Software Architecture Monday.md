@@ -142,9 +142,14 @@ tags: software engineering, software architecture, Mark Richards
 		- user satisfaction: estimate with # of errors measured, # of user-reported bugs, performance metrics
 			- don't use a survey! they tend to invite general complaint that doesn't tell you much about the specific technical problem folks want answers for
 - **Lesson 16 - The Challenges of Architecture Teams**
+  collapsed:: true
 	- an anti-pattern to be aware of is the Witch's Brew. if your architecture has no coherent vision and direction, you might just mix random stuff together with no cohesion. it'll be super complex and won't work.
 	- architects can tend to be egotistical and fall prey to the [[Golden Hammer]], thinking they know exactly what to do & there's one right way to do things
 	- consider selecting a mediator in your architecture team. they're not the head honcho, they're here to resolve conflict. they look at the overall vision and direction, and when conflict arises, use it to make a decision for this individual case.
 	- don't choose this role by rank or seniority. pick it randomly if you have to. consider rotating it regularly.
 	- then, require every architectural decision a team member wants to make comes with a reasonable justification
 	- this only works if we all agree up-front that when conflicts occur, we all have to go with the mediator.
+- **Lesson 17 - Architecture Tradeoffs**
+	- we can't satisfy every -ility! performance, scalability, extensibility, agility, maintainability, feasibility...
+	- don't assume tradeoff analysis is a one-time process, or that the architecture is static, or that you know all relevant scenarios up front!
+-

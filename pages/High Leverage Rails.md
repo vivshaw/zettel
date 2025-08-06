@@ -50,4 +50,21 @@ tags: courses, Ruby, Rails
 		- `t.datetime` -> `Time`
 			- in Ruby, there isn't any way to store only a clock value, without a corresponding day!
 		- `t.json` -> `Hash`
-	-
+	- ## Creating tables
+		- Rails will use prepared statements for your inserts. this has both performance benefits and security benefits- harder to do [[SQL injection]]
+			- ```
+			  INSERT INTO table_name (column_1, column_2) VALUES (?, ?)
+			  ```
+		- Rails will also wrap your ActiveRecord operations in transactions, to prevent data integrity problems
+		- `create` and `save` will ensure that all your validations are met before running the SQL query, then run any callbacks you have defined after the query
+	- ## Inserting records
+		- similar to creating, but:
+			- you pass `insert` your values as a hash, then they get inlined into the query instead of done as a prepared statement.
+			- you get an ActiveRecord::Result back instead of your item
+			- it skips your validation and callbacks
+			- it's not wrapped in a transaction
+		- `insert_all` will let you insert a batch of records in one go
+	- ## Updating data
+		- `update!` will throw if validations fail, `update` will return `false` and let you handle manually
+		- `update_columns` will skip validations and callbacks, similar to `insert`
+		- `save` can be called directly on an existing record instance. there's ` !` and non-`!` version as with `update`

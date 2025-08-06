@@ -1,2 +1,3 @@
 - set up mastodon verification: https://mastodon.social/settings/verification
 - set up keybase for website
+- personal "junk drawer" monorepo? call it `v`?

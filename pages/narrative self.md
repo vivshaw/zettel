@@ -1,5 +1,5 @@
 ---
-tags: philosophy, personal identity
+tags: philosophy, personal identity, narrativity
 ---
 
 - the **narrative self** is the self as the subject of the story of one's life
