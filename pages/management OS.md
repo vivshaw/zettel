@@ -8,12 +8,14 @@ tags: management, engineering management, personal
 	- like a computer's OS, no installation is going to be identical, and I won't always use every part. I will pick and choose what fits my current circumstance, and drop what isn't useful.
 - **concepts:**
 	- **overarching philosophy:** *be like water. adjust to the situation. be pragmatic. source concepts from anywhere, and use precisely what works. be an artist. hone your praxis.*
-	- [[the role of a manager]]: it's about getting results and keeping your people.
+	- [[the role of a manager]]: management is about getting results and keeping your people.
 	- [[The Three Gaps]]: why don't our strategies work out in practice? how can we do better?
-	- [[directed opportunism]]: a philosophy of strategy under uncertainty, of building both alignment _and_ autonomy. plan only what can be planned, align  and give people the autonomy to address the rest on their best judgment.
+	- [[directed opportunism]]: a philosophy of strategy under uncertainty, of building both alignment _and_ [[autonomy]]. plan only what can be planned, align  and give people the autonomy to address the rest on their best judgment.
 	- [[independent thinking obedience]]: what do I want out of my reports? neither rote following, nor going off and doing whatever they please- I want independent thinking and execution to achieve a united result.
 	- [[The Executive's Trinity]]: the high-level skills needed to manage with aplomb
 	- [[strategy, operations, and tactics]]: bridging the conceptual gap from strategy to execution
+	- the [[Ship of Theseus]]: the goal of a good manager should be to build a team so resilient that it can keep functioning if any of its parts are swapped out (including the manager!).
+	- [[eng management/the middle way]]: neither sprint ahead to the bleeding edge nor remain stuck in the past. stay focused and unsurprising.
 - **org debugging principles:**
 	- [[POSIWID]]: the things that your organization *actually does* are its purpose, not the things we may _say_ are its purpose. think _de facto_, not _de jure_.
 	- [[revealed preference]]: what people and organizations do reveal what they value.

@@ -194,4 +194,27 @@ tags: courses, postgres, db, SQL
 		- (technically, you could use an integer as well.)
 		- `B'11101` is the literal syntax
 		- they can be static length or `varying`
+	- ## Ranges
+		- there can be ranges of many types- integers, dates, etc.
+			- `'[1,5]'::int4range` - values 1 through 4
+			- `'[1,5)'::int4range` values 1 through 5
+			- there's also a function: `numrange(1, 5, '[)')`
+		- can have bounded or unbounded range ends, and inclusive or exclusive ends
+		- you can intersect ranges with the `*` operator
+		- you can check whether a value's in a range with `@>`
+		- you can check whether two ranges overlap with `&&`
+		- there are `upper()`, `lower()`, `upper_inc()` funcitons you can use on ranges
+		- multiranges exist!
+	- ## Composite types
+		- ```
+		  create type person as {
+		    firstname text,
+		    lastname text,
+		    age int
+		  }
+		  
+		  SELECT('Stan', 'Smith', 152)::person
+		  ```
+		- you might need these for working with stuff like [[PostGIS]]
+	- ## Nulls
 		-

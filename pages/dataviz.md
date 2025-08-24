@@ -1,0 +1,1 @@
+- "plotting $a$ vs. $b$" means $a$ should be on the y-axis

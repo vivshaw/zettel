@@ -35,3 +35,4 @@ alias: my website
 - colors to try:
 	- `#1E4941`
 	- `#FBCBBC`
+- [Compact Mag has a really nice text layout](https://www.compactmag.com/article/the-crisis-of-the-university-started-long-before-trump/)

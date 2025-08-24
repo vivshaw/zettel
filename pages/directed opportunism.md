@@ -3,7 +3,7 @@ tags: management, strategy, The Art of Action, management OS
 alias: planful opportunism
 ---
 
-- an approach to business strategy in a world of uncertainty and competition, based on planning only what can be planned, and building both alignment and autonomy for teams to tackle the unpredictability independently as it happens.
+- an approach to business strategy in a world of uncertainty and competition, based on planning only what can be planned, and building both alignment and [[autonomy]] for teams to tackle the unpredictability independently as it happens.
 	- this borrows from *[[Auftragstaktik]]* and [[mission command]] in the realm of military strategy, but adapts it to the world of modern business.
 - rather than making detailed plans and exercising fine control over their execution, we set and communicate clear goals, then give people the autonomy to pursue those goals in whatever way they discover to be most effective. we cultivate [[independent thinking obedience]] and adjust our plans to the situation at the closest point to where a decision needs to be made.
 - from The Art of Action:

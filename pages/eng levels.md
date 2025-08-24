@@ -29,7 +29,7 @@ tags: engineering management, software engineering
 	- > IC5 owns strategy
 	  IC4 helps shape strategy
 	  IC3 follows strategy
-- another is about autonomy. how much rope should you give before intervening? how often should you feel you need to step in?
+- another is about [[autonomy]]. how much rope should you give before intervening? how often should you feel you need to step in?
 	- > IC6 should be fine operating independently almost indefinitely
 	  IC5 for 2-3 months
 	  IC4 for a month

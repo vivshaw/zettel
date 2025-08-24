@@ -94,7 +94,7 @@ tags: management, military, books, history, strategy
 		- **knowledge gap:** limit direction to defining and expressing the essential intent. plan only what can be planned, and accept uncertainty.
 		- **alignment gap:** allow each level to define what it would achieve to realize the intent, adding to the one above, but all united in the intention
 		- **effects gap:** give individuals freedom to adjust their actions in line with the intent, make the use of individual initiative central
-	- von Moltke, rather than seeing a tradeoff between alignment and autonomy, felt they were independent.
+	- von Moltke, rather than seeing a tradeoff between alignment and [[autonomy]], felt they were independent.
 		- > Von Moltke’s insight is that there is no choice to make. Far from it, he demands high autonomy and high alignment at one and the same time.
 		- > The insight is that alignment needs to be achieved around intent, and autonomy should be granted around actions. Intent is expressed in terms of what to achieve and why. Autonomy concerns the actions taken in order to realize the intent; in other words, about what to do and how.
 		  #alignment

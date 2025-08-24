@@ -1,0 +1,2 @@
+- an insight from a coworker:
+	- > Autonomy needs to be bounded to be maintained. If everyone is permitted total autonomy, then we shrink the amount of autonomy available, because we lose the capacity for both macro and local reasoning: everything becomes too tangled! Net greater autonomy can only be achieved by carefully partitioning it, and this can be done compositionally.

@@ -1,0 +1,44 @@
+---
+tags: metrics, performance
+---
+
+- when doing performance review or advocating for a promotion, clear metrics will help demonstrate the reality of the situation and reach the right conclusion. but what measurements are relevant?
+- you can make this easier on yourself by:
+	- asking the engineer to keep a [[brag doc]]
+	- creating a running log yourself. lightweight bullet points of anything relevant: positive or negative interactions you witnessed, feedback you saw, impactful projects, any measurement that catches your eye.
+- scope / leverage:
+	- **why?** demonstrate that the IC's work has scaled beyond the local team. especiall key for [[staff+]]!
+	- adoption metrics. # of teams / eng using tools? chart growth over time?
+	- usage of docs / runbooks? if can't count live use, count how often linked, copied, or otherwise referenced
+	- cross-team dependencies: how many projects or eng outside the team unblocked by this work? evidence of relying on IC as a domain expert?
+	- you wish you could frame like:
+		- > IC's Vite migration documentation was directly adopted by 4 product teams, referenced in 3 onboarding guides, and has unblocked 15+ engineers from product teams since April
+- impact / outcomes:
+	- **why?** helps move from "this work was good" to "this measurably improved the business or engineering velocity"
+	- output metrics: [[measuring output]], but use extreme care lest you create perverse incentives
+	- performance improvements: before/after execution times for projects. engineer-reported improvements from eng surveys.
+	- onboarding time reduction: how much faster do new hires get up and running? any positive feedback?
+	- bug reduction: # / severity of internal bugs resolved. any reduction in support ticket volume?
+	- you wish you could frame like:
+		- > Ci lint time dropped from 15 minutes to 5.5 minutes, saving ~140 engineer-hours per month.
+- technical execution:
+	- **why?** showcases not just what the IC built, but _how well_ it was built. clarity of direction, quality of abstraction, maintainability, etc.
+	- review stats: how many PRs reviewed? examples of particularly important or high-risk ones?
+	- any high-quality RFCs, tech specs, etc. authored?
+	- testability / maintainability deltas: coverage before / after a change
+	- size of removed config / code from simplifcations
+	- peer feedback
+	- you wish you could frame like:
+		- > IC's unification of build config removed over 3000 lines of legacy code and created a centralized, testable system that product engineers now use for feature flags
+- org & cultural influence:
+	- **why?** prove the IC isn't just shipping, but shaping how others work, communicate, and collaborate
+	- mentorship & unblocking logs: track 1:1s, pairing sessions, or Slack threads where the IC helped unblock or coach others
+	- visibility moments: #presentations given, internal blog posts, strategy memos, announcements, etc.
+	- process or principle adoption: when did the IC add a process that was adopted more broadly? any metrics from surveys that show cultural change?
+	- you wish you could frame it like:
+		- > IC coached 5 engineers on constructive disagreement and communication during a critical roadmap planning phase
+- reflection and delta over time:
+	- **why?** perf panels will expect to see clear growth
+	- before / after
+	- examples of last cycle's feedback and how the IC addressed it
+	- any longitudinal indicators: influence on roadmap, increasing # of teams touched, etc.

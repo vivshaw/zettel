@@ -1,0 +1,35 @@
+---
+tags: data, communication, presentations
+---
+
+- to make results stick, they should be:
+	- simple
+	- concrete
+	- credible
+- the 3-minute story:
+	- what narrative could I put together in only 3 minutes?
+- the big idea:
+	- how would I boil my result down into a single sentence?
+- constructing a narrative:
+	- avoid disconnected facts. stick to your central insight.
+	- understand your audience and the background, and provide just the context they need to understand your message
+		- what do they know already?
+		- what do they _need_ to know?
+	- it's easier for customers to remember an anecdote than a z-score!
+	- focus on impact rather than process
+	- what sorts of data might help construct a narrative?
+		- change over time
+		- clustering
+		- comparison
+		- correlation
+	- background:
+		- what motivated the analysis? what changed? what is the focus?
+	- insights:
+		- what contributed to the answer?
+	- climax:
+		- what would happen if nothing changed?
+	- next steps:
+		- recommend solutions to avoid the negative outcome you revealed
+- combine data, narrative, and visuals for the best results
+	- data must be accurate, relevant, and reliable. it should provide actionable insights
+	- narrative should be compelling, easy to understand, and stripped to essentials. it should motivate action

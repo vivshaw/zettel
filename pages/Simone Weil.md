@@ -1,0 +1,1 @@
+- > Attention, taken to its highest degree, is the same thing as prayer. It presupposes faith and love. Absolutely unmixed attention is prayer."

@@ -1,8 +1,10 @@
 ---
 tags: data, dataviz
+alias: box plot
 ---
 
 - used to display data corresponding to percentiles of a dataset. it doesn't care about the distribution, so you can use it to compare data with disparate shapes.
+	- these are particularly useful when you stack 'em to compare multiple datasets
 - based on 5 numerical measures:
 	- maximum
 	- 3rd [[quartile]]

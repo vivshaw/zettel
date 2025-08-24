@@ -1,0 +1,65 @@
+---
+tags: python, data, software engineering
+---
+
+- a dataframe library for Python. handles tabular data
+- accessing values:
+	- you can index by column, to get a series: `foo['bar']`
+	- or, you can index by an array, to get another dataframe: `foo[['bar', 'baz']]`
+	- or by slice, like a Python array
+	- `iloc` lets you index by index, and `loc` by label. rows first, columns second. `foo.iloc[['bar', 'baz'], ['ht', 'wt', 'age']]`
+		- you can slice by index value as well, like: `.loc["Bar":"Qux"]`. probably you want to sort by the index first.
+	- you can subset by indexing with an array of T/F values
+		- `foo[foo["bar"] == "baz"]`
+		- you need to use `.isin()` rather than `in`, if you're using that
+		- `loc` can be simpler if you're operating on the index column. like `foo.loc["baz"]`
+		- slicing by date is valid! use strings of the date, not integers
+- you can iterate with `.iterrows()`, which will give you `label, row`
+- you can apply an operation to every row without iterating manually with `.apply()`, like = `foo['upper'] = foo['name'].apply(str.upper)`
+	- you can use `.agg()` to apply stuff to multiple columns. also works on grouped results!
+- you can sort with `.sort_values(['foo', 'bar'])`
+- you can combine boolean conditionals with `&`
+- use `.value_counts()` to count values. if you need proportions, `normalize = True` will do that
+	- to avoid duplicates, you can use `.drop_duplicates(subset = ["foo", "bar"])`
+- `groupby()` does what you'd expect. handles both single columns and arrays of columns
+- you can build a pivot table with `.pivot_table(values=["foo", "bar"], index="baz", columns="quux")`
+	- values are the things you want to aggregate. index are the indices. columns are the columns.
+	- you can pass `aggfunc` to aggregate the results in different ways
+	- pass `margins = True` to get subtotals
+	- since a pivot table is itself a dataframe (with sorted indices), you can use `.loc`, slicing, etc. on them
+	- `.melt()` can be used to unpivot! set `id_vars` to the columns that should remain the same, or `value_vars` to the ones that should be unpivoted. `var_name` and `value_name` can be used to set the names of the resulting columns
+- working with indices:
+	- `.set_index()` makes a row of your choice the index
+	- `.reset_index()` resets to the default. you can pass a `drop` param to drop the contents when you do.
+	- you can set heirarchial indices, though this makes the code trickier, 'cause everywhere that expects an index now expects a tuple
+	- you can sort by index with `.sort_index()`, including at the level of some other columns like `.sort_index(level=["foo", "bar"], ascending=[True, False])`
+- working with dates
+	- you can access the date components like `foo["date"].dt.year`
+- summary stats
+	- things like `.mean()` exist. you can change their direction with the `axis` prop. useful with pivot table
+- plotting- Pandas has [[matplotlib]] integration!
+	- `.plot(kind="bar")` lets you make bar plots!
+	- also supports line plots, scatter plots
+	- there are positional args to specify x and y columns, title, whatever else you expect from matplotlib
+- missing values
+	- `.isna()` will find all the missing values. `.isna().any()` will find if there are any missing values in each column
+	- `.dropna()` will drop the rows with them
+	- `.fillna()` will replace them with a fill of your choice
+- csv load and save is built-in with `read_csv()` and `to_csv()`
+- you can do joins with `.merge()`, similar to [[JOIN]]. the `how` param selects the join type, `on` the `ON`.
+	- defaults to inner join
+	- you can give duplicate columns tidy suffixes with `suffixes=("_foo", "_bar")`
+	- works by default with either one-to-one or one-to-many relationships
+	- `on` can merge on multiple columns
+	- to select different column names to match, use `left_on`and `right_on`
+	- you can do self-joins! but only one, Pandas won't let you keep doing it forever
+	- if you need to know why each row is in the join, you can set `indcator=True`, which will add a `_merge` column with that data
+	- `.ordered_merge()` is good for time series data, will keep it in order during the merge
+		- `fill_method="ffill"` can be used forward-fill missing values
+		- `pd.merge_asof()` is similar, but matches on _near_ values instead of exact values. useful for merging two time series without exactly matching times
+- concatenation
+	- you can `.concat()` both vertically and horizontally! `axis=1` is horizontal
+	- by default, the indexes will be retained, even if they are duplicate values. `ignore_index=True` will ignore them. alternatively, you can add `keys=[]` to label each table
+	- by default, all columns from all tables will be kept. if you wanna only keep shared columns, `join="inner"`
+- `.sample()` lets you sample. the `replace` param does what it says on the tin
+- `.value_counts()` lets you total up how often each value shows up, like a groupby with sum

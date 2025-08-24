@@ -1,0 +1,5 @@
+- how much should we innovate and stay on the bleeding edge?
+- this depends a lot on your circumstance. *if you are a tech-led company*, like #OpenAI, then you _must_ stay at the forefront or fail. *if you are a product-led company*, chances are your tech is not the big differentiator. if that is you:
+	- consider the [[principle of least surprise]]. what is the industry doing in general? if it's pretty settled, adopt that. if it's pretty volatile, insulate against it. if you do this right,k you make both maintenance and onboarding easier
+	- to put it a different way, adopt **the middle way**. what has stabililzed in the industry for a few years? don't stick to the oldest tools, neither sprint to the absolute latest. what's just on the stable edge of fresh?
+	- you pay a cost if you're at the bleeding edge. you pay a cost if you're far in the past. you pay a cost if you're scattered.
