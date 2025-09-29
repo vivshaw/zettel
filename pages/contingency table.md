@@ -1,6 +1,6 @@
 ---
 tags: stats, data, tables
-alias: cross-tabulation, cross-tabulated
+alias: cross-tabulation, cross-tabulated, cross-tabulate
 ---
 
 - a format for data in which we compare variables by placing each on their own axis.
@@ -11,3 +11,4 @@ alias: cross-tabulation, cross-tabulated
 	  | Bar 1 | 5 | 6 |
 	  | Bar 2 | 2 | 0 |
 - in [[R]], we can use `xtabs()`, or [[lolcat]]'s `transform.individual.format.to.xt()`, or `table()`
+- in [[Python]], we can use [[pandas]]' `pd.crosstab()`

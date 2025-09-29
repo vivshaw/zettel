@@ -1,0 +1,41 @@
+---
+tags: software engineering, software architecture, books
+---
+
+- # Preface
+	- > The most fundamental problem in computer science is *problem decomposition*
+- # Chapter 1: Introduction (It's All About Complexity) #complexity
+	- > [...] the greatest limitation in writing software is our ability to understand the systems we are creating.
+	- complexity is inevitable! the larger the system, the longer its life, and the bigger its team, the more there will be
+	- two paths to fight complexity:
+		- make code simpler and more obvious
+		- encapsulate the complexity
+	- software is malleable. we continually redesign it as we build- see #agile vs. #[[waterfall project management]]. that means we should be continually thinking about complexity.
+- # Chapter 2: The Nature of Complexity #complexity
+	- > Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system.
+	- complexity is something a developer experiences at a specific point in time, while pursuing some goal.
+	- complexity is determined by the most common activities in a system. if the complicated parts never need to be touched, it isn't very complex!
+		- in pseudo-math: $C = \sum_p c_p t_p$, where $c_p$ is the complexity of each part, and $t_p$ is how much time developers spend working on that part.
+	- one of the most important goals of simplicity, is for things to be obvious. #simplicity
+	- symptoms of complexity:
+		- **change amplification.** seemingly simple goals require code changes in many places.
+		- **cognitive load.** developers have to spend a long time learning to accomplish a task.
+			- sometimes more code is simpler, when that code is lower in cognitive load!
+		- **unknown unknowns.** it is not obvious which pieces of code are relevant to which tasks.
+	- what *causes* complexity?
+		- **dependencies:** when a piece of code cannot be understood or modified without considering some other piece of code.
+			- these are a fundamental part of software development- we have 'em on purpose! but we should reduce them when possible, and keep them simple and obvious.
+		- **obscurity:** when critical information isn't obvious.
+			- this _can_ be a documentation issue. but often, it's a design issue.
+	- complexity is incremental! it builds over time as we develop, in many little chunks. this means our tolerance for complexity needs to be extremely low. otherwise, we will die by 1000 papercuts.
+- # Chapter 3: Working Code Isn't Enough (Strategic vs. Tactical Programming)
+	- **tactical programming** is the most common mindset of the working programmer. you are focused on the goal- fix the bug, ship the features, etc. this is short-sighted! you ignore thinking about the best design, and settle repeatedly for what's "good enough". and complexity grows and grows.
+		- one pathological case: the **tactical tornado**, a prolific engineer who pumps out code faster than anyone else, but with 100% tactical focus. this can make them look like heroes, but they leave behind a wake of "destruction" (complexity).
+	- **strategic programming** is when we realize that **working code isn't enough**. the most important goal is **not** our current task, it's the long-term health of the system.
+		- most code is written by extending existing code, so your most important goal should be to make those extensions as easy as possible
+		- this will involve investing time. you will go slower now, to go faster inn the long run. some investments will be proactive- spending more time finding the simplest design for something. others will be reactive- cleanup as you go
+	- how much should you invest?
+		- a huge upfront investment won't work! this would be the world of #[[waterfall project management]], which doesn't fit us well. in software, the best design will emerge in pieces as the system evolves.
+		- so, spend about 10-20% of your time on investments, and over time they will pay for themselves. Osterhout thinks the payoffs tends to happen in around 6-18 months, once developers forget the code for a while, then need to return and revisit.
+		- even if you're in a "grow or die" startup, consider that once a codebase turns to spaghetti, it's almost impossible to fix. do you want to have slower development over the entire life of the product? it'll also make it harder to recruit.
+- # Chapter 4: Modules Should Be Deep

@@ -8,3 +8,4 @@ tags: stats, [[statistical tests]]
 	- the [[SD]] is **not** known
 	- the sample was randomly drawn
 - in [[R]], can use [[lolcat]] 's `t.test.onesample.simple()` for a [[one-sample test]]
+- in [[python]], can use [[scipy]]'s `stats.ttest_1samp()`

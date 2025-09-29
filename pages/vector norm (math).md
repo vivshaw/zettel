@@ -1,6 +1,6 @@
 ---
 tags: math
-alias: L1 norm, L2 norm
+alias: L1 norm, L2 norm, Euclidean norm
 ---
 
 - a **vector norm** is a function on a vector space to the non-negative reals, that behaves in particular ways like the [[distance]] from the origin.

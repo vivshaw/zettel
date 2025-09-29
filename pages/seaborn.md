@@ -2,5 +2,28 @@
 tags: dataviz, python
 ---
 
-- you can create a scatterplot from a dataframe like: `sns.scatterplot(data=foo, y="bar", x="qux")`
-- `sns.lmplot()` will get you a scatterplot with trendline
+- a Python dataviz library designed to make plotting easy. built atop [[matplotlib]], and integrates automagically with [[pandas]]
+	- to work with pandas, pass in the dataframe as the `data` param, then the column names as the `x` and `y` params. like: `sns.scatterplot(data=foo, y="bar", x="qux")`
+	- you can use the `hue` parameter to color the datapoints. works with both continuous and categorical data. for categorical, `hue_order` will let you change the order that categories appear in the legend. `palette_colors` takes a dictionary and lets you specify the colors
+	- `style` can be used similarly for point style
+	- `size` lets you set point size
+- you can create a scatterplot with `sns.scatterplot()`
+- `sns.lmplot()` will get you a [[scatter plot]] with trendline
+- `sns.countplot()` will let you make a [[bar plot]]
+- `sns.relplot()` lets you create multiple scatter or [[line plot]]s. the `row` and `col` param can be used to specify how to split into subplots, and `kind` specifies which sort of plot. `col_order` and `row_order` do what you'd expect
+	- in `line` mode, Seaborn will automagically graph a 95% [[confidence interval]]. we can swap to a [[standard deviation]] with `ci="sd"` or turn it off with `ci=None`.
+	- in `line` mode, `markers` and `dashes` can be used to turn on or off the respective attributes
+- `sns.catplot()` is used to create categorical plots like bar or [[box plot]]s, with similar flexibility to `relplot`
+	- as with `relplot` line plots, CIs are on by default. turn them off if needed with `ci=None`
+	- in `box` mode, you can use `sym` to set or remove (`""`) the outlier symbols, and `whis` to determine the whisker length (e.g. `whis=[5.95]` to get the 95% CI, or `whis=2.5` to make it 2.5% the IQR)
+	- `point` mode gets ya a point plot. you can add caps to the CIs with `capsize`, remove the lines with `join=False`, or swap out which points get plotted with `estimator` (import your estimator of choice from [[NumPy]])
+- `sns.histplot()` builds a histogram. use `binwidth` to set the size of the bins!
+- `sns.kdeplot()` gets you a [[kernel density estimate plot]]. we can use the `cut` param to put a hard cutoff if there is one in the data. `cumulative` can be used to swap it to a [[cumulative distribution function]]
+- customization:
+	- 5 built-in figure styles: white, whitegrid, dark, darkgrid, ticks. set these with `sns.set_style()`
+	- `sns.set_palette()` can be used to pick a palette. the *diverging* palettes are best for scales with two opposite ends and a netural midpoint. "RdBu" or "PrGn" are examples. *sequential* palettes are another type, all hues of one color, great for a continuous variable. "Purples" is an example
+	- you can use `sns.set_context()` to set the scale: paper, notebook, talk, or poster
+	- you can set a title on a `FacetGrid` with `.fig.suptitle()`. for an `AxesSubplot`, use `.set_title()`. the `y` param can be used to adjust its height. for the `AxesSubplot`s *within* a `FacetGrid`, use `.set_titles()`. you can use `{col_name}`
+	- you can add labels with `.set(xlabel="Foo", ylabel="Bar")` to rotate them, use matplotlib directly: `plt.xticks(rotation=90)`
+- types:
+	- Seaborn graphs are either `AxesSubplots` or `FacetGrids` (themselves full of `AxesSubplots`)

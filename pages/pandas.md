@@ -3,6 +3,11 @@ tags: python, data, software engineering
 ---
 
 - a dataframe library for Python. handles tabular data
+- summaries:
+	- `.head()` shows the first ffew rows
+	- `.info()` shows you useful stuff like counts, # of missing values
+	- `.describe()` gives you some summary stats
+	- `.dtypes` gives you the data type of each column
 - accessing values:
 	- you can index by column, to get a series: `foo['bar']`
 	- or, you can index by an array, to get another dataframe: `foo[['bar', 'baz']]`
@@ -14,9 +19,14 @@ tags: python, data, software engineering
 		- you need to use `.isin()` rather than `in`, if you're using that
 		- `loc` can be simpler if you're operating on the index column. like `foo.loc["baz"]`
 		- slicing by date is valid! use strings of the date, not integers
+	- you can use `.select_dtypes()` to grab all column with a given data type
+	- you can index into `.columns` to work by column instead of row: `foo.columns[foo.isna().sum() <= 0.05]`
 - you can iterate with `.iterrows()`, which will give you `label, row`
 - you can apply an operation to every row without iterating manually with `.apply()`, like = `foo['upper'] = foo['name'].apply(str.upper)`
-	- you can use `.agg()` to apply stuff to multiple columns. also works on grouped results!
+- you can use `.agg()` to apply stuff to multiple columns. also works on grouped results!
+	- you can apply multiple operations like: `.agg(["mean", "median"])`
+	- you can use a dictinoary format to apply different functions to different columns: `.agg({"foo": ["mean", "std"], "bar": ["median"]})`
+	- you can also use named tuples for custom column names: `.agg(mean_foo=("foo", "mean"), bar_median=("bar", "median"))`
 - you can sort with `.sort_values(['foo', 'bar'])`
 - you can combine boolean conditionals with `&`
 - use `.value_counts()` to count values. if you need proportions, `normalize = True` will do that
@@ -44,8 +54,15 @@ tags: python, data, software engineering
 - missing values
 	- `.isna()` will find all the missing values. `.isna().any()` will find if there are any missing values in each column
 	- `.dropna()` will drop the rows with them
-	- `.fillna()` will replace them with a fill of your choice
+	- `.fillna()` will replace them with a fill of your choice.
+	- ```python
+	  # Imputing car prices
+	  median_car_prices = cars.groupby("model")["price"].median()
+	  median_car_prices_dict = median_car_prices.to_dict()
+	  cars["price"] = cars["price"].fillna(cars["model"].map(median_car_prices_dict))
+	  ```
 - csv load and save is built-in with `read_csv()` and `to_csv()`
+	- we can parse columns as dates with `parse_dates`
 - you can do joins with `.merge()`, similar to [[JOIN]]. the `how` param selects the join type, `on` the `ON`.
 	- defaults to inner join
 	- you can give duplicate columns tidy suffixes with `suffixes=("_foo", "_bar")`
@@ -61,5 +78,13 @@ tags: python, data, software engineering
 	- you can `.concat()` both vertically and horizontally! `axis=1` is horizontal
 	- by default, the indexes will be retained, even if they are duplicate values. `ignore_index=True` will ignore them. alternatively, you can add `keys=[]` to label each table
 	- by default, all columns from all tables will be kept. if you wanna only keep shared columns, `join="inner"`
-- `.sample()` lets you sample. the `replace` param does what it says on the tin
+- `.sample()` lets you sample. the `replace` param does what it says on the tin. you can set a seed with `random_state`
 - `.value_counts()` lets you total up how often each value shows up, like a groupby with sum
+- `.quantile()` lets you find quantiles
+- `.astype()` lets you coerce a column to a different type
+- count missing values in a column with `.isna().sum()`
+- `.dropna()` can be used to drop missing values, and `.fillna()` to impute them
+- `.nunique()` counts unique values in a column
+- `pd.crosstab()` will let you [[cross-tabulate]] factors
+	- by default, you'll just get counts. but you can also specify a different value and aggregation function, like: `pd.crosstab(trips["method"], trips["continent"], values=trips["price"], aggfunc="mean")`
+- `pd.cut()` can be used to bin a value, like: `pd.cut(trips["price"], bins=cost_ranges, labels=cost_labels)`

@@ -8,7 +8,7 @@ tags: stats, statistical tests
 	- the populations are normally distributed
 	- the [[variance]] of the two populations is equal, but...
 	- that variance is unknown
-- calculated as $t_{df} = \dfrac{\bar{X}_1-\bar{X}_2}{\sqrt{s^2_p}(\dfrac{1}{n_1}+\dfrac{1}{n_2}}$, where
+- calculated as $t_{df} = \dfrac{\bar{X}_1-\bar{X}_2}{\sqrt{s^2_p}(\dfrac{1}{n_1}+\dfrac{1}{n_2})}$, where
 	- $s^2_p$ is the [[pooled variance]]
 	- the degrees of freedom $df = n_1 + n_2 - 2$
 - in [[R]], we can use `t.test.twosample.independent()` from [[lolcat]].

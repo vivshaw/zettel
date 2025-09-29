@@ -10,3 +10,4 @@ tags: stats
 	- the treatment populations have equal [[variance]]
 	- both individuals and groups are independent
 - ANOVA is robust to the normality assumption for large $n$ (e.g., 10-15), and equal variances if group sizes are equal
+- in [[python]], we can use [[pingouin]]'s `anova(data=foo, dv="depedent var", between="anova categories")`

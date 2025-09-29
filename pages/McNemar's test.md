@@ -15,3 +15,4 @@ tags: stats, statistical tests
 	- each cell represents one joint event
 - calculated as: $\chi^2 = {(b-c)^2 \over b+c}$
 - in [[R]], we can use [[lolcat]]'s `proportion.test.mcnemar.simple()` on the contingency table results
+- in [[python]], we can use [[pingouin]]'s `chi2_mcnemar()`

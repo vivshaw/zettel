@@ -3,8 +3,10 @@ tags: stats, statistical tests
 ---
 
 - a non-parametric test of whether two samples came from the same distribution
+	- we can consider it similar to a [[t-test]] on ranked data
 - assumptions:
 	- we have [[independent samples]]
 	- the data is at least [[ordinal data]]
 	- the underlying characteristic is continuous
 - in [[R]], we can use [[lolcat]]'s `median.test.twosample.independent.mann.whitney()`
+- in [[python]], we can use [[pingouin]]'s `.mwu()`

@@ -1,10 +1,11 @@
 ---
 tags: stats, statistical tests
-alias: repeated measures t-test, matches pairs t-test
+alias: repeated measures t-test, matched pairs t-test
 ---
 
 - a [[mean]] test for [[dependent samples]], using a [[t-test]]. operates on pairs of scores.
 	- you can use this either with paired samples or repeated samples.
+	- generally, you want 30 samples for each pair
 - assumptions:
 	- the *pairs* of scores are independent of each other
 	- the populations are normally distributed, *as are the difference scores*
@@ -12,3 +13,4 @@ alias: repeated measures t-test, matches pairs t-test
 	- where $n$ is the sample size of the pairs of scores
 - in [[R]], we can use [[lolcat]]'s `t.test.twosample.dependent()`
 	- there is a `.dbar()` version, for when you only have the differences
+- in [[python]], we can use [[scipy]]'s `stats.ttest_rel()` or [[pingouin]]'s `ttest()`

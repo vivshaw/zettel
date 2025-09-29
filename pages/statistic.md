@@ -1,5 +1,5 @@
 ---
-tag: stats
+tags: stats
 ---
 
 - a **statistic** is a [[measurement]] collected from [[sample]] data, which can be used to draw inferences about the underlying [[population (statistics)]] (such as population parameters).

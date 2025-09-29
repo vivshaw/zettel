@@ -36,3 +36,6 @@ alias: my website
 	- `#1E4941`
 	- `#FBCBBC`
 - [Compact Mag has a really nice text layout](https://www.compactmag.com/article/the-crisis-of-the-university-started-long-before-trump/)
+- [Brandur](https://brandur.org/) accomplishes something similar to my site but better
+- Jane Manchun Wong [has a really clean landing](https://wongmjane.com/)
+- Rebecca Murphey [has a very well-written EM resume section](https://rmurphey.com/about/)

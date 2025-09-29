@@ -33,7 +33,12 @@ tags: books, personal
 - Pseudo-Dionysus
 - Simone Weil- The Need for Roots / Gravity and Grace / Waiting for God
 - Murdoch - the sovereignty of good
-- Kill It With Fire
+- Gschwandtner
+- Marion
+- Ricouer
+- Lacoste
+- Marion
+- Gillian Rose
 - # software
 	- A Philosophy of Software Design
 	- Release It!
@@ -44,6 +49,7 @@ tags: books, personal
 	- kill it with fire
 	- software architecture: the hard parts
 	- programmers at work
+	- Kill It With Fire
 - # sci-fi
 	- too like the lightning
 	- a psalm for the wild-built
