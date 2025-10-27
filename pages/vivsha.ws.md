@@ -35,7 +35,11 @@ alias: my website
 - colors to try:
 	- `#1E4941`
 	- `#FBCBBC`
+	- ...nah, screw that. black and white is simple and legible. keep it so! swap to just a green highlight color.
 - [Compact Mag has a really nice text layout](https://www.compactmag.com/article/the-crisis-of-the-university-started-long-before-trump/)
 - [Brandur](https://brandur.org/) accomplishes something similar to my site but better
 - Jane Manchun Wong [has a really clean landing](https://wongmjane.com/)
 - Rebecca Murphey [has a very well-written EM resume section](https://rmurphey.com/about/)
+- Jake LAzaroff [has a nice, typography-focused post layout](https://jakelazaroff.com/words/homomorphically-encrypted-crdts/)
+- the Thinking Machines blog has really nice sidenotes: https://thinkingmachines.ai/blog/lora/
+- Daniel Eden's site is refreshingly simple yet well designed: https://daneden.me/blog/2019/where-we-can-go

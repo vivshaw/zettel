@@ -1,0 +1,79 @@
+---
+tags: courses, frontend, design, web, animation, software engineering
+---
+
+- # Module 1 - Animation Theory
+	- **what makes animations feel good?**
+		- animations feel good when we are not surprised or confused by what we see. that is to say, when they're natural-looking animations, that serve a purpose, and are tasteful.
+		- use appropriate easing! just about nothing in nature follows a linear easing curve.
+		- use timings that reflect what you'd see in nature
+		- users don't sign up for your app to get "delighted" by animations. they do so to accomplish a task. so don't use animations that get in the way of users' actions or understanding
+		- you must develop *taste*.
+	- how to choose easing?
+		- `ease-out` is the most common right choice. starts out fast, so feels fast. good for showing or hiding things, especially for user actions. you can pair it with a slight scale-down on the button to make things feel like they react very quickly.
+		- `ease-in-out` starts and ends slow. good for things that are already visible, but must move or morph. matches stuff in nature that accelerates and decelerates. use for elements already on the screen.
+		- `ease-in` starts slow, so feels slow. generally not a great choice.
+		- `linear` tends to feel robotic. use only for constant animations.
+		- `ease` is similar-ish to `ease-in-out`, but starts faster and ends slower. can be good for color and opacity, like in hover effects
+		- the default easing curves aren't amazing, so you may need to use your own tweaked versions with stronger acceleration
+	- **spring animations** are another technique. rather than using an easing curve over a specific duration, simulate the object being attached to a spring. (the duration will be determined by the simulation).
+		- #Apple loves these, puts 'em all over the place in #iOS
+		- you set a mass, damping, and stiffness. Apple has a different method, based on duration and bounce.
+		- be super careful about using bounce- most things in the world aren't and shouldn't be sproingy! it might make sense on things that require force- like a drag animation
+		- CSS itself doesn't support spring. you can try to imitate one with an approximation, or you can import heavy JS-based animation libraries
+	- when does an animation have a purpose? perhaps it shows something about the product. perhaps it cues the user in that their action is being responded to. perhaps it keeps a change from being too abrupt.
+		- the less often a user sees an animation, the freer we can be with "animating for delight". but if they see it many times a day, they'll be frustrated we wasted their time.
+		- keep animations fast- usually under `300ms`. but consider also the size of the element! a big element looks "heavy", so it should animate slower. consider also the easing curve. a steeper easing curve might mean a longer duration feels right.
+		- you can be a lot freer on marketing pages! these are meant to intrigue and entice, and aren't part of the live app folks are poking at every day.
+	- animation protips: #nuggets
+		- use `will-change` on some properties you intend to animate, so the browser knows not to swap between GPU and CPU rendering and cause a jiggling effect. for example, `transform` is a common offender
+		- scale down buttons on click. `0.97` on `:active` will do.
+		- don't animate the scale from zero! start from partway through
+		- once a tooltip is open, skip the animation on future tooltips
+		- don't animate keyboard interactions
+		- don't animate frequently interacted elements
+		- use a big enough target area. expand the target on smaller icons etc. with a `:before`
+		- disable hover effects on touchscreens
+		- use blur to bridge gaps in visual states, when you haven't got a better answer
+- # Module 2 - CSS Animations
+	- when to use CSS animations?
+		- simple hovers
+		- enter and exit
+		- infinite linear animations
+		- bundle-size sensitive projects
+	- when to use a more complex library, like [[Framer Motion]]?
+		- more complex animations
+		- making them feel more sophisticated
+		- interruptible, natural-feeling interactions
+	- `transform`s:
+		- use these for user interaction triggers, smooth interruption handling
+		- `translate(x, y)` lets us move an element around, without changing its position in the document flow
+			- when using %s, it will be a % of the element's own size on the relevant axis. that can be handy in situations where height or width may vary!
+		- `scale()` lets us resize elements. child elements will also get scaled.
+			- you should almost never scale up from 0. instead, maybe scale from 0.5 while simultaneously animating opacity
+		- `rotate()` lets us spin elements.
+		- can use `rotateX()`, `rotateY()`, `transformZ()`, and `perspective()` to produce 3d effects. you'll probably want to set `transform-style: preserve-3d`
+		- every element has an anchor that transforms will happen from. by default, the center. we can change it with `transform-origin`
+			- anything that's similar to a popover should animate from the trigger!
+		- transforms are non-[[commutative]], order matters!
+	- `transition`s:
+		- transitions allow you to move from an initial to a target state
+		- it's shorthand for these four properties: `transition-property`, (what to transition) `transition-duration` (how long to take), `transition-timing-function` (how to ease), `transition-delay` (how long to wait)
+		- avoid using the `all` keyword
+	- you can use a [[media query]] like `@media (hover: hover) and (pointer: fine)` to disable hover effects on mobile
+	- keyframe `animation`s:
+		- can use these for infinite loops, automatic triggers, multiple steps, don't need interruption handling
+		- first, you must define the animation with `@keyframes` defining the steps, then apply it to an element with `animation`
+		- can use the `animation-iteration-count` to determine how often to run, or loop it forever
+		- can use `aniamtion-fill-mode` to set the final state
+	- `clip-path` is kinda magic! it's hardware-accelerated, and can be used to construct many different things
+		- you can make a comparison slider by overlaying two images, then clip-pathing to show one on one side of the slider and the other on the other
+		- you can do reveal animations by animating in the clip-path
+		- you can do a seamless sliding button transition, by rendering the selected and non-selected states at the same time and showing the selected state with clip-path
+- # Module 3 - Framer Motion
+	- why use Framer Motion?
+		- it makes it easier to animate things out as they leave the DOM
+		- supports springs
+		- tidier/less-verbose way to do complex animations
+		- you can animate things that are impossible to animate in CSS- like flex direction
+	- Framer supports both imperative and declarative animations

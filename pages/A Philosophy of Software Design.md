@@ -39,3 +39,79 @@ tags: software engineering, software architecture, books
 		- so, spend about 10-20% of your time on investments, and over time they will pay for themselves. Osterhout thinks the payoffs tends to happen in around 6-18 months, once developers forget the code for a while, then need to return and revisit.
 		- even if you're in a "grow or die" startup, consider that once a codebase turns to spaghetti, it's almost impossible to fix. do you want to have slower development over the entire life of the product? it'll also make it harder to recruit.
 - # Chapter 4: Modules Should Be Deep
+	- modular design just means we decompose our problems into various relatively-independent things. many things can be modules- [[classes]], subsystems, [[services]], functions...
+	- modules aren't fully independent, they have to work together to accomplish the program's goal. that creates dependencies- if one module changes, the others must too.
+	- we can think of each module as an **interface** (_what_ it does) and an **implementation** (*how* it does it)
+		- the best module is one whose interface is dramatically simpler than its implementation
+		- there are formal and informal interfaces. the formal interface is what's actually specified in the language- the types, the methods, etc. but the language usually can't specify at the boudnary what exactly a thing does- e.g. "it deletes a file". it also might not express time dependencies, e.g. "you must initialize the config before you run the server". _anything_ you must know to use the module is part of its interface.
+	- an **abstraction** is a simplified view of some entity. they make it easier for us to think by removing unimportant details.
+	- think of a module as **deep** if it has a simple interface, but is very powerful. or **shallow** if its interface is about as broad as its functionality in general.
+		- the #Unix [[file system]] is a great example of this. it has only 5 top-level kernel calls as its interface, but is hundreds of thousands of lines of complex code.
+	- a pathology of conventional programming wisdom is the idea that classes should be small. this "classitis" leaves you with classes that are individual simple, but an overall system that's highly complex
+	- > Interfaces should be designed to make the common case as simple as possible.
+- # Chapter 5: Information Hiding (and Leakage)
+	- modules should hide information. they should encapsulate a few pieces of knowledge, shielding those outside from needing to know about them.
+	- information hiding reduces complexity in two ways:
+		- it simplifies the interface
+		- it makes it easier to evolve. (you can change what's inside, without changing the exterior, since there are no dependencies on the hidden info.)
+		- declaring things `private` isn't the same as information hiding. what matters is whether the exterior needs to know about them.
+		- partial information hiding still has some value.
+	- information leakage happens when two or more modules need to duplicate some design decision. for example, if multiple modules need to know about the same file format. this can occur even if no leakage is expressed in the interfaces!
+	- **temporal decomposition** is one pernicious sort of information leakage. it's when the structure of our system reflects the time order of a sequence of operations. when we do this, the temporal order of operations is leaked, as may be any things that later stages implictly depend on from earlier stages
+	- you can do information hiding _within_ a module! try to minimize the number of places each instance variable is needed. or, try to break down the module's internal logic into methods that each hide some piece of functionality.
+	- you **must not hide** information that is actually needed outside the module.
+- # Chapter 6: General-Purpose Modules are Deeper
+	- specialization can be a major source of complexity. for example, you can often simplify a function's logic by eliminating special cases (so that the general case covers them)
+	- implement new functionality in a "somewhat-general-purpose" fashion. that means the functionality should reflect your current needs, but the interface should not
+	- a motivating example: a Text class that provides separate `.backspace()`, `.delete()`, `.deleteSelection()` methods is far more complex than one that provides a generic `.insert()` and `.delete()` method. you can then build the key handling very simply from these general building blocks.
+	- motivating questions:
+		- **what's the simplest interface that will cover all my current needs?**
+		- **in how many situations will we use this method?**
+		- **is the API easy to use for my current needs?**
+	- **push specialization upwards (or downwards).**
+		- the top-level classes that implement app features will necessarily be specialized for those features. specialization can live there without polluting lower levels.
+		- low-level feature like drivers necessarily handle a lot of complexity, but can fully hide it from levels above
+- # Chapter 7: Different Layer, Different Abstraction
+	- software is a layer cake! each layer uses abstractions provided by the lower layers.
+	- "pass-through methods" are a red flag! don't write methods just to call some abstraction from the lower layer. they make for shallow classes with weak boundaries. they're typically a sign that you have overlapping responsibilities
+	- it's OK to have methods with the same signature, though, when they contribute extra functionality. like a dispatcher
+	- [[decorator]]s tend to be shallow. sometimes they make sese- for example, when overcoming an impedance mismatch with an external library. if you find yourself using one, consider alternatives:
+		- could the functionality be baked into the base class?
+		- if it's specialized for one use site, could it live there?
+		- could it be merged with some other preexisting decorator?
+		- should it be a full, standalone class instead?
+	- pass-through variables add complexity. (think [[React]] prop drilling.) tools to deal with them:
+		- storing the data in some existing object that both layers share
+		- using a global variable (though this creates other problems)
+		- creating a context object, to store the app's global state.
+		- contexts still have problems, though! they can encourage turning them into a disorganized grab-bag. they can cause concurrency problems, especially if they aren't immutable
+	- in order for any element to provide a net gain, it needs to eliminate some complexity that would otherwise be there. if it doesn't, skip it!
+- # Chapter 8: Pull Complexity Downwards
+	- > **It is more important for a module to have a simple interface than a simple implementation.**
+	- configuration parameters are a good example. they make software more flexible, true. but they also expose complexity to the software's user by forcing them to make the choices.
+		- when you're adding one, consider: "will users be able to determine a better value than we can determine here?"
+		- when you do add one, ensure it has a reasonable default, so users only need to care about it when they actually want to configure that parameter
+	- don't take it _too_ far! for example, don't pull everything into a single big class.
+	- be willing to "take a little bit of extra suffering upon yourself in order to reduce the suffering of your users"
+- # Chapter 9: Better Together or Better Apart?
+	- you might think the best way to reduce complexity is to break things into the smallest parts possible. that's not so:
+		- every new interface adds some complexity! the user needs to know about more distinct things
+		- you may have to write a lot more object wrangling code to combine all the things
+		- it may be harder to see the connections and such to more separation
+		- subdivision can result in duplication, if two pieces that are split both care about the same thing
+	- bringing pieces of code together is helpful if they're related. how can we know?
+		- they share information
+		- they're used together
+		- the concepts overlap
+		- you need to know about one to understand t'other
+	- often you can define a simpler interface by combining things, for example, if each piece implemented a part of a solution to a broader problem. you can instead have just one thing that solves that problem.
+	- keep general-purpose and special-purpose code separate
+	- repetition is a red flag! if you repeat something a lot, you probably haven't found the right abstraction
+	- don't use a mechanical approach to splitting up code. for example, "methods shouldn't be longer than 20 lines". it's fine to have long methods if they have a simple interface.
+	- > **Each method should do one thing and do it completely.**
+	- only split methods when it actually reduces complexity. for example:
+		- splitting out a subtask, so the larger task no longer needs to know about it
+		- splitting into two methods used together, if the interface is too complex. (this should leave you with two much simpler interfaces- if it doesn't, don't do it)
+	- conjoined methods are a red flag. it should be possible to completely understand each method, by looking only at that method.
+- # Chapter 10: Define Errors Out Of Existence
+	-
