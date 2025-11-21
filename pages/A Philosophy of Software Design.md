@@ -114,4 +114,43 @@ tags: software engineering, software architecture, books
 		- splitting into two methods used together, if the interface is too complex. (this should leave you with two much simpler interfaces- if it doesn't, don't do it)
 	- conjoined methods are a red flag. it should be possible to completely understand each method, by looking only at that method.
 - # Chapter 10: Define Errors Out Of Existence
-	-
+	- exceptions contribute disproportionally to complexity:
+		- code that deals with special cases is inherently harder to write than normal cases!
+		- engineers often define exceptions without considering how they'll be handled
+	- language support for exceptions can be super unwieldy- consider all the cases you must consider to read a file in Java
+	- it's difficult to *test* exception-handling code to be sure that it works as you expect. it's estimated by one study that 90% of catastrophic data center failures are due to incorrect error handling
+	- > The exceptions thrown by a class are part of its interface; **classes with lots of exceptions have complex interfaces, and they are shallower than classes with fewer exceptions**.
+	- deal with this by reducing the number of places that must handle errors as much as possible.
+	- an elegant way to do this is to define errors out of existence. for example, compare Windows and Linux fs approaches to file deletion. in Windows, you can't delete a file till no processes have it open. in Linux, you can delete any file, and if it's in use it'll be marked for later cleanup
+	- if you cannot define an error out of existence, mask it by handling it at a lower level of the system
+	- if you can't mask you exceptions, aggregate them- handle many in one way. replace several specific mechanisms, with one general one
+	- if you can't aggregate, consider just crashing! in many applications there are errors that aren't worth handling. like OOMs
+	- don't take all this too far. you need to determine which errors actually need to be known and interacted with outside your module.
+- # Chapter 11: Design it Twice
+	- software is hard. it's unlikely that you'll nail it in one shot. so, do it twice. try to pick very different approaches. do it even if your first try seems really good.
+	- if neither try seems simple, you can use their flaws to inform additional attempts.
+	- this doesn't need to take long- often, it takes a lot less time to design something twice than it does to implement it once.
+	- often, smart people balk at this because they're used to their first idea being good enough.
+- # Chapter 12: Why Write Comments? The Four Excuses
+	- documentation is more than just for developer understanding
+	- > The process of writing comments, if done correctly, will actually improve a system's design.
+	- typically, engineers that don't write comments use one of these excuses:
+		- **good code is self-documenting**
+			- this simply isn't true. there's a lot of design information that just can't be represented in code.
+			- some will say that users should just read the code. not only is this time-consuming and painful for the reader, it also encourages the writer to write short, shallow methods
+			- for large enough systems, it simply isn't practical for the user to read all relevant implementation to know the behavior
+			- > **If users must read the code of a method in order to use it, then there is no abstraction.**
+		- **I don't have time to write comments**
+			- this is about the investment mindset from earlier chapters. if we want a good system, we need to invest time up front in building a good structure.
+			- comments are actually relatively low effort, which means they will pay off quickly
+			- the most important comments are the ones related to top-level interface. writing them is an important part of doing the system design
+		- **comments get out of date and become misleading**
+			- keeping in-code documentation up to date isn't hugely effortful. large doc changes only need to be made when large code changes are made, and take less time than said code changes.
+			- code reviews provide a great mechanism to catch doc problems
+		- **all the comments I've seen are worthless**
+			- this one can be true! there are lots of worthless comments out there in the wild. we've all seen them.
+			- but it _needn't_ be true. we can write good comments instead.
+	- a good comment captures info that's not in the code, but _was_ in the implementer's mind
+	- comments help reduce cognitive load and unknown unknowns
+- # Chapter 13: Comments Should Describe Things that Aren't Obvious from the Code
+	- there are lots of things that may not be obvious. low-level details, why a given bit of code exists, whether there are any implicit rules to follow, etc.

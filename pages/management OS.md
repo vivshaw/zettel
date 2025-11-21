@@ -14,7 +14,7 @@ tags: management, engineering management, personal
 	- [[independent thinking obedience]]: what do I want out of my reports? neither rote following, nor going off and doing whatever they please- I want independent thinking and execution to achieve a united result.
 	- [[The Executive's Trinity]]: the high-level skills needed to manage with aplomb
 	- [[strategy, operations, and tactics]]: bridging the conceptual gap from strategy to execution
-	- the [[Ship of Theseus]]: the goal of a good manager should be to build a team so resilient that it can keep functioning if any of its parts are swapped out (including the manager!).
+	- the [[Ship of Theseus]]: the goal of a good manager should be to build a team so resilient that it can keep functioning if any of its parts are swapped out (including the manager!). said another way, the goal of a manager is to **optimize yourself out of a job**.
 	- [[eng management/the middle way]]: neither sprint ahead to the bleeding edge nor remain stuck in the past. stay focused and unsurprising.
 - **org debugging principles:**
 	- [[POSIWID]]: the things that your organization *actually does* are its purpose, not the things we may _say_ are its purpose. think _de facto_, not _de jure_.

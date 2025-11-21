@@ -39,6 +39,8 @@ tags: books, personal
 - Lacoste
 - Marion
 - Gillian Rose
+- Smart Brevity
+- Jazz Age Catholicism
 - # software
 	- A Philosophy of Software Design
 	- Release It!

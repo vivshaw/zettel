@@ -77,3 +77,10 @@ tags: courses, frontend, design, web, animation, software engineering
 		- tidier/less-verbose way to do complex animations
 		- you can animate things that are impossible to animate in CSS- like flex direction
 	- Framer supports both imperative and declarative animations
+	- Framer animations set a start start with the `initial` prop, and an end state with the `animate` prop
+	- Framer sets sensible transition type defaults for different properties- springs for positions, easing for color or opacity. you can override this with the `transition` prop
+	- to animate on exit, simply wrap your component in the `<AnimatePresence>` component, add an `exit` prop.
+		- you can set `wait` mode for elements to wait on others to animate in/out before triggering their own animations. good for sequential things! or `popLayout` mode to immediately remove an element from the page flow and let other elements reflow.
+	- you can set `variants` as a prop with several named animation states, then choose between them with their names
+	- avoid using Framer Motion if you could accomplish the same thing with just CSS. or, if you care a lot about bundle size.
+	-
