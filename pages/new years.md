@@ -1,0 +1,5 @@
+- 2026
+	- release Basalt with a docs site/npm package?
+	- continue to build data/ml skills?
+	- PM skills? Diffusion of Innovations?
+	- keep on top of emails, texts, and social media

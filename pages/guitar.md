@@ -1,0 +1,6 @@
+- to learn:
+	- Iron Man
+	- Sweet Leaf
+	- Sleep - Dragonaut
+	- Trouble - A Sinner's Fame
+	- Cathedral - Grim Luxuria

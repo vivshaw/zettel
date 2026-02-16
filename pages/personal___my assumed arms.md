@@ -15,3 +15,4 @@ tags: heraldry
 - motto:
 	- *"Loquere, ut te videre"* - "Speak, that I may see you"
 - idea 3- "*Per fess wavy Or and Vert, in chief 3 trees Vert, in base a book Or.*"
+- idea 4 - sable, on a bend argent, between in chief a book argent, and in base a wolf's head argent, three oak leaves sable.

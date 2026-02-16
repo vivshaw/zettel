@@ -1,1 +1,75 @@
 - "plotting $a$ vs. $b$" means $a$ should be on the y-axis
+- data visualization can be very efficient! we evolved to be visual pattern-recognizers. we can take advantage of the power of our visual system to show things that would be challenging to see in the numbers alone.
+	- we can try visualizing data in many different ways to make patterns pop out that we might not otherwise see
+	- sometimes distributions that have the same summary stats are actually dramatically different in ways that are immediately obvious when we look
+- but we can also make it worse, by providing overly complex or misleading visualizations
+- 3 core questions:
+	- what data are we looking at?
+	- why do so?
+	- how has it been designed?
+- visualization design is a [[wicked problem]]!
+- constituent parts a visualization may be broken into:
+	- data
+	- aesthetics: colors, label styles, etc.
+	- scale
+	- geometric objects: points, bars, lines
+	- statistics
+	- facets
+	- coordinate system
+- a **mapping** translates values from one space to another. in dataviz, that's from the data space to a visual space
+	- the type of each dimension informs what might be a good mapping choice. for example, a continuous value might be a good choice for size or color. a categorical value might be a good choice for shapes.
+	- you need to think about scale- linear, logarithmic, etc.
+	- size can be a mapping- either length or area. you should be careful- when you're using, for example, sized dots, don't use diameter length, use area.
+	- it's sometimes possible to use shape for continuous- for example, with [QTonSs](https://ieeexplore.ieee.org/document/5290769)
+	- motion is uncommon
+	- texture is possible- density, variation, pattern
+- distinguishing with color:
+	- for ordered data, you want to use _perceptually linear_ color scales. things that are equidistant in RGB will not be visually equidistant!
+		- steps should also be naturally ordered, and lightness should be monotonic
+		- for ordered diverging data, you should pick a scale with a natural zero point
+	- for categorical data:
+		- use colors with roughly equal visual salience
+		- use distinct hues, not tints of the same hue.
+		- if possible, use semantically meaningful colors- ones the reader will associate with that data
+- avoiding misleading data:
+	- don't truncate the y-axis on bar charts! that will make the differences look smaller than they are on [[bar chart]]s, and make the trends misleading on [[line chart]]s
+	- all data in a chart should share the same axis. if you must use a dual-axis chart, you need to adjust the scales to be comparable
+	- don't layer irrelevant information that might bias a user, like unhelpful but emotionally charged imagery. only include what actively helps you understand the data.
+	- generally avoid 3D charts- it's hard to mentally project from 2D to 3D, plus you add
+- choosing a good visualization depends primarily on what **tasks** the user wants to accomplish
+	- think about: (Schulz et. al. 2013)
+		- **why:** what goal is the user pursuing?
+			- typically one of: exploratory analysis (find a hypothesis), confirmation (test a hypothesis you already have), or presentation (show off what you found)
+		- **how:** by what means?
+			- typically navigation (any type of change to extent or granularity, including search and summarization), reorganization (including filtering and aggregation, or enriching with additional metadata), or relation (anything that puts data in context)
+			- i... don't like this trio! the lines are super unclear and feel chosen just to make there be 3. i think a different taxonomy should have been chosen
+		- **what:** what do they want to learn?
+			- could be either low-level characteristics that can be read off the graph, or high-level features like outliers, trends, clusters...
+		- **where:** where in the data will the user do it?
+			- what facets of the data do we care about? single or multiple instances? relations to time or space?
+		- **when:** how does it fit into broader workflows?
+		- **who:** what sort of person is this for?
+- Five Design Sheets:
+	- start with 1 sheet of brainstorming. sketch as many different ideas as possible, sort/categorize/combine them, rank their usefulness
+	- then, 3 sheets of lo-fi prototypes iteratively improving
+	- then, 1 sheet of realization- the final result
+- Design Studies:
+	- an iterative process of Learn -> Solve -> Analysis
+	- Learn: learn, winnow, cast
+	- Solve: discover, design, implement, deploy
+	- Analysis: reflect, write
+	- (Sedlmair et. al. 2012)
+- visual perception:
+	- preattention:
+		- the gist: what you see at a glance. the spatial envelope (overall structure of the scene), and the ensemble codes (vague statistical properties, like average and variance). you can get a glimpse of these by blurring the image!
+		- Gestalt Law of Similarity: items that _look_ similar, are perceived as part of the same group
+		- Gestalt Law of Proximity: items that are close together, are part of the same group
+		- popout is when objects attract our immediate attention- like using a different color against a uniform background
+	- attention:
+		- bottom-up: let the visual features guide where I look. browsing, exploring, etc.
+		- top-down: let my knowledge guide where I look. searching, etc.
+- qualitative evaluation:
+	- systematic surveys
+	- semistructured interviews
+	- thinkalouds
+	- journaling

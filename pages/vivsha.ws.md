@@ -22,24 +22,27 @@ alias: my website
 	- do i even need a sans? I'm not sure that I do. could go with just one typeface
 		- i _love_ love [Agrandir](https://pangrampangram.com/products/agrandir), would be cool to have an excuse to use it
 		- ended up on MB Type's Concourse
-- color palette? green scale?
-	- https://components.ai/color-scale/DPVY6RKKmtrTTJiMRVGV
-	- https://coolors.co/palette/dad7cd-a3b18a-588157-3a5a40-344e41
-	- https://coolors.co/palette/143601-1a4301-245501-538d22-73a942-aad576
-	- https://coolors.co/palette/020202-0d2818-04471c-058c42-16db65
-	- no, let's stay on primarily black & white for now. I'm not good enough at tuning color palettes to make this look better than the existing color scheme.
-	- look at this though, _so_ good: https://www.grovelust.be/
-- guidance on Sprinkles and Vanilla Extract:
-	- https://sandroroth.com/blog/vanilla-extract-approach/#atoms
-	- https://www.highlight.io/blog/typesafe-tailwind
-- colors to try:
-	- `#1E4941`
-	- `#FBCBBC`
-	- ...nah, screw that. black and white is simple and legible. keep it so! swap to just a green highlight color.
 - [Compact Mag has a really nice text layout](https://www.compactmag.com/article/the-crisis-of-the-university-started-long-before-trump/)
 - [Brandur](https://brandur.org/) accomplishes something similar to my site but better
-- Jane Manchun Wong [has a really clean landing](https://wongmjane.com/)
 - Rebecca Murphey [has a very well-written EM resume section](https://rmurphey.com/about/)
-- Jake LAzaroff [has a nice, typography-focused post layout](https://jakelazaroff.com/words/homomorphically-encrypted-crdts/)
-- the Thinking Machines blog has really nice sidenotes: https://thinkingmachines.ai/blog/lora/
-- Daniel Eden's site is refreshingly simple yet well designed: https://daneden.me/blog/2019/where-we-can-go
+- henry from online is great at this: https://henry.codes/writing/a-website-to-destroy-all-websites/
+- [aresluna](https://aresluna.org/) is an amazing type-heavy, highly readable site with its own flare
+	- including [this neat TOC](https://aresluna.org/design-details-table-of-contents/)
+- good sidenotes:
+	- https://practicaltypography.com/why-racket-why-lisp.html
+	- Jake Lazaroff [has a nice, typography-focused post layout](https://jakelazaroff.com/words/homomorphically-encrypted-crdts/)
+	- the Thinking Machines blog has really nice sidenotes: https://thinkingmachines.ai/blog/lora/
+- palette:
+	- dark mode https://coolors.co/111216-1d2128-73737d-b7bcb5-c7ccd5
+	- light mode https://coolors.co/ffffff-fafafa-73737d-08080b-000000
+	- unified https://coolors.co/000000-08080b-111216-1d2128-73737d-b7bcb5-c7ccd5-fafafa-ffffff
+	- ![image.png](../assets/image_1768897329863_0.png)
+	- not sure how I like this. `#B7BCB5` is a bit too yellow-green. i'd potentially like a light cream color rather than sharp white for some things in light mode. there's big jumps between some values, but small ones between others. the warmth/coolness seems off across the scale values.
+	- updated to interpolate one more value: https://coolors.co/000000-08080b-111216-1d2128-484a53-73737d-b7bcb5-c7ccd5-fafafa-ffffff
+- inspiration:
+	- [Strangers By Spring](https://strangersbyspring.com/) is so dang good. great monochromatic palette, cool image effect
+	- [VH Belvadi](https://vhbelvadi.com/) is an exemplary text-first site with great features
+	- [Butterick's Practical Typography](https://practicaltypography.com/) is highly legible-text-heavy, and uses sidenotes
+	- [Maggie Appleton](https://maggieappleton.com/gastown)'s blog posts have a fantastic layout
+	- [Tufte CSS](https://edwardtufte.github.io/tufte-css/) - great text-driven layout, sidenotes
+	- https://games.porg.es/games/pigeon-lottery/ - sidenotes

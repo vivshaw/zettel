@@ -1,0 +1,25 @@
+---
+tags: personal, books
+---
+
+- wish I could find on e-book:
+	- A Humument
+	- W.S. Merwin - Shadows of Sirius
+- get digitally:
+	- Revelation Space
+	- Judas Unchained/Pandora's Star
+	- Singularity Sky/Iron Sunrise
+	- Excession
+	- Ancillary series
+	- Murakami
+	- Philosophical Investigations
+- get in epub form:
+	- all PDF-only:
+		- Production Haskell
+	- replace all djvu files:
+		- How To Read Heidegger
+		- How To Read Kierkegaard
+		- How To Read Marx
+		- I and Thou
+		- Let Over Lambda
+- organized ebook library through: -> A, Y <-

@@ -37,5 +37,5 @@
 	- if by some miracle the money and incentives were fixed, _you'd still lose_. if your services are designed to be anti-addictive, the addictive platforms will just slurp up your users.
 - So markets will not save us. Market incentives align social media platforms to stunt human flourishing and destroy our wellbeing. Neither will I sell you snake-oil of some miraculous politico-economic system that fixes these woes. I'm interested in the world as it is, which keenly bears down on us with the chains of the actual in a way the merely possible never could.
 - The remaining solution, then, is exodus. Do not use these services and do not build them. You cannot rewrite the world to work in this way, but you can at least still exercise your own choice to improve your own life.
-- If you wouldn't hand your child a cigarette, don't get them on social media.re
+- If you wouldn't hand your child a cigarette, don't get them on social media.
 - reference Bowling Alone

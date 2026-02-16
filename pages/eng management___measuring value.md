@@ -1,0 +1,6 @@
+- for framework level work, there are basically three buckets:
+	- grow adoption (easy to measure, use static analysis)
+	- improve local extensibility/flexibility (hard to measure, use a mix of static analysis and feedback)
+	- improve quality / leverage (impossible to reasonably measure)
+	- it's helpful to have a shared framework here. know which bucket we're tackling in a given period, _why_ we're taking that strategy, and what the success signals would be / whether they're measurable
+	- when you're looking to build traction, it can make sense to bias toward the easily measurable end of the spectrum. lean in on the more vibes-based stuff once you already have momentum

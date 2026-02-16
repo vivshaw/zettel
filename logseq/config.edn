@@ -415,4 +415,5 @@
  :file/name-format :triple-lowbar
  :graph/forcesettings {:link-dist 130
  :charge-strength -800}
+ :editor/preferred-pasting-file? true
  }

@@ -1,0 +1,6 @@
+- learning level: beginner
+	- Dreaming Spanish progress: Intermediate / Lv 3, 154/300hrs
+		- graded reader progress: 14/37
+			- working on Paco's B1s.
+	- Language Transfer progress: 90/90 en->es, 18/40 es->en
+	- Anki progress: 957/1000 mature, 0/1000 new

@@ -1,5 +1,5 @@
 ---
-tags: agile, project management, software engineering, engineering management
+tags: agile, project management, software engineering, engineering management, #manifesto 
 ---
 
 - https://agilemanifesto.org/

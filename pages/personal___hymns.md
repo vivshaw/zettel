@@ -1,0 +1,12 @@
+- [How Can I Keep From Singing?](https://hymnary.org/text/my_life_flows_on_in_endless_song_above)
+- At The Font We Start Our Journey / Christ Is Made The Sure Foundation / [Westminster Abbey](https://hymnary.org/tune/westminster_abbey_purcell)
+- [O Holy CIty Seen of John](https://hymnary.org/text/o_holy_city_seen_of_john)
+	- > O shame to us who rest content while lust and greed for gain in street and shop and tenement wring gold from human pain, and bitter lips in blind despair cry, "Christ hath died in vain!"
+- [Thy Strong Word Did Cleave The Darkness](https://hymnary.org/text/thy_strong_word_did_cleave_the_darkness) - sounds like Christian boss fight music
+- [Lord Of All Hopefulness](https://hymnary.org/text/lord_of_all_hopefulness_lord_of_all_joy)
+- [Come Thou Font of Every Blessing](https://hymnary.org/text/come_thou_fount_of_every_blessing)
+- Doxology / Old 100th
+- What CHild Is This? / Greensleeves
+- 186 (Sherburne)
+- 242 (Reverex)
+- Idumaea

@@ -1,0 +1,2 @@
+- do rights contradict? freedom as vector vs. multi-dim space. if can be maximized, more like gradient descent. maybe can't, more like equiolibrium of forces
+- can you draw a clear line between positive and negative liberties? if nit, maybe less like a checklist, more like a web

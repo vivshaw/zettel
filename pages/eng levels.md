@@ -47,3 +47,7 @@ tags: engineering management, software engineering
 		- Impact: You should probably get a top performer grant
 		- Tech: You should probably be given more scope
 		- Org: You should consider the management track
+	- your team might involve OSS contributions as well as your org's work. you can kinda-sorta match those up with levels:
+		- > IC3 simply crushes some tickets to improve the software we use
+		  IC4 is contributing to actively unblock the critical path on one of our projects
+		  IC5+ has strategic influence in the OSS community, ships specs, sits on maintainer teams or steering committees. etc

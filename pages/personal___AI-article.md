@@ -1,0 +1,10 @@
+- _assuming_ it works,  why no productivity gain?
+- think of software dev as a complex adaptive system
+- on typing trally fast- is authoring the bottleneck?
+- on outsourcing
+- on differential adoption:
+	- spiky frontiers
+	- culture
+- on code as a cost
+- what's interesting is, most of this isn't specific to AI
+- apply: Meadows, CAS papers, AI papers
