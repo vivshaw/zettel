@@ -1,0 +1,4 @@
+- common training techniques for [[neural network]]s:
+	- **learning rate warmup** - start with a low rate, then ramp up to a max. this can help prevent instability in early training
+	- **cosine decay** - after your peak learning rate, gradually drop back to zero. this can prevent overshooting in later training
+	- **gradient clipping** - set a threshold that gradients can't exceed. for example, can use [[PyTorch]]'s `clip_grad_norm_()` with `max_norm = 1.0` to scale them so their [[L2 norm]] is $1$

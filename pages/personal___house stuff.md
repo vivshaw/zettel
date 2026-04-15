@@ -1,0 +1,7 @@
+- tree planting: https://www.appletreevermont.com/
+- solar + battery: https://suncommon.com/
+	- make sure to set up net metering
+- consider Addison County Energy Navigators: https://community.massenergize.org/Vermont/
+- porch awning: https://ottercreekawnings.com/residential-awnings/
+- weatherization: https://www.efficiencyvermont.com/
+- heat pumps: https://www.vtenergy.com/ maybe?

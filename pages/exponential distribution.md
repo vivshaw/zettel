@@ -1,11 +1,21 @@
 ---
-tags: stats, data
+tags: stats, data, distributions
 ---
 
-- a distribution for [[continuous data]].
-- good for representing physical processes that have a restraint, like the distance of a hole from a reference edge.
+- a distribution for a [[continuous]] [[random variable]] commonly used to describe time-to-event data
+	- also good for representing physical processes that have a restraint, like the distance of a hole from a reference edge.
+	- notated $X \sim exp(\lambda)$
 - generally, we only need the [[mean]] and the origin (minimum value) to work with this.
 - when the minimum value is zero, the mean and the [[standard deviation]] are equal!
+- related to the [[Poisson distribution]]: if the # of events in some interval is Poisson, then the time _between_ those events is exponential
+	- also related to the [[geometric distribution]] in that it's basically a continuous version of it
+- formulae:
+	- [[PMF]]: $f(x) = \begin{cases} \lambda e^{-\lambda x}, x \geq 0 \\ 0, x \lt 0 \end{cases}$
+	- [[CDF]]: $P(X \leq x) = 1 - e^{-(\lambda_1 + \lambda_2)z}$
+	- [[expectation]]: $E(X) = \dfrac{1}{\lambda}$
+	- second [[moment]]: $E(X^2) = \dfrac{2}{\lambda^2}$
+	- [[variance]]: $Var(X) = \dfrac{1}{\lambda^2}$
+- it is [[memoryless]] - so, if the average wait time is 20 minutes, and you've already waited an hour, the expected wait time is still 20 minutes! in fact, it's the _only_ memoryless continuous distribution
 - in [[R]], we can use the `pexp` function. (this requires the *rate*, which is `1 / mu`.) for one with an origin that isn't 0, use `pexp.low` from [[lolcat]] instead.
 - testing for exponentiality:
 	- with n <= 100, use the [[Shapiro-Wilk test]]

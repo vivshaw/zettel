@@ -2,8 +2,7 @@
 tags: books, machine learning, MLOps, system design, [[Chip Huyen]], data science
 ---
 
-- **Preface**
-  collapsed:: true
+- # Preface
 	- how do you decide what sort of ML system to build? it depends on a lot of circumstances- even orgs solving a similar problem might end up with very different model needs
 	- this books takes a holistic, [[systems thinking]] approach, based on real-life case studies from industry
 	- when might this book be useful to you?
@@ -13,8 +12,7 @@ tags: books, machine learning, MLOps, system design, [[Chip Huyen]], data scienc
 		- you're on a team for which the machine learning lifecycle is slow and manual
 		- you don't have a unified platform for your org's ML products
 		- you're worried that your ML systems may be biased, and want them not to be
-- **Chapter 1. Overview of Machine Learning Systems**
-  collapsed:: true
+- # Chapter 1. Overview of Machine Learning Systems
 	- Google's 2016 integration of neural network translation into Google Translate as a paradigmatic case, launching the current ML wave
 	- what's the relationship between MLOps and systems design?
 		- [[MLOps]] is effectively the ML version of [[devops]]- it's a set of tools and practices for bringing ML into production, monitoring, and maintaining it
@@ -78,7 +76,7 @@ tags: books, machine learning, MLOps, system design, [[Chip Huyen]], data scienc
 			- in SWE, you only test and version code. in ML, you also need to test and version data. and that is much harder than code!
 			- size is a challenge- cutting edge ML models are _massive_, which requires lots of resource investment in their infrastructure, and making 'em fast enough
 			- monitoring ML models is nontrivial! especially when interpretability is low!
-- **Chapter 2. Introduction to Machine Learning System Design**
+- # Chapter 2. Introduction to Machine Learning System Design
 	- how to start a project? first, **focus on the business metrics!** ML engineers tend to focus on technical details like [[F1 score]]s, inference [[latency]], etc, but that's not what earns the business money
 		- it can be hard to map ML models to their business impact! you may need custom metrics (e.g. Netflix's take rate- # of quality plays / # of recs seen). you may need a framework for A/B testing and other experimentation
 		- returns on investment can be great, but will not happen magically overnight. it will also depend a lot on the maturity of your ML adoption.
@@ -89,4 +87,15 @@ tags: books, machine learning, MLOps, system design, [[Chip Huyen]], data scienc
 		- **adaptability** - it should be possible to find performance improvements in the system, and to update it without downtime. ML systems are part code and part data, and data can change quickly. so you need to be able to evolve quickly too.
 	- machine learning is iterative! you need to continually monitor and update the models you deploy.
 	- rundown of the [[machine learning project lifecycle]]
+	- how to frame requests as ML problems? "customer support is slow" is not an ML problem. "it's slow to route requests to the correct department, so an automatic router would save 10 minutes" is. now it's a [[classification]] problem.
+	- rundown on [[classification]] vs. [[regression]], and binary vs. multiclass classification.
+		- classification is [[high cardinality]] when there's thousands of classes. this is uniquely tricky, because ML models might need 100 examples to learn something. do you have 100K examples for your 1000 classes? are any of them really rare, so there aren't enough
+		- [[hierarchical classification]] is sometimes easier for high-cardinality tasks. e.g., classify a nature photo first by whether it contains an animal, plant, or mineral before you try to classify which subcategory of those it is
+		- [[multilabel classification]] is a thing too. sometimes, that can be treated like a multiclass one- have the model flip all logits corresponding to a valid class. sometimes, you can treat it like a big set of binary classifications.
+			- these are hard. it makes data collection harder due to more complex label annotation, and it makes extracting probabilities harder 'cause you can't just softmax or whatever
+	- sometimes there are multiple ways to frame a task, and some better than others. for example, "which app will be opened next" could be a classification problem, or a regression problem (% chance for each app). but the classification model would need to be retrained for every new app added!
+	- you need an objective function / loss function. for [[supervised learning]], that's something like [[RMSE]] / [[MAE]] for regression, [[log loss]] for binary classification, and [[cross entropy loss]] for multiclass classification
+	- situations with multiple objectives can be especially tricky. what if you're operating a social media site, and want to maximize _engagement_ and _wholesome posts_ - but toxic posts are the ones with the most engagement?
+		- you can combine both loss functions with a scaling factor, and train one model on it. but then whenever you want to adjust the scaling factor, you need to retrain
+		- or, train two models and combine the scores. this decoupled approach is usually better for maintainability.
 	-

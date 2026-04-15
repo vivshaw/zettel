@@ -1,0 +1,28 @@
+---
+tags: python, ml, data
+---
+
+- a deep learning library, currently the most used in research by far
+	- originally, derived from Torch, the Lua ml library and scientific computing framework.
+	- compatible with Apple Silicon, nowadays!
+- built on 3 basic components:
+	- a [[tensor]] library for efficient array operations. can think of it kinda like " [[NumPy]] for GPUs"
+	- an automatic differentiation engine
+	- a [[deep learning]] library built on top of both of those
+- usually uses a nearly-[[NumPy]] format for its operations
+- you can use `.dtype` to check the type of a tensor. those created from Python floating-points will default to `int32`
+- you can use `.reshape()` to change a tensor's shape, but `.view()` is more common. view requires the data to be contiguous.
+- the autograd engine works by building a computation graph of any pipeline that has `requires_grad`. then, it can automagically apply [[backpropagation]] to those computations
+	- when you don't want automatic backprop- such as during inferense- apply `with torch.no_grad()` to skip it and save some cycles
+- we define our own networks by subclassing `torch.nn.Module`. then we must set up our layers and anything else needed in `__init__()`, and define how our layers interact in `forward()`
+- when doing classification, PyTorch wants the smallest class label to be 0, and the largest to be no more than $num\_outputs - 1$
+- you can build data loaders by subclassing `torch.utils.data.Dataset`
+	- `__init__()` handles setup, `__getitem__()` specifies how to retrieve a single item, and `__len__()` must return the length
+- `.train()` and `.eval()` simply put the model into different modes. for example, dropout layers are only active during training
+- supports [[CUDA]], as well as [[MPS]] if you're on a Mac.
+	- it's considered a best practice to make all CUDA or MPS use conditional, so it will still run if shared with others that aren't equipped for that
+	- all tensors used in an operation must be on the same device
+	- how to train with multiple devices, then?
+		- the DistributedDataParallel strategy is the basic tactic. sends a copy of the model to each device, splits the dataset into that many chunks, then trains each model separately on their own chunk. when done, averages the gradients to update the models.
+- operations suffixed with an `_` are performed in-place, which saves memory!
+- `torch.allclose()` can be used to verify two tensors are approximately equal

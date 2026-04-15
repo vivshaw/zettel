@@ -14,7 +14,7 @@ alias: GLM
 - conceptually, to find the link function, you can think: *how could I solve for a linear function of the predictors and* $\beta$*s on one side? what would then be on the other side?*
 - let:
 	- $X \in \mathbb{R}^p$ (X is a vector of real number predictors)
-	- we assume $g(E(Y | X) = \beta^T \cdot X$ for some function $g$ and some $\beta \in \mathbb{R}^p$
+	- we assume $g(E(Y | X)) = \beta^T \cdot X$ for some function $g$ and some $\beta \in \mathbb{R}^p$
 	- for linear regression:
 		- $y \in \mathbb{R}$ (y, the target, is real)
 		- we assume $E(Y | X) = \beta^T \cdot X$

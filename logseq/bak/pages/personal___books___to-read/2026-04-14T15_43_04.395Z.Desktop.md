@@ -1,0 +1,61 @@
+---
+tags: books, personal
+---
+
+- Ernst Cassirer
+- Eric Voegelin
+- Paul Tillich
+- Karl Barth
+- Hans-Georg Gadamer
+- Merleau-Ponty
+- Husserl
+- Thomas Altizer
+- Levinas
+- Harvey Cox
+- Habermas
+- Ellul
+- Edith Stein
+- Teilhard de Chardin
+- Ivan Illich
+- Agamben's *The Highest Poverty*
+- E.F. Schumacher's *A Guide for the Perplexed*
+- Jason Josephson Storm's *Metamodernism*
+- Dogen on [Uji](https://en.wikipedia.org/wiki/Uji_(Being-Time))
+- Shinshu Roberts - Being-Time
+- Wadensjo - *Interpreting As Interaction*
+- Gillian Rose
+- Brown - *Ethical Programs: Hospitality and the Rhetorics of Software*
+- FSG Originals x Logic
+- Bennington - Jacques Derrida
+- Raimon Panikkar - Rhythm of Being
+- Kastrup - The Idea of the World
+- Panarchy - Gunderson and Holling
+- Pseudo-Dionysus
+- Simone Weil- The Need for Roots / Gravity and Grace / Waiting for God
+- Murdoch - the sovereignty of good
+- Gschwandtner
+- Marion
+- Ricouer
+- Lacoste
+- Smart Brevity
+- Jazz Age Catholicism
+- Pablo Neruda - Libro de las preguntas
+- Systemantics
+- data and reality
+- Small Is Beautiful - Schumacher
+- # software
+	- Release It!
+	- Design It!
+	- Thinking in Distributed Systems
+	- Working Effectively with Legacy Code
+	- https://aosabook.org/en/index.html
+	- programmers at work
+	- Rebuilding Rails https://noahgibbs.gumroad.com/l/rebuilding_rails
+	- Kill It With Fire
+	- domain driven design
+	- Crafting Engineering Strategy
+	- Essence of Software
+- # sci-fi
+	- too like the lightning
+	- a psalm for the wild-built
+	- children of time

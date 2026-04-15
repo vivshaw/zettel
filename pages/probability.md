@@ -2,12 +2,29 @@
 tags: stats
 ---
 
-- if you ask a [[frequentist]], the likelihood that an [[event (statistics)]] will happen. if you ask a [[Bayesian]], the degree of rational belief that it will.
-- typically expressed as a number between 0 and 1
+- what is probability?
+	- if you ask a [[frequentist]], the likelihood that an [[event (statistics)]] will happen. if you ask a [[Bayesian]], the degree of rational belief that it will.
+	- typically expressed as a number between 0 and 1
+	- distinguishing from [[statistics]]: given a known [[population (statistics)]] that we know about, what's likely true of an (unknown) [[sample]]?
+- terminology:
+	- an [[experiment]] is any action or process that generates [[observations]]
+	- the [[sample space]] is the set of all possible outcomes of an [[experiment]]
+	- an [[event (statistics)]] is any possible outcome or combination of outcomes of an [[experiment]]
+	- the [[cardinality (data)]] of a [[sample space]] or an [[event (statistics)]] is the number of outcomes it contains
+- we call the probability of an event $A$, $P(A)$
+- axioms of probability:
+	- for any event $A$, $0 < P(A) < 1$ (everything is somewhere between impossibility and certainty)
+	- $P(S) = 1$ (something will occur)
+	- for $A_1, A_2, ..., A_n$ mutually exclusive events, $P(\cup^n_{k=1} A_k) = \sum^n_{k=1} P(a_k)$ (the probability that any of a group of exclusive events happens is the same as summing up the individual probabilities)
 - types:
 	- a **simple**, **marginal**, or **unconditional** probability is just the probability of a single event. e.g., the probability that you get heads when you flip a coin
 - rules:
 	- **addition rule**: $P(A\ or\ B) = P(A) + P(B) - P(A\ and\ B)$
 	- **joint rule**: $P(A\ and\ B) = P(A) * P(B|A)$
 	- **conditional rule**: $P(B|A) = P(B\ and\ A) / P(A)$
+	- **law of total probability**: $P(A) = P(A|B) P(B) + P(A|B^c) P(B^c)$
+	- [[Bayes' theorem]]: $P(A|B) = \dfrac{P(B|A) P(A)}{P(B)}$
+	- **inclusion/exclusion**: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+		- we have to adjust for overcounting! the intersection is counted twice if we sum!
+		- for higher-order intervarsections: you add up all the "single" intersections and subtract all the "doubles". effectively, alternate adding and subtracting
 	-
