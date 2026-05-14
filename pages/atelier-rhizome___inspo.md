@@ -1,0 +1,3 @@
+- https://www.noemamag.com/we-need-to-rewild-the-internet/
+- https://ngnghm.github.io/
+- https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4

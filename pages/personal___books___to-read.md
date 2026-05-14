@@ -43,6 +43,7 @@ tags: books, personal
 - Systemantics
 - data and reality
 - Small Is Beautiful - Schumacher
+- How Buildings Learn
 - # software
 	- Release It!
 	- Design It!

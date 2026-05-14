@@ -23,8 +23,9 @@ tags: stats
 	- **joint rule**: $P(A\ and\ B) = P(A) * P(B|A)$
 	- **conditional rule**: $P(B|A) = P(B\ and\ A) / P(A)$
 	- **law of total probability**: $P(A) = P(A|B) P(B) + P(A|B^c) P(B^c)$
+	- **Adam's law:** $E(Y) = E(E(Y|X))$
+	- **Eve's law:** $Var(Y) = E(Var(Y|X)) + Var(E(Y|X))$ (think of it as, summing the within-group and between-group variance!)
 	- [[Bayes' theorem]]: $P(A|B) = \dfrac{P(B|A) P(A)}{P(B)}$
 	- **inclusion/exclusion**: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 		- we have to adjust for overcounting! the intersection is counted twice if we sum!
 		- for higher-order intervarsections: you add up all the "single" intersections and subtract all the "doubles". effectively, alternate adding and subtracting
-	-

@@ -1,4 +1,6 @@
-tags:: Buddhism
+---
+tags: Buddhism
+---
 
 - born Siddhartha Gautama, a prince in the Shakyamuni clan, around 500 BC near Lumbini
 - he had a sheltered upbringing in a palace, surrounded by pleasures and joys, where the suffering of the world was hidden away

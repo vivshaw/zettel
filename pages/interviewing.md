@@ -1,0 +1,4 @@
+- random resources:
+	- https://www.em-tools.io/, for #[[engineering management]] interviews specifically
+	- [ByteByteGo](https://bytebytego.com/), structured #[[system design]] courses
+	- [Exponent](https://www.tryexponent.com/), more courses, focused on specific roles

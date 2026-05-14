@@ -1,0 +1,6 @@
+- professional profiles:
+	- https://jeremymorrell.dev/
+	- https://laurenloprete.design/
+- personal sites:
+	- https://turntrout.com/welcome - such character! yet text-forward and highly readable!
+	- https://fredchan.org/
