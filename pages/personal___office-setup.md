@@ -1,0 +1,20 @@
+- ZVE10 II: www.youtube.com/watch?v=TISrm4lSioQ
+	- w/ camera mount arm of some kinda
+- podcast mic
+	- w/ mic mount from uplift
+- https://www.upliftdesk.com, walnut, 60"
+	- double monitor arm
+	- keeb tray
+	- mic mount
+	- organizer
+	- deskpad
+	- power strip (& power grommet?)
+	- floor pad
+	- headphone stand
+- side table
+	- put the headphone stand on it
+	- 3 laptop stands https://www.humancentric.com/products/vertical-laptop-stand-for-desks
+- Caldigit TS5+ dock
+- modular storage?
+	- https://aftermath.site/best-modular-storage-toolboxes-bookshelves/
+	- the Uplift ones?

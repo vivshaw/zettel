@@ -7,7 +7,7 @@ tags: data, management
 - examples:
 	- **quality:** [[CSAT]], defect rates, performance
 	- **productivity:** throughput, yield, availability, reliability
-	- **cost:** materials, operations, labor
+	- **cost:** materials, operations, labour
 	- **safety:** # of incidents, incident rate, lost days
 	- **empoyees:** turnover, employee satisfaction, suggestions implemented
 - they need to be created from the business's unique mission, vision, and value prop

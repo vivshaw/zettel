@@ -1,0 +1,1 @@
+- > "I would rather follow the plow as thrall to another man, one with no land allotted him and not much to live on, than be king over all the perished dead."

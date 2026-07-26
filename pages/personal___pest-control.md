@@ -1,0 +1,5 @@
+- tung oil on exterior wood surfaces? https://www.lenorebrooksdesign.com/blog/my-no1-tip-to-repel-wasps
+- stain the back deck and front porch
+- spearmint essential oil: on surfaces, under eaves, around perimeter
+	- or other essential oils: see https://pubmed.ncbi.nlm.nih.gov/23081867/
+- vinegar?

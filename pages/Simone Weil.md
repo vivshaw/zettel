@@ -1,1 +1,70 @@
-- > Attention, taken to its highest degree, is the same thing as prayer. It presupposes faith and love. Absolutely unmixed attention is prayer."
+- on [[work]]:
+	- > Not only should man know what he is making, but if possible, ,he should see how it is used- see how nature is changed by him. Every man's work should be an *object of contemplation* for him.
+	- Weil went to work at a factory to come to know what the affliction of work was. further, on a fishing boat, on a farm... remarked on the thought-destroying capacity of work, and on all being trapped in a race to get ahead, even the owners
+	- factory work doesn't just cause suffering. it degrades one's status as s human being
+	- servitude as a universal condition
+- on [[affliction]] / malheur
+	- > It *is* surprising that God should have given affliction the power to seize the very souls of the innocent and to take possession of them as their sovereign lord.
+	- viewed [[Job]] as the model for affliction. also, [[King Lear]]
+	- > Do you realize there are millions and millions of people on Earth who suffer nearly always, from birth to death? It is a pity they have not learned expression; they would say the truth about suffering.
+	- > Affliction constrains a man to ask continually 'Why' - the question to which there is essentially no reply.
+	- > [Affliction] deprives its victims of their personality and makes them into things.
+	- malheur reduces us to a husk that "blindly fastens itself to everything which can provide it with support, like a plant fastens its tendrils." one crushed by it is "hideous as life in its nakedness always is, like an amputated stump, like the swarming of insects"
+	- affliction is not that puzzling... _until_ one considers the question of God. then, we are in the realm of [[theodicy]]
+- [[force]] "enslaves man", and "modifies the human spirit", it is that "before which man's flesh shrinks away". sees the [[Iliad]] as a model for this (of which she prepared her own translation!)
+	- > Force is as pitiless to the man who possesses it, or thinks he does, as it is to his victims; the second it crushes, the first it intoxicates. The truth is, nobody really possesses it.
+- on [[attention]]:
+	- > Attention, taken to its highest degree, is the same thing as prayer. It presupposes faith and love. Absolutely unmixed attention is prayer.
+	- from *Essai sur la notion de lecture*, gives the example of a woman who reads a letter conveying the death of her son, and is struck by a faint and her life is never the same. in reading it, the pain itself leaps out from the letter
+	- we "read" meanings from the world. the world is replete with meanings that take hold and fix our beliefs and acts. they sweep over us, such that "my soul is no longer my own". that force makes each reading "appear as the only real, only possible way to look at things; the othe one seems purely imaginary
+	- reading is on-the-ground, it's rooted in our own standpoint in the world
+	- for Weil, the [[epistemological]] _is_ the [[ethical]]! from Winch, "our concepts, which give the world its shape, are unintelligible except as concepts exercised by beings whose common life exhibits certain aspirations and values"
+	- attention is a "negative effort", not about forcing one's mind to focus in on some specific solution. it's about opening up, standing still, and reflecting upon a problem. waiting. "dilating the mind". embracing the process over the destination will get us somewhere far more important than we intended to go.
+	- attention means receding from oneself, leaving one "detached, empty, and ready to be penetrated by the object" of attention
+	- > Complete attention is like unconsciousness.
+		- something to be said here of [[Heidegger]] and the ready-to-hand
+	- > Every time a human being succeeds in making an effort of attention with the sole idea of increasing his grasp of truth, he acquires a greater aptitude for grasping it, even if his effort produces no visible fruit.
+	- [[compassion]] is attention toward the afflicted person, identifying totally with them
+	- attention is similar to reverence
+	- attention is "the rarest and purest form of generosity"
+	- training one's attention require resistance against one's pull to not see the world as it is, to view things in the easy, conventional way, to overlook the afflicted...
+- on [[pedagogy]]: #[[philosophy of education]]
+	- > It does not even matter much whether we succeed in finding the solution or understanding the proof, although it is important to try really hard to do so. Never in any case whatever is a genuine effort of attention wasted.
+	- > Although people seem to be unaware of it today, the development of the faculty of attention forms the real object and almost the sole interest of studies [...] All tasks that call upon the power of attention are interesting for the same reasons and to an almost equal degree.
+	- > In every school exercise there is a special way of waiting upon truth, setting our hearts upon it, yet not allowing ourselves to go out in search of it [...] There is a way of waiting,, when we are writing, for the right word to come of itself at the end of our pen, while we merely reject all inadequate words.
+	- > [Students should] work without any wish to gain good marks, to pass examinations, to win school successes; without any reference to their natural abilities and tastes; applying themselves equally to all their tasks, with the idea that each one might help to form in them the habit of attention.
+	- teaching is an awakening from slumber
+- on [[revolution]]:
+	- > The word 'revolution' is a word for which you kill, for which you die, for which you send the laboring masses to their death, but which does not possess any content
+	- began as an admirer of [[Marx]], but with stronger sympathies for [[anarchism]]. became disillusioned in the 30s over conflicts within the left and labor movements. zero sympathy for [[Stalinism]]
+	- > Descartes used to say that a clock out of order is not an exception to the laws governing clocks, but a different mechanism obeying its own laws. This is how we should regard Stalin's regime: not as a worker's state out of order, but as a different social mechanism. Its definition is found in the wheels that compose it and which functions according to the nature of those wheels.
+		- reminiscent of [[POSIWID]]!
+	- Marxists often ignore the lived experiences of industrial workers. in fact, Weil saw intellectual work in general as alienated from [[everyday]] life and the world
+- on [[resistance]]:
+	- > Even if defeat is inevitable, I will always choose to side with the vanquished workers than the victorious oppressors.
+	- resistance does not make you a innocent! you are complicit in your own side's wrongdoing
+	- > If one stops oneself from thinking of all this, one makes oneself an accomplice of what is happening. One has to do something quite different: take one's place in this system of things and do something about it.
+	- influenced by [[Chartier]] and his dual republican values of obedience and resistance
+	- resistance begins with clarity of thought
+- Weil came to view oppression as flowing from [[power]] directly, and power as a basic fact of human existence.
+	- > Preservation of power is a vital nnecessity for the powerful, since it is their power which provides their sustenance
+	- power is unstable! it is always precarious and sought by rivals. it eventually undoes all who have it.
+	- > [Power] contains a sort of fatality which weighs as pitilessly onthose who command as on those who obey.
+- on [[religion]]
+	- despite her [[Jewish]] background, did not see herself as one. early in life, was an [[atheist]]. later in life, embraced [[Catholicism]]
+	- > The conviction was suddenly borne in upon me that Christianity is preeminently the religion of slaves, that slaves cannot help belonging to it, and I among others
+		- a reversal of [[Nietzsche]], no?
+- on [[sacrifice]]:
+	- > Sacrifice is the acceptance of pain, the refusal to obey one's animal needs and the will to redeem the suffering of others by choosing to suffer as well.
+- on [[political philosophy]]:
+	- Weil viewed "the collectivity" as poisonous! not just that of totalitarian states, but the "blind social mechanism" of liberal societies
+		- see Heidegger's *das Man*, or [[Arendt]]'s banality of evil
+	- > Never has the individual been so completely delivered up to a blind collectivity, and never have men been less capable, not only of subordinating their actions to their thought, but even of thinking.
+	- on [[media]] and mass [[communication]]:
+		- > With the popular press and the wireless, you can make a whole people swallow with their breakfast or supper a series of ready-made and, by the same token, absurd opinions.
+		- can this be used for good? no! "You cannot with the aid of these things arouse so much as a gleam of thought."
+	- on [[liberty]]:
+		- > Perfect liberty is what we must try to represent clearly to ourselves, not in the hope of attaining a less imperfect liberty than is our present condition. The better can be conceived only by reference to the perfect.
+			- [[Iris Murdoch]] in [[The Sovereignty of Good]] says as much
+		- > [Liberty is defined] by a relationship between thought and action; the absolutely free man would be he whose every action proceeded from a preliminary judgement concerning the end which he set himself and the sequence of means suitable for attaining this end
+			- here contra [[The Sovereignty of Good]], as Murdoch funds this picture of man impoverishing. what of the inner life?

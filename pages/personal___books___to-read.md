@@ -44,6 +44,10 @@ tags: books, personal
 - data and reality
 - Small Is Beautiful - Schumacher
 - How Buildings Learn
+- Normal Accidents - Charles Perrow
+- Rational Accidents - John Downer
+- Karl Polanyi’s *The Great Transformation*
+- Ellen Meiksins Wood's *The Origin of Capitalism*
 - # software
 	- Release It!
 	- Design It!

@@ -1,0 +1,7 @@
+- [NixOS might be the best thing for sandboxed testing stuff!](https://www.reddit.com/r/NixOS/comments/1ti12ok/nixos_might_be_the_best_thing_for_sandboxed/)
+- [You Don’t Need to Master ML Theory to Break Into MLOps](https://medium.com/@thevarunfreelance/you-dont-need-to-master-ml-theory-to-break-into-mlops-here-s-the-other-path-no-one-talks-about-56bc6fb45319)
+- [How To Become A Mechanistic Interpretability Researcher](https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher)
+- [How to Learn Nix](https://ianthehenry.com/posts/how-to-learn-nix/prior-knowledge/)
+- [Lorin's cognitive systems engineering papers](https://github.com/lorin/cognitive-systems-engineering)
+- [Platofrm Engineering University](https://university.platformengineering.org/)
+- [A Spirit of Trust](https://sites.pitt.edu/~rbrandom/Courses/Hegel%20(2021)/ST%202021%20Main.html)

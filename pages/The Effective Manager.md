@@ -174,7 +174,7 @@ tags: books, management
 			- *"Can I have a word?" / "Can I give you some feedback?"*
 			- ask, every time, whether it's positive or negative feedback
 			- the purpose is to make sure we have their attention. there's no point in talking about their future behavior if now is a bad time!
-			- honor a "no" if it is given. sincerity matters!
+			- honour a "no" if it is given. sincerity matters!
 			- empirically, asking directs for permission increased their appreciation for the feedback and likelihood of following through
 		- **describe the behavior**
 		  logseq.order-list-type:: number
@@ -330,7 +330,7 @@ tags: books, management
 	- delegate a _settled, routine_ responsibility. you don't know how new responsibilities should be properly done, so how could you delegate them?
 	- won't this overload the IC who ends up with a new task, who was already full? yes, absolutely- *so they should drop some existing tasks to make room*. let them "delegate to the floor" what they need to in order to make room. taking on new responsibilities will end up deprioritizing others, and that's just life.
 	- don't delegate your primary responsibilities. delegate the side work.
-	- don't think about yourself. don't delegate the stuff you don't like, don't need, etc. your directs will realize you're just pushing work ont hem that you don't want, and they'll say "no" or not do it! this is the "push model" of delegation. don't do it.
+	- don't think about yourself. don't delegate the stuff you don't like, don't need, etc. your directs will realize you're just pushing work on them that you don't want, and they'll say "no" or not do it! this is the "push model" of delegation. don't do it.
 	- delegate work that fits the direct: what they **want to do**, **like to do**, **need for growth**, and **are good at**. this is the "pull model" of delegation.
 	- don't judge by whether "I could do it quicker/better". you can't do everything, and it's not your job to. your job is to enable others to do it! so, ask instead: "can my direct do it at the level I did when I first started?" you were good enough back then, so if they can do it at that level, they're also good enough.
 	- not every thing that comes to "us" is coming to us personally. much of it is to "our role" or "our office". and it's our job to figure out what and delegate accordingly.
@@ -348,7 +348,7 @@ tags: books, management
 		- **go over quality and deadline standards.**
 		- **nail down reporting standards.**
 		- **ask for skill/resource needs.** "What do you need from me?"
-	- what if a direct keeps saying "no" to delegation? well... they _can_ say no, that's intentional. you need to be willing to honor that if you're building trust and not leaning on role power.
+	- what if a direct keeps saying "no" to delegation? well... they _can_ say no, that's intentional. you need to be willing to honour that if you're building trust and not leaning on role power.
 		- after two or more "no"s in a row, reexamine your assumptions. are they overloaded? what's the behavior and tone you observe like? how's attendance. saying "no" is fine, but a general deterioration in the relationship is _not_ fine.
 		- after three, you should have a different conversation. refusing any particular delegation is A-OK, but a general refusal to handle new or different work isn't. organizations grow and change, and the employees need to adapt. talk about how to become a team player, and why they aren't yet.
 - **14: Delegating to Remote Directs** #delegation

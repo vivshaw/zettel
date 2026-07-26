@@ -251,7 +251,7 @@ tags: books, design, systems thinking, frontend
 		  If you think about it for a bit, you’ll realize that lots of organizations already have a word for this. That word is … Designer.
 		  When I’m working with teams that want to be more collaboratively successful at making web products, one of the first things I suggest is moving all front-end engineers to the design team and changing their titles to “Designer.” It takes a little while to warm up to the idea and a little more time to implement, but it’s amazing to see how much confidence a front-end engineer can get when people think of them—and when they think of themselves—as designers.
 		- consider making sure every maker on the team is a designer or engineer, and treat those roles as a spectrum, with overlap
-		- *I think this is really poorly justified!*
+		- *i think this is really poorly justified!*
 	- alternative suggestion: split up [[front-of-the-frontend and back-of-the-frontend]]
 		- or, "hammer and chisel"- hammer bangs out the rough structure and feel, chisel refines it into a great UX
 	- it's important to become a "three-legged stool"- product, design, and engineering working hand in hand

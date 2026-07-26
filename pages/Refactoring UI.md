@@ -114,31 +114,31 @@ tags: books, design, frontend, CSS, software engineering, HCI, design system, re
 	- **use letter spacing effectively.** by default, trust the type designer and leave it alone.
 		- you might choose to track in headlines and other very large text. don't do this the other way around, though!
 		- you might increase the spacing of all-caps text for better legibility
-- # Working with Color #color
+- # Working with Colour #colour
   collapsed:: true
-	- **ditch hex for HSL.** in hex and RGB, many colors that look similar visually look nothing alike in code. [[HSL]] fixes this, by specifying color in terms of hue, saturation, and lightness- all meaningful to the human eye.
-	- **you need more colors than you think.** you can't just have a palette of 5 primaries! you need:
+	- **ditch hex for HSL.** in hex and RGB, many colours that look similar visually look nothing alike in code. [[HSL]] fixes this, by specifying colour in terms of hue, saturation, and lightness- all meaningful to the human eye.
+	- **you need more colours than you think.** you can't just have a palette of 5 primaries! you need:
 		- **greys**, because almost everything in an interface is a shade of grey. probably 8-10 shades. true black tends to look unnatural, so use a really dark grey as the top-end of the grey scale.
 		- **primary**, most apps need just one. *maybe* two. you'll also want a scale of 8-10.
 		- **accents**, for communicating different things to the user, like success/failure states. you'll want multiple shades of these too
-		- altogether, you'll probably have up to 10 different colors, with up to 5-10 shades each
+		- altogether, you'll probably have up to 10 different colours, with up to 5-10 shades each
 	- **define your shades up front.** don't use lighten and darken preprocessor functions on the fly!
-		- start by picking a base color. this will be one in the middle, from which you'll derive lighter and darker shades.
+		- start by picking a base colour. this will be one in the middle, from which you'll derive lighter and darker shades.
 		- next, find the lightest and darkest ends of the scale. the darkest is usually used for text, and the lightest is usually used for background tints, so something like an alert component can be a good place to test this.
 		- last, fill in the gaps. you might call your middle shade 500, your light and dark ends 100 and 900, then fill in the remaining slots.
 		- don't be afraid to tweak things manually. a mathematical approach will only get you so far. human eyes are the final arbiter of quality.
-	- **don't let lightness kill your saturation.** in HSL, as a color gets closer to 0% or 100% lightness, the impact of saturation is reduced. so you'll need to boost it on both ends of the scale.
-		- you can use [[perceived brightness]] to your advantage. the human eye sees certain hues as brighter than others, like yellow. so, you can lighten a color by rotating toward the nearest bright hue (60, 180, 360) or darken by rotating toward dark hues (0, 120, 240).
-		- this is especially useful when building color scales for light colors like yellow, where a naive lightness-only approach will get you a scale full of gross muddy browns
+	- **don't let lightness kill your saturation.** in HSL, as a colour gets closer to 0% or 100% lightness, the impact of saturation is reduced. so you'll need to boost it on both ends of the scale.
+		- you can use [[perceived brightness]] to your advantage. the human eye sees certain hues as brighter than others, like yellow. so, you can lighten a colour by rotating toward the nearest bright hue (60, 180, 360) or darken by rotating toward dark hues (0, 120, 240).
+		- this is especially useful when building colour scales for light colours like yellow, where a naive lightness-only approach will get you a scale full of gross muddy browns
 	- **greys don't have to be grey.** "true" grey has no saturation at all, but many IRL greys have lots of saturation!
-		- think about color temperature, like when you buy lightbulbs. "cooler" greys are blue-saturated. "warmer" greys are yellow or orange-saturated.
+		- think about colour temperature, like when you buy lightbulbs. "cooler" greys are blue-saturated. "warmer" greys are yellow or orange-saturated.
 		- as with the lightness discussion above, you need to adjust saturation at the ends of the scale for visual consistency
-	- **accessible doesn't have to mean ugly.** [[WCAG]] recommends a 4.5:1 contrast ration for normal text, and 3:1 for larger text. that's easy with black & white, but tricky with colors. how do we do it? #a11y
-		- flip the contrast when needed. using dark colored text on a light colored background can be easier than white text on a dark colored background.
+	- **accessible doesn't have to mean ugly.** [[WCAG]] recommends a 4.5:1 contrast ration for normal text, and 3:1 for larger text. that's easy with black & white, but tricky with colours. how do we do it? #a11y
+		- flip the contrast when needed. using dark coloured text on a light coloured background can be easier than white text on a dark coloured background.
 		- when you can't reduce or increase lightness to create hierarchy without getting inaccessible, try rotating hues
-	- **don't rely on color alone.** what if a use is red-green colorblind, for example?
-		- never use color as the only means to communicate something. communicate each piece of info in multiple ways. for example, color _and_ an icon, or color _and_ sizing.
-		- rely on contrast rather than hue. for example, bar charts in all shades of one color rather than many colors.
+	- **don't rely on colour alone.** what if a use is red-green colourblind, for example?
+		- never use colour as the only means to communicate something. communicate each piece of info in multiple ways. for example, colour _and_ an icon, or colour _and_ sizing.
+		- rely on contrast rather than hue. for example, bar charts in all shades of one colour rather than many colours.
 - # Creating Depth #depth
   collapsed:: true
 	- **emulate a light source.** the rules for simluating light are simpler than you might expect:

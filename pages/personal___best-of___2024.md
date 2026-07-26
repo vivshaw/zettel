@@ -10,7 +10,7 @@ tags: music, metal, personal
 	- Blood Incantation - Absolute Elsewhere #metal #[[death metal]] #[[prog metal]] #[[kosmische musik]]
 	- Bedsore - Dreaming the Strife for Love #metal #[[death metal]] #[[prog metal]]
 	- Opeth - The Last Will and Testament #metal #[[death metal]] #[[prog metal]]
-- honorable mention:
+- honourable mention:
 	- Selbst - Despondency Chord Progression #metal #[[black metal]] #atmoblack
 	- Saidan - Visual Kill #metal #[[black metal]] #meloblack
 	- Hulder?

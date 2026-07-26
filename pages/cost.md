@@ -3,7 +3,7 @@ tags: finance, management
 ---
 
 - 2 types of cost:
-	- **direct cost** - the cost of manufacturing and distributing a product. materials, labor, electricity, etc.
+	- **direct cost** - the cost of manufacturing and distributing a product. materials, labour, electricity, etc.
 	- **indirect costs** - the cost of everything else needed along the way. marketing, engineering, legal, etc.
 - other concepts:
 	- **overhead**- similar to indirect costs
